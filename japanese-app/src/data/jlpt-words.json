@@ -1,0 +1,7690 @@
+{
+  "n5": [
+    {
+      "japanese": "学校",
+      "reading": "がっこう",
+      "meaning": "school",
+      "level": "N5",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "川",
+      "reading": "かわ",
+      "meaning": "river, stream",
+      "level": "N5",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "手",
+      "reading": "て",
+      "meaning": "hand, arm",
+      "level": "N5",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "戸",
+      "reading": "と",
+      "meaning": "door (esp. Japanese-style)",
+      "level": "N5",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "メガネ",
+      "reading": "メガネ",
+      "meaning": "glasses, eyeglasses, spectacles",
+      "level": "N5",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "煙草",
+      "reading": "タバコ",
+      "meaning": "tobacco, cigarette, cigar",
+      "level": "N5",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "赤",
+      "reading": "あか",
+      "meaning": "red, crimson, scarlet",
+      "level": "N5",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "仕事",
+      "reading": "しごと",
+      "meaning": "work, job, labor",
+      "level": "N5",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "英語",
+      "reading": "えいご",
+      "meaning": "English (language)",
+      "level": "N5",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "問題",
+      "reading": "もんだい",
+      "meaning": "question (e.g. on a test), problem",
+      "level": "N5",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "部屋",
+      "reading": "へや",
+      "meaning": "room, chamber",
+      "level": "N5",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "子供",
+      "reading": "こども",
+      "meaning": "child, children",
+      "level": "N5",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "時間",
+      "reading": "じかん",
+      "meaning": "time",
+      "level": "N5",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "雨",
+      "reading": "あめ",
+      "meaning": "rain",
+      "level": "N5",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "先生",
+      "reading": "せんせい",
+      "meaning": "teacher, instructor, master",
+      "level": "N5",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "年",
+      "reading": "とし",
+      "meaning": "year",
+      "level": "N5",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "手紙",
+      "reading": "てがみ",
+      "meaning": "letter, note",
+      "level": "N5",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "電話",
+      "reading": "でんわ",
+      "meaning": "telephone call, phone call",
+      "level": "N5",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "水",
+      "reading": "みず",
+      "meaning": "water (esp. cool or cold)",
+      "level": "N5",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "病気",
+      "reading": "びょうき",
+      "meaning": "illness (usu. excluding minor ailments, e.g. common cold), disease, sickness",
+      "level": "N5",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "会社",
+      "reading": "かいしゃ",
+      "meaning": "company, corporation, firm",
+      "level": "N5",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "結婚",
+      "reading": "けっこん",
+      "meaning": "marriage",
+      "level": "N5",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "言葉",
+      "reading": "ことば",
+      "meaning": "language, dialect",
+      "level": "N5",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "目",
+      "reading": "め",
+      "meaning": "eye, eyeball",
+      "level": "N5",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "走る",
+      "reading": "はしる",
+      "meaning": "to run",
+      "level": "N5",
+      "common": true,
+      "pos": "Godan verb with 'ru' ending"
+    },
+    {
+      "japanese": "名前",
+      "reading": "なまえ",
+      "meaning": "name",
+      "level": "N5",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "旅行",
+      "reading": "りょこう",
+      "meaning": "travel, trip, journey",
+      "level": "N5",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "道",
+      "reading": "みち",
+      "meaning": "road, path, street",
+      "level": "N5",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "飛行機",
+      "reading": "ひこうき",
+      "meaning": "airplane, aeroplane, plane",
+      "level": "N5",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "映画",
+      "reading": "えいが",
+      "meaning": "movie, film, motion picture",
+      "level": "N5",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "音楽",
+      "reading": "おんがく",
+      "meaning": "music",
+      "level": "N5",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "木",
+      "reading": "き",
+      "meaning": "tree, shrub, bush",
+      "level": "N5",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "大学",
+      "reading": "だいがく",
+      "meaning": "university, college",
+      "level": "N5",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "時計",
+      "reading": "とけい",
+      "meaning": "clock, watch, timepiece",
+      "level": "N5",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "家族",
+      "reading": "かぞく",
+      "meaning": "family",
+      "level": "N5",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "花",
+      "reading": "はな",
+      "meaning": "flower, blossom, bloom",
+      "level": "N5",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "猫",
+      "reading": "ねこ",
+      "meaning": "cat (esp. the domestic cat, Felis catus), feline",
+      "level": "N5",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "毎日",
+      "reading": "まいにち",
+      "meaning": "every day, daily",
+      "level": "N5",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "宿題",
+      "reading": "しゅくだい",
+      "meaning": "homework, assignment",
+      "level": "N5",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "雪",
+      "reading": "ゆき",
+      "meaning": "snow, snowfall",
+      "level": "N5",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "山",
+      "reading": "やま",
+      "meaning": "mountain, hill",
+      "level": "N5",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "窓",
+      "reading": "まど",
+      "meaning": "window",
+      "level": "N5",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "動物",
+      "reading": "どうぶつ",
+      "meaning": "animal",
+      "level": "N5",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "夜",
+      "reading": "よる",
+      "meaning": "night, evening",
+      "level": "N5",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "料理",
+      "reading": "りょうり",
+      "meaning": "cooking, cookery, cuisine",
+      "level": "N5",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "夏",
+      "reading": "なつ",
+      "meaning": "summer",
+      "level": "N5",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "新聞",
+      "reading": "しんぶん",
+      "meaning": "newspaper",
+      "level": "N5",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "公園",
+      "reading": "こうえん",
+      "meaning": "(public) park",
+      "level": "N5",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "意味",
+      "reading": "いみ",
+      "meaning": "meaning, significance, sense",
+      "level": "N5",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "自転車",
+      "reading": "じてんしゃ",
+      "meaning": "bicycle, bike",
+      "level": "N5",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "足",
+      "reading": "あし",
+      "meaning": "foot, paw, arm (of an octopus, squid, etc.)",
+      "level": "N5",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "電車",
+      "reading": "でんしゃ",
+      "meaning": "train, electric train",
+      "level": "N5",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "散歩",
+      "reading": "さんぽ",
+      "meaning": "walk, stroll",
+      "level": "N5",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "声",
+      "reading": "こえ",
+      "meaning": "voice",
+      "level": "N5",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "朝",
+      "reading": "あさ",
+      "meaning": "morning",
+      "level": "N5",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "歌",
+      "reading": "うた",
+      "meaning": "song, singing",
+      "level": "N5",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "靴",
+      "reading": "くつ",
+      "meaning": "shoe, shoes, boots",
+      "level": "N5",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "箱",
+      "reading": "はこ",
+      "meaning": "box, case, chest",
+      "level": "N5",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "机",
+      "reading": "つくえ",
+      "meaning": "desk",
+      "level": "N5",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "帽子",
+      "reading": "ぼうし",
+      "meaning": "hat, cap",
+      "level": "N5",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "海",
+      "reading": "うみ",
+      "meaning": "sea, ocean, waters",
+      "level": "N5",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "授業",
+      "reading": "じゅぎょう",
+      "meaning": "lesson, class, teaching",
+      "level": "N5",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "銀行",
+      "reading": "ぎんこう",
+      "meaning": "bank, banking institution",
+      "level": "N5",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "写真",
+      "reading": "しゃしん",
+      "meaning": "photograph, photo, picture",
+      "level": "N5",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "冬",
+      "reading": "ふゆ",
+      "meaning": "winter",
+      "level": "N5",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "村",
+      "reading": "むら",
+      "meaning": "village",
+      "level": "N5",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "傘",
+      "reading": "かさ",
+      "meaning": "umbrella, parasol",
+      "level": "N5",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "口",
+      "reading": "くち",
+      "meaning": "mouth",
+      "level": "N5",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "橋",
+      "reading": "はし",
+      "meaning": "bridge",
+      "level": "N5",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "病院",
+      "reading": "びょういん",
+      "meaning": "hospital, clinic, doctor's office",
+      "level": "N5",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "春",
+      "reading": "はる",
+      "meaning": "spring, springtime",
+      "level": "N5",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "図書館",
+      "reading": "としょかん",
+      "meaning": "library",
+      "level": "N5",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "買い物",
+      "reading": "かいもの",
+      "meaning": "shopping, purchased goods",
+      "level": "N5",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "椅子",
+      "reading": "いす",
+      "meaning": "chair, seat, stool",
+      "level": "N5",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "自動車",
+      "reading": "じどうしゃ",
+      "meaning": "car, automobile, motorcar",
+      "level": "N5",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "色",
+      "reading": "いろ",
+      "meaning": "colour, color, hue",
+      "level": "N5",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "卵",
+      "reading": "たまご",
+      "meaning": "eggs, egg, spawn",
+      "level": "N5",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "肉",
+      "reading": "にく",
+      "meaning": "flesh",
+      "level": "N5",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "風邪",
+      "reading": "かぜ",
+      "meaning": "(common) cold, influenza, flu",
+      "level": "N5",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "掃除",
+      "reading": "そうじ",
+      "meaning": "cleaning, sweeping, dusting",
+      "level": "N5",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "紙",
+      "reading": "かみ",
+      "meaning": "paper",
+      "level": "N5",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "鍵",
+      "reading": "かぎ",
+      "meaning": "key",
+      "level": "N5",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "雑誌",
+      "reading": "ざっし",
+      "meaning": "magazine, journal, periodical",
+      "level": "N5",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "切符",
+      "reading": "きっぷ",
+      "meaning": "ticket",
+      "level": "N5",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "外国人",
+      "reading": "がいこくじん",
+      "meaning": "foreigner, foreign citizen, foreign national",
+      "level": "N5",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "財布",
+      "reading": "さいふ",
+      "meaning": "wallet, purse, coin purse",
+      "level": "N5",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "鉛筆",
+      "reading": "えんぴつ",
+      "meaning": "(wooden) pencil",
+      "level": "N5",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "大人",
+      "reading": "おとな",
+      "meaning": "adult, grown-up",
+      "level": "N5",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "塩",
+      "reading": "しお",
+      "meaning": "salt, common salt, table salt",
+      "level": "N5",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "地図",
+      "reading": "ちず",
+      "meaning": "map, atlas, chart",
+      "level": "N5",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "砂糖",
+      "reading": "さとう",
+      "meaning": "sugar",
+      "level": "N5",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "夏休み",
+      "reading": "なつやすみ",
+      "meaning": "summer vacation, summer holiday",
+      "level": "N5",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "郵便局",
+      "reading": "ゆうびんきょく",
+      "meaning": "post office",
+      "level": "N5",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "池",
+      "reading": "いけ",
+      "meaning": "pond",
+      "level": "N5",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "教室",
+      "reading": "きょうしつ",
+      "meaning": "classroom, lecture room",
+      "level": "N5",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "耳",
+      "reading": "みみ",
+      "meaning": "ear",
+      "level": "N5",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "切手",
+      "reading": "きって",
+      "meaning": "stamp (postage)",
+      "level": "N5",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "台所",
+      "reading": "だいどころ",
+      "meaning": "kitchen",
+      "level": "N5",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "電気",
+      "reading": "でんき",
+      "meaning": "electricity",
+      "level": "N5",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "歯",
+      "reading": "は",
+      "meaning": "tooth, teeth",
+      "level": "N5",
+      "common": true,
+      "pos": "Noun"
+    }
+  ],
+  "n4": [
+    {
+      "japanese": "周り",
+      "reading": "まわり",
+      "meaning": "circumference, girth",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "上げる",
+      "reading": "あげる",
+      "meaning": "to raise, to elevate",
+      "level": "N4",
+      "common": true,
+      "pos": "Ichidan verb"
+    },
+    {
+      "japanese": "腕",
+      "reading": "うで",
+      "meaning": "arm",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "人形",
+      "reading": "にんぎょう",
+      "meaning": "doll, puppet, marionette",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "文化",
+      "reading": "ぶんか",
+      "meaning": "culture, civilization, civilisation",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "海岸",
+      "reading": "かいがん",
+      "meaning": "seashore, coast, seaside",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "産業",
+      "reading": "さんぎょう",
+      "meaning": "industry",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "動物園",
+      "reading": "どうぶつえん",
+      "meaning": "zoo, zoological gardens",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "美術館",
+      "reading": "びじゅつかん",
+      "meaning": "art museum, art gallery",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "水道",
+      "reading": "すいどう",
+      "meaning": "water supply, water service, waterworks",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "飛行場",
+      "reading": "ひこうじょう",
+      "meaning": "airfield, airport, aerodrome",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "葡萄",
+      "reading": "ぶどう",
+      "meaning": "grape, grapevine",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "事故",
+      "reading": "じこ",
+      "meaning": "accident, incident, trouble",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "息子",
+      "reading": "むすこ",
+      "meaning": "son",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "生活",
+      "reading": "せいかつ",
+      "meaning": "life, living",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "注意",
+      "reading": "ちゅうい",
+      "meaning": "attention, notice, heed",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "女性",
+      "reading": "じょせい",
+      "meaning": "woman, female",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "生きる",
+      "reading": "いきる",
+      "meaning": "to live, to exist",
+      "level": "N4",
+      "common": true,
+      "pos": "Ichidan verb"
+    },
+    {
+      "japanese": "船",
+      "reading": "ふね",
+      "meaning": "ship, boat, watercraft",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "説明",
+      "reading": "せつめい",
+      "meaning": "explanation, exposition, description",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "警察",
+      "reading": "けいさつ",
+      "meaning": "police",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "危険",
+      "reading": "きけん",
+      "meaning": "danger, peril, hazard",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "世界",
+      "reading": "せかい",
+      "meaning": "the world, society, the universe",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "戦争",
+      "reading": "せんそう",
+      "meaning": "war",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "小説",
+      "reading": "しょうせつ",
+      "meaning": "novel, story, (work of) fiction",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "関係",
+      "reading": "かんけい",
+      "meaning": "relation, relationship, connection",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "研究",
+      "reading": "けんきゅう",
+      "meaning": "research, study, investigation",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "会議",
+      "reading": "かいぎ",
+      "meaning": "meeting, conference, session",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "音",
+      "reading": "おと",
+      "meaning": "sound, noise",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "普通",
+      "reading": "ふつう",
+      "meaning": "normal, ordinary, regular",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun which may take the genitive case particle 'no'"
+    },
+    {
+      "japanese": "湖",
+      "reading": "みずうみ",
+      "meaning": "lake",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "夢",
+      "reading": "ゆめ",
+      "meaning": "dream",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "空港",
+      "reading": "くうこう",
+      "meaning": "airport",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "数学",
+      "reading": "すうがく",
+      "meaning": "mathematics",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "教育",
+      "reading": "きょういく",
+      "meaning": "education, schooling, training",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "赤ちゃん",
+      "reading": "あかちゃん",
+      "meaning": "baby, infant",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "自由",
+      "reading": "じゆう",
+      "meaning": "freedom, liberty",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "火",
+      "reading": "ひ",
+      "meaning": "fire, flame, blaze",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "森",
+      "reading": "もり",
+      "meaning": "forest",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "法律",
+      "reading": "ほうりつ",
+      "meaning": "law, legislation, act",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "気分",
+      "reading": "きぶん",
+      "meaning": "feeling, mood",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "壁",
+      "reading": "かべ",
+      "meaning": "wall, partition",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "田舎",
+      "reading": "いなか",
+      "meaning": "rural area, countryside, the sticks",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "気",
+      "reading": "き",
+      "meaning": "spirit, mind, heart",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "男性",
+      "reading": "だんせい",
+      "meaning": "man, male",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "地震",
+      "reading": "じしん",
+      "meaning": "earthquake",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "人口",
+      "reading": "じんこう",
+      "meaning": "population",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "故障",
+      "reading": "こしょう",
+      "meaning": "fault, trouble, breakdown",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "残念",
+      "reading": "ざんねん",
+      "meaning": "regrettable, unfortunate, disappointing",
+      "level": "N4",
+      "common": true,
+      "pos": "Na-adjective (keiyodoshi)"
+    },
+    {
+      "japanese": "島",
+      "reading": "しま",
+      "meaning": "island",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "教会",
+      "reading": "きょうかい",
+      "meaning": "church, congregation",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "歴史",
+      "reading": "れきし",
+      "meaning": "history",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "社会",
+      "reading": "しゃかい",
+      "meaning": "society, public, community",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "住所",
+      "reading": "じゅうしょ",
+      "meaning": "address (of a home, business, etc.), residence, domicile",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "工場",
+      "reading": "こうじょう",
+      "meaning": "factory, plant, mill",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "趣味",
+      "reading": "しゅみ",
+      "meaning": "hobby, pastime",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "経済",
+      "reading": "けいざい",
+      "meaning": "economy, economics",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "台風",
+      "reading": "たいふう",
+      "meaning": "typhoon, hurricane",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "卒業",
+      "reading": "そつぎょう",
+      "meaning": "graduation, completion (of a course)",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "雲",
+      "reading": "くも",
+      "meaning": "cloud",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "光",
+      "reading": "ひかり",
+      "meaning": "light",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "科学",
+      "reading": "かがく",
+      "meaning": "science",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "贈り物",
+      "reading": "おくりもの",
+      "meaning": "present, gift",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "政治",
+      "reading": "せいじ",
+      "meaning": "politics, government",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "特別",
+      "reading": "とくべつ",
+      "meaning": "special, particular, extraordinary",
+      "level": "N4",
+      "common": true,
+      "pos": "Na-adjective (keiyodoshi)"
+    },
+    {
+      "japanese": "水泳",
+      "reading": "すいえい",
+      "meaning": "swimming",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "講義",
+      "reading": "こうぎ",
+      "meaning": "lecture",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "指",
+      "reading": "ゆび",
+      "meaning": "finger, toe, digit",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "生産",
+      "reading": "せいさん",
+      "meaning": "production, manufacture",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "会話",
+      "reading": "かいわ",
+      "meaning": "conversation, talk, chat",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "季節",
+      "reading": "きせつ",
+      "meaning": "season, time of year",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "玩具",
+      "reading": "おもちゃ",
+      "meaning": "toy",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "翻訳",
+      "reading": "ほんやく",
+      "meaning": "translation",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "貿易",
+      "reading": "ぼうえき",
+      "meaning": "(foreign) trade, (international) commerce, importing and exporting",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "文学",
+      "reading": "ぶんがく",
+      "meaning": "literature",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "葉",
+      "reading": "は",
+      "meaning": "leaf, blade (of grass), (pine) needle",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "交通",
+      "reading": "こうつう",
+      "meaning": "traffic, transportation",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "遊び",
+      "reading": "あそび",
+      "meaning": "play, playing, game",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "道具",
+      "reading": "どうぐ",
+      "meaning": "tool, implement, instrument",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "背中",
+      "reading": "せなか",
+      "meaning": "back (of the body)",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "入学",
+      "reading": "にゅうがく",
+      "meaning": "admission (to a school or university), entrance, enrolment",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "発音",
+      "reading": "はつおん",
+      "meaning": "pronunciation",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "指輪",
+      "reading": "ゆびわ",
+      "meaning": "(finger) ring",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "医学",
+      "reading": "いがく",
+      "meaning": "medicine, medical science",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "漫画",
+      "reading": "まんが",
+      "meaning": "cartoon, comic, comic strip",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "鏡",
+      "reading": "かがみ",
+      "meaning": "mirror, looking-glass",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "電報",
+      "reading": "でんぽう",
+      "meaning": "telegram",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "校長",
+      "reading": "こうちょう",
+      "meaning": "principal, head teacher, headmaster",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "市民",
+      "reading": "しみん",
+      "meaning": "citizen (of a country), citizenry",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "郊外",
+      "reading": "こうがい",
+      "meaning": "suburb, residential area on the outskirt of a city, commuter belt",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "国際",
+      "reading": "こくさい",
+      "meaning": "international",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun which may take the genitive case particle 'no'"
+    },
+    {
+      "japanese": "砂",
+      "reading": "すな",
+      "meaning": "sand, grit, fine gravel",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "手袋",
+      "reading": "てぶくろ",
+      "meaning": "glove, mitten, mitt",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "日記",
+      "reading": "にっき",
+      "meaning": "diary, journal",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "絹",
+      "reading": "きぬ",
+      "meaning": "silk",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "文法",
+      "reading": "ぶんぽう",
+      "meaning": "grammar",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "糸",
+      "reading": "いと",
+      "meaning": "thread, yarn, string",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "神社",
+      "reading": "じんじゃ",
+      "meaning": "Shinto shrine",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "駐車場",
+      "reading": "ちゅうしゃじょう",
+      "meaning": "parking lot, car park, carpark",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "小学校",
+      "reading": "しょうがっこう",
+      "meaning": "primary school, elementary school, grade school",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "駐車場",
+      "reading": "ちゅうしゃじょう",
+      "meaning": "parking lot, car park, carpark",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "西洋",
+      "reading": "せいよう",
+      "meaning": "the West, the Occident, Western countries",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "先輩",
+      "reading": "せんぱい",
+      "meaning": "senior (at school, work, etc.), superior, elder",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "注射",
+      "reading": "ちゅうしゃ",
+      "meaning": "injection, jab, shot",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "坂",
+      "reading": "さか",
+      "meaning": "slope, incline, hill",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "乗り物",
+      "reading": "のりもの",
+      "meaning": "vehicle, conveyance, (means of) transport",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "旅館",
+      "reading": "りょかん",
+      "meaning": "ryokan, traditional Japanese inn",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "林",
+      "reading": "はやし",
+      "meaning": "wood, woods, forest",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "布団",
+      "reading": "ふとん",
+      "meaning": "futon, Japanese bedding consisting of a mattress and a duvet",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "会議室",
+      "reading": "かいぎしつ",
+      "meaning": "conference room, council room",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "柔道",
+      "reading": "じゅうどう",
+      "meaning": "judo",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "研究室",
+      "reading": "けんきゅうしつ",
+      "meaning": "laboratory",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "中学校",
+      "reading": "ちゅうがっこう",
+      "meaning": "junior high school, middle school, lower secondary school",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "高等学校",
+      "reading": "こうとうがっこう",
+      "meaning": "senior high school, high school",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "花見",
+      "reading": "はなみ",
+      "meaning": "cherry blossom viewing, flower viewing",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "公務員",
+      "reading": "こうむいん",
+      "meaning": "public employee, government employee, public-sector worker",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "辞典",
+      "reading": "じてん",
+      "meaning": "dictionary, lexicon",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "心",
+      "reading": "こころ",
+      "meaning": "mind, heart, spirit",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "力",
+      "reading": "ちから",
+      "meaning": "force, strength, might",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "喧嘩",
+      "reading": "けんか",
+      "meaning": "quarrel, brawl, fight",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "天気予報",
+      "reading": "てんきよほう",
+      "meaning": "weather forecast, weather report",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "髭",
+      "reading": "ひげ",
+      "meaning": "moustache, mustache, beard",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "押入れ",
+      "reading": "おしいれ",
+      "meaning": "closet (built into the wall, usu. with sliding doors), (built-in) wardrobe",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "味噌",
+      "reading": "みそ",
+      "meaning": "miso, fermented condiment usu. made from soybeans",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "皆",
+      "reading": "みな",
+      "meaning": "everyone, everybody, all",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "明日",
+      "reading": "あした",
+      "meaning": "tomorrow",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "掛ける",
+      "reading": "かける",
+      "meaning": "to hang up (e.g. a coat, a picture on the wall), to let hang, to suspend (from)",
+      "level": "N4",
+      "common": true,
+      "pos": "Ichidan verb"
+    },
+    {
+      "japanese": "降りる",
+      "reading": "おりる",
+      "meaning": "to descend (e.g. a mountain), to go down, to come down",
+      "level": "N4",
+      "common": true,
+      "pos": "Ichidan verb"
+    },
+    {
+      "japanese": "彼",
+      "reading": "かれ",
+      "meaning": "he, him",
+      "level": "N4",
+      "common": true,
+      "pos": "Pronoun"
+    },
+    {
+      "japanese": "客",
+      "reading": "きゃく",
+      "meaning": "guest, visitor",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "祖父",
+      "reading": "そふ",
+      "meaning": "grandfather",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "高校",
+      "reading": "こうこう",
+      "meaning": "senior high school, high school",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "近所",
+      "reading": "きんじょ",
+      "meaning": "neighbourhood, neighborhood, vicinity",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "番組",
+      "reading": "ばんぐみ",
+      "meaning": "program (e.g. TV), programme",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "見物",
+      "reading": "けんぶつ",
+      "meaning": "sightseeing, watching, viewing",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "亜米利加",
+      "reading": "アメリカ",
+      "meaning": "(United States of) America, United States, US",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "彼女",
+      "reading": "かのじょ",
+      "meaning": "she, her",
+      "level": "N4",
+      "common": true,
+      "pos": "Pronoun"
+    },
+    {
+      "japanese": "思う",
+      "reading": "おもう",
+      "meaning": "to think, to consider, to believe",
+      "level": "N4",
+      "common": true,
+      "pos": "Godan verb with 'u' ending"
+    },
+    {
+      "japanese": "僕",
+      "reading": "ぼく",
+      "meaning": "I, me",
+      "level": "N4",
+      "common": true,
+      "pos": "Pronoun"
+    },
+    {
+      "japanese": "必要",
+      "reading": "ひつよう",
+      "meaning": "necessary, needed, essential",
+      "level": "N4",
+      "common": true,
+      "pos": "Na-adjective (keiyodoshi)"
+    },
+    {
+      "japanese": "見える",
+      "reading": "みえる",
+      "meaning": "to be seen, to be visible, to be in sight",
+      "level": "N4",
+      "common": true,
+      "pos": "Ichidan verb"
+    },
+    {
+      "japanese": "考える",
+      "reading": "かんがえる",
+      "meaning": "to think (about, of), to think over, to ponder",
+      "level": "N4",
+      "common": true,
+      "pos": "Ichidan verb"
+    },
+    {
+      "japanese": "為",
+      "reading": "ため",
+      "meaning": "good, advantage, benefit",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "始める",
+      "reading": "はじめる",
+      "meaning": "to start, to begin, to commence",
+      "level": "N4",
+      "common": true,
+      "pos": "Ichidan verb"
+    },
+    {
+      "japanese": "受ける",
+      "reading": "うける",
+      "meaning": "to receive, to get",
+      "level": "N4",
+      "common": true,
+      "pos": "Ichidan verb"
+    },
+    {
+      "japanese": "美しい",
+      "reading": "うつくしい",
+      "meaning": "beautiful, pretty, lovely",
+      "level": "N4",
+      "common": true,
+      "pos": "I-adjective (keiyoushi)"
+    },
+    {
+      "japanese": "試験",
+      "reading": "しけん",
+      "meaning": "examination, exam, test",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "親切",
+      "reading": "しんせつ",
+      "meaning": "kind, gentle, considerate",
+      "level": "N4",
+      "common": true,
+      "pos": "Na-adjective (keiyodoshi)"
+    },
+    {
+      "japanese": "失敗",
+      "reading": "しっぱい",
+      "meaning": "failure, mistake, blunder",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "以上",
+      "reading": "いじょう",
+      "meaning": "not less than ..., ... and over, ... and above",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun, used as a suffix"
+    },
+    {
+      "japanese": "意見",
+      "reading": "いけん",
+      "meaning": "opinion, view, comment",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "決して",
+      "reading": "けっして",
+      "meaning": "(not) ever, (not) by any means, (not) in the least",
+      "level": "N4",
+      "common": true,
+      "pos": "Adverb (fukushi)"
+    },
+    {
+      "japanese": "十分",
+      "reading": "じゅうぶん",
+      "meaning": "enough, sufficient, plenty",
+      "level": "N4",
+      "common": true,
+      "pos": "Na-adjective (keiyodoshi)"
+    },
+    {
+      "japanese": "試合",
+      "reading": "しあい",
+      "meaning": "match, game, bout",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "一生懸命",
+      "reading": "いっしょうけんめい",
+      "meaning": "very hard, with utmost effort, as hard as one can",
+      "level": "N4",
+      "common": true,
+      "pos": "Adverb (fukushi)"
+    },
+    {
+      "japanese": "子",
+      "reading": "こ",
+      "meaning": "child, kid, teenager",
+      "level": "N4",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "探す",
+      "reading": "さがす",
+      "meaning": "to search for, to look for, to hunt for",
+      "level": "N4",
+      "common": true,
+      "pos": "Godan verb with 'su' ending"
+    },
+    {
+      "japanese": "急ぐ",
+      "reading": "いそぐ",
+      "meaning": "to hurry, to rush, to hasten",
+      "level": "N4",
+      "common": true,
+      "pos": "Godan verb with 'gu' ending"
+    },
+    {
+      "japanese": "選ぶ",
+      "reading": "えらぶ",
+      "meaning": "to choose, to select, to pick (out)",
+      "level": "N4",
+      "common": true,
+      "pos": "Godan verb with 'bu' ending"
+    },
+    {
+      "japanese": "送る",
+      "reading": "おくる",
+      "meaning": "to send, to dispatch, to forward",
+      "level": "N4",
+      "common": true,
+      "pos": "Godan verb with 'ru' ending"
+    }
+  ],
+  "n3": [
+    {
+      "japanese": "周り",
+      "reading": "まわり",
+      "meaning": "circumference, girth",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "川",
+      "reading": "かわ",
+      "meaning": "river, stream",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "夜",
+      "reading": "よる",
+      "meaning": "night, evening",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "散歩",
+      "reading": "さんぽ",
+      "meaning": "walk, stroll",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "椅子",
+      "reading": "いす",
+      "meaning": "chair, seat, stool",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "鍵",
+      "reading": "かぎ",
+      "meaning": "key",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "風呂",
+      "reading": "ふろ",
+      "meaning": "bath, bathing, bathtub",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "曇り",
+      "reading": "くもり",
+      "meaning": "cloudiness, cloudy weather",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "成る",
+      "reading": "なる",
+      "meaning": "to become, to get, to grow",
+      "level": "N3",
+      "common": true,
+      "pos": "Godan verb with 'ru' ending"
+    },
+    {
+      "japanese": "程",
+      "reading": "ほど",
+      "meaning": "extent, degree, measure",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "船",
+      "reading": "ふね",
+      "meaning": "ship, boat, watercraft",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "音",
+      "reading": "おと",
+      "meaning": "sound, noise",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "故障",
+      "reading": "こしょう",
+      "meaning": "fault, trouble, breakdown",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "生産",
+      "reading": "せいさん",
+      "meaning": "production, manufacture",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "入学",
+      "reading": "にゅうがく",
+      "meaning": "admission (to a school or university), entrance, enrolment",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "喧嘩",
+      "reading": "けんか",
+      "meaning": "quarrel, brawl, fight",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "正直",
+      "reading": "しょうじき",
+      "meaning": "honest, frank, candid",
+      "level": "N3",
+      "common": true,
+      "pos": "Na-adjective (keiyodoshi)"
+    },
+    {
+      "japanese": "一致",
+      "reading": "いっち",
+      "meaning": "agreement, accord, correspondence",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "博物館",
+      "reading": "はくぶつかん",
+      "meaning": "museum",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "皿",
+      "reading": "さら",
+      "meaning": "plate, dish, platter",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "舞台",
+      "reading": "ぶたい",
+      "meaning": "stage (of a theatre, concert hall, etc.)",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "寄付",
+      "reading": "きふ",
+      "meaning": "contribution, donation",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "猿",
+      "reading": "さる",
+      "meaning": "monkey (esp. the Japanese macaque, Macaca fuscata), ape, non-human primate",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "平等",
+      "reading": "びょうどう",
+      "meaning": "equality, impartiality, evenness",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "左右",
+      "reading": "さゆう",
+      "meaning": "left and right, right and left",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "金属",
+      "reading": "きんぞく",
+      "meaning": "metal",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "商人",
+      "reading": "しょうにん",
+      "meaning": "merchant, trader, tradesman",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "国境",
+      "reading": "こっきょう",
+      "meaning": "border (between countries), national border",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "集団",
+      "reading": "しゅうだん",
+      "meaning": "group, mass",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "根",
+      "reading": "ね",
+      "meaning": "root (of a plant)",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "鎖",
+      "reading": "くさり",
+      "meaning": "chain, chains",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "一番",
+      "reading": "いちばん",
+      "meaning": "number one, first, first place",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "時",
+      "reading": "とき",
+      "meaning": "time, hour, moment",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "元",
+      "reading": "もと",
+      "meaning": "origin, source, beginning",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "計画",
+      "reading": "けいかく",
+      "meaning": "plan, project, schedule",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "少年",
+      "reading": "しょうねん",
+      "meaning": "boy",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "列車",
+      "reading": "れっしゃ",
+      "meaning": "train, railway train",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "健康",
+      "reading": "けんこう",
+      "meaning": "health",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "人間",
+      "reading": "にんげん",
+      "meaning": "human being, human, person",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "結果",
+      "reading": "けっか",
+      "meaning": "result, consequence, outcome",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "理解",
+      "reading": "りかい",
+      "meaning": "understanding, comprehension, appreciation",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "少女",
+      "reading": "しょうじょ",
+      "meaning": "girl (usu. between 7 and 17), young lady",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "事実",
+      "reading": "じじつ",
+      "meaning": "fact, truth, reality",
+      "level": "N3",
+      "common": true,
+      "pos": "Adverb (fukushi)"
+    },
+    {
+      "japanese": "食事",
+      "reading": "しょくじ",
+      "meaning": "meal (e.g. lunch, dinner)",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "人生",
+      "reading": "じんせい",
+      "meaning": "(one's) life",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "母親",
+      "reading": "ははおや",
+      "meaning": "mother",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "行動",
+      "reading": "こうどう",
+      "meaning": "action, conduct, behaviour",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "父親",
+      "reading": "ちちおや",
+      "meaning": "father",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "太陽",
+      "reading": "たいよう",
+      "meaning": "Sun",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "幸福",
+      "reading": "こうふく",
+      "meaning": "happiness, well-being, joy",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "政府",
+      "reading": "せいふ",
+      "meaning": "government, administration, ministry",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "経験",
+      "reading": "けいけん",
+      "meaning": "experience",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "責任",
+      "reading": "せきにん",
+      "meaning": "duty, responsibility (incl. supervision of staff)",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "我慢",
+      "reading": "がまん",
+      "meaning": "endurance, patience, perseverance",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "噂",
+      "reading": "うわさ",
+      "meaning": "rumour, rumor, report",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "道路",
+      "reading": "どうろ",
+      "meaning": "road, highway",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "機械",
+      "reading": "きかい",
+      "meaning": "machine, mechanism",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "地球",
+      "reading": "ちきゅう",
+      "meaning": "Earth, the globe",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "偶然",
+      "reading": "ぐうぜん",
+      "meaning": "coincidence, chance, accident",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "秘密",
+      "reading": "ひみつ",
+      "meaning": "secret, secrecy, confidentiality",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "情報",
+      "reading": "じょうほう",
+      "meaning": "information, news, report",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "現在",
+      "reading": "げんざい",
+      "meaning": "the present, present time, now",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "昼食",
+      "reading": "ちゅうしょく",
+      "meaning": "lunch, midday meal",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "期待",
+      "reading": "きたい",
+      "meaning": "expectation, anticipation, hope",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "嵐",
+      "reading": "あらし",
+      "meaning": "storm, tempest",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "丘",
+      "reading": "おか",
+      "meaning": "hill, height, knoll",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "運動",
+      "reading": "うんどう",
+      "meaning": "exercise, physical training, workout",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "大統領",
+      "reading": "だいとうりょう",
+      "meaning": "president (of a country)",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "演説",
+      "reading": "えんぜつ",
+      "meaning": "speech, address",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "神",
+      "reading": "かみ",
+      "meaning": "god, deity, divinity",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "読書",
+      "reading": "どくしょ",
+      "meaning": "reading (books)",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "馬",
+      "reading": "うま",
+      "meaning": "horse",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "詩",
+      "reading": "し",
+      "meaning": "poem, poetry, verse",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "知識",
+      "reading": "ちしき",
+      "meaning": "knowledge, information",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "嘘",
+      "reading": "うそ",
+      "meaning": "lie, fib, falsehood",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "収入",
+      "reading": "しゅうにゅう",
+      "meaning": "income, earnings, revenue",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "都市",
+      "reading": "とし",
+      "meaning": "town, city, municipal",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "詩人",
+      "reading": "しじん",
+      "meaning": "poet",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "涙",
+      "reading": "なみだ",
+      "meaning": "tear, tears, lachrymal secretion",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "円",
+      "reading": "えん",
+      "meaning": "yen (currency of Japan)",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "財産",
+      "reading": "ざいさん",
+      "meaning": "property, fortune, assets",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "酒",
+      "reading": "さけ",
+      "meaning": "alcohol, sake",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "勇気",
+      "reading": "ゆうき",
+      "meaning": "courage, bravery, valour",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "発見",
+      "reading": "はっけん",
+      "meaning": "discovery, detection, finding",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "解決",
+      "reading": "かいけつ",
+      "meaning": "settlement, solution, resolution",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "患者",
+      "reading": "かんじゃ",
+      "meaning": "patient",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "学者",
+      "reading": "がくしゃ",
+      "meaning": "scholar, academic, scientist",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "存在",
+      "reading": "そんざい",
+      "meaning": "existence, being, presence",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "信頼",
+      "reading": "しんらい",
+      "meaning": "trust (in), confidence, faith",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "言語",
+      "reading": "げんご",
+      "meaning": "language",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "作家",
+      "reading": "さっか",
+      "meaning": "author, writer, novelist",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "海外",
+      "reading": "かいがい",
+      "meaning": "foreign, abroad, overseas",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "平和",
+      "reading": "へいわ",
+      "meaning": "peace, harmony",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "希望",
+      "reading": "きぼう",
+      "meaning": "hope, wish, aspiration",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "調査",
+      "reading": "ちょうさ",
+      "meaning": "investigation, examination, inquiry",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "地域",
+      "reading": "ちいき",
+      "meaning": "area, region, district",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "気候",
+      "reading": "きこう",
+      "meaning": "climate",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "愛",
+      "reading": "あい",
+      "meaning": "love, affection, care",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "実験",
+      "reading": "じっけん",
+      "meaning": "experiment, experimentation",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "権利",
+      "reading": "けんり",
+      "meaning": "right, privilege",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "国民",
+      "reading": "こくみん",
+      "meaning": "people (of a country), nation, citizen",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "騒音",
+      "reading": "そうおん",
+      "meaning": "noise, din",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "義務",
+      "reading": "ぎむ",
+      "meaning": "duty, obligation, responsibility",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "釣り",
+      "reading": "つり",
+      "meaning": "fishing, angling",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "胸",
+      "reading": "むね",
+      "meaning": "chest, breast",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "過去",
+      "reading": "かこ",
+      "meaning": "the past, bygone days",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "物価",
+      "reading": "ぶっか",
+      "meaning": "prices of commodities, prices (in general), cost-of-living",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "利益",
+      "reading": "りえき",
+      "meaning": "profit, gains",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "植物",
+      "reading": "しょくぶつ",
+      "meaning": "plant, vegetation",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "発明",
+      "reading": "はつめい",
+      "meaning": "invention",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "教授",
+      "reading": "きょうじゅ",
+      "meaning": "professor",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "氷",
+      "reading": "こおり",
+      "meaning": "ice",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "痛み",
+      "reading": "いたみ",
+      "meaning": "pain, ache, soreness",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "石油",
+      "reading": "せきゆ",
+      "meaning": "oil, petroleum",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "進歩",
+      "reading": "しんぽ",
+      "meaning": "progress, advance, improvement",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "物語",
+      "reading": "ものがたり",
+      "meaning": "story, tale, narrative",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "感情",
+      "reading": "かんじょう",
+      "meaning": "emotion, feeling, feelings",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "週",
+      "reading": "しゅう",
+      "meaning": "week",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "屋根",
+      "reading": "やね",
+      "meaning": "roof",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "恐怖",
+      "reading": "きょうふ",
+      "meaning": "fear, dread, dismay",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "議長",
+      "reading": "ぎちょう",
+      "meaning": "chair, chairman, chairperson",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "費用",
+      "reading": "ひよう",
+      "meaning": "cost, expense",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "商品",
+      "reading": "しょうひん",
+      "meaning": "commodity, article of commerce, goods",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "否定",
+      "reading": "ひてい",
+      "meaning": "denial, negation, repudiation",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "作品",
+      "reading": "さくひん",
+      "meaning": "work (e.g. book, film, painting, composition), piece, production",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "賞",
+      "reading": "しょう",
+      "meaning": "prize, award",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "城",
+      "reading": "しろ",
+      "meaning": "castle",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "留学",
+      "reading": "りゅうがく",
+      "meaning": "studying abroad",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "価格",
+      "reading": "かかく",
+      "meaning": "price, value, cost",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "犯罪",
+      "reading": "はんざい",
+      "meaning": "crime, offence, offense",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "肩",
+      "reading": "かた",
+      "meaning": "shoulder",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "評価",
+      "reading": "ひょうか",
+      "meaning": "valuation, appraisal, evaluation",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "意志",
+      "reading": "いし",
+      "meaning": "will, volition, intention",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "正午",
+      "reading": "しょうご",
+      "meaning": "noon, midday",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "職業",
+      "reading": "しょくぎょう",
+      "meaning": "occupation, profession, job",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "家具",
+      "reading": "かぐ",
+      "meaning": "furniture",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "劇場",
+      "reading": "げきじょう",
+      "meaning": "theatre, theater, playhouse",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "不安",
+      "reading": "ふあん",
+      "meaning": "anxiety, uneasiness, worry",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "首相",
+      "reading": "しゅしょう",
+      "meaning": "prime minister, chancellor (Germany, Austria, etc.), premier",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "自然",
+      "reading": "しぜん",
+      "meaning": "nature",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "意識",
+      "reading": "いしき",
+      "meaning": "consciousness",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "自殺",
+      "reading": "じさつ",
+      "meaning": "suicide",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "逮捕",
+      "reading": "たいほ",
+      "meaning": "arrest, apprehension, capture",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "爆発",
+      "reading": "ばくはつ",
+      "meaning": "explosion, detonation, blast",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "論文",
+      "reading": "ろんぶん",
+      "meaning": "thesis, essay, treatise",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "記録",
+      "reading": "きろく",
+      "meaning": "record, document, minutes",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "世紀",
+      "reading": "せいき",
+      "meaning": "century",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "頭痛",
+      "reading": "ずつう",
+      "meaning": "headache",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "契約",
+      "reading": "けいやく",
+      "meaning": "contract, compact, agreement",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "精神",
+      "reading": "せいしん",
+      "meaning": "mind, spirit, soul",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "牛",
+      "reading": "うし",
+      "meaning": "cattle (Bos taurus), cow, bull",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "記憶",
+      "reading": "きおく",
+      "meaning": "memory, recollection, remembrance",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "独立",
+      "reading": "どくりつ",
+      "meaning": "independence, self-reliance, supporting oneself",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "優勝",
+      "reading": "ゆうしょう",
+      "meaning": "overall victory, championship, winning the title",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "俳優",
+      "reading": "はいゆう",
+      "meaning": "actor, actress, player",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "額",
+      "reading": "がく",
+      "meaning": "(picture) frame, framed picture",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "州",
+      "reading": "しゅう",
+      "meaning": "state (of the US, Australia, India, Germany, etc.), province (e.g. of Canada), county (e.g. of the UK)",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "公平",
+      "reading": "こうへい",
+      "meaning": "fairness, impartiality, justice",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "生命",
+      "reading": "せいめい",
+      "meaning": "life, existence",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "強盗",
+      "reading": "ごうとう",
+      "meaning": "robber, mugger",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "霧",
+      "reading": "きり",
+      "meaning": "fog, mist",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "命令",
+      "reading": "めいれい",
+      "meaning": "order, command, decree",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "輸入",
+      "reading": "ゆにゅう",
+      "meaning": "import, importation, introduction",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "記事",
+      "reading": "きじ",
+      "meaning": "article, news story, report",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "宇宙",
+      "reading": "うちゅう",
+      "meaning": "universe, cosmos, space",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "銃",
+      "reading": "じゅう",
+      "meaning": "gun, firearm, small arms (e.g. rifle, pistol, etc)",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "計算",
+      "reading": "けいさん",
+      "meaning": "calculation, computation, reckoning",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "医師",
+      "reading": "いし",
+      "meaning": "doctor, physician",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "合図",
+      "reading": "あいず",
+      "meaning": "sign, signal, cue",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "禁煙",
+      "reading": "きんえん",
+      "meaning": "abstaining from smoking, quitting smoking",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "現実",
+      "reading": "げんじつ",
+      "meaning": "reality, actuality, hard fact",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "友情",
+      "reading": "ゆうじょう",
+      "meaning": "friendship, fellowship, camaraderie",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "握手",
+      "reading": "あくしゅ",
+      "meaning": "handshake",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "生物",
+      "reading": "せいぶつ",
+      "meaning": "living thing, organism, creature",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "企業",
+      "reading": "きぎょう",
+      "meaning": "enterprise, business, company",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "方向",
+      "reading": "ほうこう",
+      "meaning": "direction, orientation, bearing",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "攻撃",
+      "reading": "こうげき",
+      "meaning": "attack, assault, raid",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "香り",
+      "reading": "かおり",
+      "meaning": "aroma, fragrance, scent",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "訓練",
+      "reading": "くんれん",
+      "meaning": "training, drill, practice",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "宗教",
+      "reading": "しゅうきょう",
+      "meaning": "religion, religious affiliation, belief",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "役割",
+      "reading": "やくわり",
+      "meaning": "part, assigning (allotment of) parts, role",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "羽",
+      "reading": "はね",
+      "meaning": "feather, plume, down",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "流れ",
+      "reading": "ながれ",
+      "meaning": "flow (of a fluid or gas), stream, current",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "宗教",
+      "reading": "しゅうきょう",
+      "meaning": "religion, religious affiliation, belief",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "波",
+      "reading": "なみ",
+      "meaning": "wave, billow, ripple",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "服装",
+      "reading": "ふくそう",
+      "meaning": "attire, dress, clothes",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "署名",
+      "reading": "しょめい",
+      "meaning": "signature, autograph",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "無料",
+      "reading": "むりょう",
+      "meaning": "free (of charge), gratuitous",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun which may take the genitive case particle 'no'"
+    },
+    {
+      "japanese": "広告",
+      "reading": "こうこく",
+      "meaning": "advertisement, advertising",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "個人",
+      "reading": "こじん",
+      "meaning": "individual, private person, personal",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "駐車",
+      "reading": "ちゅうしゃ",
+      "meaning": "parking (a vehicle)",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "王様",
+      "reading": "おうさま",
+      "meaning": "king",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "証明",
+      "reading": "しょうめい",
+      "meaning": "proof, testimony, demonstration",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "宝石",
+      "reading": "ほうせき",
+      "meaning": "gem, jewel, precious stone",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "現金",
+      "reading": "げんきん",
+      "meaning": "cash, ready money, money on hand",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "話題",
+      "reading": "わだい",
+      "meaning": "topic, subject",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "塔",
+      "reading": "とう",
+      "meaning": "tower, steeple, spire",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "博士",
+      "reading": "はかせ",
+      "meaning": "expert, learned person",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "芝居",
+      "reading": "しばい",
+      "meaning": "play, drama",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "出版",
+      "reading": "しゅっぱん",
+      "meaning": "publication",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "保証",
+      "reading": "ほしょう",
+      "meaning": "guarantee, security, assurance",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "競技",
+      "reading": "きょうぎ",
+      "meaning": "game, match, contest",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "離婚",
+      "reading": "りこん",
+      "meaning": "divorce",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "軍隊",
+      "reading": "ぐんたい",
+      "meaning": "armed forces, military, troops",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "診察",
+      "reading": "しんさつ",
+      "meaning": "medical examination, checkup, consultation",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "投票",
+      "reading": "とうひょう",
+      "meaning": "voting, ballot, poll",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "心臓",
+      "reading": "しんぞう",
+      "meaning": "heart",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "販売",
+      "reading": "はんばい",
+      "meaning": "sale, sales, selling",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "年寄り",
+      "reading": "としより",
+      "meaning": "old person, elderly person, senior citizen",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "衝突",
+      "reading": "しょうとつ",
+      "meaning": "collision, crash, impact",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "影",
+      "reading": "かげ",
+      "meaning": "shadow, silhouette, figure",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "型",
+      "reading": "かた",
+      "meaning": "type, style, model",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "平均",
+      "reading": "へいきん",
+      "meaning": "average, mean",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "輸出",
+      "reading": "ゆしゅつ",
+      "meaning": "export, exportation",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "冒険",
+      "reading": "ぼうけん",
+      "meaning": "adventure, venture",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "永遠",
+      "reading": "えいえん",
+      "meaning": "eternity, perpetuity, permanence",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "表情",
+      "reading": "ひょうじょう",
+      "meaning": "facial expression, countenance",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "未来",
+      "reading": "みらい",
+      "meaning": "(distant) future",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "通学",
+      "reading": "つうがく",
+      "meaning": "commuting to school, school commute",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "胃",
+      "reading": "い",
+      "meaning": "stomach",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "畑",
+      "reading": "はたけ",
+      "meaning": "field (for growing wheat, fruit, vegetables, etc.), cultivated land, vegetable plot",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "制度",
+      "reading": "せいど",
+      "meaning": "system, institution, organization",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "女王",
+      "reading": "じょおう",
+      "meaning": "queen",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "青年",
+      "reading": "せいねん",
+      "meaning": "youth, young man",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "虎",
+      "reading": "とら",
+      "meaning": "tiger (Panthera tigris)",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "改善",
+      "reading": "かいぜん",
+      "meaning": "betterment, improvement",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "通学",
+      "reading": "つうがく",
+      "meaning": "commuting to school, school commute",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "収穫",
+      "reading": "しゅうかく",
+      "meaning": "harvest, crop, ingathering",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "信号",
+      "reading": "しんごう",
+      "meaning": "signal, signalling, signaling",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "観客",
+      "reading": "かんきゃく",
+      "meaning": "spectator, audience",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "鉄道",
+      "reading": "てつどう",
+      "meaning": "railroad, railway, rail transport",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "雷",
+      "reading": "かみなり",
+      "meaning": "lightning, thunder, thunderbolt",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "籠",
+      "reading": "かご",
+      "meaning": "basket (shopping, etc.), hamper, cage",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "放送",
+      "reading": "ほうそう",
+      "meaning": "broadcasting, broadcast, program",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "中心",
+      "reading": "ちゅうしん",
+      "meaning": "center, centre, middle",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "文字",
+      "reading": "もじ",
+      "meaning": "letter (of an alphabet), character",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "国家",
+      "reading": "こっか",
+      "meaning": "state, country, nation",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "睡眠",
+      "reading": "すいみん",
+      "meaning": "sleep",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "袋",
+      "reading": "ふくろ",
+      "meaning": "bag, sack, pouch",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "節約",
+      "reading": "せつやく",
+      "meaning": "economising, saving",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "国家",
+      "reading": "こっか",
+      "meaning": "state, country, nation",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "化学",
+      "reading": "かがく",
+      "meaning": "chemistry",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "教科書",
+      "reading": "きょうかしょ",
+      "meaning": "textbook, coursebook, schoolbook",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "油",
+      "reading": "あぶら",
+      "meaning": "oil",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "毒",
+      "reading": "どく",
+      "meaning": "poison, toxicant, venom",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "座席",
+      "reading": "ざせき",
+      "meaning": "seat (esp. in public places or places with assigned seating), seating",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "単位",
+      "reading": "たんい",
+      "meaning": "unit (e.g. meters, grams, etc.), denomination",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "常識",
+      "reading": "じょうしき",
+      "meaning": "common sense, good sense, common knowledge",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "郵便",
+      "reading": "ゆうびん",
+      "meaning": "mail service, postal service, mail",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "誕生",
+      "reading": "たんじょう",
+      "meaning": "birth (of a person), nativity",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "労働",
+      "reading": "ろうどう",
+      "meaning": "labor, labour, work",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "運",
+      "reading": "うん",
+      "meaning": "fortune, luck, chance",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "家事",
+      "reading": "かじ",
+      "meaning": "housework, domestic chores",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "数字",
+      "reading": "すうじ",
+      "meaning": "numeral, digit, numeric character",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "観光",
+      "reading": "かんこう",
+      "meaning": "sightseeing, tourism",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "汗",
+      "reading": "あせ",
+      "meaning": "sweat, perspiration",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "食欲",
+      "reading": "しょくよく",
+      "meaning": "appetite (for food)",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "学習",
+      "reading": "がくしゅう",
+      "meaning": "learning, study",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "失業",
+      "reading": "しつぎょう",
+      "meaning": "unemployment",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "知恵",
+      "reading": "ちえ",
+      "meaning": "wisdom, wit, sagacity",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "婚約",
+      "reading": "こんやく",
+      "meaning": "engagement, betrothal",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "毛布",
+      "reading": "もうふ",
+      "meaning": "blanket",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "知恵",
+      "reading": "ちえ",
+      "meaning": "wisdom, wit, sagacity",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "首都",
+      "reading": "しゅと",
+      "meaning": "(national) capital (city), metropolis",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "引用",
+      "reading": "いんよう",
+      "meaning": "quotation, citation, reference",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "武器",
+      "reading": "ぶき",
+      "meaning": "weapon, arms, ordnance",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "鉄",
+      "reading": "てつ",
+      "meaning": "iron (Fe)",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "書斎",
+      "reading": "しょさい",
+      "meaning": "study, library, den",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "砂漠",
+      "reading": "さばく",
+      "meaning": "desert",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "針",
+      "reading": "はり",
+      "meaning": "needle, pin",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "異常",
+      "reading": "いじょう",
+      "meaning": "abnormal, unusual, extraordinary",
+      "level": "N3",
+      "common": true,
+      "pos": "Na-adjective (keiyodoshi)"
+    },
+    {
+      "japanese": "舌",
+      "reading": "した",
+      "meaning": "tongue",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "位置",
+      "reading": "いち",
+      "meaning": "place, position, location",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "笑い",
+      "reading": "わらい",
+      "meaning": "laugh, laughter",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "監督",
+      "reading": "かんとく",
+      "meaning": "supervision, control, superintendence",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "硬貨",
+      "reading": "こうか",
+      "meaning": "coin",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "対象",
+      "reading": "たいしょう",
+      "meaning": "target, object (of worship, study, etc.), subject (of taxation, etc.)",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "酸素",
+      "reading": "さんそ",
+      "meaning": "oxygen (O)",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "感覚",
+      "reading": "かんかく",
+      "meaning": "sense, sensation, feeling",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "速度",
+      "reading": "そくど",
+      "meaning": "speed, velocity, pace",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "絶滅",
+      "reading": "ぜつめつ",
+      "meaning": "extinction, extermination",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "速度",
+      "reading": "そくど",
+      "meaning": "speed, velocity, pace",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "予算",
+      "reading": "よさん",
+      "meaning": "estimate (of costs), budget",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "対象",
+      "reading": "たいしょう",
+      "meaning": "target, object (of worship, study, etc.), subject (of taxation, etc.)",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "穀物",
+      "reading": "こくもつ",
+      "meaning": "grain, cereal, corn",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "祭り",
+      "reading": "まつり",
+      "meaning": "festival, feast, matsuri",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "物質",
+      "reading": "ぶっしつ",
+      "meaning": "material, substance",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "腰",
+      "reading": "こし",
+      "meaning": "lower back, waist, hips",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "奨学金",
+      "reading": "しょうがくきん",
+      "meaning": "scholarship, stipend, bursary",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "農家",
+      "reading": "のうか",
+      "meaning": "farmer, farming family",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "石炭",
+      "reading": "せきたん",
+      "meaning": "coal",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "谷",
+      "reading": "たに",
+      "meaning": "valley, ravine, gorge",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "泥",
+      "reading": "どろ",
+      "meaning": "mud, (wet) dirt",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "巣",
+      "reading": "す",
+      "meaning": "nest, rookery, breeding place",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "議会",
+      "reading": "ぎかい",
+      "meaning": "congress, parliament, diet",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "安定",
+      "reading": "あんてい",
+      "meaning": "stability, steadiness, consistency",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "独身",
+      "reading": "どくしん",
+      "meaning": "unmarried, single",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun which may take the genitive case particle 'no'"
+    },
+    {
+      "japanese": "黒板",
+      "reading": "こくばん",
+      "meaning": "blackboard",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "批評",
+      "reading": "ひひょう",
+      "meaning": "criticism, critique, review",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "農業",
+      "reading": "のうぎょう",
+      "meaning": "agriculture, farming",
+      "level": "N3",
+      "common": true,
+      "pos": "Noun"
+    }
+  ],
+  "n2": [
+    {
+      "japanese": "箸",
+      "reading": "はし",
+      "meaning": "chopsticks",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "茶碗",
+      "reading": "ちゃわん",
+      "meaning": "rice bowl, tea cup, teacup",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "上げる",
+      "reading": "あげる",
+      "meaning": "to raise, to elevate",
+      "level": "N2",
+      "common": true,
+      "pos": "Ichidan verb"
+    },
+    {
+      "japanese": "石鹸",
+      "reading": "せっけん",
+      "meaning": "soap",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "髭",
+      "reading": "ひげ",
+      "meaning": "moustache, mustache, beard",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "機械",
+      "reading": "きかい",
+      "meaning": "machine, mechanism",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "羽",
+      "reading": "はね",
+      "meaning": "feather, plume, down",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "儀式",
+      "reading": "ぎしき",
+      "meaning": "ceremony, rite, ritual",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "職人",
+      "reading": "しょくにん",
+      "meaning": "craftsman, artisan, tradesman",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "南極",
+      "reading": "なんきょく",
+      "meaning": "South Pole",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "北極",
+      "reading": "ほっきょく",
+      "meaning": "North Pole",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "昼寝",
+      "reading": "ひるね",
+      "meaning": "(afternoon) nap, sleeping during the day, siesta",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "新幹線",
+      "reading": "しんかんせん",
+      "meaning": "Shinkansen, bullet train",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "大通り",
+      "reading": "おおどおり",
+      "meaning": "main street, avenue, boulevard",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "木材",
+      "reading": "もくざい",
+      "meaning": "lumber, timber, wood",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "運河",
+      "reading": "うんが",
+      "meaning": "(navigable) canal, waterway",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "遊園地",
+      "reading": "ゆうえんち",
+      "meaning": "amusement park",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "天皇",
+      "reading": "てんのう",
+      "meaning": "Emperor of Japan",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "蛇口",
+      "reading": "じゃぐち",
+      "meaning": "faucet, tap",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "溶岩",
+      "reading": "ようがん",
+      "meaning": "lava",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "武士",
+      "reading": "ぶし",
+      "meaning": "samurai, warrior",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "苗字",
+      "reading": "みょうじ",
+      "meaning": "surname, family name, last name",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "有る",
+      "reading": "ある",
+      "meaning": "to be, to exist, to live",
+      "level": "N2",
+      "common": true,
+      "pos": "Godan verb with 'ru' ending (irregular verb)"
+    },
+    {
+      "japanese": "作る",
+      "reading": "つくる",
+      "meaning": "to make, to produce, to manufacture",
+      "level": "N2",
+      "common": true,
+      "pos": "Godan verb with 'ru' ending"
+    },
+    {
+      "japanese": "長い",
+      "reading": "ながい",
+      "meaning": "long (distance, length)",
+      "level": "N2",
+      "common": true,
+      "pos": "I-adjective (keiyoushi)"
+    },
+    {
+      "japanese": "立つ",
+      "reading": "たつ",
+      "meaning": "to stand (up), to rise, to get to one's feet",
+      "level": "N2",
+      "common": true,
+      "pos": "Godan verb with 'tsu' ending"
+    },
+    {
+      "japanese": "上る",
+      "reading": "のぼる",
+      "meaning": "to ascend, to go up, to climb",
+      "level": "N2",
+      "common": true,
+      "pos": "Godan verb with 'ru' ending"
+    },
+    {
+      "japanese": "飛ぶ",
+      "reading": "とぶ",
+      "meaning": "to fly, to soar",
+      "level": "N2",
+      "common": true,
+      "pos": "Godan verb with 'bu' ending"
+    },
+    {
+      "japanese": "止まる",
+      "reading": "とまる",
+      "meaning": "to stop (moving), to come to a stop",
+      "level": "N2",
+      "common": true,
+      "pos": "Godan verb with 'ru' ending"
+    },
+    {
+      "japanese": "勤める",
+      "reading": "つとめる",
+      "meaning": "to work (for), to be employed (at), to serve (in)",
+      "level": "N2",
+      "common": true,
+      "pos": "Ichidan verb"
+    },
+    {
+      "japanese": "丸い",
+      "reading": "まるい",
+      "meaning": "round, circular, spherical",
+      "level": "N2",
+      "common": true,
+      "pos": "I-adjective (keiyoushi)"
+    },
+    {
+      "japanese": "一昨年",
+      "reading": "おととし",
+      "meaning": "year before last",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "会う",
+      "reading": "あう",
+      "meaning": "to meet, to encounter, to see",
+      "level": "N2",
+      "common": true,
+      "pos": "Godan verb with 'u' ending"
+    },
+    {
+      "japanese": "分かる",
+      "reading": "わかる",
+      "meaning": "to understand, to comprehend, to grasp",
+      "level": "N2",
+      "common": true,
+      "pos": "Godan verb with 'ru' ending"
+    },
+    {
+      "japanese": "出かける",
+      "reading": "でかける",
+      "meaning": "to go out (e.g. on an excursion or outing), to leave, to depart",
+      "level": "N2",
+      "common": true,
+      "pos": "Ichidan verb"
+    },
+    {
+      "japanese": "付ける",
+      "reading": "つける",
+      "meaning": "to attach, to join, to connect",
+      "level": "N2",
+      "common": true,
+      "pos": "Ichidan verb"
+    },
+    {
+      "japanese": "無くす",
+      "reading": "なくす",
+      "meaning": "to lose (something)",
+      "level": "N2",
+      "common": true,
+      "pos": "Godan verb with 'su' ending"
+    },
+    {
+      "japanese": "奥さん",
+      "reading": "おくさん",
+      "meaning": "wife, your wife, his wife",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "再来年",
+      "reading": "さらいねん",
+      "meaning": "year after next",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "面接",
+      "reading": "めんせつ",
+      "meaning": "interview (e.g. for a job)",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "資料",
+      "reading": "しりょう",
+      "meaning": "material, materials, data",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "望遠鏡",
+      "reading": "ぼうえんきょう",
+      "meaning": "telescope",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "唇",
+      "reading": "くちびる",
+      "meaning": "lip, lips",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "群れ",
+      "reading": "むれ",
+      "meaning": "group, crowd, flock",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "解放",
+      "reading": "かいほう",
+      "meaning": "release, unleashing, liberation",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "液体",
+      "reading": "えきたい",
+      "meaning": "liquid",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "書店",
+      "reading": "しょてん",
+      "meaning": "bookshop, bookstore",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "温泉",
+      "reading": "おんせん",
+      "meaning": "hot spring",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "垣根",
+      "reading": "かきね",
+      "meaning": "hedge, fence",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "煙突",
+      "reading": "えんとつ",
+      "meaning": "chimney, smokestack, funnel (of a ship)",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "過失",
+      "reading": "かしつ",
+      "meaning": "accident (caused by negligence), error, blunder",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "井戸",
+      "reading": "いど",
+      "meaning": "water well",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "広場",
+      "reading": "ひろば",
+      "meaning": "public square, square, plaza",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "演劇",
+      "reading": "えんげき",
+      "meaning": "drama, theatre, theater",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "通勤",
+      "reading": "つうきん",
+      "meaning": "commuting to work",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "果実",
+      "reading": "かじつ",
+      "meaning": "fruit, nut, berry",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "皮膚",
+      "reading": "ひふ",
+      "meaning": "skin",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "乾燥",
+      "reading": "かんそう",
+      "meaning": "dryness, aridity, drying (e.g. clothes)",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "宣伝",
+      "reading": "せんでん",
+      "meaning": "publicity, advertisement, advertising",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "電池",
+      "reading": "でんち",
+      "meaning": "battery, cell",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "電池",
+      "reading": "でんち",
+      "meaning": "battery, cell",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "乾燥",
+      "reading": "かんそう",
+      "meaning": "dryness, aridity, drying (e.g. clothes)",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "宣伝",
+      "reading": "せんでん",
+      "meaning": "publicity, advertisement, advertising",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "基礎",
+      "reading": "きそ",
+      "meaning": "foundation, basis",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "火山",
+      "reading": "かざん",
+      "meaning": "volcano",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "中世",
+      "reading": "ちゅうせい",
+      "meaning": "Middle Ages (in Japan esp. the Kamakura and Muromachi periods), medieval times, mediaeval times",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "観念",
+      "reading": "かんねん",
+      "meaning": "idea, notion, concept",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "車庫",
+      "reading": "しゃこ",
+      "meaning": "garage, carport, depot (for trains, buses, etc.)",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "相撲",
+      "reading": "すもう",
+      "meaning": "sumo (wrestling)",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "回転",
+      "reading": "かいてん",
+      "meaning": "rotation, revolution, turn",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "吹雪",
+      "reading": "ふぶき",
+      "meaning": "snow storm, blizzard",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "競馬",
+      "reading": "けいば",
+      "meaning": "horse racing",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "水素",
+      "reading": "すいそ",
+      "meaning": "hydrogen (H)",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "虹",
+      "reading": "にじ",
+      "meaning": "rainbow",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "花火",
+      "reading": "はなび",
+      "meaning": "fireworks",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "枕",
+      "reading": "まくら",
+      "meaning": "pillow, bolster",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "通貨",
+      "reading": "つうか",
+      "meaning": "currency",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "毛皮",
+      "reading": "けがわ",
+      "meaning": "fur, skin, pelt",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "公害",
+      "reading": "こうがい",
+      "meaning": "pollution, public nuisance, contamination",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "政党",
+      "reading": "せいとう",
+      "meaning": "political party",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "角度",
+      "reading": "かくど",
+      "meaning": "angle",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "公害",
+      "reading": "こうがい",
+      "meaning": "pollution, public nuisance, contamination",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "停電",
+      "reading": "ていでん",
+      "meaning": "power outage, power failure, power cut",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "空想",
+      "reading": "くうそう",
+      "meaning": "daydream, fantasy, fancy",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "灰色",
+      "reading": "はいいろ",
+      "meaning": "grey, gray, ashen",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "商業",
+      "reading": "しょうぎょう",
+      "meaning": "commerce, trade, business",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "百科事典",
+      "reading": "ひゃっかじてん",
+      "meaning": "encyclopedia, encyclopaedia",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "公共",
+      "reading": "こうきょう",
+      "meaning": "public (facilities, service, etc.), communal",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun which may take the genitive case particle 'no'"
+    },
+    {
+      "japanese": "公式",
+      "reading": "こうしき",
+      "meaning": "official, formal",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun which may take the genitive case particle 'no'"
+    },
+    {
+      "japanese": "足跡",
+      "reading": "あしあと",
+      "meaning": "footprints",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "名所",
+      "reading": "めいしょ",
+      "meaning": "famous place, noted place, place of (scenic or historical) interest",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "牧場",
+      "reading": "ぼくじょう",
+      "meaning": "farm (livestock), stock farm, ranch",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "蒸気",
+      "reading": "じょうき",
+      "meaning": "steam, vapour, vapor",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "姿勢",
+      "reading": "しせい",
+      "meaning": "posture, pose, position",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "死体",
+      "reading": "したい",
+      "meaning": "dead body, corpse, cadaver",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "車輪",
+      "reading": "しゃりん",
+      "meaning": "(vehicle) wheel",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "強化",
+      "reading": "きょうか",
+      "meaning": "strengthening, intensifying, reinforcement",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "血液",
+      "reading": "けつえき",
+      "meaning": "blood",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "消化",
+      "reading": "しょうか",
+      "meaning": "digestion (of food)",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "看板",
+      "reading": "かんばん",
+      "meaning": "signboard, sign, billboard",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "看板",
+      "reading": "かんばん",
+      "meaning": "signboard, sign, billboard",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "薬局",
+      "reading": "やっきょく",
+      "meaning": "pharmacy, drugstore, chemist's (shop)",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "大工",
+      "reading": "だいく",
+      "meaning": "carpenter",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "磁石",
+      "reading": "じしゃく",
+      "meaning": "magnet",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "乗り換え",
+      "reading": "のりかえ",
+      "meaning": "transfer (trains, buses, etc.), change, connection",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "消化",
+      "reading": "しょうか",
+      "meaning": "digestion (of food)",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "神話",
+      "reading": "しんわ",
+      "meaning": "myth, mythology",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "文体",
+      "reading": "ぶんたい",
+      "meaning": "literary style",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "東洋",
+      "reading": "とうよう",
+      "meaning": "the East, the Orient, (East) Asia",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "顕微鏡",
+      "reading": "けんびきょう",
+      "meaning": "microscope",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "滝",
+      "reading": "たき",
+      "meaning": "waterfall",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "電力",
+      "reading": "でんりょく",
+      "meaning": "electric power",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "家屋",
+      "reading": "かおく",
+      "meaning": "house, building",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "酢",
+      "reading": "す",
+      "meaning": "vinegar",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "方言",
+      "reading": "ほうげん",
+      "meaning": "dialect, provincialism",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "面積",
+      "reading": "めんせき",
+      "meaning": "area (measurement), square measure, size (of land)",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "撮影",
+      "reading": "さつえい",
+      "meaning": "photography (still or motion), photographing, filming",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "寮",
+      "reading": "りょう",
+      "meaning": "hostel, dormitory",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "診断",
+      "reading": "しんだん",
+      "meaning": "diagnosis, medical examination",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "刺身",
+      "reading": "さしみ",
+      "meaning": "sashimi (raw sliced fish, shellfish or crustaceans)",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "血圧",
+      "reading": "けつあつ",
+      "meaning": "blood pressure",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "楽器",
+      "reading": "がっき",
+      "meaning": "musical instrument",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "将棋",
+      "reading": "しょうぎ",
+      "meaning": "shogi, Japanese chess",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "伝記",
+      "reading": "でんき",
+      "meaning": "biography, life story",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "無限",
+      "reading": "むげん",
+      "meaning": "infinity, infinitude, eternity",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "反省",
+      "reading": "はんせい",
+      "meaning": "reflection, reconsideration, introspection",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "継続",
+      "reading": "けいぞく",
+      "meaning": "continuation, continuance, maintenance",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "直線",
+      "reading": "ちょくせん",
+      "meaning": "straight line",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "給与",
+      "reading": "きゅうよ",
+      "meaning": "pay, salary, wages",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "診断",
+      "reading": "しんだん",
+      "meaning": "diagnosis, medical examination",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "国籍",
+      "reading": "こくせき",
+      "meaning": "nationality, citizenship",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "噴火",
+      "reading": "ふんか",
+      "meaning": "eruption, volcanic eruption",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "倉庫",
+      "reading": "そうこ",
+      "meaning": "storehouse, warehouse, godown",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "姓",
+      "reading": "せい",
+      "meaning": "surname, family name",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "明け方",
+      "reading": "あけがた",
+      "meaning": "dawn, daybreak",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "包装",
+      "reading": "ほうそう",
+      "meaning": "packing, wrapping",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "手首",
+      "reading": "てくび",
+      "meaning": "wrist",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "香水",
+      "reading": "こうすい",
+      "meaning": "perfume, scent",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "銅",
+      "reading": "どう",
+      "meaning": "copper (Cu)",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "彫刻",
+      "reading": "ちょうこく",
+      "meaning": "carving, engraving, sculpture",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "電柱",
+      "reading": "でんちゅう",
+      "meaning": "utility pole, power pole, telephone pole",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "分布",
+      "reading": "ぶんぷ",
+      "meaning": "distribution",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "太鼓",
+      "reading": "たいこ",
+      "meaning": "drum",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "包丁",
+      "reading": "ほうちょう",
+      "meaning": "kitchen knife",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "統一",
+      "reading": "とういつ",
+      "meaning": "unity, consolidation, uniformity",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "行列",
+      "reading": "ぎょうれつ",
+      "meaning": "line, queue, procession",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "手前",
+      "reading": "てまえ",
+      "meaning": "before oneself, in front of one, nearby",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "深夜",
+      "reading": "しんや",
+      "meaning": "late at night",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "竹",
+      "reading": "たけ",
+      "meaning": "bamboo (any grass of subfamily Bambusoideae)",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "煮る",
+      "reading": "にる",
+      "meaning": "to boil, to simmer, to stew",
+      "level": "N2",
+      "common": true,
+      "pos": "Ichidan verb"
+    },
+    {
+      "japanese": "引き分け",
+      "reading": "ひきわけ",
+      "meaning": "draw (in competition), tie game",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "記号",
+      "reading": "きごう",
+      "meaning": "sign, symbol, mark",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "学年",
+      "reading": "がくねん",
+      "meaning": "academic year, school year",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "先祖",
+      "reading": "せんぞ",
+      "meaning": "ancestor, forefather, foremother",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "商社",
+      "reading": "しょうしゃ",
+      "meaning": "trading company",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "表紙",
+      "reading": "ひょうし",
+      "meaning": "cover (of a book, magazine, etc.), binding",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "園芸",
+      "reading": "えんげい",
+      "meaning": "horticulture, gardening",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "和服",
+      "reading": "わふく",
+      "meaning": "Japanese clothes",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "漁師",
+      "reading": "りょうし",
+      "meaning": "fisherman",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "算数",
+      "reading": "さんすう",
+      "meaning": "arithmetic",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "電球",
+      "reading": "でんきゅう",
+      "meaning": "light bulb",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "宴会",
+      "reading": "えんかい",
+      "meaning": "party, banquet, reception",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "中年",
+      "reading": "ちゅうねん",
+      "meaning": "middle-age, middle age, midlife",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "親指",
+      "reading": "おやゆび",
+      "meaning": "thumb",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "古典",
+      "reading": "こてん",
+      "meaning": "classic (work, esp. book), the classics",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "光線",
+      "reading": "こうせん",
+      "meaning": "ray (of light), beam, light",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "編集",
+      "reading": "へんしゅう",
+      "meaning": "editing, compilation",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "通路",
+      "reading": "つうろ",
+      "meaning": "passage, pathway, roadway",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "農産物",
+      "reading": "のうさんぶつ",
+      "meaning": "agricultural produce",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "算数",
+      "reading": "さんすう",
+      "meaning": "arithmetic",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "漁師",
+      "reading": "りょうし",
+      "meaning": "fisherman",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "口紅",
+      "reading": "くちべに",
+      "meaning": "lipstick",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "集合",
+      "reading": "しゅうごう",
+      "meaning": "meeting up, gathering, assembly",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "測定",
+      "reading": "そくてい",
+      "meaning": "measurement",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "温室",
+      "reading": "おんしつ",
+      "meaning": "greenhouse, hothouse, conservatory",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "平日",
+      "reading": "へいじつ",
+      "meaning": "weekday, ordinary days (i.e. non-holiday)",
+      "level": "N2",
+      "common": true,
+      "pos": "Adverb (fukushi)"
+    },
+    {
+      "japanese": "原理",
+      "reading": "げんり",
+      "meaning": "principle, theory, fundamental truth",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "歯磨き",
+      "reading": "はみがき",
+      "meaning": "dental brushing, brushing one's teeth",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "俳句",
+      "reading": "はいく",
+      "meaning": "haiku, 17-mora poem, usu. in 3 lines of 5, 7 and 5 morae",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "水平",
+      "reading": "すいへい",
+      "meaning": "horizontal, level, even",
+      "level": "N2",
+      "common": true,
+      "pos": "Na-adjective (keiyodoshi)"
+    },
+    {
+      "japanese": "確率",
+      "reading": "かくりつ",
+      "meaning": "probability, likelihood, chances",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "水蒸気",
+      "reading": "すいじょうき",
+      "meaning": "water vapour, water vapor, steam",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "俳句",
+      "reading": "はいく",
+      "meaning": "haiku, 17-mora poem, usu. in 3 lines of 5, 7 and 5 morae",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "水分",
+      "reading": "すいぶん",
+      "meaning": "water, liquid, fluid",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "餅",
+      "reading": "もち",
+      "meaning": "mochi, small rice cake made from glutinous rice",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "摩擦",
+      "reading": "まさつ",
+      "meaning": "friction",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "電波",
+      "reading": "でんぱ",
+      "meaning": "radio wave, reception, signal",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "垂直",
+      "reading": "すいちょく",
+      "meaning": "vertical",
+      "level": "N2",
+      "common": true,
+      "pos": "Na-adjective (keiyodoshi)"
+    },
+    {
+      "japanese": "自然科学",
+      "reading": "しぜんかがく",
+      "meaning": "natural science",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "歯磨き",
+      "reading": "はみがき",
+      "meaning": "dental brushing, brushing one's teeth",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "交流",
+      "reading": "こうりゅう",
+      "meaning": "exchange (e.g. cultural), interchange, interaction",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "売買",
+      "reading": "ばいばい",
+      "meaning": "trade, buying and selling, trafficking (e.g. of humans, arms, drugs)",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "性別",
+      "reading": "せいべつ",
+      "meaning": "(distinction of) sex, gender",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "湿度",
+      "reading": "しつど",
+      "meaning": "humidity",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "文房具",
+      "reading": "ぶんぼうぐ",
+      "meaning": "stationery",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "名刺",
+      "reading": "めいし",
+      "meaning": "business card",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "祝日",
+      "reading": "しゅくじつ",
+      "meaning": "national holiday, public holiday",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "貨物",
+      "reading": "かもつ",
+      "meaning": "cargo, freight",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "吐き気",
+      "reading": "はきけ",
+      "meaning": "nausea, feeling like throwing up, feeling sick",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "童話",
+      "reading": "どうわ",
+      "meaning": "children's story, fairy tale",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "祝日",
+      "reading": "しゅくじつ",
+      "meaning": "national holiday, public holiday",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "洗剤",
+      "reading": "せんざい",
+      "meaning": "detergent, cleanser, cleaning agent",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "冠",
+      "reading": "かんむり",
+      "meaning": "traditional cap worn by Shinto clergy and courtiers",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "鉱物",
+      "reading": "こうぶつ",
+      "meaning": "mineral",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "随筆",
+      "reading": "ずいひつ",
+      "meaning": "essays, miscellaneous writings, literary jottings",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "透明",
+      "reading": "とうめい",
+      "meaning": "transparent, clear",
+      "level": "N2",
+      "common": true,
+      "pos": "Na-adjective (keiyodoshi)"
+    },
+    {
+      "japanese": "線路",
+      "reading": "せんろ",
+      "meaning": "railway track, railway line, railroad",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "吐き気",
+      "reading": "はきけ",
+      "meaning": "nausea, feeling like throwing up, feeling sick",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "紫",
+      "reading": "むらさき",
+      "meaning": "purple, violet",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "歯車",
+      "reading": "はぐるま",
+      "meaning": "gear, cogwheel",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "名刺",
+      "reading": "めいし",
+      "meaning": "business card",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "電流",
+      "reading": "でんりゅう",
+      "meaning": "electric current",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "役所",
+      "reading": "やくしょ",
+      "meaning": "government office, public office",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "漁業",
+      "reading": "ぎょぎょう",
+      "meaning": "fishing industry, fishery",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "工夫",
+      "reading": "くふう",
+      "meaning": "devising (a way), contriving, inventing",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "代名詞",
+      "reading": "だいめいし",
+      "meaning": "pronoun",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "会館",
+      "reading": "かいかん",
+      "meaning": "meeting hall, assembly hall",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "幼稚園",
+      "reading": "ようちえん",
+      "meaning": "kindergarten (in Japan, non-compulsory education from age 3 until primary school), preschool",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "転々",
+      "reading": "てんてん",
+      "meaning": "moving from place to place, being passed around repeatedly",
+      "level": "N2",
+      "common": true,
+      "pos": "Adverb (fukushi)"
+    },
+    {
+      "japanese": "接続",
+      "reading": "せつぞく",
+      "meaning": "connection, attachment, union",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "重力",
+      "reading": "じゅうりょく",
+      "meaning": "gravity, gravitation, gravitational pull",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "官庁",
+      "reading": "かんちょう",
+      "meaning": "government office, government agency, authorities",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "郡",
+      "reading": "ぐん",
+      "meaning": "district, county",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "社説",
+      "reading": "しゃせつ",
+      "meaning": "editorial, leading article, leader",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "半島",
+      "reading": "はんとう",
+      "meaning": "peninsula",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "接続",
+      "reading": "せつぞく",
+      "meaning": "connection, attachment, union",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "流域",
+      "reading": "りゅういき",
+      "meaning": "drainage basin, catchment basin, river basin",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "農薬",
+      "reading": "のうやく",
+      "meaning": "agricultural chemical, agrochemical, agrichemical",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "転々",
+      "reading": "てんてん",
+      "meaning": "moving from place to place, being passed around repeatedly",
+      "level": "N2",
+      "common": true,
+      "pos": "Adverb (fukushi)"
+    },
+    {
+      "japanese": "名物",
+      "reading": "めいぶつ",
+      "meaning": "famous product, special product, speciality",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "気圧",
+      "reading": "きあつ",
+      "meaning": "atmospheric pressure, air pressure",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "真空",
+      "reading": "しんくう",
+      "meaning": "vacuum",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "学部",
+      "reading": "がくぶ",
+      "meaning": "faculty (of a university), school, college",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "発電",
+      "reading": "はつでん",
+      "meaning": "generation of electricity, power generation",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "頂点",
+      "reading": "ちょうてん",
+      "meaning": "vertex, apex",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "杉",
+      "reading": "すぎ",
+      "meaning": "Japanese cedar (Cryptomeria japonica)",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "輸血",
+      "reading": "ゆけつ",
+      "meaning": "blood transfusion",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "炭鉱",
+      "reading": "たんこう",
+      "meaning": "coal mine, (coal) pit, colliery",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "自治",
+      "reading": "じち",
+      "meaning": "self-government, autonomy",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "工芸",
+      "reading": "こうげい",
+      "meaning": "industrial arts, craft",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "保健",
+      "reading": "ほけん",
+      "meaning": "preservation of health, hygiene, sanitation",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "社会科学",
+      "reading": "しゃかいかがく",
+      "meaning": "social science",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "図鑑",
+      "reading": "ずかん",
+      "meaning": "pictorial book, picture book, illustrated reference book",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "為替",
+      "reading": "かわせ",
+      "meaning": "money order, draft",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "機関車",
+      "reading": "きかんしゃ",
+      "meaning": "locomotive, engine",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "索引",
+      "reading": "さくいん",
+      "meaning": "index (in a book)",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "西暦",
+      "reading": "せいれき",
+      "meaning": "Common Era, CE, Christian Era",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "測量",
+      "reading": "そくりょう",
+      "meaning": "measurement, surveying",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "峠",
+      "reading": "とうげ",
+      "meaning": "(mountain) pass, highest point on a mountain road, ridge",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "学会",
+      "reading": "がっかい",
+      "meaning": "learned society, scientific society, academy",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "工芸",
+      "reading": "こうげい",
+      "meaning": "industrial arts, craft",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "炭鉱",
+      "reading": "たんこう",
+      "meaning": "coal mine, (coal) pit, colliery",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "輸血",
+      "reading": "ゆけつ",
+      "meaning": "blood transfusion",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "献立",
+      "reading": "こんだて",
+      "meaning": "menu, bill of fare",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "自治",
+      "reading": "じち",
+      "meaning": "self-government, autonomy",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "合同",
+      "reading": "ごうどう",
+      "meaning": "combination, union, joining",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "踏切",
+      "reading": "ふみきり",
+      "meaning": "railway crossing, railroad crossing, train crossing",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "曖昧",
+      "reading": "あいまい",
+      "meaning": "vague, ambiguous, unclear",
+      "level": "N2",
+      "common": true,
+      "pos": "Na-adjective (keiyodoshi)"
+    },
+    {
+      "japanese": "梯子",
+      "reading": "はしご",
+      "meaning": "ladder",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "肘",
+      "reading": "ひじ",
+      "meaning": "elbow",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "絨毯",
+      "reading": "じゅうたん",
+      "meaning": "carpet, rug, runner",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "編み物",
+      "reading": "あみもの",
+      "meaning": "knitting, knitted material, crochet",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "釘",
+      "reading": "くぎ",
+      "meaning": "nail, spike, tack",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "茹でる",
+      "reading": "ゆでる",
+      "meaning": "to boil (something in hot water)",
+      "level": "N2",
+      "common": true,
+      "pos": "Ichidan verb"
+    },
+    {
+      "japanese": "包帯",
+      "reading": "ほうたい",
+      "meaning": "bandage, dressing",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "気体",
+      "reading": "きたい",
+      "meaning": "gas, vapour, vapor",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "胡椒",
+      "reading": "こしょう",
+      "meaning": "pepper",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "飢饉",
+      "reading": "ききん",
+      "meaning": "famine, crop failure",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "煉瓦",
+      "reading": "れんが",
+      "meaning": "brick",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "直角",
+      "reading": "ちょっかく",
+      "meaning": "right angle",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "錆",
+      "reading": "さび",
+      "meaning": "rust",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "迷信",
+      "reading": "めいしん",
+      "meaning": "superstition, superstitious belief",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "待合室",
+      "reading": "まちあいしつ",
+      "meaning": "waiting room",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "失恋",
+      "reading": "しつれん",
+      "meaning": "disappointed love, broken heart, unrequited love",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "櫛",
+      "reading": "くし",
+      "meaning": "comb",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "省略",
+      "reading": "しょうりゃく",
+      "meaning": "omission, leaving out",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "蒸発",
+      "reading": "じょうはつ",
+      "meaning": "evaporation",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "回り道",
+      "reading": "まわりみち",
+      "meaning": "detour, circuitous route, diversion",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "扇風機",
+      "reading": "せんぷうき",
+      "meaning": "electric fan",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "名詞",
+      "reading": "めいし",
+      "meaning": "noun",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "正方形",
+      "reading": "せいほうけい",
+      "meaning": "square",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "形容詞",
+      "reading": "けいようし",
+      "meaning": "adjective, i-adjective (in Japanese)",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "裁縫",
+      "reading": "さいほう",
+      "meaning": "sewing, needlework",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "人差し指",
+      "reading": "ひとさしゆび",
+      "meaning": "index finger, forefinger, first (occ. second) finger",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "蕎麦",
+      "reading": "そば",
+      "meaning": "buckwheat (Fagopyrum esculentum)",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "副詞",
+      "reading": "ふくし",
+      "meaning": "adverb",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "消防署",
+      "reading": "しょうぼうしょ",
+      "meaning": "fire station",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "定規",
+      "reading": "じょうぎ",
+      "meaning": "(measuring) ruler",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "蛍光灯",
+      "reading": "けいこうとう",
+      "meaning": "fluorescent lamp, fluorescent light",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "体積",
+      "reading": "たいせき",
+      "meaning": "capacity, volume",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "海水浴",
+      "reading": "かいすいよく",
+      "meaning": "swimming in the ocean, sea bathing, seawater bath",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "座布団",
+      "reading": "ざぶとん",
+      "meaning": "zabuton, flat floor cushion used when sitting or kneeling; usu. rectangular",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "箒",
+      "reading": "ほうき",
+      "meaning": "broom",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "矢印",
+      "reading": "やじるし",
+      "meaning": "arrow (symbol)",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "人文科学",
+      "reading": "じんぶんかがく",
+      "meaning": "humanities, arts",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "敬語",
+      "reading": "けいご",
+      "meaning": "honorific, term of respect, polite expression",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "経度",
+      "reading": "けいど",
+      "meaning": "longitude",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "時間割",
+      "reading": "じかんわり",
+      "meaning": "timetable (esp. a weekly school timetable), schedule",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "括弧",
+      "reading": "かっこ",
+      "meaning": "brackets, parentheses",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "長方形",
+      "reading": "ちょうほうけい",
+      "meaning": "rectangle, oblong",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "複写",
+      "reading": "ふくしゃ",
+      "meaning": "copying, duplication, reproduction",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "下駄",
+      "reading": "げた",
+      "meaning": "geta, traditional Japanese wooden sandal",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "水筒",
+      "reading": "すいとう",
+      "meaning": "canteen, flask, water bottle",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "風呂敷",
+      "reading": "ふろしき",
+      "meaning": "furoshiki, wrapping cloth, cloth wrapper",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "噴水",
+      "reading": "ふんすい",
+      "meaning": "water fountain",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "手洗い",
+      "reading": "てあらい",
+      "meaning": "washing one's hands, water (or basin, etc.) for washing one's hands",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "便所",
+      "reading": "べんじょ",
+      "meaning": "toilet, lavatory, water closet",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "薬指",
+      "reading": "くすりゆび",
+      "meaning": "ring finger, third finger, fourth finger (esp. in piano-playing)",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "肌着",
+      "reading": "はだぎ",
+      "meaning": "underwear, underclothes, lingerie",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "障子",
+      "reading": "しょうじ",
+      "meaning": "shoji (paper sliding door)",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "温帯",
+      "reading": "おんたい",
+      "meaning": "temperate zone",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "方程式",
+      "reading": "ほうていしき",
+      "meaning": "equation, formula",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "中指",
+      "reading": "なかゆび",
+      "meaning": "middle finger, long finger, second finger",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "ネジ",
+      "reading": "ネジ",
+      "meaning": "screw",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "探す",
+      "reading": "さがす",
+      "meaning": "to search for, to look for, to hunt for",
+      "level": "N2",
+      "common": true,
+      "pos": "Godan verb with 'su' ending"
+    },
+    {
+      "japanese": "喜ぶ",
+      "reading": "よろこぶ",
+      "meaning": "to be delighted, to be glad, to be pleased",
+      "level": "N2",
+      "common": true,
+      "pos": "Godan verb with 'bu' ending"
+    },
+    {
+      "japanese": "赤ん坊",
+      "reading": "あかんぼう",
+      "meaning": "baby, infant",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "向かう",
+      "reading": "むかう",
+      "meaning": "to face",
+      "level": "N2",
+      "common": true,
+      "pos": "Godan verb with 'u' ending"
+    },
+    {
+      "japanese": "見つかる",
+      "reading": "みつかる",
+      "meaning": "to be found, to be discovered",
+      "level": "N2",
+      "common": true,
+      "pos": "Godan verb with 'ru' ending"
+    },
+    {
+      "japanese": "増える",
+      "reading": "ふえる",
+      "meaning": "to increase, to multiply",
+      "level": "N2",
+      "common": true,
+      "pos": "Ichidan verb"
+    },
+    {
+      "japanese": "柔らかい",
+      "reading": "やわらかい",
+      "meaning": "soft, tender, supple",
+      "level": "N2",
+      "common": true,
+      "pos": "I-adjective (keiyoushi)"
+    },
+    {
+      "japanese": "又は",
+      "reading": "または",
+      "meaning": "or, either ... or ...",
+      "level": "N2",
+      "common": true,
+      "pos": "Conjunction"
+    },
+    {
+      "japanese": "引き出す",
+      "reading": "ひきだす",
+      "meaning": "to pull out, to take out, to draw out",
+      "level": "N2",
+      "common": true,
+      "pos": "Godan verb with 'su' ending"
+    },
+    {
+      "japanese": "退院",
+      "reading": "たいいん",
+      "meaning": "leaving hospital, discharge from hospital",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "漬ける",
+      "reading": "つける",
+      "meaning": "to soak (in), to steep, to dip",
+      "level": "N2",
+      "common": true,
+      "pos": "Ichidan verb"
+    },
+    {
+      "japanese": "見つける",
+      "reading": "みつける",
+      "meaning": "to find, to discover, to come across",
+      "level": "N2",
+      "common": true,
+      "pos": "Ichidan verb"
+    },
+    {
+      "japanese": "慣れる",
+      "reading": "なれる",
+      "meaning": "to get used to, to grow accustomed to, to become familiar with",
+      "level": "N2",
+      "common": true,
+      "pos": "Ichidan verb"
+    },
+    {
+      "japanese": "直す",
+      "reading": "なおす",
+      "meaning": "to repair, to mend, to fix",
+      "level": "N2",
+      "common": true,
+      "pos": "Godan verb with 'su' ending"
+    },
+    {
+      "japanese": "捨てる",
+      "reading": "すてる",
+      "meaning": "to throw away, to cast away, to dump",
+      "level": "N2",
+      "common": true,
+      "pos": "Ichidan verb"
+    },
+    {
+      "japanese": "硬い",
+      "reading": "かたい",
+      "meaning": "hard, solid, tough",
+      "level": "N2",
+      "common": true,
+      "pos": "I-adjective (keiyoushi)"
+    },
+    {
+      "japanese": "掏摸",
+      "reading": "すり",
+      "meaning": "pickpocket",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "滑る",
+      "reading": "すべる",
+      "meaning": "to slide, to glide, to skate",
+      "level": "N2",
+      "common": true,
+      "pos": "Godan verb with 'ru' ending"
+    },
+    {
+      "japanese": "床屋",
+      "reading": "とこや",
+      "meaning": "barbershop, barber shop, barber",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "拝見",
+      "reading": "はいけん",
+      "meaning": "seeing, looking at",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "再来月",
+      "reading": "さらいげつ",
+      "meaning": "month after next",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "再来週",
+      "reading": "さらいしゅう",
+      "meaning": "week after next",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "主語",
+      "reading": "しゅご",
+      "meaning": "subject",
+      "level": "N2",
+      "common": false,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "零点",
+      "reading": "れいてん",
+      "meaning": "zero (points, marks), no marks",
+      "level": "N2",
+      "common": false,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "只",
+      "reading": "ただ",
+      "meaning": "ordinary, common, usual",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun which may take the genitive case particle 'no'"
+    },
+    {
+      "japanese": "喜び",
+      "reading": "よろこび",
+      "meaning": "joy, delight, rapture",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "越える",
+      "reading": "こえる",
+      "meaning": "to cross over, to cross, to pass through",
+      "level": "N2",
+      "common": true,
+      "pos": "Ichidan verb"
+    },
+    {
+      "japanese": "備える",
+      "reading": "そなえる",
+      "meaning": "to furnish with, to equip with, to provide",
+      "level": "N2",
+      "common": true,
+      "pos": "Ichidan verb"
+    },
+    {
+      "japanese": "乗せる",
+      "reading": "のせる",
+      "meaning": "to place on (something)",
+      "level": "N2",
+      "common": true,
+      "pos": "Ichidan verb"
+    },
+    {
+      "japanese": "減る",
+      "reading": "へる",
+      "meaning": "to decrease (in size or number), to diminish, to abate",
+      "level": "N2",
+      "common": true,
+      "pos": "Godan verb with 'ru' ending"
+    },
+    {
+      "japanese": "計る",
+      "reading": "はかる",
+      "meaning": "to measure, to weigh, to survey",
+      "level": "N2",
+      "common": true,
+      "pos": "Godan verb with 'ru' ending"
+    },
+    {
+      "japanese": "替える",
+      "reading": "かえる",
+      "meaning": "to replace, to convert, to change",
+      "level": "N2",
+      "common": true,
+      "pos": "Ichidan verb"
+    },
+    {
+      "japanese": "収める",
+      "reading": "おさめる",
+      "meaning": "to put (into), to put away (in), to put back (in)",
+      "level": "N2",
+      "common": true,
+      "pos": "Ichidan verb"
+    },
+    {
+      "japanese": "空き",
+      "reading": "あき",
+      "meaning": "space, room, gap",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "長所",
+      "reading": "ちょうしょ",
+      "meaning": "strong point, merit, virtue",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "休息",
+      "reading": "きゅうそく",
+      "meaning": "rest, relief, relaxation",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "湿気",
+      "reading": "しっけ",
+      "meaning": "moisture, humidity, dampness",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "勝負",
+      "reading": "しょうぶ",
+      "meaning": "victory or defeat",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "役人",
+      "reading": "やくにん",
+      "meaning": "government official",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "相互",
+      "reading": "そうご",
+      "meaning": "mutual, reciprocal",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "引っ越し",
+      "reading": "ひっこし",
+      "meaning": "moving (dwelling, office, etc.), changing residence",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "海洋",
+      "reading": "かいよう",
+      "meaning": "ocean, sea",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "関西",
+      "reading": "かんさい",
+      "meaning": "Kansai (region comprising Kyoto, Osaka, Kobe and surrounding prefectures)",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "上り",
+      "reading": "のぼり",
+      "meaning": "ascent, climbing, ascending (path)",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "正門",
+      "reading": "せいもん",
+      "meaning": "main gate, main entrance",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "南米",
+      "reading": "なんべい",
+      "meaning": "South America",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "南米",
+      "reading": "なんべい",
+      "meaning": "South America",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "下町",
+      "reading": "したまち",
+      "meaning": "low-lying part of a city (usu. containing shops, factories, etc.)",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "一応",
+      "reading": "いちおう",
+      "meaning": "more or less, though not quite satisfactorily, after a fashion",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "大小",
+      "reading": "だいしょう",
+      "meaning": "size",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "伸ばす",
+      "reading": "のばす",
+      "meaning": "to grow long (e.g. hair, nails)",
+      "level": "N2",
+      "common": true,
+      "pos": "Godan verb with 'su' ending"
+    },
+    {
+      "japanese": "伸びる",
+      "reading": "のびる",
+      "meaning": "to stretch, to extend, to lengthen",
+      "level": "N2",
+      "common": true,
+      "pos": "Ichidan verb"
+    },
+    {
+      "japanese": "越す",
+      "reading": "こす",
+      "meaning": "to cross over (e.g. mountain), to go across",
+      "level": "N2",
+      "common": true,
+      "pos": "Godan verb with 'su' ending"
+    },
+    {
+      "japanese": "粗い",
+      "reading": "あらい",
+      "meaning": "coarse, rough",
+      "level": "N2",
+      "common": true,
+      "pos": "I-adjective (keiyoushi)"
+    },
+    {
+      "japanese": "御免",
+      "reading": "ごめん",
+      "meaning": "I'm sorry, my apologies, excuse me",
+      "level": "N2",
+      "common": true,
+      "pos": ""
+    },
+    {
+      "japanese": "一旦",
+      "reading": "いったん",
+      "meaning": "once",
+      "level": "N2",
+      "common": true,
+      "pos": "Adverb (fukushi)"
+    },
+    {
+      "japanese": "麓",
+      "reading": "ふもと",
+      "meaning": "foot (of a mountain or hill), bottom, base",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "生け花",
+      "reading": "いけばな",
+      "meaning": "ikebana, Japanese art of flower arrangement",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "欧米",
+      "reading": "おうべい",
+      "meaning": "Europe and the United States, Europe and America, the West",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "隙間",
+      "reading": "すきま",
+      "meaning": "gap, opening, aperture",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "稽古",
+      "reading": "けいこ",
+      "meaning": "practice, practising, training",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "箪笥",
+      "reading": "たんす",
+      "meaning": "chest of drawers, bureau, cabinet",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "瀬戸物",
+      "reading": "せともの",
+      "meaning": "earthenware, porcelain, china",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "合流",
+      "reading": "ごうりゅう",
+      "meaning": "confluence (of rivers), flowing together, joining",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "ペン",
+      "reading": "ペン",
+      "meaning": "pen",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "一昨日",
+      "reading": "おととい",
+      "meaning": "day before yesterday",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "醤油",
+      "reading": "しょうゆ",
+      "meaning": "soy sauce, soya sauce, shoyu",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "けど",
+      "reading": "けど",
+      "meaning": "but, however, although",
+      "level": "N2",
+      "common": true,
+      "pos": "Conjunction"
+    },
+    {
+      "japanese": "大分",
+      "reading": "だいぶ",
+      "meaning": "considerably, greatly, a lot",
+      "level": "N2",
+      "common": true,
+      "pos": "Adverb (fukushi)"
+    },
+    {
+      "japanese": "下る",
+      "reading": "くだる",
+      "meaning": "to descend, to go down, to come down",
+      "level": "N2",
+      "common": true,
+      "pos": "Godan verb with 'ru' ending"
+    },
+    {
+      "japanese": "間もなく",
+      "reading": "まもなく",
+      "meaning": "soon, shortly, before long",
+      "level": "N2",
+      "common": true,
+      "pos": "Adverb (fukushi)"
+    },
+    {
+      "japanese": "耐える",
+      "reading": "たえる",
+      "meaning": "to bear, to stand, to endure",
+      "level": "N2",
+      "common": true,
+      "pos": "Ichidan verb"
+    },
+    {
+      "japanese": "少なくとも",
+      "reading": "すくなくとも",
+      "meaning": "at least",
+      "level": "N2",
+      "common": true,
+      "pos": "Adverb (fukushi)"
+    },
+    {
+      "japanese": "押さえる",
+      "reading": "おさえる",
+      "meaning": "to pin down, to hold down, to press down",
+      "level": "N2",
+      "common": true,
+      "pos": "Ichidan verb"
+    },
+    {
+      "japanese": "知り合い",
+      "reading": "しりあい",
+      "meaning": "acquaintance",
+      "level": "N2",
+      "common": true,
+      "pos": "Noun"
+    },
+    {
+      "japanese": "相変わらず",
+      "reading": "あいかわらず",
+      "meaning": "as usual, as always, as before",
+      "level": "N2",
+      "common": true,
+      "pos": "Adverb (fukushi)"
+    },
+    {
+      "japanese": "率直",
+      "reading": "そっちょく",
+      "meaning": "frank, candid, straightforward",
+      "level": "N2",
+      "common": true,
+      "pos": "Na-adjective (keiyodoshi)"
+    },
+    {
+      "japanese": "努める",
+      "reading": "つとめる",
+      "meaning": "to endeavor (to do), to endeavour, to try hard",
+      "level": "N2",
+      "common": true,
+      "pos": "Ichidan verb"
+    },
+    {
+      "japanese": "殴る",
+      "reading": "なぐる",
+      "meaning": "to strike, to hit, to beat",
+      "level": "N2",
+      "common": true,
+      "pos": "Godan verb with 'ru' ending"
+    },
+    {
+      "japanese": "慌てる",
+      "reading": "あわてる",
+      "meaning": "to become confused (disconcerted, disorganized, disorganised), to be flustered, to panic",
+      "level": "N2",
+      "common": true,
+      "pos": "Ichidan verb"
+    },
+    {
+      "japanese": "診る",
+      "reading": "みる",
+      "meaning": "to examine (medically), to have a look at, to check (a patient's pulse)",
+      "level": "N2",
+      "common": true,
+      "pos": "Ichidan verb"
+    },
+    {
+      "japanese": "何とも",
+      "reading": "なんとも",
+      "meaning": "really, very, extremely",
+      "level": "N2",
+      "common": true,
+      "pos": "Adverb (fukushi)"
+    },
+    {
+      "japanese": "稀",
+      "reading": "まれ",
+      "meaning": "rare, seldom",
+      "level": "N2",
+      "common": true,
+      "pos": "Na-adjective (keiyodoshi)"
+    },
+    {
+      "japanese": "狙う",
+      "reading": "ねらう",
+      "meaning": "to aim at (with a weapon, etc.)",
+      "level": "N2",
+      "common": true,
+      "pos": "Godan verb with 'u' ending"
+    },
+    {
+      "japanese": "迫る",
+      "reading": "せまる",
+      "meaning": "to approach, to draw near, to be imminent",
+      "level": "N2",
+      "common": true,
+      "pos": "Godan verb with 'ru' ending"
+    },
+    {
+      "japanese": "預かる",
+      "reading": "あずかる",
+      "meaning": "to look after, to take care of, to keep",
+      "level": "N2",
+      "common": true,
+      "pos": "Godan verb with 'ru' ending"
+    }
+  ]
+}

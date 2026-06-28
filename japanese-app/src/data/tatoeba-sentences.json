@@ -1,0 +1,1513 @@
+{
+  "beginner": [
+    {
+      "japanese": "これ変？",
+      "english": "Is this strange?",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "何これ？",
+      "english": "What is this?",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "これ何？",
+      "english": "What is this?",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "これ好き？",
+      "english": "Do you like it?",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "これいる？",
+      "english": "Do you need this?",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "これ使う？",
+      "english": "Are you going to use this?",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "来れそう？",
+      "english": "Can you come?",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "これは花？",
+      "english": "This is a flower?",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "来れるの？",
+      "english": "Can you come?",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "何だこれ？",
+      "english": "What's that?",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "光あれ！",
+      "english": "Let there be light!",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "あれ誰？",
+      "english": "Who's that?",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "あれ何？",
+      "english": "What's that?",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "あれまあ！",
+      "english": "Oh, my God!",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "あれを見て！",
+      "english": "Look at that!",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "冷徹であれ！",
+      "english": "Be merciless.",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "何だあれは？",
+      "english": "What's that?",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "大荒れだな。",
+      "english": "It's stormy.",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "あれって、猫？",
+      "english": "Is that a cat?",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "あれは犬かな？",
+      "english": "Is that a dog?",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "私は狼だ。",
+      "english": "I'm a wolf.",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "私は死だ。",
+      "english": "I am Death.",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "私は女だ。",
+      "english": "I am a woman.",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "私は暇だ。",
+      "english": "I'm free.",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "私は走る。",
+      "english": "I run.",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "私は男だ。",
+      "english": "I am a man.",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "私は食べた。",
+      "english": "I ate.",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "私は内気だ。",
+      "english": "I'm the bashful type.",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "私は大丈夫。",
+      "english": "I'm all right.",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "私は猫です。",
+      "english": "I'm a cat.",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "私が勝ち！",
+      "english": "I won!",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "私が怖いの？",
+      "english": "Are you afraid of me?",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "私が払う番？",
+      "english": "Is it my turn to pay?",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "私が一番。",
+      "english": "I'm first.",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "私が船長だ。",
+      "english": "I'm the captain.",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "私が壊した。",
+      "english": "I broke it.",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "今日は私が。",
+      "english": "It is on me.",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "私が妊娠した？",
+      "english": "Am I pregnant?",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "私が出ます。",
+      "english": "I'll get it.",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "私が先に行くよ！",
+      "english": "I'm going first!",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "何？",
+      "english": "What?",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "何事？",
+      "english": "Is something happening?",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "何て？",
+      "english": "What was that?",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "笑、何？",
+      "english": "Lol, what?",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "それ何？",
+      "english": "What is it?",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "何の話？",
+      "english": "What are you talking about?",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "何しょん？",
+      "english": "What are you doing, darling?",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "どこ？",
+      "english": "Where?",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "雨はどこ？",
+      "english": "Where is the rain?",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "苺はどこ？",
+      "english": "Where are the strawberries?",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "家はどこ？",
+      "english": "Where is your house?",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "ここどこ？",
+      "english": "Where am I?",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "新聞どこ？",
+      "english": "Where's the newspaper?",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "お金はどこ？",
+      "english": "Where's the money?",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "何処にも。",
+      "english": "Nowhere.",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "いつどこで？",
+      "english": "Where and when?",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "500gいくら？",
+      "english": "How much for half a kilo?",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "幾らするの？",
+      "english": "How much is it?",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "給料はいくら？",
+      "english": "What is your salary?",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "それ幾らした？",
+      "english": "How much did that cost?",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "いくらだった？",
+      "english": "How much did it cost?",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "いくらほしい？",
+      "english": "How many do you want?",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "時給はいくら？",
+      "english": "How much is your hourly pay?",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "いくらですか？",
+      "english": "How much is it?",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "いくら拾ったの？",
+      "english": "How much money did you find?",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "バス代はいくら？",
+      "english": "What's the bus fare?",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "ありがとう！",
+      "english": "Thank you!",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "ありがとう。",
+      "english": "Thank you!",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "本ありがとう。",
+      "english": "Thanks for the book.",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "「ありがとう」は？",
+      "english": "Tell them thanks.",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "感動をありがとう！",
+      "english": "Thank you, that was very moving.",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "説明ありがとう。",
+      "english": "Thanks for explaining it.",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "電話ありがとう。",
+      "english": "Thank you for calling.",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "本当にありがとう！",
+      "english": "Thank you very much!",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "招待ありがとう。",
+      "english": "Thanks for the invite.",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "とにかく有難う。",
+      "english": "Thank you just the same.",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "すみません！",
+      "english": "Excuse me!",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "すみません...",
+      "english": "Sorry...",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "すみません。",
+      "english": "I'm sorry.",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "すみませんね。",
+      "english": "I'm sorry.",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "度々すみません。",
+      "english": "Sorry for asking so many questions.",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "あの、すみません...",
+      "english": "Sorry...",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "すみませんでした。",
+      "english": "I'm sorry.",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "あっ、すみません。",
+      "english": "Oh, I'm sorry.",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "遅れてすみません。",
+      "english": "Forgive me for being late.",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "本当にすみません。",
+      "english": "Oh, I'm terribly sorry.",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "美味しい！",
+      "english": "Yummy!",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "魚、美味しい？",
+      "english": "Is the fish tasty?",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "それ美味しい？",
+      "english": "Does that taste good?",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "美味しいです。",
+      "english": "It's delicious!",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "魚どう？美味しい？",
+      "english": "How's the fish? Is it good?",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "スープ美味しい？",
+      "english": "Do you like the soup?",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "とっても美味しい！",
+      "english": "Very delicious!",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "サラダ、美味しい？",
+      "english": "Is the salad tasty?",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "アイス、美味しい？",
+      "english": "Is the ice cream nice?",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "バナナおいしい。",
+      "english": "Bananas are delicious.",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "子供好き？",
+      "english": "Do you like kids?",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "それ好き？",
+      "english": "Do you like it?",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "大好き。",
+      "english": "I love you.",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "雨は好き？",
+      "english": "Do you like rain?",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "好きですか？",
+      "english": "Do you like it?",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "中華は好き？",
+      "english": "Do you like Chinese cuisine?",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "好きにしろ！",
+      "english": "Do what you want!",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "それ好き。",
+      "english": "I like it.",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "好きです。",
+      "english": "I like you.",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "大きいね。",
+      "english": "It's big.",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "どのくらい大きい？",
+      "english": "How big?",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "随分と大きいな。",
+      "english": "It's so big!",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "その本は大きい。",
+      "english": "The book is big.",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "とても大きいね。",
+      "english": "They are very big.",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "彼の声は大きい。",
+      "english": "He has a loud voice.",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "彼は手が大きい。",
+      "english": "He has big hands.",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "彼は声が大きい。",
+      "english": "He has a loud voice.",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "あの木、大きいね。",
+      "english": "That tree is big.",
+      "grade": "beginner"
+    },
+    {
+      "japanese": "鳥居は大きいです。",
+      "english": "The shrine gate is huge.",
+      "grade": "beginner"
+    }
+  ],
+  "intermediate": [
+    {
+      "japanese": "辛い？",
+      "english": "Is it hot?",
+      "grade": "intermediate"
+    },
+    {
+      "japanese": "だから？",
+      "english": "So?",
+      "grade": "intermediate"
+    },
+    {
+      "japanese": "いつから？",
+      "english": "Since when?",
+      "grade": "intermediate"
+    },
+    {
+      "japanese": "だから何？",
+      "english": "So what?",
+      "grade": "intermediate"
+    },
+    {
+      "japanese": "辛すぎる。",
+      "english": "It's too spicy.",
+      "grade": "intermediate"
+    },
+    {
+      "japanese": "辛すぎた。",
+      "english": "It was too spicy.",
+      "grade": "intermediate"
+    },
+    {
+      "japanese": "缶は空よ。",
+      "english": "The can is empty.",
+      "grade": "intermediate"
+    },
+    {
+      "japanese": "今から帰る？",
+      "english": "Are you going back now?",
+      "grade": "intermediate"
+    },
+    {
+      "japanese": "空っぽだ。",
+      "english": "It's empty.",
+      "grade": "intermediate"
+    },
+    {
+      "japanese": "身体は洗った？",
+      "english": "Did you wash yourself?",
+      "grade": "intermediate"
+    },
+    {
+      "japanese": "弟のです。",
+      "english": "It's my brother's.",
+      "grade": "intermediate"
+    },
+    {
+      "japanese": "これ誰のですか？",
+      "english": "Whose is this?",
+      "grade": "intermediate"
+    },
+    {
+      "japanese": "売りものです。",
+      "english": "It's for sale.",
+      "grade": "intermediate"
+    },
+    {
+      "japanese": "これは私のです。",
+      "english": "This is mine.",
+      "grade": "intermediate"
+    },
+    {
+      "japanese": "よそ者なもので。",
+      "english": "I'm a stranger here.",
+      "grade": "intermediate"
+    },
+    {
+      "japanese": "これは偽物ですか？",
+      "english": "Is this fake?",
+      "grade": "intermediate"
+    },
+    {
+      "japanese": "この傘誰のですか？",
+      "english": "Whose umbrella is this?",
+      "grade": "intermediate"
+    },
+    {
+      "japanese": "この車誰のですか？",
+      "english": "Whose car is this?",
+      "grade": "intermediate"
+    },
+    {
+      "japanese": "これ、私のですか？",
+      "english": "Is this mine?",
+      "grade": "intermediate"
+    },
+    {
+      "japanese": "それ、私のです。",
+      "english": "That is mine.",
+      "grade": "intermediate"
+    },
+    {
+      "japanese": "やけどしたの？",
+      "english": "Did you burn yourself?",
+      "grade": "intermediate"
+    },
+    {
+      "japanese": "火傷しなかった？",
+      "english": "Didn't you burn yourself?",
+      "grade": "intermediate"
+    },
+    {
+      "japanese": "けど、いらない。",
+      "english": "But I don't need it.",
+      "grade": "intermediate"
+    },
+    {
+      "japanese": "持ってないけど。",
+      "english": "I don't have it.",
+      "grade": "intermediate"
+    },
+    {
+      "japanese": "自信はないけど。",
+      "english": "I'm not confident.",
+      "grade": "intermediate"
+    },
+    {
+      "japanese": "悪いけど、無理。",
+      "english": "I'm sorry, I can't.",
+      "grade": "intermediate"
+    },
+    {
+      "japanese": "ないと思うけど。",
+      "english": "I don't think so.",
+      "grade": "intermediate"
+    },
+    {
+      "japanese": "まあ、いいけど。",
+      "english": "I guess we could.",
+      "grade": "intermediate"
+    },
+    {
+      "japanese": "大変だけど、勝つぞ！",
+      "english": "It'll be hard, but we're going to win!",
+      "grade": "intermediate"
+    },
+    {
+      "japanese": "頼んでませんけど。",
+      "english": "We didn't order that.",
+      "grade": "intermediate"
+    },
+    {
+      "japanese": "食べてから寝たよ。",
+      "english": "After we ate, we went to sleep.",
+      "grade": "intermediate"
+    },
+    {
+      "japanese": "帰ってから勉強するよ。",
+      "english": "I'll study after I come home.",
+      "grade": "intermediate"
+    },
+    {
+      "japanese": "考えてから話しなさい。",
+      "english": "Think before you speak.",
+      "grade": "intermediate"
+    },
+    {
+      "japanese": "考えてから言いなさい。",
+      "english": "You should think before you speak.",
+      "grade": "intermediate"
+    },
+    {
+      "japanese": "映画を見てから寝ようよ。",
+      "english": "Let's watch the film and then go to bed.",
+      "grade": "intermediate"
+    },
+    {
+      "japanese": "サインしてから送ってよ。",
+      "english": "Sign it before sending it.",
+      "grade": "intermediate"
+    },
+    {
+      "japanese": "考えてから発言しなさい。",
+      "english": "You should think before you begin to speak.",
+      "grade": "intermediate"
+    },
+    {
+      "japanese": "彼が来てから出発します。",
+      "english": "I'll leave after he comes.",
+      "grade": "intermediate"
+    },
+    {
+      "japanese": "お昼ご飯食べてからやるよ。",
+      "english": "I'll do that after eating lunch.",
+      "grade": "intermediate"
+    },
+    {
+      "japanese": "宿題は、帰ってからするよ。",
+      "english": "When I get home I will do my homework.",
+      "grade": "intermediate"
+    },
+    {
+      "japanese": "何のために？",
+      "english": "For what?",
+      "grade": "intermediate"
+    },
+    {
+      "japanese": "愛のために死ねる？",
+      "english": "Can you die for love?",
+      "grade": "intermediate"
+    },
+    {
+      "japanese": "私のためにしてくれる？",
+      "english": "Will you do it for me?",
+      "grade": "intermediate"
+    },
+    {
+      "japanese": "すごく為になります。",
+      "english": "That's very helpful.",
+      "grade": "intermediate"
+    },
+    {
+      "japanese": "私のために祈ってて。",
+      "english": "Pray for me.",
+      "grade": "intermediate"
+    },
+    {
+      "japanese": "勝つためにここにいる。",
+      "english": "We're here to win.",
+      "grade": "intermediate"
+    },
+    {
+      "japanese": "トムの為にしたんでしょ？",
+      "english": "You did that for Tom, didn't you?",
+      "grade": "intermediate"
+    },
+    {
+      "japanese": "彼は生活のために働く。",
+      "english": "He works for his living.",
+      "grade": "intermediate"
+    },
+    {
+      "japanese": "彼女のために買ったんだ。",
+      "english": "I bought this for my girlfriend.",
+      "grade": "intermediate"
+    },
+    {
+      "japanese": "何で彼の為に働いているの？",
+      "english": "Why are you working for him?",
+      "grade": "intermediate"
+    },
+    {
+      "japanese": "我ながら、完璧だね。",
+      "english": "It's perfect, if I do say so myself.",
+      "grade": "intermediate"
+    },
+    {
+      "japanese": "ながら食べはやめなさい。",
+      "english": "Do stop eating while doing other things.",
+      "grade": "intermediate"
+    },
+    {
+      "japanese": "ネットに繋がらなかった。",
+      "english": "I couldn't connect to the network.",
+      "grade": "intermediate"
+    },
+    {
+      "japanese": "陰ながら応援しています。",
+      "english": "I'll support you from the sidelines.",
+      "grade": "intermediate"
+    },
+    {
+      "japanese": "彼女は涙ながらに話した。",
+      "english": "She told her story in tears.",
+      "grade": "intermediate"
+    },
+    {
+      "japanese": "残念ながらその通りです。",
+      "english": "Unfortunately, it's true.",
+      "grade": "intermediate"
+    },
+    {
+      "japanese": "残念ながらそのようです。",
+      "english": "I'm afraid so.",
+      "grade": "intermediate"
+    },
+    {
+      "japanese": "彼女は歩きながら話した。",
+      "english": "She walked and talked.",
+      "grade": "intermediate"
+    },
+    {
+      "japanese": "がっかりしながら店を出た。",
+      "english": "I left the store disappointed.",
+      "grade": "intermediate"
+    },
+    {
+      "japanese": "コーヒー飲みながら話さない？",
+      "english": "Why don't we talk over coffee?",
+      "grade": "intermediate"
+    },
+    {
+      "japanese": "私は走ることができる。",
+      "english": "I'm able to run.",
+      "grade": "intermediate"
+    },
+    {
+      "japanese": "熊は木に登る事ができる。",
+      "english": "A bear can climb a tree.",
+      "grade": "intermediate"
+    },
+    {
+      "japanese": "１０人も泊まることができる。",
+      "english": "It can accommodate as many as ten people.",
+      "grade": "intermediate"
+    },
+    {
+      "japanese": "今度は、いつ会うことができる？",
+      "english": "When can we meet again?",
+      "grade": "intermediate"
+    },
+    {
+      "japanese": "君はそれを復号することができる？",
+      "english": "Can you decode it?",
+      "grade": "intermediate"
+    },
+    {
+      "japanese": "今日家に早く帰ることができるか？",
+      "english": "Can I go home early today?",
+      "grade": "intermediate"
+    },
+    {
+      "japanese": "ハエは天井を歩くことができる。",
+      "english": "A fly can walk on the ceiling.",
+      "grade": "intermediate"
+    },
+    {
+      "japanese": "馬はとても速く走る事ができる。",
+      "english": "A horse can run very fast.",
+      "grade": "intermediate"
+    },
+    {
+      "japanese": "彼はギターを弾くことができる。",
+      "english": "He is able to play the guitar.",
+      "grade": "intermediate"
+    },
+    {
+      "japanese": "彼は日本語を話すことができる。",
+      "english": "He is able to speak Japanese.",
+      "grade": "intermediate"
+    },
+    {
+      "japanese": "試してみる。",
+      "english": "I try.",
+      "grade": "intermediate"
+    },
+    {
+      "japanese": "やってみる。",
+      "english": "I try.",
+      "grade": "intermediate"
+    },
+    {
+      "japanese": "やってみるよ。",
+      "english": "I'll give it a try.",
+      "grade": "intermediate"
+    },
+    {
+      "japanese": "調べてみるよ。",
+      "english": "I'll look into it.",
+      "grade": "intermediate"
+    },
+    {
+      "japanese": "考えてみるよ。",
+      "english": "I'll think about it.",
+      "grade": "intermediate"
+    },
+    {
+      "japanese": "直してみるよ。",
+      "english": "I'll try to fix it.",
+      "grade": "intermediate"
+    },
+    {
+      "japanese": "頑張ってみる。",
+      "english": "I try.",
+      "grade": "intermediate"
+    },
+    {
+      "japanese": "修理してみるよ。",
+      "english": "I'll try to fix it.",
+      "grade": "intermediate"
+    },
+    {
+      "japanese": "トライしてみる。",
+      "english": "I try.",
+      "grade": "intermediate"
+    },
+    {
+      "japanese": "頑張ってみるよ。",
+      "english": "I'll try my best.",
+      "grade": "intermediate"
+    },
+    {
+      "japanese": "可愛すぎて溶けてしまう。",
+      "english": "It's so cute I'm gonna melt.",
+      "grade": "intermediate"
+    },
+    {
+      "japanese": "殺されてしまうのだろうか？",
+      "english": "Are they going to kill me?",
+      "grade": "intermediate"
+    },
+    {
+      "japanese": "彼は時々くじけてしまう。",
+      "english": "He sometimes loses hope.",
+      "grade": "intermediate"
+    },
+    {
+      "japanese": "ペンキがすぐはげてしまう。",
+      "english": "This paint comes off easily.",
+      "grade": "intermediate"
+    },
+    {
+      "japanese": "僕、時々吃音してしまうんだ。",
+      "english": "I sometimes stutter.",
+      "grade": "intermediate"
+    },
+    {
+      "japanese": "甘い物にはつい手が出てしまう。",
+      "english": "I can't resist sweet things.",
+      "grade": "intermediate"
+    },
+    {
+      "japanese": "バカバカしくてつい笑ってしまう。",
+      "english": "It's ridiculous and I can't help but laugh.",
+      "grade": "intermediate"
+    },
+    {
+      "japanese": "あなたには本当に感心してしまう。",
+      "english": "I'm truly impressed with you.",
+      "grade": "intermediate"
+    },
+    {
+      "japanese": "彼女の無責任さには呆れてしまう。",
+      "english": "I'm surprised by her lack of responsibility.",
+      "grade": "intermediate"
+    },
+    {
+      "japanese": "キスしてほしい。",
+      "english": "I want you to kiss me.",
+      "grade": "intermediate"
+    },
+    {
+      "japanese": "すぐ来てほしい。",
+      "english": "I want you to come at once.",
+      "grade": "intermediate"
+    },
+    {
+      "japanese": "許してほしいのです。",
+      "english": "I ask you to forgive me.",
+      "grade": "intermediate"
+    },
+    {
+      "japanese": "何を買ってきてほしいの？",
+      "english": "What do you want me to buy for you?",
+      "grade": "intermediate"
+    },
+    {
+      "japanese": "何かしてほしいことない？",
+      "english": "Is there anything you want me to do?",
+      "grade": "intermediate"
+    },
+    {
+      "japanese": "宿題を減らしてほしい。",
+      "english": "I wish there were less homework.",
+      "grade": "intermediate"
+    },
+    {
+      "japanese": "あなたに歌ってほしい。",
+      "english": "I want you to sing.",
+      "grade": "intermediate"
+    },
+    {
+      "japanese": "私と一緒にいてほしいの。",
+      "english": "I want you to stay with me.",
+      "grade": "intermediate"
+    },
+    {
+      "japanese": "一つだけ約束してほしい。",
+      "english": "You just have to promise me one thing.",
+      "grade": "intermediate"
+    },
+    {
+      "japanese": "彼女に会ってほしいんだ。",
+      "english": "I want you to see her.",
+      "grade": "intermediate"
+    }
+  ],
+  "advanced": [
+    {
+      "japanese": "私は雨にもかかわらず出かけた。",
+      "english": "I went out in spite of the rain.",
+      "grade": "advanced"
+    },
+    {
+      "japanese": "雨にもかかわらず、私は外出した。",
+      "english": "In spite of the rain, I went out.",
+      "grade": "advanced"
+    },
+    {
+      "japanese": "彼は大雪にもかかわらず来ました。",
+      "english": "He came in spite of the heavy snow.",
+      "grade": "advanced"
+    },
+    {
+      "japanese": "嵐にもかかわらず彼は出ていった。",
+      "english": "In spite of the storm, he went out.",
+      "grade": "advanced"
+    },
+    {
+      "japanese": "私たちは雨にもかかわらず出かけた。",
+      "english": "We went out in spite of the rain.",
+      "grade": "advanced"
+    },
+    {
+      "japanese": "悪天候にもかかわらず、トムは来てくれた。",
+      "english": "Tom came in spite of the bad weather.",
+      "grade": "advanced"
+    },
+    {
+      "japanese": "彼は裕福であるにもかかわらず幸福ではない。",
+      "english": "He's rich, but he isn't happy.",
+      "grade": "advanced"
+    },
+    {
+      "japanese": "母は病弱にもかかわらず、いつもすごく明るい。",
+      "english": "My mother is always very cheerful in spite of poor health.",
+      "grade": "advanced"
+    },
+    {
+      "japanese": "トムは裕福であるにもかかわらず幸福ではない。",
+      "english": "Tom is rich, but he's not happy.",
+      "grade": "advanced"
+    },
+    {
+      "japanese": "彼は、非常に努力したにもかかわらず失敗した。",
+      "english": "He failed in spite of his great efforts.",
+      "grade": "advanced"
+    },
+    {
+      "japanese": "必ずということではありません。",
+      "english": "I made no promises.",
+      "grade": "advanced"
+    },
+    {
+      "japanese": "つまり常識を疑えということだ。",
+      "english": "In other words, you should doubt common sense.",
+      "grade": "advanced"
+    },
+    {
+      "japanese": "どうということのない１日だった。",
+      "english": "It was a day in which I have nothing much to say.",
+      "grade": "advanced"
+    },
+    {
+      "japanese": "問題はお金がないということです。",
+      "english": "The trouble is that we have no money.",
+      "grade": "advanced"
+    },
+    {
+      "japanese": "ということで、トムが嫌いなんです。",
+      "english": "That's why I don't like Tom.",
+      "grade": "advanced"
+    },
+    {
+      "japanese": "それでは、またの機会ということに。",
+      "english": "Well, let's make it some other time.",
+      "grade": "advanced"
+    },
+    {
+      "japanese": "君が嘘をついたということは明白だ。",
+      "english": "It's evident that you told a lie.",
+      "grade": "advanced"
+    },
+    {
+      "japanese": "彼が嘘をついたということは明白だ。",
+      "english": "It's obvious that he lied.",
+      "grade": "advanced"
+    },
+    {
+      "japanese": "彼女が病気だということは明らかだ。",
+      "english": "That she is ill is obvious.",
+      "grade": "advanced"
+    },
+    {
+      "japanese": "問題は彼女が未熟であるということだ。",
+      "english": "The trouble is that she lacks experience.",
+      "grade": "advanced"
+    },
+    {
+      "japanese": "事件は終わったわけではない。",
+      "english": "The event isn't over yet.",
+      "grade": "advanced"
+    },
+    {
+      "japanese": "全く悪いというわけではない。",
+      "english": "That is not altogether bad.",
+      "grade": "advanced"
+    },
+    {
+      "japanese": "全く嘘と言う訳ではないんだ。",
+      "english": "That is not altogether false.",
+      "grade": "advanced"
+    },
+    {
+      "japanese": "両方とも好きなわけではない。",
+      "english": "I don't like either of them.",
+      "grade": "advanced"
+    },
+    {
+      "japanese": "全ての鳥が飛べるわけではない。",
+      "english": "Not all birds can fly.",
+      "grade": "advanced"
+    },
+    {
+      "japanese": "彼は朝いつも忙しいわけではない。",
+      "english": "He is not always busy in the morning.",
+      "grade": "advanced"
+    },
+    {
+      "japanese": "それは全く嘘というわけではない。",
+      "english": "That is not altogether false.",
+      "grade": "advanced"
+    },
+    {
+      "japanese": "誰でも詩人になれるわけではない。",
+      "english": "Not everyone can be a poet.",
+      "grade": "advanced"
+    },
+    {
+      "japanese": "彼らがみんな貧しいわけではない。",
+      "english": "All of them are not poor.",
+      "grade": "advanced"
+    },
+    {
+      "japanese": "母はいつも家にいるわけではない。",
+      "english": "My mother is not always at home.",
+      "grade": "advanced"
+    },
+    {
+      "japanese": "君は学生にすぎない。",
+      "english": "You are nothing but a student.",
+      "grade": "advanced"
+    },
+    {
+      "japanese": "彼は臆病者にすぎない。",
+      "english": "He is nothing more than a coward.",
+      "grade": "advanced"
+    },
+    {
+      "japanese": "愛は作りごとにすぎない。",
+      "english": "Love is only an invention.",
+      "grade": "advanced"
+    },
+    {
+      "japanese": "彼はうそつきにすぎない。",
+      "english": "He is nothing but a liar.",
+      "grade": "advanced"
+    },
+    {
+      "japanese": "それは言葉の綾にすぎない。",
+      "english": "That's nothing but a figure of speech.",
+      "grade": "advanced"
+    },
+    {
+      "japanese": "彼はアマチュアにすぎない。",
+      "english": "He is just an amateur.",
+      "grade": "advanced"
+    },
+    {
+      "japanese": "彼女はまだ子供にすぎない。",
+      "english": "She's but a child.",
+      "grade": "advanced"
+    },
+    {
+      "japanese": "トムはアマチュアにすぎない。",
+      "english": "Tom is just an amateur.",
+      "grade": "advanced"
+    },
+    {
+      "japanese": "人生は、はかない夢にすぎない。",
+      "english": "Life is but an empty dream.",
+      "grade": "advanced"
+    },
+    {
+      "japanese": "トムにとって幸せって何？",
+      "english": "What's happiness for you, Tom?",
+      "grade": "advanced"
+    },
+    {
+      "japanese": "あなたにとって幸せって何？",
+      "english": "What is happiness to you?",
+      "grade": "advanced"
+    },
+    {
+      "japanese": "水は人間にとって大切だ。",
+      "english": "Water is important for humans.",
+      "grade": "advanced"
+    },
+    {
+      "japanese": "私にとって、特別な日でした。",
+      "english": "It was a special day for me.",
+      "grade": "advanced"
+    },
+    {
+      "japanese": "人間は人間にとって狼である。",
+      "english": "Man is a wolf to man.",
+      "grade": "advanced"
+    },
+    {
+      "japanese": "私にとってお金って重要なもの？",
+      "english": "Is money important to me?",
+      "grade": "advanced"
+    },
+    {
+      "japanese": "それは誰にとっても同じだよ。",
+      "english": "It's the same for everyone.",
+      "grade": "advanced"
+    },
+    {
+      "japanese": "俺にとっては簡単じゃないよ。",
+      "english": "It's not easy for me.",
+      "grade": "advanced"
+    },
+    {
+      "japanese": "その責任は彼にとって重荷だ。",
+      "english": "That responsibility is a burden to him.",
+      "grade": "advanced"
+    },
+    {
+      "japanese": "彼は君に対して怒っている。",
+      "english": "He is angry with you.",
+      "grade": "advanced"
+    },
+    {
+      "japanese": "彼は誰に対しても腰が低い。",
+      "english": "He is humble towards everyone.",
+      "grade": "advanced"
+    },
+    {
+      "japanese": "彼女は美に対して眼識がある。",
+      "english": "She has an eye for the beautiful.",
+      "grade": "advanced"
+    },
+    {
+      "japanese": "私は北に対して西側にいます。",
+      "english": "I am located on the North-west side.",
+      "grade": "advanced"
+    },
+    {
+      "japanese": "私は西に対して東側にいます。",
+      "english": "I'm to the east of the west.",
+      "grade": "advanced"
+    },
+    {
+      "japanese": "私に対して怒ってるんでしょう。",
+      "english": "You're angry with me, aren't you?",
+      "grade": "advanced"
+    },
+    {
+      "japanese": "あの監督は批判に対して敏感だ。",
+      "english": "The director is sensitive to criticism.",
+      "grade": "advanced"
+    },
+    {
+      "japanese": "彼女は誰に対しても感じがいい。",
+      "english": "She is friendly to everybody.",
+      "grade": "advanced"
+    },
+    {
+      "japanese": "カレンは私に対して怒っている。",
+      "english": "Karen is angry with me.",
+      "grade": "advanced"
+    },
+    {
+      "japanese": "年によって違います。",
+      "english": "Each year is different.",
+      "grade": "advanced"
+    },
+    {
+      "japanese": "脇によってください。",
+      "english": "Please step aside.",
+      "grade": "advanced"
+    },
+    {
+      "japanese": "国によって習慣は異なる。",
+      "english": "Countries vary in customs and habits.",
+      "grade": "advanced"
+    },
+    {
+      "japanese": "価格が需要によって変わる。",
+      "english": "The price varies with demand.",
+      "grade": "advanced"
+    },
+    {
+      "japanese": "熱によって氷は水に変わる。",
+      "english": "Heat turns ice into water.",
+      "grade": "advanced"
+    },
+    {
+      "japanese": "ちょっと銀行によってくる。",
+      "english": "I'm just going to run down to the bank.",
+      "grade": "advanced"
+    },
+    {
+      "japanese": "文化は国々によって異なる。",
+      "english": "Countries differ in culture.",
+      "grade": "advanced"
+    },
+    {
+      "japanese": "例によって、トムは遅刻した。",
+      "english": "As usual, Tom was late.",
+      "grade": "advanced"
+    },
+    {
+      "japanese": "音楽の好みは人によって違う。",
+      "english": "Tastes in music vary from person to person.",
+      "grade": "advanced"
+    },
+    {
+      "japanese": "嵐によって多くの人が死んだ。",
+      "english": "Many people were killed as a result of the storm.",
+      "grade": "advanced"
+    },
+    {
+      "japanese": "鳥が囀る。",
+      "english": "Birds sing.",
+      "grade": "advanced"
+    },
+    {
+      "japanese": "鼻を押さえて。",
+      "english": "Plug your nose.",
+      "grade": "advanced"
+    },
+    {
+      "japanese": "私って冴えてる！",
+      "english": "I'm smart.",
+      "grade": "advanced"
+    },
+    {
+      "japanese": "水さえあればいい。",
+      "english": "We only need water.",
+      "grade": "advanced"
+    },
+    {
+      "japanese": "気分が冴えないな。",
+      "english": "I'm not feeling very well.",
+      "grade": "advanced"
+    },
+    {
+      "japanese": "戸を押さえてくれ。",
+      "english": "Hold the door.",
+      "grade": "advanced"
+    },
+    {
+      "japanese": "鳥のさえずり、聞いた？",
+      "english": "Did you hear the birds tweeting?",
+      "grade": "advanced"
+    },
+    {
+      "japanese": "まだ気分が冴えないの？",
+      "english": "Are you still not feeling well?",
+      "grade": "advanced"
+    },
+    {
+      "japanese": "挨拶さえしなかった。",
+      "english": "He didn't even say hello.",
+      "grade": "advanced"
+    },
+    {
+      "japanese": "汚染は抑えられます。",
+      "english": "Pollution can be controlled.",
+      "grade": "advanced"
+    },
+    {
+      "japanese": "ようこそ！",
+      "english": "Welcome.",
+      "grade": "advanced"
+    },
+    {
+      "japanese": "ようこそ。",
+      "english": "Welcome.",
+      "grade": "advanced"
+    },
+    {
+      "japanese": "こちらこそ。",
+      "english": "The pleasure is mine.",
+      "grade": "advanced"
+    },
+    {
+      "japanese": "Tatoebaへようこそ！",
+      "english": "Welcome to Tatoeba!",
+      "grade": "advanced"
+    },
+    {
+      "japanese": "現実へようこそ！",
+      "english": "Welcome to the real world!",
+      "grade": "advanced"
+    },
+    {
+      "japanese": "Tatoebaへようこそ。",
+      "english": "Welcome to Tatoeba!",
+      "grade": "advanced"
+    },
+    {
+      "japanese": "彼って賢そうね。",
+      "english": "He looks like a clever boy.",
+      "grade": "advanced"
+    },
+    {
+      "japanese": "地獄へようこそ。",
+      "english": "Welcome to hell!",
+      "grade": "advanced"
+    },
+    {
+      "japanese": "日本へようこそ。",
+      "english": "Welcome to Japan.",
+      "grade": "advanced"
+    },
+    {
+      "japanese": "トムって、賢そう。",
+      "english": "Tom seems clever.",
+      "grade": "advanced"
+    }
+  ]
+}
