@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm create *)",
+      "Bash(npm install *)",
+      "Bash(npm run *)",
+      "Bash(open *)",
+      "Bash(npx vite *)",
+      "Bash(npx vercel *)",
+      "Bash(node -e ' *)",
+      "Bash(grep -c \"title:\" grammar.js)",
+      "Bash(npm search *)",
+      "Bash(node scripts/fetch-vocab.js)",
+      "Bash(node scripts/fetch-sentences.js)",
+      "Bash(git commit -m ' *)",
+      "Bash(git push *)",
+      "Bash(gh auth *)",
+      "Bash(git remote *)",
+      "Bash(git ls-remote *)"
+    ]
+  }
+}
