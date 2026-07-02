@@ -18,7 +18,11 @@
       "Bash(git remote *)",
       "Bash(git ls-remote *)",
       "Bash(git config *)",
-      "Bash(git add *)"
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(brew install *)",
+      "Bash(echo \"EXIT:$?\")",
+      "Bash(mdfind -onlyin ~ 'kMDItemFSName == '\\\\''Screenshot*'\\\\'' && kMDItemFSContentChangeDate >= $time.now\\(-1800\\)')"
     ]
   }
 }
