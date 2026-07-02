@@ -1,26 +1,40 @@
 import { useState, useEffect } from "react";
+import { getCaliforniaToday } from "../data/curriculum";
 
-const KEY = "jp_daily";
+const PROFILE_KEY = "jp_profile";
 
-function load() {
-  try { return JSON.parse(localStorage.getItem(KEY)) || {}; }
+export function getStoredProfile() {
+  return localStorage.getItem(PROFILE_KEY) || null;
+}
+
+export function setStoredProfile(name) {
+  localStorage.setItem(PROFILE_KEY, name);
+}
+
+function dailyKey(profileName) {
+  return `jp_daily_${profileName}`;
+}
+
+function load(profileName) {
+  try { return JSON.parse(localStorage.getItem(dailyKey(profileName))) || {}; }
   catch { return {}; }
 }
 
-// 로컬 시간 기준 "2026-06-27" 형태 키 — toISOString()은 UTC라 timezone 버그 있음
-function dateKey(date = new Date()) {
-  const y = date.getFullYear();
-  const m = String(date.getMonth() + 1).padStart(2, "0");
-  const d = String(date.getDate()).padStart(2, "0");
-  return `${y}-${m}-${d}`;
+// 캘리포니아(LA) 기준 "YYYY-MM-DD" 키. date 인자 없으면 오늘(CA) 반환
+function dateKey(date = null) {
+  const d = date || getCaliforniaToday();
+  const y = d.getFullYear();
+  const m = String(d.getMonth() + 1).padStart(2, "0");
+  const day = String(d.getDate()).padStart(2, "0");
+  return `${y}-${m}-${day}`;
 }
 
-export function useDailyProgress() {
-  const [daily, setDaily] = useState(load);
+export function useDailyProgress(profileName) {
+  const [daily, setDaily] = useState(() => load(profileName));
 
   useEffect(() => {
-    localStorage.setItem(KEY, JSON.stringify(daily));
-  }, [daily]);
+    localStorage.setItem(dailyKey(profileName), JSON.stringify(daily));
+  }, [daily, profileName]);
 
   function markTask(task, dayKey = dateKey()) {
     setDaily(prev => ({
@@ -39,7 +53,7 @@ export function useDailyProgress() {
 
   function getStreak() {
     let streak = 0;
-    const today = new Date();
+    const today = getCaliforniaToday();
     for (let i = 0; i < 365; i++) {
       const d = new Date(today);
       d.setDate(d.getDate() - i);
@@ -53,7 +67,7 @@ export function useDailyProgress() {
   }
 
   function getWeekStatus() {
-    const today = new Date();
+    const today = getCaliforniaToday();
     return Array.from({ length: 7 }, (_, i) => {
       const d = new Date(today);
       d.setDate(d.getDate() - (6 - i));

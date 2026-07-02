@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { grammarLessons } from "../data/grammar";
+import Furigana from "./Furigana";
 
 function speak(text) {
   const utt = new SpeechSynthesisUtterance(text);
@@ -14,7 +15,7 @@ function ExampleRow({ ex }) {
       className="bg-gray-50 rounded-xl p-3 cursor-pointer hover:bg-indigo-50 transition-colors"
       onClick={() => speak(ex.japanese)}
     >
-      <p className="text-lg text-gray-800">{ex.japanese}</p>
+      <Furigana japanese={ex.japanese} reading={ex.reading} className="text-lg text-gray-800" />
       <p className="text-sm text-indigo-500 mt-0.5">{ex.reading}</p>
       <p className="text-sm text-gray-500">{ex.meaning}</p>
     </div>

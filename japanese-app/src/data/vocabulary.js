@@ -520,7 +520,7 @@ const WORDS_PER_DAY = 10;
 
 function getDaysSinceStart() {
   const now = new Date();
-  const start = new Date(2026, 5, 27); // 로컬 시간 기준
+  const start = new Date(2026, 5, 28); // 로컬 시간 기준
   const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
   return Math.max(0, Math.floor((today - start) / (1000 * 60 * 60 * 24)));
 }

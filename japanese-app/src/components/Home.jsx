@@ -67,7 +67,6 @@ export default function Home({ onNavigate, todayDone, streak, weekStatus, daily 
   const tasks = ["kana", "words", "grammar", "sentence"];
   const doneCount = tasks.filter(t => todayDone[t]).length;
   const [showCalendar, setShowCalendar] = useState(false);
-  const [selectedDay, setSelectedDay] = useState(null); // 달력에서 선택한 날
 
   const motivations = [
     "오늘도 파이팅! 🔥",
@@ -77,9 +76,9 @@ export default function Home({ onNavigate, todayDone, streak, weekStatus, daily 
   ];
   const motivation = motivations[dayNum % motivations.length];
 
-  function handleCalendarSelect(d) {
+  function handleCalendarSelect(d, task) {
     setShowCalendar(false);
-    if (d !== dayNum) setSelectedDay(d);
+    if (task) onNavigate(task, d);
   }
 
   return (
@@ -139,28 +138,6 @@ export default function Home({ onNavigate, todayDone, streak, weekStatus, daily 
           <p className="text-2xl mb-1">🎉</p>
           <p className="font-bold text-green-700">오늘 학습 완료!</p>
           <p className="text-sm text-green-600 mt-1">내일 또 만나요 またね！</p>
-        </div>
-      )}
-
-      {/* 선택한 과거 날 복습 */}
-      {selectedDay && selectedDay !== dayNum && (
-        <div className="bg-indigo-50 border border-indigo-200 rounded-2xl p-4">
-          <div className="flex items-center justify-between mb-3">
-            <p className="text-sm font-semibold text-indigo-700">Day {selectedDay} 복습</p>
-            <button onClick={() => setSelectedDay(null)} className="text-indigo-400 text-sm">✕</button>
-          </div>
-          <p className="text-xs text-indigo-400 mb-3">{getDayLesson(selectedDay).theme}</p>
-          <div className="flex gap-2 flex-wrap">
-            {tasks.map(t => (
-              <button
-                key={t}
-                onClick={() => onNavigate(t, selectedDay)}
-                className="px-3 py-2 bg-white border border-indigo-200 rounded-xl text-sm text-indigo-600 hover:bg-indigo-100 transition-colors"
-              >
-                {TASK_META[t].label}
-              </button>
-            ))}
-          </div>
         </div>
       )}
 

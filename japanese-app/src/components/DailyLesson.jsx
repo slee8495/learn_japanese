@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { getDayNumber, getDayLesson } from "../data/curriculum";
+import Furigana from "./Furigana";
 
 function speak(text) {
   const utt = new SpeechSynthesisUtterance(text);
@@ -128,7 +129,7 @@ function WordsSection({ lesson, onDone }) {
         className="w-full max-w-sm py-12 bg-white rounded-3xl shadow-lg border border-gray-100 flex flex-col items-center cursor-pointer"
         onClick={() => speak(current.japanese)}
       >
-        <span className="text-5xl">{current.japanese}</span>
+        <Furigana japanese={current.japanese} reading={current.reading} className="text-5xl" />
         <p className="text-gray-300 text-sm mt-3">탭하면 발음 🔊</p>
       </div>
       {!revealed ? (
@@ -186,7 +187,7 @@ function GrammarSection({ lesson, onDone }) {
               className="bg-white rounded-2xl border border-gray-100 shadow-sm p-4 cursor-pointer"
               onClick={() => speak(ex.j)}
             >
-              <p className="text-lg text-gray-800">{ex.j}</p>
+              <Furigana japanese={ex.j} reading={ex.r} className="text-lg text-gray-800" />
               <p className="text-sm text-indigo-500 mt-0.5">{ex.r}</p>
               <p className="text-sm text-gray-500">{ex.m}</p>
             </div>
@@ -223,7 +224,7 @@ function SentenceSection({ lesson, onDone }) {
         className="w-full max-w-sm py-10 bg-white rounded-3xl shadow-lg border border-gray-100 flex flex-col items-center gap-3 cursor-pointer px-6 text-center"
         onClick={() => speak(current.japanese)}
       >
-        <span className="text-2xl font-medium text-gray-800">{current.japanese}</span>
+        <Furigana japanese={current.japanese} reading={current.reading} className="text-2xl font-medium text-gray-800" />
         <p className="text-gray-300 text-sm">탭하면 발음 🔊</p>
       </div>
       {!revealed ? (

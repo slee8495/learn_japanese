@@ -1,5 +1,6 @@
 import { useState, useMemo } from "react";
 import jlptWords from "../data/jlpt-words.json";
+import Furigana from "./Furigana";
 
 const LEVELS = [
   { id: "n5", label: "N5", sub: "기초 (100개)", color: "bg-green-100 text-green-700" },
@@ -32,7 +33,7 @@ function WordCard({ word }) {
     >
       <div className="flex items-start justify-between gap-2">
         <div className="flex-1 min-w-0">
-          <p className="text-2xl font-medium text-gray-800">{word.japanese}</p>
+          <Furigana japanese={word.japanese} reading={word.reading} className="text-2xl font-medium text-gray-800" />
           {flipped ? (
             <div className="mt-1">
               <p className="text-sm text-indigo-500">{word.reading}</p>

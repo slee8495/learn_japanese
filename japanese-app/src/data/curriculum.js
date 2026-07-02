@@ -3,50 +3,50 @@ import tateobaSentences from "./tatoeba-sentences.json";
 
 // ── 문장 데이터 ───────────────────────────────────────────────
 const sentences = [
-  { japanese: "おはようございます", reading: "ohayou gozaimasu", meaning: "좋은 아침입니다" },
-  { japanese: "こんにちは、げんきですか", reading: "konnichiwa, genki desu ka", meaning: "안녕하세요, 잘 지내세요?" },
-  { japanese: "はい、げんきです。ありがとう", reading: "hai, genki desu. arigatou", meaning: "네, 잘 지내요. 고마워요" },
-  { japanese: "わたしはがくせいです", reading: "watashi wa gakusei desu", meaning: "저는 학생이에요" },
-  { japanese: "わたしはかんこくじんです", reading: "watashi wa kankokujin desu", meaning: "저는 한국인이에요" },
-  { japanese: "きょうはなんにちですか", reading: "kyou wa nan nichi desu ka", meaning: "오늘은 며칠이에요?" },
-  { japanese: "いま、なんじですか", reading: "ima, nanji desu ka", meaning: "지금 몇 시예요?" },
-  { japanese: "さんじはんです", reading: "sanji han desu", meaning: "3시 반이에요" },
-  { japanese: "トイレはどこですか", reading: "toire wa doko desu ka", meaning: "화장실이 어디예요?" },
-  { japanese: "えきはこのちかくにありますか", reading: "eki wa kono chikaku ni arimasu ka", meaning: "역이 이 근처에 있어요?" },
-  { japanese: "まっすぐいってください", reading: "massugu itte kudasai", meaning: "똑바로 가 주세요" },
-  { japanese: "これはいくらですか", reading: "kore wa ikura desu ka", meaning: "이건 얼마예요?" },
-  { japanese: "すこしやすくしてください", reading: "sukoshi yasuku shite kudasai", meaning: "조금 싸게 해 주세요" },
-  { japanese: "これをひとつください", reading: "kore wo hitotsu kudasai", meaning: "이거 하나 주세요" },
-  { japanese: "メニューをみせてください", reading: "menyuu wo misete kudasai", meaning: "메뉴 보여 주세요" },
-  { japanese: "おすすめはなんですか", reading: "osusume wa nan desu ka", meaning: "추천 메뉴가 뭐예요?" },
-  { japanese: "からくないですか", reading: "karakunai desu ka", meaning: "안 매워요?" },
-  { japanese: "おかいけいをおねがいします", reading: "okaikei wo onegaishimasu", meaning: "계산 부탁드려요" },
-  { japanese: "このでんしゃはしんじゅくにとまりますか", reading: "kono densha wa shinjuku ni tomarimasu ka", meaning: "이 전철은 신주쿠에 서요?" },
-  { japanese: "つぎのえきでおります", reading: "tsugi no eki de orimasu", meaning: "다음 역에서 내려요" },
-  { japanese: "すみません、えいごがわかりますか", reading: "sumimasen, eigo ga wakarimasu ka", meaning: "저기요, 영어를 아세요?" },
-  { japanese: "もういちどいってください", reading: "mou ichido itte kudasai", meaning: "한 번 더 말해 주세요" },
-  { japanese: "にほんごがすこしわかります", reading: "nihongo ga sukoshi wakarimasu", meaning: "일본어를 조금 알아요" },
-  { japanese: "たのしかったです！またあいましょう", reading: "tanoshikatta desu! mata aimashou", meaning: "즐거웠어요! 또 만나요" },
-  { japanese: "それはすごいですね", reading: "sore wa sugoi desu ne", meaning: "그건 대단하네요" },
-  { japanese: "ほんとうにたのしいです", reading: "hontou ni tanoshii desu", meaning: "정말 즐거워요" },
-  { japanese: "すこしつかれました", reading: "sukoshi tsukaremashita", meaning: "조금 피곤해요" },
-  { japanese: "もっとべんきょうしなければなりません", reading: "motto benkyou shinakereba narimasen", meaning: "더 공부해야 해요" },
-  { japanese: "にほんごがだんだんわかってきました", reading: "nihongo ga dandan wakatte kimashita", meaning: "일본어를 점점 알게 됐어요" },
-  { japanese: "もしよかったら、いっしょにいきませんか", reading: "moshi yokattara, issho ni ikimasen ka", meaning: "괜찮으면 같이 안 갈래요?" },
-  { japanese: "そのことについてどうおもいますか", reading: "sono koto ni tsuite dou omoimasu ka", meaning: "그것에 대해 어떻게 생각해요?" },
-  { japanese: "やってみなければわかりません", reading: "yatte minakereba wakarimasen", meaning: "해보지 않으면 몰라요" },
-  { japanese: "むずかしいけど、たのしいとおもいます", reading: "muzukashii kedo, tanoshii to omoimasu", meaning: "어렵지만 즐겁다고 생각해요" },
-  { japanese: "にほんにいったことがありますか", reading: "nihon ni itta koto ga arimasu ka", meaning: "일본에 간 적 있어요?" },
-  { japanese: "すしをたべたことがあります", reading: "sushi wo tabeta koto ga arimasu", meaning: "초밥을 먹어 본 적 있어요" },
-  { japanese: "まいにちすこしずつれんしゅうすれば、かならずうまくなります", reading: "mainichi sukoshi zutsu renshuu sureba, kanarazu umaku narimasu", meaning: "매일 조금씩 연습하면 반드시 잘하게 돼요" },
-  { japanese: "じかんがあれば、いっしょにえいがをみませんか", reading: "jikan ga areba, issho ni eiga wo mimasen ka", meaning: "시간 있으면 같이 영화 안 볼래요?" },
-  { japanese: "かれはにほんごがじょうずなわけだ、10ねんべんきょうしたから", reading: "kare wa nihongo ga jouzu na wake da, juu nen benkyou shita kara", meaning: "그가 일본어를 잘하는 건 당연해, 10년 공부했으니까" },
-  { japanese: "このケーキはおいしそうですね", reading: "kono keeki wa oishisou desu ne", meaning: "이 케이크 맛있어 보이죠?" },
-  { japanese: "てんきよほうによると、あしたはゆきがふるそうです", reading: "tenki yohou ni yoru to, ashita wa yuki ga furu sou desu", meaning: "일기예보에 의하면 내일은 눈이 온답니다" },
-  { japanese: "わすれないように、てちょうにかいておきました", reading: "wasurenai you ni, techou ni kaite okimashita", meaning: "잊지 않도록 수첩에 써뒀어요" },
-  { japanese: "にほんごをはなせるようになりたいです", reading: "nihongo wo hanaseru you ni naritai desu", meaning: "일본어를 말할 수 있게 되고 싶어요" },
-  { japanese: "さいふをわすれてきてしまいました", reading: "saifu wo wasurete kite shimaimashita", meaning: "지갑을 놓고 와버렸어요" },
-  { japanese: "おんがくをききながら、べんきょうするのがすきです", reading: "ongaku wo kikinagara, benkyou suru no ga suki desu", meaning: "음악을 들으면서 공부하는 것을 좋아해요" },
+  { japanese: "おはようございます", reading: "おはようございます", meaning: "좋은 아침입니다" },
+  { japanese: "こんにちは、元気ですか", reading: "こんにちは、げんきですか", meaning: "안녕하세요, 잘 지내세요?" },
+  { japanese: "はい、元気です。ありがとう", reading: "はい、げんきです。ありがとう", meaning: "네, 잘 지내요. 고마워요" },
+  { japanese: "私は学生です", reading: "わたしはがくせいです", meaning: "저는 학생이에요" },
+  { japanese: "私は韓国人です", reading: "わたしはかんこくじんです", meaning: "저는 한국인이에요" },
+  { japanese: "今日は何日ですか", reading: "きょうはなんにちですか", meaning: "오늘은 며칠이에요?" },
+  { japanese: "今、何時ですか", reading: "いま、なんじですか", meaning: "지금 몇 시예요?" },
+  { japanese: "3時半です", reading: "さんじはんです", meaning: "3시 반이에요" },
+  { japanese: "トイレはどこですか", reading: "トイレはどこですか", meaning: "화장실이 어디예요?" },
+  { japanese: "駅はこの近くにありますか", reading: "えきはこのちかくにありますか", meaning: "역이 이 근처에 있어요?" },
+  { japanese: "まっすぐ行ってください", reading: "まっすぐいってください", meaning: "똑바로 가 주세요" },
+  { japanese: "これはいくらですか", reading: "これはいくらですか", meaning: "이건 얼마예요?" },
+  { japanese: "少し安くしてください", reading: "すこしやすくしてください", meaning: "조금 싸게 해 주세요" },
+  { japanese: "これを一つください", reading: "これをひとつください", meaning: "이거 하나 주세요" },
+  { japanese: "メニューを見せてください", reading: "メニューをみせてください", meaning: "메뉴 보여 주세요" },
+  { japanese: "おすすめは何ですか", reading: "おすすめはなんですか", meaning: "추천 메뉴가 뭐예요?" },
+  { japanese: "辛くないですか", reading: "からくないですか", meaning: "안 매워요?" },
+  { japanese: "お会計をお願いします", reading: "おかいけいをおねがいします", meaning: "계산 부탁드려요" },
+  { japanese: "この電車は新宿に止まりますか", reading: "このでんしゃはしんじゅくにとまりますか", meaning: "이 전철은 신주쿠에 서요?" },
+  { japanese: "次の駅で降ります", reading: "つぎのえきでおります", meaning: "다음 역에서 내려요" },
+  { japanese: "すみません、英語が分かりますか", reading: "すみません、えいごがわかりますか", meaning: "저기요, 영어를 아세요?" },
+  { japanese: "もう一度言ってください", reading: "もういちどいってください", meaning: "한 번 더 말해 주세요" },
+  { japanese: "日本語が少し分かります", reading: "にほんごがすこしわかります", meaning: "일본어를 조금 알아요" },
+  { japanese: "楽しかったです！また会いましょう", reading: "たのしかったです！またあいましょう", meaning: "즐거웠어요! 또 만나요" },
+  { japanese: "それはすごいですね", reading: "それはすごいですね", meaning: "그건 대단하네요" },
+  { japanese: "本当に楽しいです", reading: "ほんとうにたのしいです", meaning: "정말 즐거워요" },
+  { japanese: "少し疲れました", reading: "すこしつかれました", meaning: "조금 피곤해요" },
+  { japanese: "もっと勉強しなければなりません", reading: "もっとべんきょうしなければなりません", meaning: "더 공부해야 해요" },
+  { japanese: "日本語がだんだん分かってきました", reading: "にほんごがだんだんわかってきました", meaning: "일본어를 점점 알게 됐어요" },
+  { japanese: "もしよかったら、一緒に行きませんか", reading: "もしよかったら、いっしょにいきませんか", meaning: "괜찮으면 같이 안 갈래요?" },
+  { japanese: "そのことについてどう思いますか", reading: "そのことについてどうおもいますか", meaning: "그것에 대해 어떻게 생각해요?" },
+  { japanese: "やってみなければ分かりません", reading: "やってみなければわかりません", meaning: "해보지 않으면 몰라요" },
+  { japanese: "難しいけど、楽しいと思います", reading: "むずかしいけど、たのしいとおもいます", meaning: "어렵지만 즐겁다고 생각해요" },
+  { japanese: "日本に行ったことがありますか", reading: "にほんにいったことがありますか", meaning: "일본에 간 적 있어요?" },
+  { japanese: "寿司を食べたことがあります", reading: "すしをたべたことがあります", meaning: "초밥을 먹어 본 적 있어요" },
+  { japanese: "毎日少しずつ練習すれば、必ずうまくなります", reading: "まいにちすこしずつれんしゅうすれば、かならずうまくなります", meaning: "매일 조금씩 연습하면 반드시 잘하게 돼요" },
+  { japanese: "時間があれば、一緒に映画を見ませんか", reading: "じかんがあれば、いっしょにえいがをみませんか", meaning: "시간 있으면 같이 영화 안 볼래요?" },
+  { japanese: "彼は日本語が上手なわけだ、10年勉強したから", reading: "かれはにほんごがじょうずなわけだ、じゅうねんべんきょうしたから", meaning: "그가 일본어를 잘하는 건 당연해, 10년 공부했으니까" },
+  { japanese: "このケーキはおいしそうですね", reading: "このケーキはおいしそうですね", meaning: "이 케이크 맛있어 보이죠?" },
+  { japanese: "天気予報によると、明日は雪が降るそうです", reading: "てんきよほうによると、あしたはゆきがふるそうです", meaning: "일기예보에 의하면 내일은 눈이 온답니다" },
+  { japanese: "忘れないように、手帳に書いておきました", reading: "わすれないように、てちょうにかいておきました", meaning: "잊지 않도록 수첩에 써뒀어요" },
+  { japanese: "日本語を話せるようになりたいです", reading: "にほんごをはなせるようになりたいです", meaning: "일본어를 말할 수 있게 되고 싶어요" },
+  { japanese: "財布を忘れてきてしまいました", reading: "さいふをわすれてきてしまいました", meaning: "지갑을 놓고 와버렸어요" },
+  { japanese: "音楽を聴きながら、勉強するのが好きです", reading: "おんがくをききながら、べんきょうするのがすきです", meaning: "음악을 들으면서 공부하는 것을 좋아해요" },
 ];
 
 // Tatoeba 문장을 기존 형식으로 변환해 합치기
@@ -488,185 +488,185 @@ const grammarPool = [
   { title: "です — ~이에요/입니다", level: "N5",
     rule: "명사/형용사 + です → 정중한 문장",
     examples: [
-      { j: "がくせいです", r: "gakusei desu", m: "학생이에요" },
-      { j: "にほんごはたのしいです", r: "nihongo wa tanoshii desu", m: "일본어는 즐거워요" },
+      { j: "学生です", r: "gakusei desu", m: "학생이에요" },
+      { j: "日本語は楽しいです", r: "nihongo wa tanoshii desu", m: "일본어는 즐거워요" },
     ], tip: "부정은 ではありません. 과거는 でした." },
   { title: "は — 주제 표시 (~은/는)", level: "N5",
     rule: "주제 + は + 서술 → '~은/는 ~이에요'",
     examples: [
-      { j: "わたしはかんこくじんです", r: "watashi wa kankokujin desu", m: "저는 한국인이에요" },
-      { j: "これはほんです", r: "kore wa hon desu", m: "이것은 책이에요" },
+      { j: "私は韓国人です", r: "watashi wa kankokujin desu", m: "저는 한국인이에요" },
+      { j: "これは本です", r: "kore wa hon desu", m: "이것은 책이에요" },
     ], tip: "は는 'wa'로 읽어요. 문자는 は(ha)지만 발음은 wa." },
   { title: "が — 주어 강조 (~이/가)", level: "N5",
     rule: "새 정보나 특정 대상을 강조할 때 が를 써요",
     examples: [
       { j: "どれがいいですか", r: "dore ga ii desu ka", m: "어느 것이 좋아요?" },
-      { j: "あのひとがせんせいです", r: "ano hito ga sensei desu", m: "저 분이 선생님이에요" },
+      { j: "あの人が先生です", r: "ano hito ga sensei desu", m: "저 분이 선생님이에요" },
     ], tip: "처음엔 は만 써도 돼요. が는 점차 감이 생겨요." },
   { title: "を — 목적어 (~을/를)", level: "N5",
     rule: "동작의 대상 앞에 를 붙여요",
     examples: [
-      { j: "ごはんをたべます", r: "gohan wo tabemasu", m: "밥을 먹어요" },
-      { j: "にほんごをべんきょうします", r: "nihongo wo benkyou shimasu", m: "일본어를 공부해요" },
+      { j: "ご飯を食べます", r: "gohan wo tabemasu", m: "밥을 먹어요" },
+      { j: "日本語を勉強します", r: "nihongo wo benkyou shimasu", m: "일본어를 공부해요" },
     ], tip: "を는 'wo'로 읽지만 실제 발음은 'o'에 가까워요." },
   { title: "に — 방향/장소 (~에/에게)", level: "N5",
     rule: "목적지, 존재 장소, 시간 앞에 に를 써요",
     examples: [
-      { j: "がっこうにいきます", r: "gakkou ni ikimasu", m: "학교에 가요" },
-      { j: "へやにいます", r: "heya ni imasu", m: "방에 있어요" },
+      { j: "学校に行きます", r: "gakkou ni ikimasu", m: "학교에 가요" },
+      { j: "部屋にいます", r: "heya ni imasu", m: "방에 있어요" },
     ], tip: "で는 행동 장소, に는 존재/도착 장소." },
   { title: "で — 장소/수단 (~에서/로)", level: "N5",
     rule: "행동이 일어나는 장소, 또는 이동 수단 앞에 で를 써요",
     examples: [
-      { j: "としょかんでよみます", r: "toshokan de yomimasu", m: "도서관에서 읽어요" },
-      { j: "でんしゃでいきます", r: "densha de ikimasu", m: "전철로 가요" },
-    ], tip: "수단·방법에도 써요: にほんごではなしましょう" },
+      { j: "図書館で読みます", r: "toshokan de yomimasu", m: "도서관에서 읽어요" },
+      { j: "電車で行きます", r: "densha de ikimasu", m: "전철로 가요" },
+    ], tip: "수단·방법에도 써요: 日本語で話しましょう" },
   { title: "~ます — 정중한 동사 활용", level: "N5",
     rule: "동사 기본형 → ます형: たべる→たべます, いく→いきます",
     examples: [
-      { j: "まいにちべんきょうします", r: "mainichi benkyou shimasu", m: "매일 공부해요" },
-      { j: "あしたいきます", r: "ashita ikimasu", m: "내일 가요" },
+      { j: "毎日勉強します", r: "mainichi benkyou shimasu", m: "매일 공부해요" },
+      { j: "明日行きます", r: "ashita ikimasu", m: "내일 가요" },
     ], tip: "부정: ~ません. 과거: ~ました. 과거부정: ~ませんでした" },
   { title: "~て形 — 동작 연결", level: "N5",
     rule: "동사를 て형으로 바꿔서 연결하거나 부탁을 표현해요",
     examples: [
-      { j: "みてください", r: "mite kudasai", m: "봐 주세요" },
-      { j: "たべてからいきます", r: "tabete kara ikimasu", m: "먹고 나서 가요" },
-      { j: "たべています", r: "tabete imasu", m: "먹고 있어요" },
+      { j: "見てください", r: "mite kudasai", m: "봐 주세요" },
+      { j: "食べてから行きます", r: "tabete kara ikimasu", m: "먹고 나서 가요" },
+      { j: "食べています", r: "tabete imasu", m: "먹고 있어요" },
     ], tip: "~てください = 부탁, ~ています = 진행중, ~てから = 순서" },
   { title: "~たい — 하고 싶다", level: "N5",
     rule: "ます형에서 ます를 제거하고 たい를 붙여요",
     examples: [
-      { j: "にほんにいきたいです", r: "nihon ni ikitai desu", m: "일본에 가고 싶어요" },
-      { j: "すしをたべたい", r: "sushi wo tabetai", m: "초밥을 먹고 싶어요" },
+      { j: "日本に行きたいです", r: "nihon ni ikitai desu", m: "일본에 가고 싶어요" },
+      { j: "寿司を食べたい", r: "sushi wo tabetai", m: "초밥을 먹고 싶어요" },
     ], tip: "부정: ~たくない. たい는 형용사처럼 활용해요." },
   { title: "~ない形 — 부정", level: "N5",
     rule: "동사를 부정형으로 바꾸는 방법",
     examples: [
-      { j: "たべない", r: "tabenai", m: "먹지 않아" },
-      { j: "いかない", r: "ikanai", m: "가지 않아" },
+      { j: "食べない", r: "tabenai", m: "먹지 않아" },
+      { j: "行かない", r: "ikanai", m: "가지 않아" },
       { j: "しない", r: "shinai", m: "하지 않아" },
     ], tip: "2그룹: る→ない. 1그룹: う단→あ단+ない. 불규칙: する→しない, くる→こない" },
   { title: "~ましょう — 함께 해요", level: "N5",
     rule: "동사 ます형 + ましょう → 제안/권유",
     examples: [
-      { j: "いっしょにたべましょう", r: "issho ni tabemashou", m: "같이 먹어요" },
-      { j: "はじめましょうか", r: "hajimemashou ka", m: "시작할까요?" },
+      { j: "一緒に食べましょう", r: "issho ni tabemashou", m: "같이 먹어요" },
+      { j: "始めましょうか", r: "hajimemashou ka", m: "시작할까요?" },
     ], tip: "~ましょうか로 물으면 더 공손한 제안이 돼요." },
   { title: "~てもいい — 해도 돼요", level: "N5",
     rule: "て형 + もいい → 허가 표현",
     examples: [
-      { j: "ここですわってもいいですか", r: "koko de suwatte mo ii desu ka", m: "여기 앉아도 돼요?" },
-      { j: "つかってもいいですよ", r: "tsukatte mo ii desu yo", m: "사용해도 돼요" },
+      { j: "ここで座ってもいいですか", r: "koko de suwatte mo ii desu ka", m: "여기 앉아도 돼요?" },
+      { j: "使ってもいいですよ", r: "tsukatte mo ii desu yo", m: "사용해도 돼요" },
     ], tip: "~てはいけない가 반대: '하면 안 돼요'" },
   { title: "~てはいけない — 금지", level: "N5",
     rule: "て형 + はいけない → ~하면 안 돼요",
     examples: [
-      { j: "ここでたばこをすってはいけません", r: "koko de tabako wo sutte wa ikemasen", m: "여기서 담배 피우면 안 돼요" },
-      { j: "ちこくしてはいけません", r: "chikoku shite wa ikemasen", m: "지각하면 안 돼요" },
+      { j: "ここでタバコを吸ってはいけません", r: "koko de tabako wo sutte wa ikemasen", m: "여기서 담배 피우면 안 돼요" },
+      { j: "遅刻してはいけません", r: "chikoku shite wa ikemasen", m: "지각하면 안 돼요" },
     ], tip: "규칙, 표지판, 경고에 자주 나와요." },
   { title: "~なくてもいい — 안 해도 돼요", level: "N5",
     rule: "ない형 → なくてもいい → 불필요 표현",
     examples: [
-      { j: "むりしなくてもいいです", r: "muri shinakute mo ii desu", m: "무리하지 않아도 돼요" },
-      { j: "きなくてもいいですよ", r: "konakute mo ii desu yo", m: "안 와도 돼요" },
+      { j: "無理しなくてもいいです", r: "muri shinakute mo ii desu", m: "무리하지 않아도 돼요" },
+      { j: "来なくてもいいですよ", r: "konakute mo ii desu yo", m: "안 와도 돼요" },
     ], tip: "영어의 'don't have to'와 같아요." },
   { title: "いる/ある — 존재 표현", level: "N5",
     rule: "いる(사람/동물) vs ある(사물/식물)",
     examples: [
-      { j: "ねこがいます", r: "neko ga imasu", m: "고양이가 있어요" },
-      { j: "へやにほんがあります", r: "heya ni hon ga arimasu", m: "방에 책이 있어요" },
+      { j: "猫がいます", r: "neko ga imasu", m: "고양이가 있어요" },
+      { j: "部屋に本があります", r: "heya ni hon ga arimasu", m: "방에 책이 있어요" },
     ], tip: "에 있다 = に + いる/ある" },
   // N4
   { title: "~から — 이유 (~이기 때문에)", level: "N4",
     rule: "이유를 직접적으로 말할 때 문장 끝에 から를 붙여요",
     examples: [
-      { j: "さむいから、まどをしめた", r: "samui kara, mado wo shimeta", m: "추워서 창문을 닫았어" },
-      { j: "すきだからべんきょうします", r: "suki dakara benkyou shimasu", m: "좋아서 공부해요" },
+      { j: "寒いから、窓を閉めた", r: "samui kara, mado wo shimeta", m: "추워서 창문을 닫았어" },
+      { j: "好きだから勉強します", r: "suki dakara benkyou shimasu", m: "좋아서 공부해요" },
     ], tip: "ので는 から보다 공손해요. 공식 자리엔 ので가 더 자연스러워요." },
   { title: "~と思います — ~라고 생각해요", level: "N4",
     rule: "자신의 생각/의견을 부드럽게 전달할 때 써요",
     examples: [
-      { j: "むずかしいとおもいます", r: "muzukashii to omoimasu", m: "어렵다고 생각해요" },
-      { j: "かれはもうきたとおもいます", r: "kare wa mou kita to omoimasu", m: "그는 이미 왔다고 생각해요" },
+      { j: "難しいと思います", r: "muzukashii to omoimasu", m: "어렵다고 생각해요" },
+      { j: "彼はもう来たと思います", r: "kare wa mou kita to omoimasu", m: "그는 이미 왔다고 생각해요" },
     ], tip: "단정짓는 것보다 부드러운 인상을 줘서 일본어 회화에서 많이 써요." },
   { title: "~たことがある — 경험", level: "N4",
     rule: "과거에 경험한 것을 말할 때 써요",
     examples: [
-      { j: "にほんにいったことがあります", r: "nihon ni itta koto ga arimasu", m: "일본에 간 적 있어요" },
-      { j: "すしをたべたことがない", r: "sushi wo tabeta koto ga nai", m: "초밥을 먹어본 적 없어요" },
+      { j: "日本に行ったことがあります", r: "nihon ni itta koto ga arimasu", m: "일본에 간 적 있어요" },
+      { j: "寿司を食べたことがない", r: "sushi wo tabeta koto ga nai", m: "초밥을 먹어본 적 없어요" },
     ], tip: "동사 た형 + ことがある/ない." },
   { title: "~かもしれない — ~일지도 몰라", level: "N4",
     rule: "확실하지 않은 추측을 표현할 때 써요",
     examples: [
-      { j: "あめがふるかもしれません", r: "ame ga furu kamo shiremasen", m: "비가 올지도 몰라요" },
-      { j: "もうおそいかも", r: "mou osoi kamo", m: "이미 늦었을지도 몰라" },
+      { j: "雨が降るかもしれません", r: "ame ga furu kamo shiremasen", m: "비가 올지도 몰라요" },
+      { j: "もう遅いかも", r: "mou osoi kamo", m: "이미 늦었을지도 몰라" },
     ], tip: "정중체: かもしれません. 캐주얼: かも." },
   { title: "~てみる — 해보다", level: "N4",
     rule: "무언가를 시도해볼 때 써요",
     examples: [
       { j: "やってみます", r: "yatte mimasu", m: "해볼게요" },
-      { j: "たべてみてください", r: "tabete mite kudasai", m: "먹어 보세요" },
+      { j: "食べてみてください", r: "tabete mite kudasai", m: "먹어 보세요" },
     ], tip: "~てみる는 '시도/경험'의 뉘앙스." },
   { title: "~なければならない — 해야 해요", level: "N4",
     rule: "의무나 필요성을 나타내는 표현이에요",
     examples: [
-      { j: "もっとべんきょうしなければなりません", r: "motto benkyou shinakereba narimasen", m: "더 공부해야 해요" },
-      { j: "はやくいかなきゃ", r: "hayaku ikanakya", m: "빨리 가야 해(구어)" },
+      { j: "もっと勉強しなければなりません", r: "motto benkyou shinakereba narimasen", m: "더 공부해야 해요" },
+      { j: "早く行かなきゃ", r: "hayaku ikanakya", m: "빨리 가야 해(구어)" },
     ], tip: "구어체: ~なきゃ (나키야)" },
   { title: "~そうだ (양태) — ~인 것 같아요", level: "N4",
     rule: "직접 보거나 느껴서 '~인 것 같다'고 표현해요",
     examples: [
       { j: "このケーキはおいしそうです", r: "kono keeki wa oishisou desu", m: "이 케이크 맛있어 보여요" },
-      { j: "あめがふりそうです", r: "ame ga furisou desu", m: "비가 올 것 같아요" },
+      { j: "雨が降りそうです", r: "ame ga furisou desu", m: "비가 올 것 같아요" },
     ], tip: "い형용사는 어간+そう. 동사는 ます형+そう." },
   { title: "~でしょう — ~이겠죠", level: "N4",
     rule: "어느 정도 확신이 있는 추측을 표현해요",
     examples: [
-      { j: "あしたはいいてんきでしょう", r: "ashita wa ii tenki deshou", m: "내일은 날씨가 좋겠죠" },
-      { j: "たいへんだったでしょう", r: "taihen datta deshou", m: "힘들었겠죠" },
+      { j: "明日はいい天気でしょう", r: "ashita wa ii tenki deshou", m: "내일은 날씨가 좋겠죠" },
+      { j: "大変だったでしょう", r: "taihen datta deshou", m: "힘들었겠죠" },
     ], tip: "캐주얼: ~だろう" },
   { title: "~ば — ~하면 (가정)", level: "N4",
     rule: "조건을 나타내는 표현이에요",
     examples: [
-      { j: "れんしゅうすれば、じょうずになります", r: "renshuu sureba, jouzu ni narimasu", m: "연습하면 잘하게 돼요" },
-      { j: "はやくおきれば、まにあいます", r: "hayaku okireba, maniarimasu", m: "일찍 일어나면 시간에 맞아요" },
+      { j: "練習すれば、上手になります", r: "renshuu sureba, jouzu ni narimasu", m: "연습하면 잘하게 돼요" },
+      { j: "早く起きれば、間に合います", r: "hayaku okireba, maniarimasu", m: "일찍 일어나면 시간에 맞아요" },
     ], tip: "일반적 조건이나 충고에 자주 써요." },
   { title: "~たら — ~하면/~했더니", level: "N4",
     rule: "た형 + ら → 가정/완료 후 상황",
     examples: [
-      { j: "うちにかえったら、でんわしてね", r: "uchi ni kaettara, denwa shite ne", m: "집에 돌아가면 전화해" },
-      { j: "そとにでたら、さむかったです", r: "soto ni detara, samukatta desu", m: "밖에 나갔더니 추웠어요" },
+      { j: "家に帰ったら、電話してね", r: "uchi ni kaettara, denwa shite ne", m: "집에 돌아가면 전화해" },
+      { j: "外に出たら、寒かったです", r: "soto ni detara, samukatta desu", m: "밖에 나갔더니 추웠어요" },
     ], tip: "ば보다 더 일상적으로 쓰여요." },
   { title: "~ながら — ~하면서", level: "N4",
     rule: "동사 ます형 + ながら → 동시 동작",
     examples: [
-      { j: "おんがくをききながら、べんきょうします", r: "ongaku wo kikinagara, benkyou shimasu", m: "음악을 들으면서 공부해요" },
-      { j: "あるきながら、はなしましょう", r: "aruki nagara, hanashimashou", m: "걸으면서 이야기해요" },
+      { j: "音楽を聴きながら、勉強します", r: "ongaku wo kikinagara, benkyou shimasu", m: "음악을 들으면서 공부해요" },
+      { j: "歩きながら、話しましょう", r: "aruki nagara, hanashimashou", m: "걸으면서 이야기해요" },
     ], tip: "주어가 같을 때만 써요." },
   { title: "~ために — ~을 위해서", level: "N4",
     rule: "목적을 나타내요",
     examples: [
-      { j: "にほんごをおぼえるために、まいにちべんきょうします", r: "nihongo wo oboeru tame ni, mainichi benkyou shimasu", m: "일본어를 배우기 위해 매일 공부해요" },
-      { j: "けんこうのために、うんどうしています", r: "kenkou no tame ni, undou shite imasu", m: "건강을 위해 운동하고 있어요" },
+      { j: "日本語を覚えるために、毎日勉強します", r: "nihongo wo oboeru tame ni, mainichi benkyou shimasu", m: "일본어를 배우기 위해 매일 공부해요" },
+      { j: "健康のために、運動しています", r: "kenkou no tame ni, undou shite imasu", m: "건강을 위해 운동하고 있어요" },
     ], tip: "명사 + のために, 동사 기본형 + ために" },
   { title: "~ように — ~하도록", level: "N4",
     rule: "목적이나 바람, 또는 비유를 나타내요",
     examples: [
-      { j: "わすれないように、メモしました", r: "wasurenai you ni, memo shimashita", m: "잊지 않도록 메모했어요" },
-      { j: "まるでゆめのようです", r: "marude yume no you desu", m: "마치 꿈 같아요" },
+      { j: "忘れないように、メモしました", r: "wasurenai you ni, memo shimashita", m: "잊지 않도록 메모했어요" },
+      { j: "まるで夢のようです", r: "marude yume no you desu", m: "마치 꿈 같아요" },
     ], tip: "~ように祈る = ~하도록 기도하다" },
   { title: "~ことにする — ~하기로 하다", level: "N4",
     rule: "자신의 결심/결정을 표현해요",
     examples: [
-      { j: "まいにちべんきょうすることにしました", r: "mainichi benkyou suru koto ni shimashita", m: "매일 공부하기로 했어요" },
+      { j: "毎日勉強することにしました", r: "mainichi benkyou suru koto ni shimashita", m: "매일 공부하기로 했어요" },
       { j: "タバコをやめることにしました", r: "tabako wo yameru koto ni shimashita", m: "담배를 끊기로 했어요" },
     ], tip: "~ことになる = (상황에 의해) ~하게 되다" },
   { title: "~ようになる — ~하게 되다", level: "N4",
     rule: "능력이나 상태의 변화를 나타내요",
     examples: [
-      { j: "にほんごがはなせるようになりました", r: "nihongo ga hanaseru you ni narimashita", m: "일본어를 말할 수 있게 됐어요" },
-      { j: "たべられなかったものがたべられるようになった", r: "taberarenakatta mono ga taberareru you ni natta", m: "못 먹던 게 먹을 수 있게 됐어요" },
+      { j: "日本語が話せるようになりました", r: "nihongo ga hanaseru you ni narimashita", m: "일본어를 말할 수 있게 됐어요" },
+      { j: "食べられなかったものが食べられるようになった", r: "taberarenakatta mono ga taberareru you ni natta", m: "못 먹던 게 먹을 수 있게 됐어요" },
     ], tip: "점진적 변화를 나타내요." },
 ];
 
@@ -890,12 +890,24 @@ function seededShuffle(arr, seed) {
   return a;
 }
 
-// ── 날짜 → Day 번호 (로컬 시간 기준) ────────────────────────────
-const START = { y: 2026, m: 6, d: 27 };
+// ── 날짜 → Day 번호 (캘리포니아 시간 기준) ──────────────────────
+const START = { y: 2026, m: 6, d: 28 };
+
+// 캘리포니아(LA) 시간 기준 오늘 날짜를 Date 객체로 반환
+export function getCaliforniaToday() {
+  const f = new Intl.DateTimeFormat("en-US", {
+    timeZone: "America/Los_Angeles",
+    year: "numeric", month: "2-digit", day: "2-digit",
+  });
+  const p = f.formatToParts(new Date());
+  const y = parseInt(p.find(x => x.type === "year").value);
+  const m = parseInt(p.find(x => x.type === "month").value);
+  const d = parseInt(p.find(x => x.type === "day").value);
+  return new Date(y, m - 1, d);
+}
 
 export function getDayNumber() {
-  const now = new Date();
-  const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+  const today = getCaliforniaToday();
   const start = new Date(START.y, START.m - 1, START.d);
   return Math.max(1, Math.floor((today - start) / 86400000) + 1);
 }
@@ -931,10 +943,10 @@ export function getDayLesson(dayNum) {
   const wordStart = (d * 5) % vocabPool.length;
   const words = Array.from({ length: 5 }, (_, i) => vocabPool[(wordStart + i) % vocabPool.length]);
 
-  // 문법 파트 (4일마다 새 레슨)
-  const grammarIdx = Math.floor(d / 4) % grammarPool.length;
+  // 문법 파트 (매일 새 레슨)
+  const grammarIdx = d % grammarPool.length;
   const grammar = grammarPool[grammarIdx];
-  const isNewGrammar = d % 4 === 0;
+  const isNewGrammar = true;
 
   // 문장 파트 (하루 3문장, 레벨에 맞는 풀에서)
   const sentPool = getSentencePool(dayNum);

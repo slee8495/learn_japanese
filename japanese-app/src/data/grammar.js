@@ -13,11 +13,11 @@ export const grammarLessons = [
       "부정은 ではありません / ません 으로 바꿔요",
     ],
     examples: [
-      { japanese: "わたしはがくせいです", reading: "watashi wa gakusei desu", meaning: "저는 학생입니다" },
-      { japanese: "これはほんです", reading: "kore wa hon desu", meaning: "이것은 책입니다" },
-      { japanese: "まいにちべんきょうします", reading: "mainichi benkyou shimasu", meaning: "매일 공부합니다" },
-      { japanese: "にほんごがわかります", reading: "nihongo ga wakarimasu", meaning: "일본어를 알아요" },
-      { japanese: "わかりません", reading: "wakarimasen", meaning: "모릅니다" },
+      { japanese: "私は学生です", reading: "わたしはがくせいです", meaning: "저는 학생입니다" },
+      { japanese: "これは本です", reading: "これはほんです", meaning: "이것은 책입니다" },
+      { japanese: "毎日勉強します", reading: "まいにちべんきょうします", meaning: "매일 공부합니다" },
+      { japanese: "日本語が分かります", reading: "にほんごがわかります", meaning: "일본어를 알아요" },
+      { japanese: "分かりません", reading: "わかりません", meaning: "모릅니다" },
     ],
   },
   {
@@ -31,10 +31,10 @@ export const grammarLessons = [
       "처음에는 は만 써도 대화가 통해요",
     ],
     examples: [
-      { japanese: "わたしはかんこくじんです", reading: "watashi wa kankokujin desu", meaning: "저는 한국인이에요" },
-      { japanese: "どれがいいですか", reading: "dore ga ii desu ka", meaning: "어느 것이 좋아요?" },
-      { japanese: "あのひとがせんせいです", reading: "ano hito ga sensei desu", meaning: "저 분이 선생님이에요" },
-      { japanese: "にほんごはむずかしいです", reading: "nihongo wa muzukashii desu", meaning: "일본어는 어려워요" },
+      { japanese: "私は韓国人です", reading: "わたしはかんこくじんです", meaning: "저는 한국인이에요" },
+      { japanese: "どれがいいですか", reading: "どれがいいですか", meaning: "어느 것이 좋아요?" },
+      { japanese: "あの人が先生です", reading: "あのひとがせんせいです", meaning: "저 분이 선생님이에요" },
+      { japanese: "日本語は難しいです", reading: "にほんごはむずかしいです", meaning: "일본어는 어려워요" },
     ],
   },
   {
@@ -48,11 +48,11 @@ export const grammarLessons = [
       "で → 행동이 일어나는 장소 / 수단 (에서/로)",
     ],
     examples: [
-      { japanese: "ごはんをたべます", reading: "gohan wo tabemasu", meaning: "밥을 먹어요" },
-      { japanese: "がっこうにいきます", reading: "gakkou ni ikimasu", meaning: "학교에 가요" },
-      { japanese: "としょかんでよみます", reading: "toshokan de yomimasu", meaning: "도서관에서 읽어요" },
-      { japanese: "でんしゃでいきます", reading: "densha de ikimasu", meaning: "전철로 가요" },
-      { japanese: "へやにいます", reading: "heya ni imasu", meaning: "방에 있어요" },
+      { japanese: "ご飯を食べます", reading: "ごはんをたべます", meaning: "밥을 먹어요" },
+      { japanese: "学校に行きます", reading: "がっこうにいきます", meaning: "학교에 가요" },
+      { japanese: "図書館で読みます", reading: "としょかんでよみます", meaning: "도서관에서 읽어요" },
+      { japanese: "電車で行きます", reading: "でんしゃでいきます", meaning: "전철로 가요" },
+      { japanese: "部屋にいます", reading: "へやにいます", meaning: "방에 있어요" },
     ],
   },
   {
@@ -66,10 +66,10 @@ export const grammarLessons = [
       "~て + から → ~하고 나서 (순서)",
     ],
     examples: [
-      { japanese: "みてください", reading: "mite kudasai", meaning: "봐 주세요" },
-      { japanese: "まってください", reading: "matte kudasai", meaning: "기다려 주세요" },
-      { japanese: "たべています", reading: "tabete imasu", meaning: "먹고 있어요" },
-      { japanese: "シャワーをあびてから、ねます", reading: "shawaa wo abite kara, nemasu", meaning: "샤워하고 나서 자요" },
+      { japanese: "見てください", reading: "みてください", meaning: "봐 주세요" },
+      { japanese: "待ってください", reading: "まってください", meaning: "기다려 주세요" },
+      { japanese: "食べています", reading: "たべています", meaning: "먹고 있어요" },
+      { japanese: "シャワーを浴びてから、寝ます", reading: "シャワーをあびてから、ねます", meaning: "샤워하고 나서 자요" },
     ],
   },
   {
@@ -83,10 +83,10 @@ export const grammarLessons = [
       "부정: ~たくない (하고 싶지 않아)",
     ],
     examples: [
-      { japanese: "すしをたべたい", reading: "sushi wo tabetai", meaning: "초밥을 먹고 싶어요" },
-      { japanese: "にほんにいきたいです", reading: "nihon ni ikitai desu", meaning: "일본에 가고 싶어요" },
-      { japanese: "にほんごをはなしたい", reading: "nihongo wo hanashitai", meaning: "일본어를 말하고 싶어요" },
-      { japanese: "もうねたくない", reading: "mou netakunai", meaning: "이제 자고 싶지 않아" },
+      { japanese: "寿司を食べたい", reading: "すしをたべたい", meaning: "초밥을 먹고 싶어요" },
+      { japanese: "日本に行きたいです", reading: "にほんにいきたいです", meaning: "일본에 가고 싶어요" },
+      { japanese: "日本語を話したい", reading: "にほんごをはなしたい", meaning: "일본어를 말하고 싶어요" },
+      { japanese: "もう寝たくない", reading: "もうねたくない", meaning: "이제 자고 싶지 않아" },
     ],
   },
   {
@@ -100,11 +100,11 @@ export const grammarLessons = [
       "불규칙: する → しない, くる → こない",
     ],
     examples: [
-      { japanese: "たべない", reading: "tabenai", meaning: "먹지 않아" },
-      { japanese: "いかない", reading: "ikanai", meaning: "가지 않아" },
-      { japanese: "わからない", reading: "wakaranai", meaning: "모르겠어" },
-      { japanese: "しない", reading: "shinai", meaning: "하지 않아" },
-      { japanese: "こない", reading: "konai", meaning: "오지 않아" },
+      { japanese: "食べない", reading: "たべない", meaning: "먹지 않아" },
+      { japanese: "行かない", reading: "いかない", meaning: "가지 않아" },
+      { japanese: "分からない", reading: "わからない", meaning: "모르겠어" },
+      { japanese: "しない", reading: "しない", meaning: "하지 않아" },
+      { japanese: "来ない", reading: "こない", meaning: "오지 않아" },
     ],
   },
   {
@@ -118,10 +118,10 @@ export const grammarLessons = [
       "の 뒤에 명사를 생략하고 '것'처럼 쓰기도 해요",
     ],
     examples: [
-      { japanese: "わたしのほん", reading: "watashi no hon", meaning: "나의 책" },
-      { japanese: "にほんごのきょうかしょ", reading: "nihongo no kyoukasho", meaning: "일본어 교과서" },
-      { japanese: "あかいのがすきです", reading: "akai no ga suki desu", meaning: "빨간 것을 좋아해요" },
-      { japanese: "どれがあなたのですか", reading: "dore ga anata no desu ka", meaning: "어느 것이 당신 거예요?" },
+      { japanese: "私の本", reading: "わたしのほん", meaning: "나의 책" },
+      { japanese: "日本語の教科書", reading: "にほんごのきょうかしょ", meaning: "일본어 교과서" },
+      { japanese: "赤いのが好きです", reading: "あかいのがすきです", meaning: "빨간 것을 좋아해요" },
+      { japanese: "どれがあなたのですか", reading: "どれがあなたのですか", meaning: "어느 것이 당신 거예요?" },
     ],
   },
   {
@@ -135,9 +135,9 @@ export const grammarLessons = [
       "'~도 ~도' 패턴으로 둘 다 포함할 때도 써요",
     ],
     examples: [
-      { japanese: "わたしもにほんごをべんきょうしています", reading: "watashi mo nihongo wo benkyou shite imasu", meaning: "저도 일본어를 공부하고 있어요" },
-      { japanese: "すしもラーメンもすきです", reading: "sushi mo raamen mo suki desu", meaning: "초밥도 라면도 좋아해요" },
-      { japanese: "それもちがいます", reading: "sore mo chigaimasu", meaning: "그것도 달라요" },
+      { japanese: "私も日本語を勉強しています", reading: "わたしもにほんごをべんきょうしています", meaning: "저도 일본어를 공부하고 있어요" },
+      { japanese: "寿司もラーメンも好きです", reading: "すしもラーメンもすきです", meaning: "초밥도 라면도 좋아해요" },
+      { japanese: "それも違います", reading: "それもちがいます", meaning: "그것도 달라요" },
     ],
   },
   {
@@ -151,9 +151,9 @@ export const grammarLessons = [
       "~と言います → ~라고 해요 (인용)",
     ],
     examples: [
-      { japanese: "りんごとバナナをかいました", reading: "ringo to banana wo kaimashita", meaning: "사과와 바나나를 샀어요" },
-      { japanese: "はるになると、さくらがさきます", reading: "haru ni naru to, sakura ga sakimasu", meaning: "봄이 되면 벚꽃이 피어요" },
-      { japanese: "これをなんといいますか", reading: "kore wo nan to iimasu ka", meaning: "이것을 뭐라고 해요?" },
+      { japanese: "りんごとバナナを買いました", reading: "りんごとバナナをかいました", meaning: "사과와 바나나를 샀어요" },
+      { japanese: "春になると、桜が咲きます", reading: "はるになると、さくらがさきます", meaning: "봄이 되면 벚꽃이 피어요" },
+      { japanese: "これを何と言いますか", reading: "これをなんといいますか", meaning: "이것을 뭐라고 해요?" },
     ],
   },
   {
@@ -167,10 +167,10 @@ export const grammarLessons = [
       "~かどうか → ~인지 어떤지 (간접 의문)",
     ],
     examples: [
-      { japanese: "にほんじんですか", reading: "nihonjin desu ka", meaning: "일본인이에요?" },
-      { japanese: "いまなんじですか", reading: "ima nanji desu ka", meaning: "지금 몇 시예요?" },
-      { japanese: "わかりましたか", reading: "wakarimashita ka", meaning: "이해했어요?" },
-      { japanese: "いくかどうかまだわかりません", reading: "iku ka dou ka mada wakarimasen", meaning: "갈지 어떨지 아직 몰라요" },
+      { japanese: "日本人ですか", reading: "にほんじんですか", meaning: "일본인이에요?" },
+      { japanese: "今何時ですか", reading: "いまなんじですか", meaning: "지금 몇 시예요?" },
+      { japanese: "分かりましたか", reading: "わかりましたか", meaning: "이해했어요?" },
+      { japanese: "行くかどうかまだ分かりません", reading: "いくかどうかまだわかりません", meaning: "갈지 어떨지 아직 몰라요" },
     ],
   },
   {
@@ -184,10 +184,10 @@ export const grammarLessons = [
       "ねえ → 주의 끌 때 ('저기요', '있잖아요')",
     ],
     examples: [
-      { japanese: "きょうはいいてんきですね", reading: "kyou wa ii tenki desu ne", meaning: "오늘 날씨 좋죠?" },
-      { japanese: "このりょうりはおいしいですね", reading: "kono ryouri wa oishii desu ne", meaning: "이 요리 맛있네요" },
-      { japanese: "それはちがいますよ", reading: "sore wa chigaimasu yo", meaning: "그건 달라요!" },
-      { japanese: "もうおそいですよ", reading: "mou osoi desu yo", meaning: "이미 늦었어요!" },
+      { japanese: "今日はいい天気ですね", reading: "きょうはいいてんきですね", meaning: "오늘 날씨 좋죠?" },
+      { japanese: "この料理はおいしいですね", reading: "このりょうりはおいしいですね", meaning: "이 요리 맛있네요" },
+      { japanese: "それは違いますよ", reading: "それはちがいますよ", meaning: "그건 달라요!" },
+      { japanese: "もう遅いですよ", reading: "もうおそいですよ", meaning: "이미 늦었어요!" },
     ],
   },
   {
@@ -202,10 +202,10 @@ export const grammarLessons = [
       "どの+명사 → 어느 ~ (의문)",
     ],
     examples: [
-      { japanese: "このほんはわたしのです", reading: "kono hon wa watashi no desu", meaning: "이 책은 제 거예요" },
-      { japanese: "そのかばんはいくらですか", reading: "sono kaban wa ikura desu ka", meaning: "그 가방은 얼마예요?" },
-      { japanese: "あのひとはだれですか", reading: "ano hito wa dare desu ka", meaning: "저 사람은 누구예요?" },
-      { japanese: "どのりょうりがすきですか", reading: "dono ryouri ga suki desu ka", meaning: "어느 요리를 좋아해요?" },
+      { japanese: "この本は私のです", reading: "このほんはわたしのです", meaning: "이 책은 제 거예요" },
+      { japanese: "そのかばんはいくらですか", reading: "そのかばんはいくらですか", meaning: "그 가방은 얼마예요?" },
+      { japanese: "あの人は誰ですか", reading: "あのひとはだれですか", meaning: "저 사람은 누구예요?" },
+      { japanese: "どの料理が好きですか", reading: "どのりょうりがすきですか", meaning: "어느 요리를 좋아해요?" },
     ],
   },
   {
@@ -219,10 +219,10 @@ export const grammarLessons = [
       "に + いる/ある = ~에 있다",
     ],
     examples: [
-      { japanese: "ねこがいます", reading: "neko ga imasu", meaning: "고양이가 있어요" },
-      { japanese: "へやにほんがあります", reading: "heya ni hon ga arimasu", meaning: "방에 책이 있어요" },
-      { japanese: "えきのちかくにコンビニがありますか", reading: "eki no chikaku ni konbini ga arimasu ka", meaning: "역 근처에 편의점이 있어요?" },
-      { japanese: "かのじょはいえにいます", reading: "kanojo wa ie ni imasu", meaning: "그녀는 집에 있어요" },
+      { japanese: "猫がいます", reading: "ねこがいます", meaning: "고양이가 있어요" },
+      { japanese: "部屋に本があります", reading: "へやにほんがあります", meaning: "방에 책이 있어요" },
+      { japanese: "駅の近くにコンビニがありますか", reading: "えきのちかくにコンビニがありますか", meaning: "역 근처에 편의점이 있어요?" },
+      { japanese: "彼女は家にいます", reading: "かのじょはいえにいます", meaning: "그녀는 집에 있어요" },
     ],
   },
   {
@@ -236,10 +236,10 @@ export const grammarLessons = [
       "캐주얼하게는 'じゃ、~ましょう' ('자, ~해요')",
     ],
     examples: [
-      { japanese: "いっしょにたべましょう", reading: "issho ni tabemashou", meaning: "같이 먹어요" },
-      { japanese: "はじめましょう", reading: "hajimemashou", meaning: "시작해요" },
-      { japanese: "すこしやすみましょうか", reading: "sukoshi yasumimashou ka", meaning: "조금 쉴까요?" },
-      { japanese: "にほんごではなしましょう", reading: "nihongo de hanashimashou", meaning: "일본어로 이야기해요" },
+      { japanese: "一緒に食べましょう", reading: "いっしょにたべましょう", meaning: "같이 먹어요" },
+      { japanese: "始めましょう", reading: "はじめましょう", meaning: "시작해요" },
+      { japanese: "少し休みましょうか", reading: "すこしやすみましょうか", meaning: "조금 쉴까요?" },
+      { japanese: "日本語で話しましょう", reading: "にほんごではなしましょう", meaning: "일본어로 이야기해요" },
     ],
   },
   {
@@ -253,9 +253,9 @@ export const grammarLessons = [
       "부정: ~てはいけない (하면 안 돼요)",
     ],
     examples: [
-      { japanese: "ここですわってもいいですか", reading: "koko de suwatte mo ii desu ka", meaning: "여기 앉아도 돼요?" },
-      { japanese: "つかってもいいですよ", reading: "tsukatte mo ii desu yo", meaning: "사용해도 돼요" },
-      { japanese: "もうかえってもいいです", reading: "mou kaette mo ii desu", meaning: "이제 돌아가도 돼요" },
+      { japanese: "ここで座ってもいいですか", reading: "ここですわってもいいですか", meaning: "여기 앉아도 돼요?" },
+      { japanese: "使ってもいいですよ", reading: "つかってもいいですよ", meaning: "사용해도 돼요" },
+      { japanese: "もう帰ってもいいです", reading: "もうかえってもいいです", meaning: "이제 돌아가도 돼요" },
     ],
   },
   {
@@ -269,9 +269,9 @@ export const grammarLessons = [
       "규칙, 표지판, 경고 등에 자주 써요",
     ],
     examples: [
-      { japanese: "ここでたばこをすってはいけません", reading: "koko de tabako wo sutte wa ikemasen", meaning: "여기서 담배를 피우면 안 돼요" },
-      { japanese: "しゃしんをとってはいけない", reading: "shashin wo totte wa ikenai", meaning: "사진을 찍으면 안 돼요" },
-      { japanese: "ちこくしてはいけません", reading: "chikoku shite wa ikemasen", meaning: "지각하면 안 돼요" },
+      { japanese: "ここでタバコを吸ってはいけません", reading: "ここでたばこをすってはいけません", meaning: "여기서 담배를 피우면 안 돼요" },
+      { japanese: "写真を撮ってはいけない", reading: "しゃしんをとってはいけない", meaning: "사진을 찍으면 안 돼요" },
+      { japanese: "遅刻してはいけません", reading: "ちこくしてはいけません", meaning: "지각하면 안 돼요" },
     ],
   },
   {
@@ -285,9 +285,9 @@ export const grammarLessons = [
       "영어의 'don't have to'와 같아요",
     ],
     examples: [
-      { japanese: "むりしなくてもいいです", reading: "muri shinakute mo ii desu", meaning: "무리하지 않아도 돼요" },
-      { japanese: "きなくてもいいですよ", reading: "konakute mo ii desu yo", meaning: "안 와도 돼요" },
-      { japanese: "むずかしいことばをつかわなくてもいい", reading: "muzukashii kotoba wo tsukawanakute mo ii", meaning: "어려운 말을 쓰지 않아도 돼요" },
+      { japanese: "無理しなくてもいいです", reading: "むりしなくてもいいです", meaning: "무리하지 않아도 돼요" },
+      { japanese: "来なくてもいいですよ", reading: "きなくてもいいですよ", meaning: "안 와도 돼요" },
+      { japanese: "難しい言葉を使わなくてもいい", reading: "むずかしいことばをつかわなくてもいい", meaning: "어려운 말을 쓰지 않아도 돼요" },
     ],
   },
   {
@@ -301,10 +301,10 @@ export const grammarLessons = [
       "직업/습관도 표현 가능 (매일 달리고 있어요 = 달립니다)",
     ],
     examples: [
-      { japanese: "いまごはんをたべています", reading: "ima gohan wo tabete imasu", meaning: "지금 밥 먹고 있어요" },
-      { japanese: "にほんにすんでいます", reading: "nihon ni sunde imasu", meaning: "일본에 살고 있어요" },
-      { japanese: "けっこんしています", reading: "kekkon shite imasu", meaning: "결혼해 있어요" },
-      { japanese: "まいあさはしっています", reading: "maiasa hashitte imasu", meaning: "매일 아침 달리고 있어요" },
+      { japanese: "今ご飯を食べています", reading: "いまごはんをたべています", meaning: "지금 밥 먹고 있어요" },
+      { japanese: "日本に住んでいます", reading: "にほんにすんでいます", meaning: "일본에 살고 있어요" },
+      { japanese: "結婚しています", reading: "けっこんしています", meaning: "결혼해 있어요" },
+      { japanese: "毎朝走っています", reading: "まいあさはしっています", meaning: "매일 아침 달리고 있어요" },
     ],
   },
   {
@@ -318,9 +318,9 @@ export const grammarLessons = [
       "~た後で(after)와 비슷하지만 てから가 더 자연스러운 경우가 많아요",
     ],
     examples: [
-      { japanese: "しゅくだいをしてから、あそびます", reading: "shukudai wo shite kara, asobimasu", meaning: "숙제하고 나서 놀아요" },
-      { japanese: "にほんにきてから、もう1ねんたちました", reading: "nihon ni kite kara, mou ichi nen tachimashita", meaning: "일본에 온 지 이제 1년이 됐어요" },
-      { japanese: "たべてから、くすりをのんでください", reading: "tabete kara, kusuri wo nonde kudasai", meaning: "먹고 나서 약을 드세요" },
+      { japanese: "宿題をしてから、遊びます", reading: "しゅくだいをしてから、あそびます", meaning: "숙제하고 나서 놀아요" },
+      { japanese: "日本に来てから、もう1年経ちました", reading: "にほんにきてから、もう1ねんたちました", meaning: "일본에 온 지 이제 1년이 됐어요" },
+      { japanese: "食べてから、薬を飲んでください", reading: "たべてから、くすりをのんでください", meaning: "먹고 나서 약을 드세요" },
     ],
   },
   {
@@ -334,9 +334,9 @@ export const grammarLessons = [
       "영어의 '~ing' (gerund) 역할이에요",
     ],
     examples: [
-      { japanese: "うたうのがすきです", reading: "utau no ga suki desu", meaning: "노래하는 것을 좋아해요" },
-      { japanese: "にほんごをよむのはたのしいです", reading: "nihongo wo yomu no wa tanoshii desu", meaning: "일본어를 읽는 것은 즐거워요" },
-      { japanese: "はやくはしるのがとくいです", reading: "hayaku hashiru no ga tokui desu", meaning: "빨리 달리는 것이 특기예요" },
+      { japanese: "歌うのが好きです", reading: "うたうのがすきです", meaning: "노래하는 것을 좋아해요" },
+      { japanese: "日本語を読むのは楽しいです", reading: "にほんごをよむのはたのしいです", meaning: "일본어를 읽는 것은 즐거워요" },
+      { japanese: "早く走るのが得意です", reading: "はやくはしるのがとくいです", meaning: "빨리 달리는 것이 특기예요" },
     ],
   },
 
@@ -354,9 +354,9 @@ export const grammarLessons = [
       "ので는 공식적인 상황에서 더 어울려요",
     ],
     examples: [
-      { japanese: "さむいから、まどをしめた", reading: "samui kara, mado wo shimeta", meaning: "추워서 창문을 닫았어" },
-      { japanese: "びょうきなので、やすみます", reading: "byouki na node, yasumimasu", meaning: "아파서 쉬겠습니다" },
-      { japanese: "にほんごがすきだから、べんきょうしています", reading: "nihongo ga suki dakara, benkyou shite imasu", meaning: "일본어가 좋아서 공부하고 있어요" },
+      { japanese: "寒いから、窓を閉めた", reading: "さむいから、まどをしめた", meaning: "추워서 창문을 닫았어" },
+      { japanese: "病気なので、休みます", reading: "びょうきなので、やすみます", meaning: "아파서 쉬겠습니다" },
+      { japanese: "日本語が好きだから、勉強しています", reading: "にほんごがすきだから、べんきょうしています", meaning: "일본어가 좋아서 공부하고 있어요" },
     ],
   },
   {
@@ -370,9 +370,9 @@ export const grammarLessons = [
       "과거 추측: ~たと思います",
     ],
     examples: [
-      { japanese: "むずかしいとおもいます", reading: "muzukashii to omoimasu", meaning: "어렵다고 생각해요" },
-      { japanese: "かれはもうきたとおもいます", reading: "kare wa mou kita to omoimasu", meaning: "그는 이미 왔다고 생각해요" },
-      { japanese: "それはいいとおもいます", reading: "sore wa ii to omoimasu", meaning: "그것은 좋다고 생각해요" },
+      { japanese: "難しいと思います", reading: "むずかしいとおもいます", meaning: "어렵다고 생각해요" },
+      { japanese: "彼はもう来たと思います", reading: "かれはもうきたとおもいます", meaning: "그는 이미 왔다고 생각해요" },
+      { japanese: "それはいいと思います", reading: "それはいいとおもいます", meaning: "그것은 좋다고 생각해요" },
     ],
   },
   {
@@ -386,9 +386,9 @@ export const grammarLessons = [
       "경험의 유무를 말하는 표현이에요",
     ],
     examples: [
-      { japanese: "にほんにいったことがあります", reading: "nihon ni itta koto ga arimasu", meaning: "일본에 간 적 있어요" },
-      { japanese: "すしをたべたことがない", reading: "sushi wo tabeta koto ga nai", meaning: "초밥을 먹어본 적 없어요" },
-      { japanese: "ふじさんにのぼったことがありますか", reading: "fujisan ni nobotta koto ga arimasu ka", meaning: "후지산에 오른 적 있어요?" },
+      { japanese: "日本に行ったことがあります", reading: "にほんにいったことがあります", meaning: "일본에 간 적 있어요" },
+      { japanese: "寿司を食べたことがない", reading: "すしをたべたことがない", meaning: "초밥을 먹어본 적 없어요" },
+      { japanese: "富士山に登ったことがありますか", reading: "ふじさんにのぼったことがありますか", meaning: "후지산에 오른 적 있어요?" },
     ],
   },
   {
@@ -402,9 +402,9 @@ export const grammarLessons = [
       "50% 정도의 가능성을 나타내요",
     ],
     examples: [
-      { japanese: "あめがふるかもしれません", reading: "ame ga furu kamo shiremasen", meaning: "비가 올지도 몰라요" },
-      { japanese: "かれはしっているかもしれない", reading: "kare wa shitte iru kamo shirenai", meaning: "그는 알고 있을지도 몰라" },
-      { japanese: "もうおそいかも", reading: "mou osoi kamo", meaning: "이미 늦었을지도 몰라" },
+      { japanese: "雨が降るかもしれません", reading: "あめがふるかもしれません", meaning: "비가 올지도 몰라요" },
+      { japanese: "彼は知っているかもしれない", reading: "かれはしっているかもしれない", meaning: "그는 알고 있을지도 몰라" },
+      { japanese: "もう遅いかも", reading: "もうおそいかも", meaning: "이미 늦었을지도 몰라" },
     ],
   },
   {
@@ -418,9 +418,9 @@ export const grammarLessons = [
       "やってみる (해보다)는 매우 자주 쓰여요",
     ],
     examples: [
-      { japanese: "やってみます", reading: "yatte mimasu", meaning: "해볼게요" },
-      { japanese: "たべてみてください", reading: "tabete mite kudasai", meaning: "먹어 보세요" },
-      { japanese: "いちどかんがえてみます", reading: "ichido kangaete mimasu", meaning: "한번 생각해 볼게요" },
+      { japanese: "やってみます", reading: "やってみます", meaning: "해볼게요" },
+      { japanese: "食べてみてください", reading: "たべてみてください", meaning: "먹어 보세요" },
+      { japanese: "一度考えてみます", reading: "いちどかんがえてみます", meaning: "한번 생각해 볼게요" },
     ],
   },
   {
@@ -434,9 +434,9 @@ export const grammarLessons = [
       "~なくてはいけない도 같은 의미로 많이 써요",
     ],
     examples: [
-      { japanese: "もっとべんきょうしなければなりません", reading: "motto benkyou shinakereba narimasen", meaning: "더 공부해야 해요" },
-      { japanese: "はやくいかなきゃ", reading: "hayaku ikanakya", meaning: "빨리 가야 해" },
-      { japanese: "くすりをのまなければいけません", reading: "kusuri wo nomanakereba ikemasen", meaning: "약을 먹어야 해요" },
+      { japanese: "もっと勉強しなければなりません", reading: "もっとべんきょうしなければなりません", meaning: "더 공부해야 해요" },
+      { japanese: "早く行かなきゃ", reading: "はやくいかなきゃ", meaning: "빨리 가야 해" },
+      { japanese: "薬を飲まなければいけません", reading: "くすりをのまなければいけません", meaning: "약을 먹어야 해요" },
     ],
   },
   {
@@ -466,9 +466,9 @@ export const grammarLessons = [
       "뉴스, 소문, 남에게 들은 말을 전달할 때 써요",
     ],
     examples: [
-      { japanese: "あしたはあめだそうです", reading: "ashita wa ame da sou desu", meaning: "내일은 비가 온답니다" },
-      { japanese: "かれはにほんにいくそうです", reading: "kare wa nihon ni iku sou desu", meaning: "그는 일본에 간답니다" },
-      { japanese: "このみせはおいしいそうですよ", reading: "kono mise wa oishii sou desu yo", meaning: "이 가게 맛있다고 해요" },
+      { japanese: "明日は雨だそうです", reading: "あしたはあめだそうです", meaning: "내일은 비가 온답니다" },
+      { japanese: "彼は日本に行くそうです", reading: "かれはにほんにいくそうです", meaning: "그는 일본에 간답니다" },
+      { japanese: "この店はおいしいそうですよ", reading: "このみせはおいしいそうですよ", meaning: "이 가게 맛있다고 해요" },
     ],
   },
   {
@@ -482,9 +482,9 @@ export const grammarLessons = [
       "의문문: ~でしょうか → ~이겠죠? (부드러운 확인)",
     ],
     examples: [
-      { japanese: "あしたはいいてんきでしょう", reading: "ashita wa ii tenki deshou", meaning: "내일은 날씨가 좋겠죠" },
-      { japanese: "かれもしっているでしょう", reading: "kare mo shitte iru deshou", meaning: "그도 알고 있겠죠" },
-      { japanese: "たいへんだったでしょう", reading: "taihen datta deshou", meaning: "힘들었겠죠" },
+      { japanese: "明日はいい天気でしょう", reading: "あしたはいいてんきでしょう", meaning: "내일은 날씨가 좋겠죠" },
+      { japanese: "彼も知っているでしょう", reading: "かれもしっているでしょう", meaning: "그도 알고 있겠죠" },
+      { japanese: "大変だったでしょう", reading: "たいへんだったでしょう", meaning: "힘들었겠죠" },
     ],
   },
   {
@@ -499,9 +499,9 @@ export const grammarLessons = [
       "일반적 조건이나 충고에 자주 써요",
     ],
     examples: [
-      { japanese: "れんしゅうすれば、じょうずになります", reading: "renshuu sureba, jouzu ni narimasu", meaning: "연습하면 잘하게 돼요" },
-      { japanese: "あめがふらなければ、いきます", reading: "ame ga furanakereba, ikimasu", meaning: "비가 안 오면 가요" },
-      { japanese: "はやくおきれば、まにあいます", reading: "hayaku okireba, maniarimasu", meaning: "일찍 일어나면 시간에 맞아요" },
+      { japanese: "練習すれば、上手になります", reading: "れんしゅうすれば、じょうずになります", meaning: "연습하면 잘하게 돼요" },
+      { japanese: "雨が降らなければ、行きます", reading: "あめがふらなければ、いきます", meaning: "비가 안 오면 가요" },
+      { japanese: "早く起きれば、間に合います", reading: "はやくおきれば、まにあいます", meaning: "일찍 일어나면 시간에 맞아요" },
     ],
   },
   {
@@ -515,9 +515,9 @@ export const grammarLessons = [
       "가정(~하면)과 완료 후(~했더니) 둘 다 표현해요",
     ],
     examples: [
-      { japanese: "うちにかえったら、でんわしてね", reading: "uchi ni kaettara, denwa shite ne", meaning: "집에 돌아가면 전화해" },
-      { japanese: "そとにでたら、さむかったです", reading: "soto ni detara, samukatta desu", meaning: "밖에 나갔더니 추웠어요" },
-      { japanese: "もっとはやくしったら、よかったのに", reading: "motto hayaku shittara, yokatta no ni", meaning: "더 빨리 알았더라면 좋았을 텐데" },
+      { japanese: "家に帰ったら、電話してね", reading: "うちにかえったら、でんわしてね", meaning: "집에 돌아가면 전화해" },
+      { japanese: "外に出たら、寒かったです", reading: "そとにでたら、さむかったです", meaning: "밖에 나갔더니 추웠어요" },
+      { japanese: "もっと早く知ったら、よかったのに", reading: "もっとはやくしったら、よかったのに", meaning: "더 빨리 알았더라면 좋았을 텐데" },
     ],
   },
   {
@@ -531,9 +531,9 @@ export const grammarLessons = [
       "주어가 같을 때만 써요",
     ],
     examples: [
-      { japanese: "おんがくをききながら、べんきょうします", reading: "ongaku wo kikinagara, benkyou shimasu", meaning: "음악을 들으면서 공부해요" },
-      { japanese: "あるきながら、はなしましょう", reading: "aruki nagara, hanashimashou", meaning: "걸으면서 이야기해요" },
-      { japanese: "テレビをみながら、たべる", reading: "terebi wo mi nagara, taberu", meaning: "TV를 보면서 먹는다" },
+      { japanese: "音楽を聴きながら、勉強します", reading: "おんがくをききながら、べんきょうします", meaning: "음악을 들으면서 공부해요" },
+      { japanese: "歩きながら、話しましょう", reading: "あるきながら、はなしましょう", meaning: "걸으면서 이야기해요" },
+      { japanese: "テレビを見ながら、食べる", reading: "テレビをみながら、たべる", meaning: "TV를 보면서 먹는다" },
     ],
   },
   {
@@ -547,9 +547,9 @@ export const grammarLessons = [
       "'~만 한다'고 할 때 핀잔 뉘앙스가 있어요",
     ],
     examples: [
-      { japanese: "あまいものばかりたべています", reading: "amai mono bakari tabete imasu", meaning: "단 것만 먹고 있어요" },
-      { japanese: "いまおきたばかりです", reading: "ima okita bakari desu", meaning: "방금 막 일어났어요" },
-      { japanese: "にほんにきたばかりなのでわかりません", reading: "nihon ni kita bakari na no de wakarimasen", meaning: "일본에 온 지 얼마 안 돼서 몰라요" },
+      { japanese: "甘いものばかり食べています", reading: "あまいものばかりたべています", meaning: "단 것만 먹고 있어요" },
+      { japanese: "今起きたばかりです", reading: "いまおきたばかりです", meaning: "방금 막 일어났어요" },
+      { japanese: "日本に来たばかりなので分かりません", reading: "にほんにきたばかりなのでわかりません", meaning: "일본에 온 지 얼마 안 돼서 몰라요" },
     ],
   },
   {
@@ -563,9 +563,9 @@ export const grammarLessons = [
       "'변화 없이 계속'의 뉘앙스예요",
     ],
     examples: [
-      { japanese: "くつをはいたまま、うちにはいった", reading: "kutsu wo haita mama, uchi ni haitta", meaning: "신발을 신은 채로 집에 들어갔다" },
-      { japanese: "まどをあけたまま、ねた", reading: "mado wo aketa mama, neta", meaning: "창문을 열어 둔 채로 잤다" },
-      { japanese: "なにもいわないまま、でていきました", reading: "nani mo iwanai mama, dete ikimashita", meaning: "아무 말도 없이 나가 버렸어요" },
+      { japanese: "靴を履いたまま、家に入った", reading: "くつをはいたまま、うちにはいった", meaning: "신발을 신은 채로 집에 들어갔다" },
+      { japanese: "窓を開けたまま、寝た", reading: "まどをあけたまま、ねた", meaning: "창문을 열어 둔 채로 잤다" },
+      { japanese: "何も言わないまま、出て行きました", reading: "なにもいわないまま、でていきました", meaning: "아무 말도 없이 나가 버렸어요" },
     ],
   },
   {
@@ -579,9 +579,9 @@ export const grammarLessons = [
       "~から/~ので(이유)와 달리 목적에 초점이 있어요",
     ],
     examples: [
-      { japanese: "にほんごをおぼえるために、まいにちべんきょうします", reading: "nihongo wo oboeru tame ni, mainichi benkyou shimasu", meaning: "일본어를 배우기 위해 매일 공부해요" },
-      { japanese: "けんこうのために、うんどうしています", reading: "kenkou no tame ni, undou shite imasu", meaning: "건강을 위해 운동하고 있어요" },
-      { japanese: "かぞくのためにはたらいています", reading: "kazoku no tame ni hataraite imasu", meaning: "가족을 위해 일하고 있어요" },
+      { japanese: "日本語を覚えるために、毎日勉強します", reading: "にほんごをおぼえるために、まいにちべんきょうします", meaning: "일본어를 배우기 위해 매일 공부해요" },
+      { japanese: "健康のために、運動しています", reading: "けんこうのために、うんどうしています", meaning: "건강을 위해 운동하고 있어요" },
+      { japanese: "家族のために働いています", reading: "かぞくのためにはたらいています", meaning: "가족을 위해 일하고 있어요" },
     ],
   },
   {
@@ -595,9 +595,9 @@ export const grammarLessons = [
       "기도나 소원에도 써요 (~ように祈る)",
     ],
     examples: [
-      { japanese: "わすれないように、メモしました", reading: "wasurenai you ni, memo shimashita", meaning: "잊지 않도록 메모했어요" },
-      { japanese: "はやくなおるようにいのっています", reading: "hayaku naoru you ni inotte imasu", meaning: "빨리 낫도록 기도하고 있어요" },
-      { japanese: "まるでゆめのようです", reading: "marude yume no you desu", meaning: "마치 꿈 같아요" },
+      { japanese: "忘れないように、メモしました", reading: "わすれないように、メモしました", meaning: "잊지 않도록 메모했어요" },
+      { japanese: "早く治るように祈っています", reading: "はやくなおるようにいのっています", meaning: "빨리 낫도록 기도하고 있어요" },
+      { japanese: "まるで夢のようです", reading: "まるでゆめのようです", meaning: "마치 꿈 같아요" },
     ],
   },
   {
@@ -611,9 +611,9 @@ export const grammarLessons = [
       "~ことになる → (상황에 따라) ~하게 되다 (자연스럽게 된 것)",
     ],
     examples: [
-      { japanese: "まいにちにほんごをべんきょうすることにしました", reading: "mainichi nihongo wo benkyou suru koto ni shimashita", meaning: "매일 일본어를 공부하기로 했어요" },
-      { japanese: "タバコをやめることにしました", reading: "tabako wo yameru koto ni shimashita", meaning: "담배를 끊기로 했어요" },
-      { japanese: "こうこうのあと、だいがくにいくことになりました", reading: "koukou no ato, daigaku ni iku koto ni narimashita", meaning: "고등학교 후에 대학에 가게 됐어요" },
+      { japanese: "毎日日本語を勉強することにしました", reading: "まいにちにほんごをべんきょうすることにしました", meaning: "매일 일본어를 공부하기로 했어요" },
+      { japanese: "タバコをやめることにしました", reading: "タバコをやめることにしました", meaning: "담배를 끊기로 했어요" },
+      { japanese: "高校の後、大学に行くことになりました", reading: "こうこうのあと、だいがくにいくことになりました", meaning: "고등학교 후에 대학에 가게 됐어요" },
     ],
   },
   {
@@ -627,9 +627,9 @@ export const grammarLessons = [
       "~ということ → ~라는 것",
     ],
     examples: [
-      { japanese: "たなかというひとをしっていますか", reading: "tanaka to iu hito wo shitte imasu ka", meaning: "다나카라는 사람 알아요?" },
-      { japanese: "わたしはキムといいます", reading: "watashi wa kimu to iimasu", meaning: "저는 김이라고 해요" },
-      { japanese: "「ありがとう」はかんしゃのいみです", reading: "arigatou wa kansha no imi desu", meaning: "'아리가토'는 감사의 의미예요" },
+      { japanese: "田中という人を知っていますか", reading: "たなかというひとをしっていますか", meaning: "다나카라는 사람 알아요?" },
+      { japanese: "私はキムといいます", reading: "わたしはキムといいます", meaning: "저는 김이라고 해요" },
+      { japanese: "「ありがとう」は感謝の意味です", reading: "「ありがとう」はかんしゃのいみです", meaning: "'아리가토'는 감사의 의미예요" },
     ],
   },
   {
@@ -643,8 +643,8 @@ export const grammarLessons = [
       "'예전엔 못 했는데 이제 할 수 있다'는 뉘앙스",
     ],
     examples: [
-      { japanese: "にほんごがはなせるようになりました", reading: "nihongo ga hanaseru you ni narimashita", meaning: "일본어를 말할 수 있게 됐어요" },
-      { japanese: "たべられなかったものがたべられるようになった", reading: "taberarenakatta mono ga taberareru you ni natta", meaning: "못 먹던 게 먹을 수 있게 됐어요" },
+      { japanese: "日本語が話せるようになりました", reading: "にほんごがはなせるようになりました", meaning: "일본어를 말할 수 있게 됐어요" },
+      { japanese: "食べられなかったものが食べられるようになった", reading: "たべられなかったものがたべられるようになった", meaning: "못 먹던 게 먹을 수 있게 됐어요" },
     ],
   },
 
@@ -662,8 +662,8 @@ export const grammarLessons = [
       "결론에 자주 ~そうだ가 따라와요",
     ],
     examples: [
-      { japanese: "てんきよほうによると、あしたはあめだそうです", reading: "tenki yohou ni yoru to, ashita wa ame da sou desu", meaning: "일기예보에 의하면 내일은 비가 온답니다" },
-      { japanese: "かれのはなしによると、その映画はおもしろいらしい", reading: "kare no hanashi ni yoru to, sono eiga wa omoshiroi rashii", meaning: "그의 말에 의하면 그 영화는 재미있는 것 같대요" },
+      { japanese: "天気予報によると、明日は雨だそうです", reading: "てんきよほうによると、あしたはあめだそうです", meaning: "일기예보에 의하면 내일은 비가 온답니다" },
+      { japanese: "彼の話によると、その映画は面白いらしい", reading: "かれのはなしによると、そのえいがはおもしろいらしい", meaning: "그의 말에 의하면 그 영화는 재미있는 것 같대요" },
     ],
   },
   {
@@ -677,9 +677,9 @@ export const grammarLessons = [
       "후회나 유감의 뉘앙스를 담고 있어요",
     ],
     examples: [
-      { japanese: "ケーキをぜんぶたべてしまいました", reading: "keeki wo zenbu tabete shimaimashita", meaning: "케이크를 다 먹어버렸어요" },
-      { japanese: "さいふをわすれてきてしまった", reading: "saifu wo wasurete kite shimatta", meaning: "지갑을 놓고 와버렸어" },
-      { japanese: "ひみつをはなしちゃった", reading: "himitsu wo hanashichatta", meaning: "비밀을 말해버렸어" },
+      { japanese: "ケーキを全部食べてしまいました", reading: "ケーキをぜんぶたべてしまいました", meaning: "케이크를 다 먹어버렸어요" },
+      { japanese: "財布を忘れてきてしまった", reading: "さいふをわすれてきてしまった", meaning: "지갑을 놓고 와버렸어" },
+      { japanese: "秘密を話しちゃった", reading: "ひみつをはなしちゃった", meaning: "비밀을 말해버렸어" },
     ],
   },
   {
@@ -693,9 +693,9 @@ export const grammarLessons = [
       "준비, 사전 행동의 뉘앙스가 있어요",
     ],
     examples: [
-      { japanese: "りょこうのまえに、ホテルをよやくしておきました", reading: "ryokou no mae ni, hoteru wo yoyaku shite okimashita", meaning: "여행 전에 호텔을 예약해뒀어요" },
-      { japanese: "たべておいてください", reading: "tabete oite kudasai", meaning: "미리 먹어두세요" },
-      { japanese: "じしょをかっておこう", reading: "jisho wo katte okou", meaning: "사전을 미리 사둬야지" },
+      { japanese: "旅行の前に、ホテルを予約しておきました", reading: "りょこうのまえに、ホテルをよやくしておきました", meaning: "여행 전에 호텔을 예약해뒀어요" },
+      { japanese: "食べておいてください", reading: "たべておいてください", meaning: "미리 먹어두세요" },
+      { japanese: "辞書を買っておこう", reading: "じしょをかっておこう", meaning: "사전을 미리 사둬야지" },
     ],
   },
   {
@@ -709,8 +709,8 @@ export const grammarLessons = [
       "~ばかりでなく도 비슷한 표현이에요",
     ],
     examples: [
-      { japanese: "かれはにほんごだけでなく、えいごもはなします", reading: "kare wa nihongo dake de naku, eigo mo hanashimasu", meaning: "그는 일본어뿐 아니라 영어도 해요" },
-      { japanese: "このみせはやすいだけじゃなく、おいしい", reading: "kono mise wa yasui dake ja naku, oishii", meaning: "이 가게는 싸기만 한 게 아니라 맛있어요" },
+      { japanese: "彼は日本語だけでなく、英語も話します", reading: "かれはにほんごだけでなく、えいごもはなします", meaning: "그는 일본어뿐 아니라 영어도 해요" },
+      { japanese: "この店は安いだけじゃなく、おいしい", reading: "このみせはやすいだけじゃなく、おいしい", meaning: "이 가게는 싸기만 한 게 아니라 맛있어요" },
     ],
   },
   {
@@ -724,8 +724,8 @@ export const grammarLessons = [
       "~にとっては (강조), ~にとっても (마찬가지)",
     ],
     examples: [
-      { japanese: "わたしにとって、にほんごはとてもたいせつです", reading: "watashi ni totte, nihongo wa totemo taisetsu desu", meaning: "나에게 있어서 일본어는 매우 소중해요" },
-      { japanese: "こどもにとってはむずかしすぎます", reading: "kodomo ni totte wa muzukashisugimasu", meaning: "아이에게 있어서는 너무 어려워요" },
+      { japanese: "私にとって、日本語はとても大切です", reading: "わたしにとって、にほんごはとてもたいせつです", meaning: "나에게 있어서 일본어는 매우 소중해요" },
+      { japanese: "子供にとっては難しすぎます", reading: "こどもにとってはむずかしすぎます", meaning: "아이에게 있어서는 너무 어려워요" },
     ],
   },
   {
@@ -739,9 +739,9 @@ export const grammarLessons = [
       "논리적 근거에 바탕을 둔 추측이에요",
     ],
     examples: [
-      { japanese: "かれはもうしっているはずです", reading: "kare wa mou shitte iru hazu desu", meaning: "그는 이미 알고 있을 거예요" },
-      { japanese: "そんなことはないはずだ", reading: "sonna koto wa nai hazu da", meaning: "그런 일은 없을 거야" },
-      { japanese: "きのうとどいたはずなのに、まだきていない", reading: "kinou todoita hazu na no ni, mada kite inai", meaning: "어제 도착했을 텐데 아직 안 왔어" },
+      { japanese: "彼はもう知っているはずです", reading: "かれはもうしっているはずです", meaning: "그는 이미 알고 있을 거예요" },
+      { japanese: "そんなことはないはずだ", reading: "そんなことはないはずだ", meaning: "그런 일은 없을 거야" },
+      { japanese: "昨日届いたはずなのに、まだ来ていない", reading: "きのうとどいたはずなのに、まだきていない", meaning: "어제 도착했을 텐데 아직 안 왔어" },
     ],
   },
   {
@@ -755,9 +755,9 @@ export const grammarLessons = [
       "~わけにはいかない → ~할 수는 없다 (불가능한 이유)",
     ],
     examples: [
-      { japanese: "10ねんべんきょうしたから、じょうずなわけだ", reading: "juu nen benkyou shita kara, jouzu na wake da", meaning: "10년 공부했으니까 잘하는 것이구나" },
-      { japanese: "すきなわけではありません", reading: "suki na wake dewa arimasen", meaning: "좋아하는 것은 아니에요" },
-      { japanese: "やくそくしたから、いかないわけにはいかない", reading: "yakusoku shita kara, ikanai wake ni wa ikanai", meaning: "약속했으니까 안 갈 수는 없어" },
+      { japanese: "10年勉強したから、上手なわけだ", reading: "じゅうねんべんきょうしたから、じょうずなわけだ", meaning: "10년 공부했으니까 잘하는 것이구나" },
+      { japanese: "好きなわけではありません", reading: "すきなわけではありません", meaning: "좋아하는 것은 아니에요" },
+      { japanese: "約束したから、行かないわけにはいかない", reading: "やくそくしたから、いかないわけにはいかない", meaning: "약속했으니까 안 갈 수는 없어" },
     ],
   },
 
@@ -775,9 +775,9 @@ export const grammarLessons = [
       "부정 허가: ~てはいけない → ~해서는 안 돼요",
     ],
     examples: [
-      { japanese: "ここにすわってもいいですか", reading: "koko ni suwatte mo ii desu ka", meaning: "여기 앉아도 될까요?" },
-      { japanese: "しゃしんをとってもいいですか", reading: "shashin wo totte mo ii desu ka", meaning: "사진 찍어도 될까요?" },
-      { japanese: "もうかえってもいいですよ", reading: "mou kaette mo ii desu yo", meaning: "이제 돌아가도 돼요" },
+      { japanese: "ここに座ってもいいですか", reading: "ここにすわってもいいですか", meaning: "여기 앉아도 될까요?" },
+      { japanese: "写真を撮ってもいいですか", reading: "しゃしんをとってもいいですか", meaning: "사진 찍어도 될까요?" },
+      { japanese: "もう帰ってもいいですよ", reading: "もうかえってもいいですよ", meaning: "이제 돌아가도 돼요" },
     ],
   },
   {
@@ -791,9 +791,9 @@ export const grammarLessons = [
       "반대: ~なければならない → ~해야 해요",
     ],
     examples: [
-      { japanese: "ここでたばこをすってはいけません", reading: "koko de tabako wo sutte wa ikemasen", meaning: "여기서 담배를 피워서는 안 돼요" },
-      { japanese: "うそをついてはいけない", reading: "uso wo tsuite wa ikenai", meaning: "거짓말을 해서는 안 돼" },
-      { japanese: "はしってはいけません", reading: "hashitte wa ikemasen", meaning: "뛰어서는 안 돼요" },
+      { japanese: "ここでタバコを吸ってはいけません", reading: "ここでたばこをすってはいけません", meaning: "여기서 담배를 피워서는 안 돼요" },
+      { japanese: "嘘をついてはいけない", reading: "うそをついてはいけない", meaning: "거짓말을 해서는 안 돼" },
+      { japanese: "走ってはいけません", reading: "はしってはいけません", meaning: "뛰어서는 안 돼요" },
     ],
   },
   {
@@ -807,9 +807,9 @@ export const grammarLessons = [
       "한국어의 '~하는 게 나아요'와 비슷해요",
     ],
     examples: [
-      { japanese: "はやくいったほうがいいですよ", reading: "hayaku itta hou ga ii desu yo", meaning: "빨리 가는 편이 좋아요" },
-      { japanese: "びょうきのときはやすんだほうがいい", reading: "byouki no toki wa yasunda hou ga ii", meaning: "아플 때는 쉬는 편이 좋아" },
-      { japanese: "そんなにのまないほうがいいです", reading: "sonna ni nomanai hou ga ii desu", meaning: "그렇게 많이 마시지 않는 편이 좋아요" },
+      { japanese: "早く行ったほうがいいですよ", reading: "はやくいったほうがいいですよ", meaning: "빨리 가는 편이 좋아요" },
+      { japanese: "病気の時は休んだほうがいい", reading: "びょうきのときはやすんだほうがいい", meaning: "아플 때는 쉬는 편이 좋아" },
+      { japanese: "そんなに飲まないほうがいいです", reading: "そんなにのまないほうがいいです", meaning: "그렇게 많이 마시지 않는 편이 좋아요" },
     ],
   },
   {
@@ -823,9 +823,9 @@ export const grammarLessons = [
       "~しなくていい로도 쓸 수 있어요",
     ],
     examples: [
-      { japanese: "あしたはこなくてもいいですよ", reading: "ashita wa konakute mo ii desu yo", meaning: "내일은 안 와도 돼요" },
-      { japanese: "むりしなくていいよ", reading: "muri shinakute ii yo", meaning: "무리하지 않아도 돼" },
-      { japanese: "ぜんぶたべなくてもいいです", reading: "zenbu tabenakute mo ii desu", meaning: "다 먹지 않아도 돼요" },
+      { japanese: "明日は来なくてもいいですよ", reading: "あしたはこなくてもいいですよ", meaning: "내일은 안 와도 돼요" },
+      { japanese: "無理しなくていいよ", reading: "むりしなくていいよ", meaning: "무리하지 않아도 돼" },
+      { japanese: "全部食べなくてもいいです", reading: "ぜんぶたべなくてもいいです", meaning: "다 먹지 않아도 돼요" },
     ],
   },
   {
@@ -839,9 +839,9 @@ export const grammarLessons = [
       "과거: ~と思った → ~라고 생각했어요",
     ],
     examples: [
-      { japanese: "かれはまだここにいるとおもいます", reading: "kare wa mada koko ni iru to omoimasu", meaning: "그는 아직 여기 있다고 생각해요" },
-      { japanese: "このえいがはおもしろいとおもう", reading: "kono eiga wa omoshiroi to omou", meaning: "이 영화는 재미있다고 생각해" },
-      { japanese: "むずかしいとおもいましたが、できました", reading: "muzukashii to omoimashita ga, dekimashita", meaning: "어렵다고 생각했지만 할 수 있었어요" },
+      { japanese: "彼はまだここにいると思います", reading: "かれはまだここにいるとおもいます", meaning: "그는 아직 여기 있다고 생각해요" },
+      { japanese: "この映画は面白いと思う", reading: "このえいがはおもしろいとおもう", meaning: "이 영화는 재미있다고 생각해" },
+      { japanese: "難しいと思いましたが、できました", reading: "むずかしいとおもいましたが、できました", meaning: "어렵다고 생각했지만 할 수 있었어요" },
     ],
   },
   {
@@ -855,9 +855,9 @@ export const grammarLessons = [
       "확실도: かもしれない < かもしれない = でしょう < はずだ",
     ],
     examples: [
-      { japanese: "あしたあめがふるかもしれません", reading: "ashita ame ga furu kamo shiremasen", meaning: "내일 비가 올지도 몰라요" },
-      { japanese: "かれはもうしっているかもしれない", reading: "kare wa mou shitte iru kamo shirenai", meaning: "그는 이미 알고 있을지도 몰라" },
-      { japanese: "まにあわないかもしれないからはやくいこう", reading: "maniaowanai kamo shirenai kara hayaku ikou", meaning: "늦을지도 모르니까 빨리 가자" },
+      { japanese: "明日雨が降るかもしれません", reading: "あしたあめがふるかもしれません", meaning: "내일 비가 올지도 몰라요" },
+      { japanese: "彼はもう知っているかもしれない", reading: "かれはもうしっているかもしれない", meaning: "그는 이미 알고 있을지도 몰라" },
+      { japanese: "間に合わないかもしれないから早く行こう", reading: "まにあわないかもしれないからはやくいこう", meaning: "늦을지도 모르니까 빨리 가자" },
     ],
   },
   {
@@ -871,9 +871,9 @@ export const grammarLessons = [
       "명사 + らしい → '~답다'는 의미도 있어요",
     ],
     examples: [
-      { japanese: "かれはにほんごがじょうずらしいですよ", reading: "kare wa nihongo ga jouzu rashii desu yo", meaning: "그는 일본어를 잘한다고 하더라고요" },
-      { japanese: "あのみせはおいしいらしい", reading: "ano mise wa oishii rashii", meaning: "저 가게 맛있다는 것 같아" },
-      { japanese: "きょうはがっこうがやすみらしい", reading: "kyou wa gakkou ga yasumi rashii", meaning: "오늘 학교가 쉰다고 하더라" },
+      { japanese: "彼は日本語が上手らしいですよ", reading: "かれはにほんごがじょうずらしいですよ", meaning: "그는 일본어를 잘한다고 하더라고요" },
+      { japanese: "あの店はおいしいらしい", reading: "あのみせはおいしいらしい", meaning: "저 가게 맛있다는 것 같아" },
+      { japanese: "今日は学校が休みらしい", reading: "きょうはがっこうがやすみらしい", meaning: "오늘 학교가 쉰다고 하더라" },
     ],
   },
   {
@@ -887,9 +887,9 @@ export const grammarLessons = [
       "명사/동사 + ように → ~처럼, ~같이 (비교)",
     ],
     examples: [
-      { japanese: "わすれないようにかいておきます", reading: "wasurenai you ni kaite okimasu", meaning: "잊지 않도록 써 둘게요" },
-      { japanese: "みんなにきこえるようにはなしてください", reading: "minna ni kikoeru you ni hanashite kudasai", meaning: "모두에게 들리도록 말해 주세요" },
-      { japanese: "まるでゆめのようです", reading: "marude yume no you desu", meaning: "마치 꿈같아요" },
+      { japanese: "忘れないように書いておきます", reading: "わすれないようにかいておきます", meaning: "잊지 않도록 써 둘게요" },
+      { japanese: "みんなに聞こえるように話してください", reading: "みんなにきこえるようにはなしてください", meaning: "모두에게 들리도록 말해 주세요" },
+      { japanese: "まるで夢のようです", reading: "まるでゆめのようです", meaning: "마치 꿈같아요" },
     ],
   },
   {
@@ -903,9 +903,9 @@ export const grammarLessons = [
       "점진적인 변화를 강조해요",
     ],
     examples: [
-      { japanese: "にほんごがはなせるようになりました", reading: "nihongo ga hanaseru you ni narimashita", meaning: "일본어를 말할 수 있게 됐어요" },
-      { japanese: "すこしずつわかるようになってきた", reading: "sukoshi zutsu wakaru you ni natte kita", meaning: "조금씩 알 수 있게 됐어" },
-      { japanese: "さいきんあまりのまないようになりました", reading: "saikin amari nomanai you ni narimashita", meaning: "최근 별로 마시지 않게 됐어요" },
+      { japanese: "日本語が話せるようになりました", reading: "にほんごがはなせるようになりました", meaning: "일본어를 말할 수 있게 됐어요" },
+      { japanese: "少しずつわかるようになってきた", reading: "すこしずつわかるようになってきた", meaning: "조금씩 알 수 있게 됐어" },
+      { japanese: "最近あまり飲まないようになりました", reading: "さいきんあまりのまないようになりました", meaning: "최근 별로 마시지 않게 됐어요" },
     ],
   },
   {
@@ -919,9 +919,9 @@ export const grammarLessons = [
       "ことになる → 외부적으로 결정된 경우",
     ],
     examples: [
-      { japanese: "まいにちうんどうすることにしました", reading: "mainichi undou suru koto ni shimashita", meaning: "매일 운동하기로 했어요" },
-      { japanese: "おさけをやめることにした", reading: "osake wo yameru koto ni shita", meaning: "술을 끊기로 했어" },
-      { japanese: "はやくねることにします", reading: "hayaku neru koto ni shimasu", meaning: "일찍 자기로 할게요" },
+      { japanese: "毎日運動することにしました", reading: "まいにちうんどうすることにしました", meaning: "매일 운동하기로 했어요" },
+      { japanese: "お酒をやめることにした", reading: "おさけをやめることにした", meaning: "술을 끊기로 했어" },
+      { japanese: "早く寝ることにします", reading: "はやくねることにします", meaning: "일찍 자기로 할게요" },
     ],
   },
   {
@@ -935,9 +935,9 @@ export const grammarLessons = [
       "회사/학교 등 조직의 결정을 전달할 때 자주 써요",
     ],
     examples: [
-      { japanese: "らいげつにほんへいくことになりました", reading: "raigetsu nihon e iku koto ni narimashita", meaning: "다음 달 일본에 가게 됐어요" },
-      { japanese: "かいぎはもくようびにひらかれることになった", reading: "kaigi wa mokuyoubi ni hirakareru koto ni natta", meaning: "회의는 목요일에 열리게 됐어" },
-      { japanese: "このプロジェクトをたんとうすることになりました", reading: "kono purojekuto wo tantou suru koto ni narimashita", meaning: "이 프로젝트를 담당하게 됐어요" },
+      { japanese: "来月日本へ行くことになりました", reading: "らいげつにほんへいくことになりました", meaning: "다음 달 일본에 가게 됐어요" },
+      { japanese: "会議は木曜日に開かれることになった", reading: "かいぎはもくようびにひらかれることになった", meaning: "회의는 목요일에 열리게 됐어" },
+      { japanese: "このプロジェクトを担当することになりました", reading: "このプロジェクトをたんとうすることになりました", meaning: "이 프로젝트를 담당하게 됐어요" },
     ],
   },
   {
@@ -951,9 +951,9 @@ export const grammarLessons = [
       "경험 유무를 물을 때: ~たことがありますか?",
     ],
     examples: [
-      { japanese: "にほんにいったことがあります", reading: "nihon ni itta koto ga arimasu", meaning: "일본에 간 적이 있어요" },
-      { japanese: "すしをたべたことがない", reading: "sushi wo tabeta koto ga nai", meaning: "초밥을 먹어본 적이 없어" },
-      { japanese: "スカイダイビングをしたことがありますか", reading: "sukaidaibingu wo shita koto ga arimasu ka", meaning: "스카이다이빙을 해본 적 있어요?" },
+      { japanese: "日本に行ったことがあります", reading: "にほんにいったことがあります", meaning: "일본에 간 적이 있어요" },
+      { japanese: "寿司を食べたことがない", reading: "すしをたべたことがない", meaning: "초밥을 먹어본 적이 없어" },
+      { japanese: "スカイダイビングをしたことがありますか", reading: "スカイダイビングをしたことがありますか", meaning: "스카이다이빙을 해본 적 있어요?" },
     ],
   },
   {
@@ -967,9 +967,9 @@ export const grammarLessons = [
       "준비/유지의 뉘앙스가 있어요",
     ],
     examples: [
-      { japanese: "りょこうのまえにちずをしらべておきます", reading: "ryokou no mae ni chizu wo shirabete okimasu", meaning: "여행 전에 지도를 미리 찾아봐 둘게요" },
-      { japanese: "ドアをあけておいてください", reading: "doa wo akete oite kudasai", meaning: "문을 열어 두세요" },
-      { japanese: "よやくしておいたほうがいい", reading: "yoyaku shite oita hou ga ii", meaning: "예약해 두는 편이 좋아" },
+      { japanese: "旅行の前に地図を調べておきます", reading: "りょこうのまえにちずをしらべておきます", meaning: "여행 전에 지도를 미리 찾아봐 둘게요" },
+      { japanese: "ドアを開けておいてください", reading: "ドアをあけておいてください", meaning: "문을 열어 두세요" },
+      { japanese: "予約しておいた方がいい", reading: "よやくしておいたほうがいい", meaning: "예약해 두는 편이 좋아" },
     ],
   },
   {
@@ -983,9 +983,9 @@ export const grammarLessons = [
       "てあげる → (내가) 남을 위해 ~해 준다",
     ],
     examples: [
-      { japanese: "ともだちがてつだってくれました", reading: "tomodachi ga tetsudatte kuremashita", meaning: "친구가 도와줬어요" },
-      { japanese: "せんせいにせつめいしてもらいました", reading: "sensei ni setsumei shite moraimashita", meaning: "선생님께 설명을 받았어요" },
-      { japanese: "おしえてもらえますか", reading: "oshiete moraemasu ka", meaning: "가르쳐 주실 수 있어요?" },
+      { japanese: "友達が手伝ってくれました", reading: "ともだちがてつだってくれました", meaning: "친구가 도와줬어요" },
+      { japanese: "先生に説明してもらいました", reading: "せんせいにせつめいしてもらいました", meaning: "선생님께 설명을 받았어요" },
+      { japanese: "教えてもらえますか", reading: "おしえてもらえますか", meaning: "가르쳐 주실 수 있어요?" },
     ],
   },
   {
@@ -999,9 +999,9 @@ export const grammarLessons = [
       "강요처럼 들릴 수 있으니 상황에 맞게 써요",
     ],
     examples: [
-      { japanese: "にもつをもってあげましょうか", reading: "nimotsu wo motte age mashou ka", meaning: "짐을 들어 드릴까요?" },
-      { japanese: "たんじょうびにプレゼントをかってあげた", reading: "tanjoubi ni purezento wo katte ageta", meaning: "생일에 선물을 사줬어" },
-      { japanese: "こどもにほんをよんであげました", reading: "kodomo ni hon wo yonde agemashita", meaning: "아이에게 책을 읽어줬어요" },
+      { japanese: "荷物を持ってあげましょうか", reading: "にもつをもってあげましょうか", meaning: "짐을 들어 드릴까요?" },
+      { japanese: "誕生日にプレゼントを買ってあげた", reading: "たんじょうびにプレゼントをかってあげた", meaning: "생일에 선물을 사줬어" },
+      { japanese: "子供に本を読んであげました", reading: "こどもにほんをよんであげました", meaning: "아이에게 책을 읽어줬어요" },
     ],
   },
   {
@@ -1015,9 +1015,9 @@ export const grammarLessons = [
       "な형용사: しずかな → しずかそうだ (조용할 것 같다)",
     ],
     examples: [
-      { japanese: "このケーキはおいしそうですね", reading: "kono keeki wa oishisou desu ne", meaning: "이 케이크는 맛있을 것 같네요" },
-      { japanese: "かれはつかれているそうです", reading: "kare wa tsukarete iru sou desu", meaning: "그는 피곤한 것 같아요" },
-      { japanese: "あめがふりそうです", reading: "ame ga furisou desu", meaning: "비가 올 것 같아요" },
+      { japanese: "このケーキは美味しそうですね", reading: "このケーキはおいしそうですね", meaning: "이 케이크는 맛있을 것 같네요" },
+      { japanese: "彼は疲れているそうです", reading: "かれはつかれているそうです", meaning: "그는 피곤한 것 같아요" },
+      { japanese: "雨が降りそうです", reading: "あめがふりそうです", meaning: "비가 올 것 같아요" },
     ],
   },
 
@@ -1035,9 +1035,9 @@ export const grammarLessons = [
       "た형 + ために → ~때문에 (원인, 부정적 결과)",
     ],
     examples: [
-      { japanese: "にほんごをまなぶためににほんにきました", reading: "nihongo wo manabu tame ni nihon ni kimashita", meaning: "일본어를 배우기 위해 일본에 왔어요" },
-      { japanese: "かぜをひいたために、がっこうをやすんだ", reading: "kaze wo hiita tame ni, gakkou wo yasunda", meaning: "감기에 걸렸기 때문에 학교를 쉬었어" },
-      { japanese: "みんなのためにがんばります", reading: "minna no tame ni ganbarimasu", meaning: "모두를 위해 열심히 할게요" },
+      { japanese: "日本語を学ぶために日本に来ました", reading: "にほんごをまなぶためににほんにきました", meaning: "일본어를 배우기 위해 일본에 왔어요" },
+      { japanese: "風邪をひいたために、学校を休んだ", reading: "かぜをひいたために、がっこうをやすんだ", meaning: "감기에 걸렸기 때문에 학교를 쉬었어" },
+      { japanese: "みんなのために頑張ります", reading: "みんなのためにがんばります", meaning: "모두를 위해 열심히 할게요" },
     ],
   },
   {
@@ -1051,9 +1051,9 @@ export const grammarLessons = [
       "이유를 나타내는 ので와 혼동하지 마세요",
     ],
     examples: [
-      { japanese: "べんきょうしたのに、テストにおちた", reading: "benkyou shita no ni, tesuto ni ochita", meaning: "공부했는데도 시험에 떨어졌어" },
-      { japanese: "やすかったのにかわなかった", reading: "yasukatta no ni kawanakatta", meaning: "쌌는데도 사지 않았어" },
-      { japanese: "いっているのにきいてくれない", reading: "itte iru no ni kiite kurenai", meaning: "말하고 있는데 들어주지 않아" },
+      { japanese: "勉強したのに、テストに落ちた", reading: "べんきょうしたのに、テストにおちた", meaning: "공부했는데도 시험에 떨어졌어" },
+      { japanese: "安かったのに買わなかった", reading: "やすかったのにかわなかった", meaning: "쌌는데도 사지 않았어" },
+      { japanese: "言っているのに聞いてくれない", reading: "いっているのにきいてくれない", meaning: "말하고 있는데 들어주지 않아" },
     ],
   },
   {
@@ -1067,9 +1067,9 @@ export const grammarLessons = [
       "친한 사이나 혼잣말에 주로 써요",
     ],
     examples: [
-      { japanese: "しらないくせに、えらそうにいうな", reading: "shiranai kuse ni, erasou ni iu na", meaning: "모르는 주제에 잘난 척하지 마" },
-      { japanese: "へたなくせにひとのことをひはんする", reading: "heta na kuse ni hito no koto wo hihan suru", meaning: "자기는 못하면서 남을 비판해" },
-      { japanese: "こどものくせにおとなぶる", reading: "kodomo no kuse ni otonaburu", meaning: "어린 주제에 어른 흉내를 내" },
+      { japanese: "知らないくせに、えらそうに言うな", reading: "しらないくせに、えらそうにいうな", meaning: "모르는 주제에 잘난 척하지 마" },
+      { japanese: "下手なくせに人のことを批判する", reading: "へたなくせにひとのことをひはんする", meaning: "자기는 못하면서 남을 비판해" },
+      { japanese: "子供のくせに大人ぶる", reading: "こどものくせにおとなぶる", meaning: "어린 주제에 어른 흉내를 내" },
     ],
   },
   {
@@ -1083,9 +1083,9 @@ export const grammarLessons = [
       "割合(비율)에서 온 표현이에요",
     ],
     examples: [
-      { japanese: "このレストランはねだんのわりにおいしい", reading: "kono resutoran wa nedan no wari ni oishii", meaning: "이 레스토랑은 가격에 비해 맛있어" },
-      { japanese: "いちねんべんきょうしたわりにはじょうずだ", reading: "ichi nen benkyou shita wari ni wa jouzu da", meaning: "1년 공부한 것치고는 잘해" },
-      { japanese: "わかいわりにおちついている", reading: "wakai wari ni ochitsuite iru", meaning: "젊은 것에 비해 침착해" },
+      { japanese: "このレストランは値段のわりにおいしい", reading: "このレストランはねだんのわりにおいしい", meaning: "이 레스토랑은 가격에 비해 맛있어" },
+      { japanese: "一年勉強したわりには上手だ", reading: "いちねんべんきょうしたわりにはじょうずだ", meaning: "1년 공부한 것치고는 잘해" },
+      { japanese: "若いわりに落ち着いている", reading: "わかいわりにおちついている", meaning: "젊은 것에 비해 침착해" },
     ],
   },
   {
@@ -1099,9 +1099,9 @@ export const grammarLessons = [
       "반드시 뒤에 ない/ません이 와야 해요",
     ],
     examples: [
-      { japanese: "さいふに1000えんしかない", reading: "saifu ni sen en shika nai", meaning: "지갑에 1000엔밖에 없어" },
-      { japanese: "あなたしかいない", reading: "anata shika inai", meaning: "당신밖에 없어" },
-      { japanese: "いくしかありません", reading: "iku shika arimasen", meaning: "갈 수밖에 없어요" },
+      { japanese: "財布に1000円しかない", reading: "さいふにせんえんしかない", meaning: "지갑에 1000엔밖에 없어" },
+      { japanese: "あなたしかいない", reading: "あなたしかいない", meaning: "당신밖에 없어" },
+      { japanese: "行くしかありません", reading: "いくしかありません", meaning: "갈 수밖에 없어요" },
     ],
   },
   {
@@ -1115,9 +1115,9 @@ export const grammarLessons = [
       "명사 + ばかり → ~만, ~뿐",
     ],
     examples: [
-      { japanese: "あまいものばかりたべている", reading: "amai mono bakari tabete iru", meaning: "단 것만 먹고 있어" },
-      { japanese: "いまにほんにきたばかりです", reading: "ima nihon ni kita bakari desu", meaning: "방금 막 일본에 왔어요" },
-      { japanese: "ねてばかりいないでべんきょうしなさい", reading: "nete bakari inai de benkyou shinasai", meaning: "자기만 하지 말고 공부해라" },
+      { japanese: "甘いものばかり食べている", reading: "あまいものばかりたべている", meaning: "단 것만 먹고 있어" },
+      { japanese: "今日本に来たばかりです", reading: "いまにほんにきたばかりです", meaning: "방금 막 일본에 왔어요" },
+      { japanese: "寝てばかりいないで勉強しなさい", reading: "ねてばかりいないでべんきょうしなさい", meaning: "자기만 하지 말고 공부해라" },
     ],
   },
   {
@@ -1131,9 +1131,9 @@ export const grammarLessons = [
       "さえ 단독으로 '~조차도'의 뜻도 있어요",
     ],
     examples: [
-      { japanese: "おかねさえあればなんでもできる", reading: "okane sae areba nandemo dekiru", meaning: "돈만 있으면 뭐든 할 수 있어" },
-      { japanese: "れんしゅうさえすればじょうずになれる", reading: "renshuu sae sureba jouzu ni nareru", meaning: "연습만 하면 잘할 수 있어" },
-      { japanese: "あなたさえいればいい", reading: "anata sae ireba ii", meaning: "당신만 있으면 돼" },
+      { japanese: "お金さえあれば何でもできる", reading: "おかねさえあればなんでもできる", meaning: "돈만 있으면 뭐든 할 수 있어" },
+      { japanese: "練習さえすれば上手になれる", reading: "れんしゅうさえすればじょうずになれる", meaning: "연습만 하면 잘할 수 있어" },
+      { japanese: "あなたさえいればいい", reading: "あなたさえいればいい", meaning: "당신만 있으면 돼" },
     ],
   },
   {
@@ -1147,9 +1147,9 @@ export const grammarLessons = [
       "명사 + のまま → ~인 상태 그대로",
     ],
     examples: [
-      { japanese: "くつをはいたまま入ってしまった", reading: "kutsu wo haita mama haitte shimatta", meaning: "신발을 신은 채로 들어가 버렸어" },
-      { japanese: "宿題をしないままねた", reading: "shukudai wo shinai mama neta", meaning: "숙제를 안 한 채로 잤어" },
-      { japanese: "ドアをあけたままにしないでください", reading: "doa wo aketa mama ni shinaide kudasai", meaning: "문을 열어 둔 채로 두지 마세요" },
+      { japanese: "靴を履いたまま入ってしまった", reading: "くつをはいたままはいってしまった", meaning: "신발을 신은 채로 들어가 버렸어" },
+      { japanese: "宿題をしないまま寝た", reading: "しゅくだいをしないままねた", meaning: "숙제를 안 한 채로 잤어" },
+      { japanese: "ドアを開けたままにしないでください", reading: "ドアをあけたままにしないでください", meaning: "문을 열어 둔 채로 두지 마세요" },
     ],
   },
   {
@@ -1163,9 +1163,9 @@ export const grammarLessons = [
       "た + ところだ → 방금 막 ~했다 (직후)",
     ],
     examples: [
-      { japanese: "いまでかけるところです", reading: "ima dekakeru tokoro desu", meaning: "지금 막 나가려는 참이에요" },
-      { japanese: "いまごはんをたべているところです", reading: "ima gohan wo tabete iru tokoro desu", meaning: "지금 밥을 먹는 중이에요" },
-      { japanese: "いまかえってきたところです", reading: "ima kaette kita tokoro desu", meaning: "방금 막 돌아온 참이에요" },
+      { japanese: "今出かけるところです", reading: "いまでかけるところです", meaning: "지금 막 나가려는 참이에요" },
+      { japanese: "今ご飯を食べているところです", reading: "いまごはんをたべているところです", meaning: "지금 밥을 먹는 중이에요" },
+      { japanese: "今帰ってきたところです", reading: "いまかえってきたところです", meaning: "방금 막 돌아온 참이에요" },
     ],
   },
   {
@@ -1179,9 +1179,9 @@ export const grammarLessons = [
       "같은 주어의 동시 동작에만 써요",
     ],
     examples: [
-      { japanese: "おんがくをきながらべんきょうする", reading: "ongaku wo kikinagara benkyou suru", meaning: "음악을 들으면서 공부해" },
-      { japanese: "あるきながらスマホをみるのはきけんだ", reading: "aruki nagara sumaho wo miru no wa kiken da", meaning: "걸으면서 스마트폰을 보는 건 위험해" },
-      { japanese: "わらいながらはなしてくれた", reading: "warai nagara hanashite kureta", meaning: "웃으면서 얘기해줬어" },
+      { japanese: "音楽を聴きながら勉強する", reading: "おんがくをきながらべんきょうする", meaning: "음악을 들으면서 공부해" },
+      { japanese: "歩きながらスマホを見るのは危険だ", reading: "あるきながらスマホをみるのはきけんだ", meaning: "걸으면서 스마트폰을 보는 건 위험해" },
+      { japanese: "笑いながら話してくれた", reading: "わらいながらはなしてくれた", meaning: "웃으면서 얘기해줬어" },
     ],
   },
   {
@@ -1195,9 +1195,9 @@ export const grammarLessons = [
       "~ば~ほど → ~하면 할수록",
     ],
     examples: [
-      { japanese: "やればやるほどうまくなる", reading: "yareba yaru hodo umaku naru", meaning: "하면 할수록 잘하게 돼" },
-      { japanese: "あなたほどじょうずではありません", reading: "anata hodo jouzu dewa arimasen", meaning: "당신만큼 잘하지는 못해요" },
-      { japanese: "にほんごはむずかしいほどおもしろい", reading: "nihongo wa muzukashii hodo omoshiroi", meaning: "일본어는 어려울수록 재미있어" },
+      { japanese: "やればやるほど上手くなる", reading: "やればやるほどうまくなる", meaning: "하면 할수록 잘하게 돼" },
+      { japanese: "あなたほど上手ではありません", reading: "あなたほどじょうずではありません", meaning: "당신만큼 잘하지는 못해요" },
+      { japanese: "日本語は難しいほど面白い", reading: "にほんごはむずかしいほどおもしろい", meaning: "일본어는 어려울수록 재미있어" },
     ],
   },
   {
@@ -1211,9 +1211,9 @@ export const grammarLessons = [
       "~とよかった로도 쓸 수 있어요",
     ],
     examples: [
-      { japanese: "もっとはやくはじめればよかった", reading: "motto hayaku hajimereba yokatta", meaning: "더 일찍 시작했으면 좋았을텐데" },
-      { japanese: "あんなことをいわなければよかった", reading: "anna koto wo iwanakereba yokatta", meaning: "그런 말을 하지 않았으면 좋았을텐데" },
-      { japanese: "かさをもってくればよかった", reading: "kasa wo motte kureba yokatta", meaning: "우산을 가져왔으면 좋았을텐데" },
+      { japanese: "もっと早く始めればよかった", reading: "もっとはやくはじめればよかった", meaning: "더 일찍 시작했으면 좋았을텐데" },
+      { japanese: "あんなことを言わなければよかった", reading: "あんなことをいわなければよかった", meaning: "그런 말을 하지 않았으면 좋았을텐데" },
+      { japanese: "傘を持ってくればよかった", reading: "かさをもってくればよかった", meaning: "우산을 가져왔으면 좋았을텐데" },
     ],
   },
   {
@@ -1227,9 +1227,9 @@ export const grammarLessons = [
       "ことにした(결정)와 달리 계속적인 상태예요",
     ],
     examples: [
-      { japanese: "まいあさ6じにおきることにしています", reading: "mai asa roku ji ni okiru koto ni shite imasu", meaning: "매일 아침 6시에 일어나기로 하고 있어요" },
-      { japanese: "ひとのわるぐちをいわないことにしている", reading: "hito no waruguchi wo iwanai koto ni shite iru", meaning: "남 욕을 하지 않기로 하고 있어" },
-      { japanese: "よるはさけをのまないことにしています", reading: "yoru wa sake wo nomanai koto ni shite imasu", meaning: "저녁에는 술을 마시지 않기로 하고 있어요" },
+      { japanese: "毎朝6時に起きることにしています", reading: "まいあさろくじにおきることにしています", meaning: "매일 아침 6시에 일어나기로 하고 있어요" },
+      { japanese: "人の悪口を言わないことにしている", reading: "ひとのわるぐちをいわないことにしている", meaning: "남 욕을 하지 않기로 하고 있어" },
+      { japanese: "夜はお酒を飲まないことにしています", reading: "よるはおさけをのまないことにしています", meaning: "저녁에는 술을 마시지 않기로 하고 있어요" },
     ],
   },
   {
@@ -1243,9 +1243,9 @@ export const grammarLessons = [
       "はずだ(논리적 근거) vs に違いない(주관적 확신)",
     ],
     examples: [
-      { japanese: "かれはもうしっているにちがいない", reading: "kare wa mou shitte iru ni chigai nai", meaning: "그는 틀림없이 이미 알고 있을 거야" },
-      { japanese: "あのひとはにほんじんにちがいない", reading: "ano hito wa nihonjin ni chigai nai", meaning: "저 사람은 틀림없이 일본인이야" },
-      { japanese: "このうわさはうそにちがいない", reading: "kono uwasa wa uso ni chigai nai", meaning: "이 소문은 틀림없이 거짓말이야" },
+      { japanese: "彼はもう知っているに違いない", reading: "かれはもうしっているにちがいない", meaning: "그는 틀림없이 이미 알고 있을 거야" },
+      { japanese: "あの人は日本人に違いない", reading: "あのひとはにほんじんにちがいない", meaning: "저 사람은 틀림없이 일본인이야" },
+      { japanese: "この噂は嘘に違いない", reading: "このうわさはうそにちがいない", meaning: "이 소문은 틀림없이 거짓말이야" },
     ],
   },
   {
@@ -1259,9 +1259,9 @@ export const grammarLessons = [
       "구어체: ~わけない로도 써요",
     ],
     examples: [
-      { japanese: "あのひとがうそをつくわけがない", reading: "ano hito ga uso wo tsuku wake ga nai", meaning: "저 사람이 거짓말을 할 리가 없어" },
-      { japanese: "こんなもんだいができないわけがない", reading: "konna mondai ga dekinai wake ga nai", meaning: "이런 문제를 못 풀 리가 없어" },
-      { japanese: "かれがしらないわけがないでしょう", reading: "kare ga shiranai wake ga nai deshou", meaning: "그가 모를 리가 없잖아요" },
+      { japanese: "あの人が嘘をつくわけがない", reading: "あのひとがうそをつくわけがない", meaning: "저 사람이 거짓말을 할 리가 없어" },
+      { japanese: "こんな問題ができないわけがない", reading: "こんなもんだいができないわけがない", meaning: "이런 문제를 못 풀 리가 없어" },
+      { japanese: "彼が知らないわけがないでしょう", reading: "かれがしらないわけがないでしょう", meaning: "그가 모를 리가 없잖아요" },
     ],
   },
   {
@@ -1275,9 +1275,9 @@ export const grammarLessons = [
       "なくてもいい와 비슷하지만 더 단호한 뉘앙스",
     ],
     examples: [
-      { japanese: "そんなにしんぱいすることはない", reading: "sonna ni shinpai suru koto wa nai", meaning: "그렇게 걱정할 필요 없어" },
-      { japanese: "あやまることはありません", reading: "ayamaru koto wa arimasen", meaning: "사과할 필요 없어요" },
-      { japanese: "いそぐことはないよ、じかんはたっぷりある", reading: "isogu koto wa nai yo, jikan wa tappuri aru", meaning: "서두를 필요 없어, 시간은 충분히 있어" },
+      { japanese: "そんなに心配することはない", reading: "そんなにしんぱいすることはない", meaning: "그렇게 걱정할 필요 없어" },
+      { japanese: "謝ることはありません", reading: "あやまることはありません", meaning: "사과할 필요 없어요" },
+      { japanese: "急ぐことはないよ、時間はたっぷりある", reading: "いそぐことはないよ、じかんはたっぷりある", meaning: "서두를 필요 없어, 시간은 충분히 있어" },
     ],
   },
   {
@@ -1291,9 +1291,9 @@ export const grammarLessons = [
       "부정: ~ものではない → ~해서는 안 된다",
     ],
     examples: [
-      { japanese: "ひとのものをとってはいけないものだ", reading: "hito no mono wo totte wa ikenai mono da", meaning: "남의 것을 가져가서는 안 되는 거야" },
-      { japanese: "こどものころよくここであそんだものだ", reading: "kodomo no koro yoku koko de asonda mono da", meaning: "어릴 때 여기서 자주 놀았었지" },
-      { japanese: "かいしゃにはじかんどおりくるものです", reading: "kaisha ni wa jikan doori kuru mono desu", meaning: "회사에는 제시간에 오는 것이에요" },
+      { japanese: "人のものを取ってはいけないものだ", reading: "ひとのものをとってはいけないものだ", meaning: "남의 것을 가져가서는 안 되는 거야" },
+      { japanese: "子供のころよくここで遊んだものだ", reading: "こどものころよくここであそんだものだ", meaning: "어릴 때 여기서 자주 놀았었지" },
+      { japanese: "会社には時間通りくるものです", reading: "かいしゃにはじかんどおりくるものです", meaning: "회사에는 제시간에 오는 것이에요" },
     ],
   },
   {
@@ -1307,9 +1307,9 @@ export const grammarLessons = [
       "실수나 예상치 못한 결과에 자주 써요",
     ],
     examples: [
-      { japanese: "さいふをわすれてきてしまいました", reading: "saifu wo wasurete kite shimaimashita", meaning: "지갑을 두고 와버렸어요" },
-      { japanese: "ケーキをぜんぶたべてしまった", reading: "keeki wo zenbu tabete shimatta", meaning: "케이크를 다 먹어버렸어" },
-      { japanese: "ほんをなくしてしまってこまっています", reading: "hon wo nakushite shimatte komatte imasu", meaning: "책을 잃어버려서 곤란해요" },
+      { japanese: "財布を忘れてきてしまいました", reading: "さいふをわすれてきてしまいました", meaning: "지갑을 두고 와버렸어요" },
+      { japanese: "ケーキを全部食べてしまった", reading: "ケーキをぜんぶたべてしまった", meaning: "케이크를 다 먹어버렸어" },
+      { japanese: "本をなくしてしまって困っています", reading: "ほんをなくしてしまってこまっています", meaning: "책을 잃어버려서 곤란해요" },
     ],
   },
   {
@@ -1323,9 +1323,9 @@ export const grammarLessons = [
       "진행 중임을 강하게 강조해요",
     ],
     examples: [
-      { japanese: "いまちょうどしらべているところです", reading: "ima choudo shirabete iru tokoro desu", meaning: "지금 마침 조사하는 중이에요" },
-      { japanese: "かれにれんらくしているところです", reading: "kare ni renraku shite iru tokoro desu", meaning: "그에게 연락하는 중이에요" },
-      { japanese: "いまたべているところなのでまってください", reading: "ima tabete iru tokoro na no de matte kudasai", meaning: "지금 먹는 중이니까 기다려 주세요" },
+      { japanese: "今ちょうど調べているところです", reading: "いまちょうどしらべているところです", meaning: "지금 마침 조사하는 중이에요" },
+      { japanese: "彼に連絡しているところです", reading: "かれにれんらくしているところです", meaning: "그에게 연락하는 중이에요" },
+      { japanese: "今食べているところなので待ってください", reading: "いまたべているところなのでまってください", meaning: "지금 먹는 중이니까 기다려 주세요" },
     ],
   },
   {
@@ -1339,9 +1339,9 @@ export const grammarLessons = [
       "てみたい → ~해 보고 싶다",
     ],
     examples: [
-      { japanese: "いちどたべてみてください", reading: "ichido tabete mite kudasai", meaning: "한 번 먹어 보세요" },
-      { japanese: "にほんごでかいてみます", reading: "nihongo de kaite mimasu", meaning: "일본어로 써 볼게요" },
-      { japanese: "やってみなければわからない", reading: "yatte minakereba wakaranai", meaning: "해 보지 않으면 몰라" },
+      { japanese: "一度食べてみてください", reading: "いちどたべてみてください", meaning: "한 번 먹어 보세요" },
+      { japanese: "日本語で書いてみます", reading: "にほんごでかいてみます", meaning: "일본어로 써 볼게요" },
+      { japanese: "やってみなければわからない", reading: "やってみなければわからない", meaning: "해 보지 않으면 몰라" },
     ],
   },
   {
@@ -1355,9 +1355,9 @@ export const grammarLessons = [
       "직접적인 요청보다 부드러운 바람을 나타내요",
     ],
     examples: [
-      { japanese: "はやくかえってきてほしい", reading: "hayaku kaette kite hoshii", meaning: "빨리 돌아와 줬으면 해" },
-      { japanese: "このことはだれにもいわないでほしい", reading: "kono koto wa dare ni mo iwanai de hoshii", meaning: "이 일은 아무에게도 말하지 않아 줬으면 해" },
-      { japanese: "もっとじかんをかけてやってほしかった", reading: "motto jikan wo kakete yatte hoshikatta", meaning: "좀 더 시간을 들여 해줬으면 했어" },
+      { japanese: "早く帰ってきてほしい", reading: "はやくかえってきてほしい", meaning: "빨리 돌아와 줬으면 해" },
+      { japanese: "このことは誰にも言わないでほしい", reading: "このことはだれにもいわないでほしい", meaning: "이 일은 아무에게도 말하지 않아 줬으면 해" },
+      { japanese: "もっと時間をかけてやってほしかった", reading: "もっとじかんをかけてやってほしかった", meaning: "좀 더 시간을 들여 해줬으면 했어" },
     ],
   },
   {
@@ -1371,9 +1371,9 @@ export const grammarLessons = [
       "~ということだ → ~라는 것이다 (결론 정리)",
     ],
     examples: [
-      { japanese: "たなかというひとがきました", reading: "tanaka to iu hito ga kimashita", meaning: "다나카라는 사람이 왔어요" },
-      { japanese: "あいというのはむずかしいものだ", reading: "ai to iu no wa muzukashii mono da", meaning: "사랑이라는 것은 어려운 거야" },
-      { japanese: "つまり、いくのはむりだということですか", reading: "tsumari, iku no wa muri da to iu koto desu ka", meaning: "즉, 가는 건 무리라는 거예요?" },
+      { japanese: "田中という人が来ました", reading: "たなかというひとがきました", meaning: "다나카라는 사람이 왔어요" },
+      { japanese: "愛というのは難しいものだ", reading: "あいというのはむずかしいものだ", meaning: "사랑이라는 것은 어려운 거야" },
+      { japanese: "つまり、行くのは無理だということですか", reading: "つまり、いくのはむりだということですか", meaning: "즉, 가는 건 무리라는 거예요?" },
     ],
   },
   {
@@ -1387,9 +1387,9 @@ export const grammarLessons = [
       "~さえ~ば(~만 하면)와 구별해서 써요",
     ],
     examples: [
-      { japanese: "こどもさえできるのに、なんでできないの", reading: "kodomo sae dekiru no ni, nande dekinai no", meaning: "아이도 할 수 있는데 왜 못 해?" },
-      { japanese: "かれはじぶんのなまえさえかけない", reading: "kare wa jibun no namae sae kakenai", meaning: "그는 자기 이름조차 못 써" },
-      { japanese: "かなしくてなみださえでない", reading: "kanashikute namida sae denai", meaning: "너무 슬퍼서 눈물조차 안 나와" },
+      { japanese: "子供さえできるのに、なんでできないの", reading: "こどもさえできるのに、なんでできないの", meaning: "아이도 할 수 있는데 왜 못 해?" },
+      { japanese: "彼は自分の名前さえ書けない", reading: "かれはじぶんのなまえさえかけない", meaning: "그는 자기 이름조차 못 써" },
+      { japanese: "悲しくて涙さえでない", reading: "かなしくてなみださえでない", meaning: "너무 슬퍼서 눈물조차 안 나와" },
     ],
   },
 
@@ -1407,9 +1407,9 @@ export const grammarLessons = [
       "に関する + 명사 형태로도 써요",
     ],
     examples: [
-      { japanese: "このけんにかんしてはあとでせつめいします", reading: "kono ken ni kanshite wa ato de setsumei shimasu", meaning: "이 건에 관해서는 나중에 설명할게요" },
-      { japanese: "にほんのぶんかにかんするほんをよんだ", reading: "nihon no bunka ni kansuru hon wo yonda", meaning: "일본 문화에 관한 책을 읽었어" },
-      { japanese: "プロジェクトにかんしてしつもんがあります", reading: "purojekuto ni kanshite shitsumon ga arimasu", meaning: "프로젝트에 관해 질문이 있어요" },
+      { japanese: "この件に関しては後で説明します", reading: "このけんにかんしてはあとでせつめいします", meaning: "이 건에 관해서는 나중에 설명할게요" },
+      { japanese: "日本の文化に関する本を読んだ", reading: "にほんのぶんかにかんするほんをよんだ", meaning: "일본 문화에 관한 책을 읽었어" },
+      { japanese: "プロジェクトに関して質問があります", reading: "プロジェクトにかんしてしつもんがあります", meaning: "프로젝트에 관해 질문이 있어요" },
     ],
   },
   {
@@ -1423,9 +1423,9 @@ export const grammarLessons = [
       "に対する + 명사 형태로도 써요",
     ],
     examples: [
-      { japanese: "こきゃくにたいしていつもていねいにせっする", reading: "kokyaku ni taishite itsumo teinei ni sessuru", meaning: "고객에 대해 항상 정중하게 대한다" },
-      { japanese: "かれがしずかなのにたいして、かのじょはにぎやかだ", reading: "kare ga shizuka na no ni taishite, kanojo wa nigiyaka da", meaning: "그가 조용한 반면, 그녀는 활발해" },
-      { japanese: "このそちはひこうに対してのたいさくだ", reading: "kono sochi wa hikou ni taishite no taisaku da", meaning: "이 조치는 비행에 대한 대책이야" },
+      { japanese: "顧客に対していつも丁寧に接する", reading: "こきゃくにたいしていつもていねいにせっする", meaning: "고객에 대해 항상 정중하게 대한다" },
+      { japanese: "彼が静かなのに対して、彼女はにぎやかだ", reading: "かれがしずかなのにたいして、かのじょはにぎやかだ", meaning: "그가 조용한 반면, 그녀는 활발해" },
+      { japanese: "この措置は非行に対しての対策だ", reading: "このそちはひこうにたいしてのたいさくだ", meaning: "이 조치는 비행에 대한 대책이야" },
     ],
   },
   {
@@ -1439,9 +1439,9 @@ export const grammarLessons = [
       "차이: ~によって → ~에 따라 (다양성)",
     ],
     examples: [
-      { japanese: "この絵はピカソによってかかれた", reading: "kono e wa pikaso ni yotte kakareta", meaning: "이 그림은 피카소에 의해 그려졌어" },
-      { japanese: "じしんによってたてものがくずれた", reading: "jishin ni yotte tatemono ga kuzureta", meaning: "지진으로 인해 건물이 무너졌어" },
-      { japanese: "ひとによってかんがえかたがちがう", reading: "hito ni yotte kangaekata ga chigau", meaning: "사람에 따라 생각하는 방식이 달라" },
+      { japanese: "この絵はピカソによって描かれた", reading: "このえはピカソによってかかれた", meaning: "이 그림은 피카소에 의해 그려졌어" },
+      { japanese: "地震によって建物が崩れた", reading: "じしんによってたてものがくずれた", meaning: "지진으로 인해 건물이 무너졌어" },
+      { japanese: "人によって考え方が違う", reading: "ひとによってかんがえかたがちがう", meaning: "사람에 따라 생각하는 방식이 달라" },
     ],
   },
   {
@@ -1455,9 +1455,9 @@ export const grammarLessons = [
       "데이터·법률·규칙 등을 근거로 말할 때 자주 써요",
     ],
     examples: [
-      { japanese: "データにもとづいてけつろんをだした", reading: "deeta ni motozuite ketsuron wo dashita", meaning: "데이터에 근거해서 결론을 냈어" },
-      { japanese: "ほうりつにもとづいてはんだんします", reading: "houritsu ni motozuite handan shimasu", meaning: "법률에 근거해서 판단해요" },
-      { japanese: "けいけんにもとづいたちしきがたいせつだ", reading: "keiken ni motozuita chishiki ga taisetsu da", meaning: "경험에 바탕을 둔 지식이 중요해" },
+      { japanese: "データに基づいて結論を出した", reading: "データにもとづいてけつろんをだした", meaning: "데이터에 근거해서 결론을 냈어" },
+      { japanese: "法律に基づいて判断します", reading: "ほうりつにもとづいてはんだんします", meaning: "법률에 근거해서 판단해요" },
+      { japanese: "経験に基づいた知識が大切だ", reading: "けいけんにもとづいたちしきがたいせつだ", meaning: "경험에 바탕을 둔 지식이 중요해" },
     ],
   },
   {
@@ -1471,9 +1471,9 @@ export const grammarLessons = [
       "기간 전체에 걸친 경우도 나타내요",
     ],
     examples: [
-      { japanese: "インターネットをつうじてしりあった", reading: "intaanetto wo tsuujite shiriatta", meaning: "인터넷을 통해 알게 됐어" },
-      { japanese: "かれをとおしてすてきなひとにあった", reading: "kare wo tooshite suteki na hito ni atta", meaning: "그를 통해 멋진 사람을 만났어" },
-      { japanese: "いちねんをつうじてあたたかいきこうです", reading: "ichi nen wo tsuujite atatakai kikou desu", meaning: "일년 내내 따뜻한 기후예요" },
+      { japanese: "インターネットを通じて知り合った", reading: "インターネットをつうじてしりあった", meaning: "인터넷을 통해 알게 됐어" },
+      { japanese: "彼を通してすてきな人に会った", reading: "かれをとおしてすてきなひとにあった", meaning: "그를 통해 멋진 사람을 만났어" },
+      { japanese: "一年を通じて暖かい気候です", reading: "いちねんをつうじてあたたかいきこうです", meaning: "일년 내내 따뜻한 기후예요" },
     ],
   },
   {
@@ -1487,9 +1487,9 @@ export const grammarLessons = [
       "に伴う + 명사 형태로도 써요",
     ],
     examples: [
-      { japanese: "けいざいのはってんにともなって、せいかつすいじゅんがあがった", reading: "keizai no hatten ni tomonatte, seikatsu suijun ga agatta", meaning: "경제 발전에 따라 생활 수준이 올랐어" },
-      { japanese: "じんこうぞうかにともなう問題", reading: "jinkou zouka ni tomonau mondai", meaning: "인구 증가에 따른 문제" },
-      { japanese: "こうれいかにともなって、ふくしのじゅうようせいがたかまっている", reading: "koureika ni tomonatte, fukushi no juuyousei ga takamatte iru", meaning: "고령화에 따라 복지의 중요성이 높아지고 있어" },
+      { japanese: "経済の発展に伴って、生活水準が上がった", reading: "けいざいのはってんにともなって、せいかつすいじゅんがあがった", meaning: "경제 발전에 따라 생활 수준이 올랐어" },
+      { japanese: "人口増加に伴う問題", reading: "じんこうぞうかにともなうもんだい", meaning: "인구 증가에 따른 문제" },
+      { japanese: "高齢化に伴って、福祉の重要性が高まっている", reading: "こうれいかにともなって、ふくしのじゅうようせいがたかまっている", meaning: "고령화에 따라 복지의 중요성이 높아지고 있어" },
     ],
   },
   {
@@ -1503,9 +1503,9 @@ export const grammarLessons = [
       "두 가지 뜻을 문맥으로 구분해요",
     ],
     examples: [
-      { japanese: "かくにんしたうえで、しょめいしてください", reading: "kakunin shita ue de, shomei shite kudasai", meaning: "확인한 후에 서명해 주세요" },
-      { japanese: "けんこうのうえでたいせつなことは？", reading: "kenkou no ue de taisetsu na koto wa?", meaning: "건강 면에서 중요한 것은?" },
-      { japanese: "そうだんのうえで、けっていします", reading: "soudan no ue de, kettei shimasu", meaning: "상담한 후에 결정할게요" },
+      { japanese: "確認した上で、署名してください", reading: "かくにんしたうえで、しょめいしてください", meaning: "확인한 후에 서명해 주세요" },
+      { japanese: "健康の上で大切なことは？", reading: "けんこうのうえでたいせつなことは？", meaning: "건강 면에서 중요한 것은?" },
+      { japanese: "相談の上で、決定します", reading: "そうだんのうえで、けっていします", meaning: "상담한 후에 결정할게요" },
     ],
   },
   {
@@ -1519,9 +1519,9 @@ export const grammarLessons = [
       "동사 ます형 + 次第 → ~하는 즉시 (별개 표현)",
     ],
     examples: [
-      { japanese: "けっかはどりょくしだいです", reading: "kekka wa doryoku shidai desu", meaning: "결과는 노력에 달려 있어요" },
-      { japanese: "てんきしだいでけっていします", reading: "tenki shidai de kettei shimasu", meaning: "날씨에 따라 결정할게요" },
-      { japanese: "あなたのやりかたしだいでかわる", reading: "anata no yarikata shidai de kawaru", meaning: "당신의 방식에 따라 달라져" },
+      { japanese: "結果は努力次第です", reading: "けっかはどりょくしだいです", meaning: "결과는 노력에 달려 있어요" },
+      { japanese: "天気次第で決定します", reading: "てんきしだいでけっていします", meaning: "날씨에 따라 결정할게요" },
+      { japanese: "あなたのやり方次第で変わる", reading: "あなたのやりかたしだいでかわる", meaning: "당신의 방식에 따라 달라져" },
     ],
   },
   {
@@ -1535,9 +1535,9 @@ export const grammarLessons = [
       "どんくさっぽい처럼 부정적 뉘앙스가 많아요",
     ],
     examples: [
-      { japanese: "あのひとはどうもうそっぽいはなしをする", reading: "ano hito wa dou mo usoppoi hanashi wo suru", meaning: "저 사람은 왠지 거짓말 같은 이야기를 해" },
-      { japanese: "このへやはこどもっぽい", reading: "kono heya wa kodomoppoi", meaning: "이 방은 어린애 같아" },
-      { japanese: "かれはわすれっぽいので、きをつけて", reading: "kare wa wasureppoi no de, ki wo tsukete", meaning: "그는 잘 잊어버리니까 조심해" },
+      { japanese: "あの人はどうも嘘っぽい話をする", reading: "あのひとはどうもうそっぽいはなしをする", meaning: "저 사람은 왠지 거짓말 같은 이야기를 해" },
+      { japanese: "この部屋は子供っぽい", reading: "このへやはこどもっぽい", meaning: "이 방은 어린애 같아" },
+      { japanese: "彼は忘れっぽいので、気をつけて", reading: "かれはわすれっぽいので、きをつけて", meaning: "그는 잘 잊어버리니까 조심해" },
     ],
   },
   {
@@ -1551,9 +1551,9 @@ export const grammarLessons = [
       "てしまいがち → 자꾸 ~해버리는 경향",
     ],
     examples: [
-      { japanese: "かれはおくれがちです", reading: "kare wa okure gachi desu", meaning: "그는 자꾸 늦어요" },
-      { japanese: "ひとはよわいときにまちがいをしがちだ", reading: "hito wa yowai toki ni machigai wo shi gachi da", meaning: "사람은 약할 때 실수를 하기 쉽다" },
-      { japanese: "さいきんすいみんぶそくになりがちです", reading: "saikin suimin busoku ni nari gachi desu", meaning: "요즘 수면 부족이 되기 쉬워요" },
+      { japanese: "彼は遅れがちです", reading: "かれはおくれがちです", meaning: "그는 자꾸 늦어요" },
+      { japanese: "人は弱い時に間違いをしがちだ", reading: "ひとはよわいときにまちがいをしがちだ", meaning: "사람은 약할 때 실수를 하기 쉽다" },
+      { japanese: "最近睡眠不足になりがちです", reading: "さいきんすいみんぶそくになりがちです", meaning: "요즘 수면 부족이 되기 쉬워요" },
     ],
   },
   {
@@ -1567,9 +1567,9 @@ export const grammarLessons = [
       "체념이나 결단의 뉘앙스가 있어요",
     ],
     examples: [
-      { japanese: "もうここをでるしかない", reading: "mou koko wo deru shika nai", meaning: "이제 여기를 나갈 수밖에 없어" },
-      { japanese: "じぶんでやるしかありません", reading: "jibun de yaru shika arimasen", meaning: "스스로 할 수밖에 없어요" },
-      { japanese: "あやまるしかなかった", reading: "ayamaru shika nakatta", meaning: "사과할 수밖에 없었어" },
+      { japanese: "もうここを出るしかない", reading: "もうここをでるしかない", meaning: "이제 여기를 나갈 수밖에 없어" },
+      { japanese: "自分でやるしかありません", reading: "じぶんでやるしかありません", meaning: "스스로 할 수밖에 없어요" },
+      { japanese: "謝るしかなかった", reading: "あやまるしかなかった", meaning: "사과할 수밖에 없었어" },
     ],
   },
   {
@@ -1583,9 +1583,9 @@ export const grammarLessons = [
       "しかない보다 격식체이고 강한 표현이에요",
     ],
     examples: [
-      { japanese: "じょうきょうをかんがえると、みとめざるをえない", reading: "joukyou wo kangaeru to, mitomezaru wo enai", meaning: "상황을 생각하면 인정하지 않을 수 없어" },
-      { japanese: "たかくてもかわざるをえなかった", reading: "takakute mo kawazaru wo enakatta", meaning: "비싸도 사지 않을 수 없었어" },
-      { japanese: "けっかをはっぴょうせざるをえません", reading: "kekka wo happyou sezaru wo emasen", meaning: "결과를 발표하지 않을 수 없어요" },
+      { japanese: "状況を考えると、認めざるを得ない", reading: "じょうきょうをかんがえると、みとめざるをえない", meaning: "상황을 생각하면 인정하지 않을 수 없어" },
+      { japanese: "高くても買わざるを得なかった", reading: "たかくてもかわざるをえなかった", meaning: "비싸도 사지 않을 수 없었어" },
+      { japanese: "結果を発表せざるを得ません", reading: "けっかをはっぴょうせざるをえません", meaning: "결과를 발표하지 않을 수 없어요" },
     ],
   },
   {
@@ -1599,9 +1599,9 @@ export const grammarLessons = [
       "주의나 경고의 맥락에서 자주 써요",
     ],
     examples: [
-      { japanese: "そのやりかたではしっぱいしかねない", reading: "sono yarikata de wa shippai shi kanenai", meaning: "그 방식으로는 실패할 수도 있어" },
-      { japanese: "こんなことをつづけたらびょうきになりかねない", reading: "konna koto wo tsuzuketara byouki ni nari kanenai", meaning: "이런 일을 계속하면 병이 날 수도 있어" },
-      { japanese: "いいすぎるとごかいをうみかねない", reading: "iisugiru to gokai wo umi kanenai", meaning: "너무 말하면 오해를 살 수도 있어" },
+      { japanese: "そのやり方では失敗しかねない", reading: "そのやりかたではしっぱいしかねない", meaning: "그 방식으로는 실패할 수도 있어" },
+      { japanese: "こんなことを続けたら病気になりかねない", reading: "こんなことをつづけたらびょうきになりかねない", meaning: "이런 일을 계속하면 병이 날 수도 있어" },
+      { japanese: "言い過ぎると誤解を生みかねない", reading: "いいすぎるとごかいをうみかねない", meaning: "너무 말하면 오해를 살 수도 있어" },
     ],
   },
   {
@@ -1615,9 +1615,9 @@ export const grammarLessons = [
       "비즈니스 상황에서 거절할 때 자주 써요",
     ],
     examples: [
-      { japanese: "そのようなことはいたしかねます", reading: "sono you na koto wa itashi kanemasu", meaning: "그런 일은 하기 어렵습니다" },
-      { japanese: "どうしてもさんせいしかねます", reading: "doushitemo sansei shi kanemasu", meaning: "도저히 찬성하기 어렵습니다" },
-      { japanese: "そのもうしでは、おうじかねます", reading: "sono moushide wa, ouji kanemasu", meaning: "그 제안에는 응하기 어렵습니다" },
+      { japanese: "そのようなことは致しかねます", reading: "そのようなことはいたしかねます", meaning: "그런 일은 하기 어렵습니다" },
+      { japanese: "どうしても賛成しかねます", reading: "どうしてもさんせいしかねます", meaning: "도저히 찬성하기 어렵습니다" },
+      { japanese: "その申し出では、応じかねます", reading: "そのもうしでは、おうじかねます", meaning: "그 제안에는 응하기 어렵습니다" },
     ],
   },
   {
@@ -1631,9 +1631,9 @@ export const grammarLessons = [
       "をもとにした + 명사 형태로도 써요",
     ],
     examples: [
-      { japanese: "じじつをもとにしたえいがです", reading: "jijitsu wo moto ni shita eiga desu", meaning: "사실을 바탕으로 한 영화예요" },
-      { japanese: "アンケートをもとにかいぜんしました", reading: "ankeeto wo moto ni kaizen shimashita", meaning: "설문조사를 바탕으로 개선했어요" },
-      { japanese: "このしょうせつはじぶんのけいけんをもとにかいた", reading: "kono shousetsu wa jibun no keiken wo moto ni kaita", meaning: "이 소설은 자신의 경험을 바탕으로 썼어" },
+      { japanese: "事実をもとにした映画です", reading: "じじつをもとにしたえいがです", meaning: "사실을 바탕으로 한 영화예요" },
+      { japanese: "アンケートをもとに改善しました", reading: "アンケートをもとにかいぜんしました", meaning: "설문조사를 바탕으로 개선했어요" },
+      { japanese: "この小説は自分の経験をもとに書いた", reading: "このしょうせつはじぶんのけいけんをもとにかいた", meaning: "이 소설은 자신의 경험을 바탕으로 썼어" },
     ],
   },
   {
@@ -1647,9 +1647,9 @@ export const grammarLessons = [
       "にあたり 형태로도 써요 (더 격식체)",
     ],
     examples: [
-      { japanese: "しんがっきにあたって、もくひょうをたてた", reading: "shin gakki ni atatte, mokuhyou wo tateta", meaning: "새 학기를 맞이해 목표를 세웠어" },
-      { japanese: "ご卒業にあたり、ひとことごあいさつ申し上げます", reading: "go sotsugyou ni atari, hitokoto go aisatsu moushiagemasu", meaning: "졸업에 즈음하여 한 말씀 드리겠습니다" },
-      { japanese: "けいやくをむすぶにあたって、ないようをかくにんしてください", reading: "keiyaku wo musubu ni atatte, naiyou wo kakunin shite kudasai", meaning: "계약을 맺을 때, 내용을 확인해 주세요" },
+      { japanese: "新学期にあたって、目標を立てた", reading: "しんがっきにあたって、もくひょうをたてた", meaning: "새 학기를 맞이해 목표를 세웠어" },
+      { japanese: "ご卒業にあたり、一言ご挨拶申し上げます", reading: "ごそつぎょうにあたり、ひとことごあいさつもうしあげます", meaning: "졸업에 즈음하여 한 말씀 드리겠습니다" },
+      { japanese: "契約を結ぶにあたって、内容を確認してください", reading: "けいやくをむすぶにあたって、ないようをかくにんしてください", meaning: "계약을 맺을 때, 내용을 확인해 주세요" },
     ],
   },
   {
@@ -1663,9 +1663,9 @@ export const grammarLessons = [
       "보통 긍정적·중립적 변화에 써요",
     ],
     examples: [
-      { japanese: "しゃかいはかわりつつある", reading: "shakai wa kawari tsutsu aru", meaning: "사회는 변하는 중이야" },
-      { japanese: "かんきょうもんだいはかいけつされつつある", reading: "kankyou mondai wa kaiketsu sare tsutsu aru", meaning: "환경 문제는 해결되는 중이야" },
-      { japanese: "かれのにほんごはめきめきとびつつある", reading: "kare no nihongo wa mekimeki to nobi tsutsu aru", meaning: "그의 일본어 실력은 눈에 띄게 늘고 있어" },
+      { japanese: "社会は変わりつつある", reading: "しゃかいはかわりつつある", meaning: "사회는 변하는 중이야" },
+      { japanese: "環境問題は解決されつつある", reading: "かんきょうもんだいはかいけつされつつある", meaning: "환경 문제는 해결되는 중이야" },
+      { japanese: "彼の日本語はめきめきと伸びつつある", reading: "かれのにほんごはめきめきとのびつつある", meaning: "그의 일본어 실력은 눈에 띄게 늘고 있어" },
     ],
   },
   {
@@ -1679,9 +1679,9 @@ export const grammarLessons = [
       "ようがない = しようがない",
     ],
     examples: [
-      { japanese: "いまさらとりけしようがない", reading: "imasara torikeshi you ga nai", meaning: "이제 와서 취소할 방법이 없어" },
-      { japanese: "かれのきもちはりかいしようがない", reading: "kare no kimochi wa rikai shi you ga nai", meaning: "그의 마음은 이해할 방법이 없어" },
-      { japanese: "てがかりがなくてさがしようがない", reading: "tegakari ga nakute sagashi you ga nai", meaning: "단서가 없어서 찾을 방법이 없어" },
+      { japanese: "今さら取り消しようがない", reading: "いまさらとりけしようがない", meaning: "이제 와서 취소할 방법이 없어" },
+      { japanese: "彼の気持ちは理解しようがない", reading: "かれのきもちはりかいしようがない", meaning: "그의 마음은 이해할 방법이 없어" },
+      { japanese: "手がかりがなくて探しようがない", reading: "てがかりがなくてさがしようがない", meaning: "단서가 없어서 찾을 방법이 없어" },
     ],
   },
   {
@@ -1695,9 +1695,9 @@ export const grammarLessons = [
       "격식체 문장에서 자주 써요",
     ],
     examples: [
-      { japanese: "かれとともにしごとをすることができた", reading: "kare to tomo ni shigoto wo suru koto ga dekita", meaning: "그와 함께 일할 수 있었어" },
-      { japanese: "としをとるとともに、けんこうをたいせつにする", reading: "toshi wo toru to tomo ni, kenkou wo taisetsu ni suru", meaning: "나이를 먹음과 동시에 건강을 소중히 한다" },
-      { japanese: "きじゅつのはったんとともに、せかいはかわった", reading: "gijutsu no hatten to tomo ni, sekai wa kawatta", meaning: "기술 발전과 함께 세상이 변했어" },
+      { japanese: "彼とともに仕事をすることができた", reading: "かれとともにしごとをすることができた", meaning: "그와 함께 일할 수 있었어" },
+      { japanese: "年をとるとともに、健康を大切にする", reading: "としをとるとともに、けんこうをたいせつにする", meaning: "나이를 먹음과 동시에 건강을 소중히 한다" },
+      { japanese: "技術の発展とともに、世界は変わった", reading: "ぎじゅつのはってんとともに、せかいはかわった", meaning: "기술 발전과 함께 세상이 변했어" },
     ],
   },
   {
@@ -1711,9 +1711,9 @@ export const grammarLessons = [
       "につれて와 유사하지만 지시 준수의 뉘앙스가 강해요",
     ],
     examples: [
-      { japanese: "せんせいのしじにしたがってこうどうします", reading: "sensei no shiji ni shitagatte koudou shimasu", meaning: "선생님의 지시에 따라 행동할게요" },
-      { japanese: "じかんがたつにしたがって、かれのきもちもかわった", reading: "jikan ga tatsu ni shitagatte, kare no kimochi mo kawatta", meaning: "시간이 지남에 따라 그의 마음도 바뀌었어" },
-      { japanese: "きそくにしたがってこうどうしてください", reading: "kisoku ni shitagatte koudou shite kudasai", meaning: "규칙에 따라 행동해 주세요" },
+      { japanese: "先生の指示に従って行動します", reading: "せんせいのしじにしたがってこうどうします", meaning: "선생님의 지시에 따라 행동할게요" },
+      { japanese: "時間が経つに従って、彼の気持ちも変わった", reading: "じかんがたつにしたがって、かれのきもちもかわった", meaning: "시간이 지남에 따라 그의 마음도 바뀌었어" },
+      { japanese: "規則に従って行動してください", reading: "きそくにしたがってこうどうしてください", meaning: "규칙에 따라 행동해 주세요" },
     ],
   },
 ];
