@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { hiragana, katakana } from "./data/kana";
 import { useDailyProgress, getStoredProfile, setStoredProfile } from "./hooks/useDailyProgress";
-import { getDayNumber, dayNumToDateKey } from "./data/curriculum";
+import { getDayNumber, dayNumToDateKey, getDayLesson } from "./data/curriculum";
 import Home from "./components/Home";
 import DailyLesson from "./components/DailyLesson";
 import Flashcard from "./components/Flashcard";
@@ -9,6 +9,15 @@ import ReadingDrill from "./components/ReadingDrill";
 import VocabBook from "./components/VocabBook";
 import GrammarLesson from "./components/GrammarLesson";
 import KanaChart from "./components/KanaChart";
+import ChatWidget from "./components/ChatWidget";
+
+const SCREEN_LABELS = {
+  home: "홈", hiragana: "히라가나 퀴즈", katakana: "카타카나 퀴즈",
+  reading: "읽기 드릴", chart: "가나 표", vocab: "단어장", grammar: "문법 레슨",
+};
+const TASK_LABELS_FOR_CHAT = {
+  kana: "글자 연습", words: "단어 학습", grammar: "문법", sentence: "문장 익히기",
+};
 
 const BOTTOM_TABS = [
   { id: "home",    icon: "🏠", label: "홈" },
@@ -89,6 +98,12 @@ function MainApp({ profile, onSwitchProfile }) {
     kana: "글자 연습", words: "단어 학습", grammar: "문법", sentence: "문장 익히기",
   };
 
+  const chatDayNum = activeLesson ? activeLesson.dayNum : getDayNumber();
+  const chatScreenLabel = activeLesson
+    ? `Day ${activeLesson.dayNum} ${TASK_LABELS_FOR_CHAT[activeLesson.task]}`
+    : SCREEN_LABELS[tab] || tab;
+  const chatContext = { profile, dayNum: chatDayNum, screenLabel: chatScreenLabel, lesson: getDayLesson(chatDayNum) };
+
   if (activeLesson) {
     return (
       <div className="min-h-screen bg-gray-50">
@@ -106,6 +121,7 @@ function MainApp({ profile, onSwitchProfile }) {
         <main className="max-w-lg mx-auto">
           <DailyLesson task={activeLesson.task} dayNum={activeLesson.dayNum} onDone={handleTaskDone} />
         </main>
+        <ChatWidget context={chatContext} />
       </div>
     );
   }
@@ -172,6 +188,7 @@ function MainApp({ profile, onSwitchProfile }) {
           })}
         </div>
       </nav>
+      <ChatWidget context={chatContext} />
     </div>
   );
 }

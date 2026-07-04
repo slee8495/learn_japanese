@@ -1,13 +1,7 @@
 import { useState } from "react";
 import { getDayNumber, getDayLesson } from "../data/curriculum";
 import Furigana from "./Furigana";
-
-function speak(text) {
-  const utt = new SpeechSynthesisUtterance(text);
-  utt.lang = "ja-JP";
-  utt.rate = 0.85;
-  speechSynthesis.speak(utt);
-}
+import { speak } from "../utils/speak";
 
 // ── 글자 연습 (히라가나+카타카나 같이 + 읽기 연습) ───────────────
 function KanaSection({ lesson, onDone }) {
