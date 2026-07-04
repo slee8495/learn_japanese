@@ -24,7 +24,14 @@
       "Bash(echo \"EXIT:$?\")",
       "Bash(mdfind -onlyin ~ 'kMDItemFSName == '\\\\''Screenshot*'\\\\'' && kMDItemFSContentChangeDate >= $time.now\\(-1800\\)')",
       "Bash(node -e \"const d=require\\('./src/data/jlpt-words.json'\\); console.log\\(Object.keys\\(d\\)\\); for \\(const k of Object.keys\\(d\\)\\) console.log\\(k, Array.isArray\\(d[k]\\)?d[k].length:'obj'\\)\")",
-      "Bash(git -C .. log --oneline)"
+      "Bash(git -C .. log --oneline)",
+      "Bash(npx oxlint *)",
+      "Bash(curl *)",
+      "Bash(python3 -c \"import cairosvg; print\\('ok'\\)\")",
+      "Bash(python3 -c \"from PIL import Image; print\\('pil ok'\\)\")",
+      "Bash(npx --yes @resvg/resvg-cli --version)",
+      "Bash(fc-list)",
+      "Bash(npm uninstall *)"
     ]
   }
 }
