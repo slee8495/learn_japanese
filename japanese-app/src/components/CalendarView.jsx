@@ -88,18 +88,20 @@ export default function CalendarView({ daily, startKey, todayDayNum, onSelectDay
                 const isToday = key === dateKey(today);
                 const isFuture = dateObj > today;
                 const isBeforeStart = dayNum < 1;
+                // 전날 학습을 다 못 끝냈으면 실제 날짜가 지나도 그 다음 Day는 아직 잠겨있음(오늘 칸은 예외)
+                const isLocked = !isToday && dayNum > todayDay;
                 const done = daily[key] || {};
                 const doneCount = Object.values(done).filter(Boolean).length;
 
                 let style = "bg-white border border-gray-100 text-gray-400";
                 if (isBeforeStart) style = "text-gray-200";
                 else if (isToday) style = "bg-indigo-600 text-white font-bold";
-                else if (isFuture) style = "text-gray-300";
+                else if (isFuture || isLocked) style = "text-gray-300";
                 else if (doneCount >= 4) style = "bg-green-400 text-white";
                 else if (doneCount > 0) style = "bg-yellow-100 border border-yellow-300 text-yellow-700";
                 else style = "bg-white border border-gray-100 text-gray-600";
 
-                const clickable = !isBeforeStart && !isFuture;
+                const clickable = !isBeforeStart && !isFuture && !isLocked;
 
                 return (
                   <button

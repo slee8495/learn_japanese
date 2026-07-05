@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
-import { getCaliforniaToday, getDayNumber } from "../data/curriculum";
+import { getCaliforniaToday, getDayNumber, dayNumToDateKey } from "../data/curriculum";
 
 const PROFILE_KEY = "jp_profile";
+const TASK_KEYS = ["kana", "words", "grammar", "sentence"];
 
 export function getStoredProfile() {
   return localStorage.getItem(PROFILE_KEY) || null;
@@ -19,9 +20,36 @@ function startKeyStorageKey(profileName) {
   return `jp_start_${profileName}`;
 }
 
+function dayProgressKey(profileName) {
+  return `jp_dayprogress_${profileName}`;
+}
+
 function load(profileName) {
   try { return JSON.parse(localStorage.getItem(dailyKey(profileName))) || {}; }
   catch { return {}; }
+}
+
+function isDayComplete(dayDone) {
+  return TASK_KEYS.every((t) => dayDone?.[t]);
+}
+
+// Day 번호별 완료 기록을 반환. 예전에는 완료 여부를 실제 날짜로만 저장했으므로,
+// 처음 호출될 때는 그 프로필의 시작일 기준 "자연스러운 날짜"에 남아있는 완료 기록을
+// Day 번호별 기록으로 한 번 옮겨온다(마이그레이션). 이후로는 이 기록이 진도의 기준이 된다.
+function ensureDayProgress(profileName, daily, startKey) {
+  const key = dayProgressKey(profileName);
+  const stored = localStorage.getItem(key);
+  if (stored) {
+    try { return JSON.parse(stored); } catch { /* 파싱 실패 시 재구성 */ }
+  }
+  const rebuilt = {};
+  const calendarDayNum = getDayNumber(startKey);
+  for (let d = 1; d <= calendarDayNum; d++) {
+    const naturalKey = dayNumToDateKey(d, startKey);
+    if (daily[naturalKey]) rebuilt[d] = daily[naturalKey];
+  }
+  localStorage.setItem(key, JSON.stringify(rebuilt));
+  return rebuilt;
 }
 
 // 이 프로필이 학습을 시작한 날짜(YYYY-MM-DD)를 반환. 처음 보는 프로필이면
@@ -50,11 +78,23 @@ function dateKey(date = null) {
 export function useDailyProgress(profileName) {
   const [daily, setDaily] = useState(() => load(profileName));
   const [startKey] = useState(() => ensureStartKey(profileName, load(profileName)));
-  const dayNum = getDayNumber(startKey);
+  const [dayProgress, setDayProgress] = useState(() => ensureDayProgress(profileName, load(profileName), startKey));
 
   useEffect(() => {
     localStorage.setItem(dailyKey(profileName), JSON.stringify(daily));
   }, [daily, profileName]);
+
+  useEffect(() => {
+    localStorage.setItem(dayProgressKey(profileName), JSON.stringify(dayProgress));
+  }, [dayProgress, profileName]);
+
+  // 실제 캘린더 날짜로는 며칠째인지와 별개로, "아직 다 못 끝낸 가장 이른 Day"를 현재 Day로 삼는다.
+  // 즉 어제 학습을 다 못 끝냈으면 오늘이 와도 새 Day로 안 넘어가고 어제 것이 그대로 남는다.
+  const calendarDayNum = getDayNumber(startKey);
+  let dayNum = calendarDayNum;
+  for (let d = 1; d <= calendarDayNum; d++) {
+    if (!isDayComplete(dayProgress[d])) { dayNum = d; break; }
+  }
 
   function markTask(task, dayKey = dateKey()) {
     setDaily(prev => ({
@@ -63,8 +103,16 @@ export function useDailyProgress(profileName) {
     }));
   }
 
+  // Day 번호 기준 완료 기록 — 실제로 어느 날짜에 했든 상관없이 "그 Day를 끝냈는지"만 추적
+  function markDayTask(dayNumToMark, task) {
+    setDayProgress(prev => ({
+      ...prev,
+      [dayNumToMark]: { ...(prev[dayNumToMark] || {}), [task]: true },
+    }));
+  }
+
   function getTodayDone() {
-    return daily[dateKey()] || {};
+    return dayProgress[dayNum] || {};
   }
 
   function getDayDone(dayKey) {
@@ -98,5 +146,5 @@ export function useDailyProgress(profileName) {
     });
   }
 
-  return { markTask, getTodayDone, getDayDone, getStreak, getWeekStatus, dateKey, daily, dayNum, startKey };
+  return { markTask, markDayTask, getTodayDone, getDayDone, getStreak, getWeekStatus, dateKey, daily, dayNum, startKey };
 }

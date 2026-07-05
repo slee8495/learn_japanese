@@ -76,7 +76,7 @@ function MainApp({ profile, onSwitchProfile }) {
   const [tab, setTab] = useState("home");
   const [activeLesson, setActiveLesson] = useState(null);
 
-  const { markTask, getTodayDone, getStreak, getWeekStatus, dateKey, daily, dayNum: todayDayNum, startKey } = useDailyProgress(profile);
+  const { markTask, markDayTask, getTodayDone, getStreak, getWeekStatus, dateKey, daily, dayNum: todayDayNum, startKey } = useDailyProgress(profile);
   const todayDone = getTodayDone();
   const streak = getStreak();
   const weekStatus = getWeekStatus();
@@ -87,9 +87,8 @@ function MainApp({ profile, onSwitchProfile }) {
 
   function handleTaskDone() {
     const { task, dayNum } = activeLesson;
-    if (dayNum === todayDayNum) {
-      markTask(task, dateKey());
-    }
+    markTask(task, dateKey());
+    markDayTask(dayNum, task);
     setActiveLesson(null);
     setTab("home");
   }
