@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { getCaliforniaToday } from "../data/curriculum";
+import { getCaliforniaToday, getDayNumber } from "../data/curriculum";
 
 const PROFILE_KEY = "jp_profile";
 
@@ -15,9 +15,27 @@ function dailyKey(profileName) {
   return `jp_daily_${profileName}`;
 }
 
+function startKeyStorageKey(profileName) {
+  return `jp_start_${profileName}`;
+}
+
 function load(profileName) {
   try { return JSON.parse(localStorage.getItem(dailyKey(profileName))) || {}; }
   catch { return {}; }
+}
+
+// 이 프로필이 학습을 시작한 날짜(YYYY-MM-DD)를 반환. 처음 보는 프로필이면
+// 지금까지 기록된 학습 이력 중 가장 이른 날짜(없으면 오늘)로 한 번만 정해서 저장한다.
+// 이렇게 해야 프로필마다 "Day 몇째" 번호가 실제 진도에 맞게 서로 달라진다.
+function ensureStartKey(profileName, daily) {
+  const key = startKeyStorageKey(profileName);
+  let stored = localStorage.getItem(key);
+  if (!stored) {
+    const recordedDates = Object.keys(daily).sort();
+    stored = recordedDates[0] || dateKey();
+    localStorage.setItem(key, stored);
+  }
+  return stored;
 }
 
 // 캘리포니아(LA) 기준 "YYYY-MM-DD" 키. date 인자 없으면 오늘(CA) 반환
@@ -31,6 +49,8 @@ function dateKey(date = null) {
 
 export function useDailyProgress(profileName) {
   const [daily, setDaily] = useState(() => load(profileName));
+  const [startKey] = useState(() => ensureStartKey(profileName, load(profileName)));
+  const dayNum = getDayNumber(startKey);
 
   useEffect(() => {
     localStorage.setItem(dailyKey(profileName), JSON.stringify(daily));
@@ -78,5 +98,5 @@ export function useDailyProgress(profileName) {
     });
   }
 
-  return { markTask, getTodayDone, getDayDone, getStreak, getWeekStatus, dateKey, daily };
+  return { markTask, getTodayDone, getDayDone, getStreak, getWeekStatus, dateKey, daily, dayNum, startKey };
 }

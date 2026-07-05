@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { hiragana, katakana } from "./data/kana";
 import { useDailyProgress, getStoredProfile, setStoredProfile } from "./hooks/useDailyProgress";
-import { getDayNumber, dayNumToDateKey, getDayLesson } from "./data/curriculum";
+import { getDayLesson } from "./data/curriculum";
 import Home from "./components/Home";
 import DailyLesson from "./components/DailyLesson";
 import Flashcard from "./components/Flashcard";
@@ -76,18 +76,18 @@ function MainApp({ profile, onSwitchProfile }) {
   const [tab, setTab] = useState("home");
   const [activeLesson, setActiveLesson] = useState(null);
 
-  const { markTask, getTodayDone, getStreak, getWeekStatus, dateKey, daily } = useDailyProgress(profile);
+  const { markTask, getTodayDone, getStreak, getWeekStatus, dateKey, daily, dayNum: todayDayNum, startKey } = useDailyProgress(profile);
   const todayDone = getTodayDone();
   const streak = getStreak();
   const weekStatus = getWeekStatus();
 
-  function handleNavigate(task, dayNum = getDayNumber()) {
+  function handleNavigate(task, dayNum = todayDayNum) {
     setActiveLesson({ task, dayNum });
   }
 
   function handleTaskDone() {
     const { task, dayNum } = activeLesson;
-    if (dayNum === getDayNumber()) {
+    if (dayNum === todayDayNum) {
       markTask(task, dateKey());
     }
     setActiveLesson(null);
@@ -98,7 +98,7 @@ function MainApp({ profile, onSwitchProfile }) {
     kana: "글자 연습", words: "단어 학습", grammar: "문법", sentence: "문장 익히기",
   };
 
-  const chatDayNum = activeLesson ? activeLesson.dayNum : getDayNumber();
+  const chatDayNum = activeLesson ? activeLesson.dayNum : todayDayNum;
   const chatScreenLabel = activeLesson
     ? `Day ${activeLesson.dayNum} ${TASK_LABELS_FOR_CHAT[activeLesson.task]}`
     : SCREEN_LABELS[tab] || tab;
@@ -112,7 +112,7 @@ function MainApp({ profile, onSwitchProfile }) {
             <button onClick={() => setActiveLesson(null)} className="text-gray-400 text-2xl leading-none">←</button>
             <div>
               <p className="font-semibold text-gray-800">{taskLabel[activeLesson.task]}</p>
-              {activeLesson.dayNum !== getDayNumber() && (
+              {activeLesson.dayNum !== todayDayNum && (
                 <p className="text-xs text-indigo-500">Day {activeLesson.dayNum} 복습</p>
               )}
             </div>
@@ -161,7 +161,7 @@ function MainApp({ profile, onSwitchProfile }) {
 
       <main className="max-w-lg mx-auto">
         {tab === "home" && (
-          <Home onNavigate={handleNavigate} todayDone={todayDone} streak={streak} weekStatus={weekStatus} daily={daily} />
+          <Home onNavigate={handleNavigate} todayDone={todayDone} streak={streak} weekStatus={weekStatus} daily={daily} dayNum={todayDayNum} startKey={startKey} />
         )}
         {tab === "hiragana" && <Flashcard key="hiragana" deck={hiragana} onProgress={() => {}} />}
         {tab === "katakana" && <Flashcard key="katakana" deck={katakana} onProgress={() => {}} />}

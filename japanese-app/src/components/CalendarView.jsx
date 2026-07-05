@@ -1,13 +1,7 @@
 import { useState } from "react";
-import { getDayNumber, getDayLesson, getCaliforniaToday } from "../data/curriculum";
+import { getDayLesson, getCaliforniaToday, dateToDayNum } from "../data/curriculum";
 
 const DAYS = ["일","월","화","수","목","금","토"];
-
-const START = new Date(2026, 5, 28); // 2026-06-28 (curriculum.js START와 동일)
-function dateToDay(date) {
-  const d = new Date(date.getFullYear(), date.getMonth(), date.getDate());
-  return Math.floor((d - START) / 86400000) + 1;
-}
 
 function dateKey(date) {
   return `${date.getFullYear()}-${String(date.getMonth()+1).padStart(2,"0")}-${String(date.getDate()).padStart(2,"0")}`;
@@ -20,9 +14,9 @@ const TASK_META = {
   sentence: { icon: "会", label: "문장 익히기" },
 };
 
-export default function CalendarView({ daily, onSelectDay, onClose }) {
+export default function CalendarView({ daily, startKey, todayDayNum, onSelectDay, onClose }) {
   const today = getCaliforniaToday();
-  const todayDay = getDayNumber();
+  const todayDay = todayDayNum;
   const [viewYear, setViewYear] = useState(today.getFullYear());
   const [viewMonth, setViewMonth] = useState(today.getMonth());
   const [pickedDay, setPickedDay] = useState(null); // { dayNum, dateObj }
@@ -90,7 +84,7 @@ export default function CalendarView({ daily, onSelectDay, onClose }) {
 
                 const dateObj = new Date(viewYear, viewMonth, day);
                 const key = dateKey(dateObj);
-                const dayNum = dateToDay(dateObj);
+                const dayNum = dateToDayNum(dateObj, startKey);
                 const isToday = key === dateKey(today);
                 const isFuture = dateObj > today;
                 const isBeforeStart = dayNum < 1;

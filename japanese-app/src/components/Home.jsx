@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { getDayNumber, getDayLesson } from "../data/curriculum";
+import { getDayLesson } from "../data/curriculum";
 import CalendarView from "./CalendarView";
 
 const TASK_META = {
@@ -61,8 +61,7 @@ function TaskCard({ taskKey, done, onClick }) {
   );
 }
 
-export default function Home({ onNavigate, todayDone, streak, weekStatus, daily }) {
-  const dayNum = getDayNumber();
+export default function Home({ onNavigate, todayDone, streak, weekStatus, daily, dayNum, startKey }) {
   const lesson = getDayLesson(dayNum);
   const tasks = ["kana", "words", "grammar", "sentence"];
   const doneCount = tasks.filter(t => todayDone[t]).length;
@@ -145,6 +144,8 @@ export default function Home({ onNavigate, todayDone, streak, weekStatus, daily 
       {showCalendar && (
         <CalendarView
           daily={daily}
+          startKey={startKey}
+          todayDayNum={dayNum}
           onSelectDay={handleCalendarSelect}
           onClose={() => setShowCalendar(false)}
         />

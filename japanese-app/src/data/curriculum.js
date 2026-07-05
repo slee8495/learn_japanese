@@ -906,20 +906,36 @@ export function getCaliforniaToday() {
   return new Date(y, m - 1, d);
 }
 
-export function getDayNumber() {
+// "YYYY-MM-DD" → Date. startKey가 없으면 앱 공통 기준일(START)을 사용
+function resolveStart(startKey) {
+  if (!startKey) return new Date(START.y, START.m - 1, START.d);
+  const [y, m, d] = startKey.split("-").map(Number);
+  return new Date(y, m - 1, d);
+}
+
+// startKey(그 프로필이 학습을 시작한 날짜)를 기준으로 "오늘은 Day 며칠째"인지 계산.
+// 프로필마다 시작일이 다르므로 같은 날짜라도 사람마다 Day 번호가 다를 수 있음.
+export function getDayNumber(startKey) {
   const today = getCaliforniaToday();
-  const start = new Date(START.y, START.m - 1, START.d);
+  const start = resolveStart(startKey);
   return Math.max(1, Math.floor((today - start) / 86400000) + 1);
 }
 
-export function dayNumToDateKey(dayNum) {
-  const start = new Date(START.y, START.m - 1, START.d);
+export function dayNumToDateKey(dayNum, startKey) {
+  const start = resolveStart(startKey);
   const d = new Date(start);
   d.setDate(d.getDate() + dayNum - 1);
   const y = d.getFullYear();
   const m = String(d.getMonth() + 1).padStart(2, "0");
   const day = String(d.getDate()).padStart(2, "0");
   return `${y}-${m}-${day}`;
+}
+
+// 실제 날짜(Date) → 그 프로필 기준 Day 번호 (달력에서 날짜 탭할 때 사용)
+export function dateToDayNum(dateObj, startKey) {
+  const start = resolveStart(startKey);
+  const d = new Date(dateObj.getFullYear(), dateObj.getMonth(), dateObj.getDate());
+  return Math.floor((d - start) / 86400000) + 1;
 }
 
 // ── 하루 레슨 생성 ──────────────────────────────────────────────
