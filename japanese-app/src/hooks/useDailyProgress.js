@@ -116,6 +116,11 @@ export function useDailyProgress(profileName) {
     return dayProgress[dayNum] || {};
   }
 
+  // Day 번호로 그 Day의 완료 현황을 조회 (지난 Day를 볼 때 사용)
+  function getDayProgress(dayNumToCheck) {
+    return dayProgress[dayNumToCheck] || {};
+  }
+
   function getDayDone(dayKey) {
     return daily[dayKey] || {};
   }
@@ -147,5 +152,5 @@ export function useDailyProgress(profileName) {
     });
   }
 
-  return { markTask, markDayTask, getTodayDone, getDayDone, getStreak, getWeekStatus, dateKey, daily, dayNum, startKey };
+  return { markTask, markDayTask, getTodayDone, getDayProgress, getDayDone, getStreak, getWeekStatus, dateKey, daily, dayNum, startKey };
 }

@@ -61,7 +61,8 @@ function TaskCard({ taskKey, done, onClick }) {
   );
 }
 
-export default function Home({ onNavigate, todayDone, streak, weekStatus, daily, dayNum, startKey }) {
+export default function Home({ onNavigate, todayDone, streak, weekStatus, daily, dayNum, actualDayNum, onBackToToday, onViewDay, startKey }) {
+  const isToday = dayNum === actualDayNum;
   const lesson = getDayLesson(dayNum);
   const tasks = ["kana", "words", "grammar", "sentence"];
   const doneCount = tasks.filter(t => todayDone[t]).length;
@@ -75,9 +76,9 @@ export default function Home({ onNavigate, todayDone, streak, weekStatus, daily,
   ];
   const motivation = motivations[dayNum % motivations.length];
 
-  function handleCalendarSelect(d, task) {
+  function handleCalendarSelect(d) {
     setShowCalendar(false);
-    if (task) onNavigate(task, d);
+    onViewDay(d);
   }
 
   return (
@@ -87,8 +88,16 @@ export default function Home({ onNavigate, todayDone, streak, weekStatus, daily,
       <div className="bg-indigo-600 rounded-3xl p-5 text-white">
         <div className="flex items-start justify-between">
           <div>
-            <p className="text-2xl font-bold">오늘의 학습</p>
+            <p className="text-2xl font-bold">{isToday ? "오늘의 학습" : `Day ${dayNum} 복습`}</p>
             <p className="text-indigo-200 text-xs mt-1">Day {dayNum} · {lesson.theme}</p>
+            {!isToday && (
+              <button
+                onClick={onBackToToday}
+                className="mt-2 text-xs bg-white/20 text-white rounded-full px-3 py-1 active:scale-95"
+              >
+                ← 오늘로 돌아가기
+              </button>
+            )}
           </div>
           <div className="text-right">
             <p className="text-3xl">🔥</p>
@@ -121,12 +130,14 @@ export default function Home({ onNavigate, todayDone, streak, weekStatus, daily,
         <WeekStrip weekStatus={weekStatus} />
       </div>
 
-      {/* 오늘 할 일 */}
+      {/* 할 일 */}
       <div>
-        <p className="text-sm font-semibold text-gray-500 mb-2">오늘의 학습 (하루 10분)</p>
+        <p className="text-sm font-semibold text-gray-500 mb-2">
+          {isToday ? "오늘의 학습 (하루 10분)" : `Day ${dayNum} 학습 내용`}
+        </p>
         <div className="flex flex-col gap-2">
           {tasks.map(t => (
-            <TaskCard key={t} taskKey={t} done={!!todayDone[t]} onClick={() => onNavigate(t)} />
+            <TaskCard key={t} taskKey={t} done={!!todayDone[t]} onClick={() => onNavigate(t, dayNum)} />
           ))}
         </div>
       </div>
@@ -134,8 +145,8 @@ export default function Home({ onNavigate, todayDone, streak, weekStatus, daily,
       {doneCount === 4 && (
         <div className="bg-green-50 border-2 border-green-200 rounded-2xl p-4 text-center">
           <p className="text-2xl mb-1">🎉</p>
-          <p className="font-bold text-green-700">오늘 학습 완료!</p>
-          <p className="text-sm text-green-600 mt-1">내일 또 만나요 またね！</p>
+          <p className="font-bold text-green-700">{isToday ? "오늘 학습 완료!" : `Day ${dayNum} 학습 완료!`}</p>
+          <p className="text-sm text-green-600 mt-1">{isToday ? "내일 또 만나요 またね！" : "잘 복습했어요 👏"}</p>
         </div>
       )}
 
@@ -144,7 +155,7 @@ export default function Home({ onNavigate, todayDone, streak, weekStatus, daily,
         <CalendarView
           daily={daily}
           startKey={startKey}
-          todayDayNum={dayNum}
+          todayDayNum={actualDayNum}
           onSelectDay={handleCalendarSelect}
           onClose={() => setShowCalendar(false)}
         />

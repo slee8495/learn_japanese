@@ -76,14 +76,21 @@ function ProfileSetup({ onDone }) {
 function MainApp({ profile, onSwitchProfile }) {
   const [tab, setTab] = useState("home");
   const [activeLesson, setActiveLesson] = useState(null);
+  const [viewDayNum, setViewDayNum] = useState(null); // null = 오늘(현재 진행 중인 Day) 보는 중
 
-  const { markTask, markDayTask, getTodayDone, getStreak, getWeekStatus, dateKey, daily, dayNum: todayDayNum, startKey } = useDailyProgress(profile);
-  const todayDone = getTodayDone();
+  const { markTask, markDayTask, getDayProgress, getStreak, getWeekStatus, dateKey, daily, dayNum: todayDayNum, startKey } = useDailyProgress(profile);
   const streak = getStreak();
   const weekStatus = getWeekStatus();
 
-  function handleNavigate(task, dayNum = todayDayNum) {
+  const homeDayNum = viewDayNum ?? todayDayNum;
+  const homeDone = getDayProgress(homeDayNum);
+
+  function handleNavigate(task, dayNum = homeDayNum) {
     setActiveLesson({ task, dayNum });
+  }
+
+  function handleViewDay(d) {
+    setViewDayNum(d === todayDayNum ? null : d);
   }
 
   function handleTaskDone() {
@@ -98,7 +105,7 @@ function MainApp({ profile, onSwitchProfile }) {
     kana: "글자 연습", words: "단어 학습", grammar: "문법", sentence: "문장 익히기",
   };
 
-  const chatDayNum = activeLesson ? activeLesson.dayNum : todayDayNum;
+  const chatDayNum = activeLesson ? activeLesson.dayNum : homeDayNum;
   const chatScreenLabel = activeLesson
     ? `Day ${activeLesson.dayNum} ${TASK_LABELS_FOR_CHAT[activeLesson.task]}`
     : SCREEN_LABELS[tab] || tab;
@@ -162,7 +169,18 @@ function MainApp({ profile, onSwitchProfile }) {
 
       <main className="max-w-lg mx-auto">
         {tab === "home" && (
-          <Home onNavigate={handleNavigate} todayDone={todayDone} streak={streak} weekStatus={weekStatus} daily={daily} dayNum={todayDayNum} startKey={startKey} />
+          <Home
+            onNavigate={handleNavigate}
+            todayDone={homeDone}
+            streak={streak}
+            weekStatus={weekStatus}
+            daily={daily}
+            dayNum={homeDayNum}
+            actualDayNum={todayDayNum}
+            onBackToToday={() => setViewDayNum(null)}
+            onViewDay={handleViewDay}
+            startKey={startKey}
+          />
         )}
         {tab === "hiragana" && <Flashcard key="hiragana" deck={hiragana} onProgress={() => {}} />}
         {tab === "katakana" && <Flashcard key="katakana" deck={katakana} onProgress={() => {}} />}
