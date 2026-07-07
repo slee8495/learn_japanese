@@ -88,11 +88,12 @@ export function useDailyProgress(profileName) {
     localStorage.setItem(dayProgressKey(profileName), JSON.stringify(dayProgress));
   }, [dayProgress, profileName]);
 
-  // 실제 캘린더 날짜로는 며칠째인지와 별개로, "아직 다 못 끝낸 가장 이른 Day"를 현재 Day로 삼는다.
-  // 즉 어제 학습을 다 못 끝냈으면 오늘이 와도 새 Day로 안 넘어가고 어제 것이 그대로 남는다.
-  const calendarDayNum = getDayNumber(startKey);
-  let dayNum = calendarDayNum;
-  for (let d = 1; d <= calendarDayNum; d++) {
+  // 실제 캘린더 날짜와 상관없이 "아직 다 못 끝낸 가장 이른 Day"가 현재 Day.
+  // 어제 걸 다 못 끝냈으면 오늘이 와도 그대로 남아있고, 오늘 걸 다 끝내면 실제 날짜와 상관없이
+  // 바로 다음 Day가 열려서 하루에 여러 Day를 이어서 할 수 있다.
+  const maxKnownDay = Object.keys(dayProgress).reduce((max, k) => Math.max(max, Number(k)), 0);
+  let dayNum = maxKnownDay + 1;
+  for (let d = 1; d <= maxKnownDay + 1; d++) {
     if (!isDayComplete(dayProgress[d])) { dayNum = d; break; }
   }
 

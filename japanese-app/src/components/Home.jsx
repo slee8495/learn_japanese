@@ -87,9 +87,8 @@ export default function Home({ onNavigate, todayDone, streak, weekStatus, daily,
       <div className="bg-indigo-600 rounded-3xl p-5 text-white">
         <div className="flex items-start justify-between">
           <div>
-            <p className="text-indigo-200 text-sm">오늘의 학습</p>
-            <p className="text-3xl font-bold mt-1">Day {dayNum}</p>
-            <p className="text-indigo-200 text-sm mt-0.5">/ 365 — {lesson.theme}</p>
+            <p className="text-2xl font-bold">오늘의 학습</p>
+            <p className="text-indigo-200 text-xs mt-1">Day {dayNum} · {lesson.theme}</p>
           </div>
           <div className="text-right">
             <p className="text-3xl">🔥</p>
