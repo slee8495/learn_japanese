@@ -10,6 +10,7 @@ import VocabBook from "./components/VocabBook";
 import GrammarLesson from "./components/GrammarLesson";
 import KanaChart from "./components/KanaChart";
 import ChatWidget from "./components/ChatWidget";
+import ScratchPad from "./components/ScratchPad";
 
 const SCREEN_LABELS = {
   home: "홈", hiragana: "히라가나 퀴즈", katakana: "카타카나 퀴즈",
@@ -121,6 +122,7 @@ function MainApp({ profile, onSwitchProfile }) {
           <DailyLesson task={activeLesson.task} dayNum={activeLesson.dayNum} onDone={handleTaskDone} />
         </main>
         <ChatWidget context={chatContext} />
+        <ScratchPad />
       </div>
     );
   }
