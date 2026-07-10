@@ -36,7 +36,10 @@
       "Read(//tmp/**)",
       "Bash(npm ls *)",
       "Bash(jobs -l)",
-      "Bash(pkill -f \"vite --port 5183\")"
+      "Bash(pkill -f \"vite --port 5183\")",
+      "Bash(awk '/^const grammarPool/,/^\\\\];$/' src/data/curriculum.js)",
+      "Bash(cp '/Users/stanlee/Desktop/Desktop - Sangho MacBook Pro/QuantLee Capital/learn_japanese/japanese-app/src/data/curriculum.js' /private/tmp/claude-501/-Users-stanlee-Desktop-Desktop---Sangho-MacBook-Pro-QuantLee-Capital-learn-japanese/b049d464-b83a-460b-87c3-c43683052598/scratchpad/furicheck/data/curriculum.js)",
+      "Bash(sed -i '' 's/from \"\\\\.\\\\/kana\"/from \".\\\\/kana.js\"/' data/curriculum.js)"
     ]
   }
 }
