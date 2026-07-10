@@ -32,7 +32,11 @@
       "Bash(npx --yes @resvg/resvg-cli --version)",
       "Bash(fc-list)",
       "Bash(npm uninstall *)",
-      "Bash(node *)"
+      "Bash(node *)",
+      "Read(//tmp/**)",
+      "Bash(npm ls *)",
+      "Bash(jobs -l)",
+      "Bash(pkill -f \"vite --port 5183\")"
     ]
   }
 }

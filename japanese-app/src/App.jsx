@@ -17,7 +17,7 @@ const SCREEN_LABELS = {
   reading: "읽기 드릴", chart: "가나 표", vocab: "단어장", grammar: "문법 레슨",
 };
 const TASK_LABELS_FOR_CHAT = {
-  kana: "글자 연습", words: "단어 학습", grammar: "문법", sentence: "문장 익히기",
+  kana: "글자 연습", words: "단어 학습", grammar: "문법", sentence: "문장 익히기", review: "복습 퀴즈",
 };
 
 const BOTTOM_TABS = [
@@ -78,9 +78,9 @@ function MainApp({ profile, onSwitchProfile }) {
   const [activeLesson, setActiveLesson] = useState(null);
   const [viewDayNum, setViewDayNum] = useState(null); // null = 오늘(현재 진행 중인 Day) 보는 중
 
-  const { markTask, markDayTask, getDayProgress, getStreak, getWeekStatus, dateKey, daily, dayNum: todayDayNum, startKey } = useDailyProgress(profile);
+  const { markDayTask, getDayProgress, getStreak, getRecentStatus, dayProgress, dayNum: todayDayNum } = useDailyProgress(profile);
   const streak = getStreak();
-  const weekStatus = getWeekStatus();
+  const recentStatus = getRecentStatus();
 
   const homeDayNum = viewDayNum ?? todayDayNum;
   const homeDone = getDayProgress(homeDayNum);
@@ -95,14 +95,13 @@ function MainApp({ profile, onSwitchProfile }) {
 
   function handleTaskDone() {
     const { task, dayNum } = activeLesson;
-    markTask(task, dateKey());
     markDayTask(dayNum, task);
     setActiveLesson(null);
     setTab("home");
   }
 
   const taskLabel = {
-    kana: "글자 연습", words: "단어 학습", grammar: "문법", sentence: "문장 익히기",
+    kana: "글자 연습", words: "단어 학습", grammar: "문법", sentence: "문장 익히기", review: "복습 퀴즈",
   };
 
   const chatDayNum = activeLesson ? activeLesson.dayNum : homeDayNum;
@@ -173,13 +172,12 @@ function MainApp({ profile, onSwitchProfile }) {
             onNavigate={handleNavigate}
             todayDone={homeDone}
             streak={streak}
-            weekStatus={weekStatus}
-            daily={daily}
+            recentStatus={recentStatus}
+            dayProgress={dayProgress}
             dayNum={homeDayNum}
             actualDayNum={todayDayNum}
             onBackToToday={() => setViewDayNum(null)}
             onViewDay={handleViewDay}
-            startKey={startKey}
           />
         )}
         {tab === "hiragana" && <Flashcard key="hiragana" deck={hiragana} onProgress={() => {}} />}

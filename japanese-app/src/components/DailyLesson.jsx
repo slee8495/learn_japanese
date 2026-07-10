@@ -1,7 +1,8 @@
 import { useState } from "react";
-import { getDayNumber, getDayLesson } from "../data/curriculum";
+import { getDayLesson } from "../data/curriculum";
 import Furigana from "./Furigana";
 import { speak } from "../utils/speak";
+import ReviewQuiz from "./ReviewQuiz";
 
 // ── 글자 연습 (히라가나+카타카나 같이 + 읽기 연습) ───────────────
 function KanaSection({ lesson, onDone }) {
@@ -247,8 +248,7 @@ function SentenceSection({ lesson, onDone }) {
 }
 
 // ── 메인 ──────────────────────────────────────────────────────
-export default function DailyLesson({ task, dayNum: propDayNum, onDone }) {
-  const dayNum = propDayNum ?? getDayNumber();
+export default function DailyLesson({ task, dayNum, onDone }) {
   const lesson = getDayLesson(dayNum);
 
   return (
@@ -257,6 +257,7 @@ export default function DailyLesson({ task, dayNum: propDayNum, onDone }) {
       {task === "words" && <WordsSection lesson={lesson} onDone={onDone} />}
       {task === "grammar" && <GrammarSection lesson={lesson} onDone={onDone} />}
       {task === "sentence" && <SentenceSection lesson={lesson} onDone={onDone} />}
+      {task === "review" && <ReviewQuiz lesson={lesson} onDone={onDone} />}
     </div>
   );
 }

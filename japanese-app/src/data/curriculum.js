@@ -1,5 +1,4 @@
 import { hiragana, katakana } from "./kana";
-import tateobaSentences from "./tatoeba-sentences.json";
 
 // ── 문장 데이터 ───────────────────────────────────────────────
 const sentences = [
@@ -49,29 +48,10 @@ const sentences = [
   { japanese: "音楽を聴きながら、勉強するのが好きです", reading: "おんがくをききながら、べんきょうするのがすきです", meaning: "음악을 들으면서 공부하는 것을 좋아해요" },
 ];
 
-// Tatoeba 문장을 기존 형식으로 변환해 합치기
-const tateobaBeginner = (tateobaSentences.beginner || []).map((s) => ({
-  japanese: s.japanese,
-  reading: "",
-  meaning: s.english,
-}));
-const tateobaIntermediate = (tateobaSentences.intermediate || []).map((s) => ({
-  japanese: s.japanese,
-  reading: "",
-  meaning: s.english,
-}));
-const tateobaAdvanced = (tateobaSentences.advanced || []).map((s) => ({
-  japanese: s.japanese,
-  reading: "",
-  meaning: s.english,
-}));
-
-// 레벨에 따라 문장 풀 선택 (dayNum 기준으로 getDayLesson에서 사용)
-function getSentencePool(dayNum) {
-  if (dayNum <= 60) return [...sentences, ...tateobaBeginner];
-  if (dayNum <= 180) return [...sentences, ...tateobaBeginner, ...tateobaIntermediate];
-  return [...sentences, ...tateobaBeginner, ...tateobaIntermediate, ...tateobaAdvanced];
-}
+// sentences 배열은 이미 쉬운 순서로 정렬돼 있음. 그 중 정말 기초적인 앞부분만
+// "아주 쉬운 문장" 풀로 써서, 오늘의 문법 예문(4개)과 함께 매일 1개씩 등장시킨다.
+// (뒷부분은 이미 grammarPool 예문과 겹치거나 난이도가 갑자기 올라가서 제외)
+const easySentences = sentences.slice(0, 26);
 
 // ── 단어 풀 (450개+, N5+N4, 히라가나/카타카나/한자 골고루) ──────────
 const vocabPool = [
@@ -490,42 +470,56 @@ const grammarPool = [
     examples: [
       { j: "学生です", r: "gakusei desu", m: "학생이에요" },
       { j: "日本語は楽しいです", r: "nihongo wa tanoshii desu", m: "일본어는 즐거워요" },
+      { j: "これはペンです", r: "kore wa pen desu", m: "이것은 펜이에요" },
+      { j: "今日は月曜日です", r: "kyou wa getsuyoubi desu", m: "오늘은 월요일이에요" },
     ], tip: "부정은 ではありません. 과거는 でした." },
   { title: "は — 주제 표시 (~은/는)", level: "N5",
     rule: "주제 + は + 서술 → '~은/는 ~이에요'",
     examples: [
       { j: "私は韓国人です", r: "watashi wa kankokujin desu", m: "저는 한국인이에요" },
       { j: "これは本です", r: "kore wa hon desu", m: "이것은 책이에요" },
+      { j: "彼は先生です", r: "kare wa sensei desu", m: "그는 선생님이에요" },
+      { j: "今日は暑いです", r: "kyou wa atsui desu", m: "오늘은 더워요" },
     ], tip: "は는 'wa'로 읽어요. 문자는 は(ha)지만 발음은 wa." },
   { title: "が — 주어 강조 (~이/가)", level: "N5",
     rule: "새 정보나 특정 대상을 강조할 때 が를 써요",
     examples: [
       { j: "どれがいいですか", r: "dore ga ii desu ka", m: "어느 것이 좋아요?" },
       { j: "あの人が先生です", r: "ano hito ga sensei desu", m: "저 분이 선생님이에요" },
+      { j: "猫が好きです", r: "neko ga suki desu", m: "고양이를 좋아해요" },
+      { j: "誰が来ますか", r: "dare ga kimasu ka", m: "누가 와요?" },
     ], tip: "처음엔 は만 써도 돼요. が는 점차 감이 생겨요." },
   { title: "を — 목적어 (~을/를)", level: "N5",
     rule: "동작의 대상 앞에 를 붙여요",
     examples: [
       { j: "ご飯を食べます", r: "gohan wo tabemasu", m: "밥을 먹어요" },
       { j: "日本語を勉強します", r: "nihongo wo benkyou shimasu", m: "일본어를 공부해요" },
+      { j: "水を飲みます", r: "mizu wo nomimasu", m: "물을 마셔요" },
+      { j: "テレビを見ます", r: "terebi wo mimasu", m: "TV를 봐요" },
     ], tip: "を는 'wo'로 읽지만 실제 발음은 'o'에 가까워요." },
   { title: "に — 방향/장소 (~에/에게)", level: "N5",
     rule: "목적지, 존재 장소, 시간 앞에 に를 써요",
     examples: [
       { j: "学校に行きます", r: "gakkou ni ikimasu", m: "학교에 가요" },
       { j: "部屋にいます", r: "heya ni imasu", m: "방에 있어요" },
+      { j: "友達に会います", r: "tomodachi ni aimasu", m: "친구를 만나요" },
+      { j: "7時に起きます", r: "shichiji ni okimasu", m: "7시에 일어나요" },
     ], tip: "で는 행동 장소, に는 존재/도착 장소." },
   { title: "で — 장소/수단 (~에서/로)", level: "N5",
     rule: "행동이 일어나는 장소, 또는 이동 수단 앞에 で를 써요",
     examples: [
       { j: "図書館で読みます", r: "toshokan de yomimasu", m: "도서관에서 읽어요" },
       { j: "電車で行きます", r: "densha de ikimasu", m: "전철로 가요" },
+      { j: "公園で遊びます", r: "kouen de asobimasu", m: "공원에서 놀아요" },
+      { j: "箸で食べます", r: "hashi de tabemasu", m: "젓가락으로 먹어요" },
     ], tip: "수단·방법에도 써요: 日本語で話しましょう" },
   { title: "~ます — 정중한 동사 활용", level: "N5",
     rule: "동사 기본형 → ます형: たべる→たべます, いく→いきます",
     examples: [
       { j: "毎日勉強します", r: "mainichi benkyou shimasu", m: "매일 공부해요" },
       { j: "明日行きます", r: "ashita ikimasu", m: "내일 가요" },
+      { j: "毎朝コーヒーを飲みます", r: "maiasa koohii wo nomimasu", m: "매일 아침 커피를 마셔요" },
+      { j: "週末は働きません", r: "shuumatsu wa hatarakimasen", m: "주말에는 일하지 않아요" },
     ], tip: "부정: ~ません. 과거: ~ました. 과거부정: ~ませんでした" },
   { title: "~て形 — 동작 연결", level: "N5",
     rule: "동사를 て형으로 바꿔서 연결하거나 부탁을 표현해요",
@@ -533,12 +527,15 @@ const grammarPool = [
       { j: "見てください", r: "mite kudasai", m: "봐 주세요" },
       { j: "食べてから行きます", r: "tabete kara ikimasu", m: "먹고 나서 가요" },
       { j: "食べています", r: "tabete imasu", m: "먹고 있어요" },
+      { j: "窓を開けて掃除します", r: "mado wo akete souji shimasu", m: "창문을 열고 청소해요" },
     ], tip: "~てください = 부탁, ~ています = 진행중, ~てから = 순서" },
   { title: "~たい — 하고 싶다", level: "N5",
     rule: "ます형에서 ます를 제거하고 たい를 붙여요",
     examples: [
       { j: "日本に行きたいです", r: "nihon ni ikitai desu", m: "일본에 가고 싶어요" },
       { j: "寿司を食べたい", r: "sushi wo tabetai", m: "초밥을 먹고 싶어요" },
+      { j: "新しい靴が買いたいです", r: "atarashii kutsu ga kaitai desu", m: "새 신발을 사고 싶어요" },
+      { j: "早く休みたいです", r: "hayaku yasumitai desu", m: "빨리 쉬고 싶어요" },
     ], tip: "부정: ~たくない. たい는 형용사처럼 활용해요." },
   { title: "~ない形 — 부정", level: "N5",
     rule: "동사를 부정형으로 바꾸는 방법",
@@ -546,36 +543,47 @@ const grammarPool = [
       { j: "食べない", r: "tabenai", m: "먹지 않아" },
       { j: "行かない", r: "ikanai", m: "가지 않아" },
       { j: "しない", r: "shinai", m: "하지 않아" },
+      { j: "分からない", r: "wakaranai", m: "모르겠어" },
     ], tip: "2그룹: る→ない. 1그룹: う단→あ단+ない. 불규칙: する→しない, くる→こない" },
   { title: "~ましょう — 함께 해요", level: "N5",
     rule: "동사 ます형 + ましょう → 제안/권유",
     examples: [
       { j: "一緒に食べましょう", r: "issho ni tabemashou", m: "같이 먹어요" },
       { j: "始めましょうか", r: "hajimemashou ka", m: "시작할까요?" },
+      { j: "少し休みましょう", r: "sukoshi yasumimashou", m: "잠깐 쉬어요" },
+      { j: "写真を撮りましょう", r: "shashin wo torimashou", m: "사진을 찍어요" },
     ], tip: "~ましょうか로 물으면 더 공손한 제안이 돼요." },
   { title: "~てもいい — 해도 돼요", level: "N5",
     rule: "て형 + もいい → 허가 표현",
     examples: [
       { j: "ここで座ってもいいですか", r: "koko de suwatte mo ii desu ka", m: "여기 앉아도 돼요?" },
       { j: "使ってもいいですよ", r: "tsukatte mo ii desu yo", m: "사용해도 돼요" },
+      { j: "ここで写真を撮ってもいいですか", r: "koko de shashin wo totte mo ii desu ka", m: "여기서 사진 찍어도 돼요?" },
+      { j: "先に帰ってもいいですよ", r: "saki ni kaette mo ii desu yo", m: "먼저 가도 돼요" },
     ], tip: "~てはいけない가 반대: '하면 안 돼요'" },
   { title: "~てはいけない — 금지", level: "N5",
     rule: "て형 + はいけない → ~하면 안 돼요",
     examples: [
       { j: "ここでタバコを吸ってはいけません", r: "koko de tabako wo sutte wa ikemasen", m: "여기서 담배 피우면 안 돼요" },
       { j: "遅刻してはいけません", r: "chikoku shite wa ikemasen", m: "지각하면 안 돼요" },
+      { j: "ここに車を止めてはいけません", r: "koko ni kuruma wo tomete wa ikemasen", m: "여기에 차를 세우면 안 돼요" },
+      { j: "授業中に寝てはいけません", r: "jugyouchuu ni nete wa ikemasen", m: "수업 중에 자면 안 돼요" },
     ], tip: "규칙, 표지판, 경고에 자주 나와요." },
   { title: "~なくてもいい — 안 해도 돼요", level: "N5",
     rule: "ない형 → なくてもいい → 불필요 표현",
     examples: [
       { j: "無理しなくてもいいです", r: "muri shinakute mo ii desu", m: "무리하지 않아도 돼요" },
       { j: "来なくてもいいですよ", r: "konakute mo ii desu yo", m: "안 와도 돼요" },
+      { j: "今日は勉強しなくてもいいです", r: "kyou wa benkyou shinakute mo ii desu", m: "오늘은 공부하지 않아도 돼요" },
+      { j: "心配しなくてもいいですよ", r: "shinpai shinakute mo ii desu yo", m: "걱정하지 않아도 돼요" },
     ], tip: "영어의 'don't have to'와 같아요." },
   { title: "いる/ある — 존재 표현", level: "N5",
     rule: "いる(사람/동물) vs ある(사물/식물)",
     examples: [
       { j: "猫がいます", r: "neko ga imasu", m: "고양이가 있어요" },
       { j: "部屋に本があります", r: "heya ni hon ga arimasu", m: "방에 책이 있어요" },
+      { j: "公園に子供がいます", r: "kouen ni kodomo ga imasu", m: "공원에 아이가 있어요" },
+      { j: "机の上にペンがあります", r: "tsukue no ue ni pen ga arimasu", m: "책상 위에 펜이 있어요" },
     ], tip: "에 있다 = に + いる/ある" },
   // N4
   { title: "~から — 이유 (~이기 때문에)", level: "N4",
@@ -583,90 +591,120 @@ const grammarPool = [
     examples: [
       { j: "寒いから、窓を閉めた", r: "samui kara, mado wo shimeta", m: "추워서 창문을 닫았어" },
       { j: "好きだから勉強します", r: "suki dakara benkyou shimasu", m: "좋아서 공부해요" },
+      { j: "眠いから、早く寝ます", r: "nemui kara, hayaku nemasu", m: "졸려서 일찍 자요" },
+      { j: "雨だから、傘を持って行きます", r: "ame dakara, kasa wo motte ikimasu", m: "비가 와서 우산을 가지고 가요" },
     ], tip: "ので는 から보다 공손해요. 공식 자리엔 ので가 더 자연스러워요." },
   { title: "~と思います — ~라고 생각해요", level: "N4",
     rule: "자신의 생각/의견을 부드럽게 전달할 때 써요",
     examples: [
       { j: "難しいと思います", r: "muzukashii to omoimasu", m: "어렵다고 생각해요" },
       { j: "彼はもう来たと思います", r: "kare wa mou kita to omoimasu", m: "그는 이미 왔다고 생각해요" },
+      { j: "明日は晴れると思います", r: "ashita wa hareru to omoimasu", m: "내일은 맑을 거라고 생각해요" },
+      { j: "このドラマは面白いと思います", r: "kono dorama wa omoshiroi to omoimasu", m: "이 드라마는 재미있다고 생각해요" },
     ], tip: "단정짓는 것보다 부드러운 인상을 줘서 일본어 회화에서 많이 써요." },
   { title: "~たことがある — 경험", level: "N4",
     rule: "과거에 경험한 것을 말할 때 써요",
     examples: [
       { j: "日本に行ったことがあります", r: "nihon ni itta koto ga arimasu", m: "일본에 간 적 있어요" },
       { j: "寿司を食べたことがない", r: "sushi wo tabeta koto ga nai", m: "초밥을 먹어본 적 없어요" },
+      { j: "富士山に登ったことがあります", r: "fujisan ni nobotta koto ga arimasu", m: "후지산에 오른 적이 있어요" },
+      { j: "一度も会ったことがない", r: "ichido mo atta koto ga nai", m: "한 번도 만난 적이 없어요" },
     ], tip: "동사 た형 + ことがある/ない." },
   { title: "~かもしれない — ~일지도 몰라", level: "N4",
     rule: "확실하지 않은 추측을 표현할 때 써요",
     examples: [
       { j: "雨が降るかもしれません", r: "ame ga furu kamo shiremasen", m: "비가 올지도 몰라요" },
       { j: "もう遅いかも", r: "mou osoi kamo", m: "이미 늦었을지도 몰라" },
+      { j: "彼は忙しいかもしれません", r: "kare wa isogashii kamo shiremasen", m: "그는 바쁠지도 몰라요" },
+      { j: "今日は誰も来ないかもしれない", r: "kyou wa daremo konai kamo shirenai", m: "오늘은 아무도 안 올지도 몰라" },
     ], tip: "정중체: かもしれません. 캐주얼: かも." },
   { title: "~てみる — 해보다", level: "N4",
     rule: "무언가를 시도해볼 때 써요",
     examples: [
       { j: "やってみます", r: "yatte mimasu", m: "해볼게요" },
       { j: "食べてみてください", r: "tabete mite kudasai", m: "먹어 보세요" },
+      { j: "この服を着てみてください", r: "kono fuku wo kite mite kudasai", m: "이 옷을 입어 보세요" },
+      { j: "一度聞いてみます", r: "ichido kiite mimasu", m: "한번 물어볼게요" },
     ], tip: "~てみる는 '시도/경험'의 뉘앙스." },
   { title: "~なければならない — 해야 해요", level: "N4",
     rule: "의무나 필요성을 나타내는 표현이에요",
     examples: [
       { j: "もっと勉強しなければなりません", r: "motto benkyou shinakereba narimasen", m: "더 공부해야 해요" },
       { j: "早く行かなきゃ", r: "hayaku ikanakya", m: "빨리 가야 해(구어)" },
+      { j: "薬を飲まなければなりません", r: "kusuri wo nomanakereba narimasen", m: "약을 먹어야 해요" },
+      { j: "明日までに終わらせなければならない", r: "ashita made ni owarasenakereba naranai", m: "내일까지 끝내야 해" },
     ], tip: "구어체: ~なきゃ (나키야)" },
   { title: "~そうだ (양태) — ~인 것 같아요", level: "N4",
     rule: "직접 보거나 느껴서 '~인 것 같다'고 표현해요",
     examples: [
       { j: "このケーキはおいしそうです", r: "kono keeki wa oishisou desu", m: "이 케이크 맛있어 보여요" },
       { j: "雨が降りそうです", r: "ame ga furisou desu", m: "비가 올 것 같아요" },
+      { j: "この本は難しそうです", r: "kono hon wa muzukashisou desu", m: "이 책은 어려워 보여요" },
+      { j: "彼は元気そうですね", r: "kare wa genkisou desu ne", m: "그는 건강해 보이네요" },
     ], tip: "い형용사는 어간+そう. 동사는 ます형+そう." },
   { title: "~でしょう — ~이겠죠", level: "N4",
     rule: "어느 정도 확신이 있는 추측을 표현해요",
     examples: [
       { j: "明日はいい天気でしょう", r: "ashita wa ii tenki deshou", m: "내일은 날씨가 좋겠죠" },
       { j: "大変だったでしょう", r: "taihen datta deshou", m: "힘들었겠죠" },
+      { j: "彼はもう寝ているでしょう", r: "kare wa mou nete iru deshou", m: "그는 이미 자고 있겠죠" },
+      { j: "週末は混むでしょう", r: "shuumatsu wa komu deshou", m: "주말은 붐비겠죠" },
     ], tip: "캐주얼: ~だろう" },
   { title: "~ば — ~하면 (가정)", level: "N4",
     rule: "조건을 나타내는 표현이에요",
     examples: [
       { j: "練習すれば、上手になります", r: "renshuu sureba, jouzu ni narimasu", m: "연습하면 잘하게 돼요" },
       { j: "早く起きれば、間に合います", r: "hayaku okireba, maniarimasu", m: "일찍 일어나면 시간에 맞아요" },
+      { j: "毎日少しずつ練習すれば、必ずうまくなります", r: "mainichi sukoshizutsu renshuu sureba, kanarazu umaku narimasu", m: "매일 조금씩 연습하면 반드시 잘하게 돼요" },
+      { j: "時間があれば、一緒に映画を見ませんか", r: "jikan ga areba, issho ni eiga wo mimasen ka", m: "시간 있으면 같이 영화 안 볼래요?" },
     ], tip: "일반적 조건이나 충고에 자주 써요." },
   { title: "~たら — ~하면/~했더니", level: "N4",
     rule: "た형 + ら → 가정/완료 후 상황",
     examples: [
       { j: "家に帰ったら、電話してね", r: "uchi ni kaettara, denwa shite ne", m: "집에 돌아가면 전화해" },
       { j: "外に出たら、寒かったです", r: "soto ni detara, samukatta desu", m: "밖에 나갔더니 추웠어요" },
+      { j: "駅に着いたら、電話します", r: "eki ni tsuitara, denwa shimasu", m: "역에 도착하면 전화할게요" },
+      { j: "お金があったら、旅行に行きたいです", r: "okane ga attara, ryokou ni ikitai desu", m: "돈이 있으면 여행을 가고 싶어요" },
     ], tip: "ば보다 더 일상적으로 쓰여요." },
   { title: "~ながら — ~하면서", level: "N4",
     rule: "동사 ます형 + ながら → 동시 동작",
     examples: [
       { j: "音楽を聴きながら、勉強します", r: "ongaku wo kikinagara, benkyou shimasu", m: "음악을 들으면서 공부해요" },
       { j: "歩きながら、話しましょう", r: "aruki nagara, hanashimashou", m: "걸으면서 이야기해요" },
+      { j: "テレビを見ながら、ご飯を食べます", r: "terebi wo minagara, gohan wo tabemasu", m: "TV를 보면서 밥을 먹어요" },
+      { j: "コーヒーを飲みながら、本を読みます", r: "koohii wo nominagara, hon wo yomimasu", m: "커피를 마시면서 책을 읽어요" },
     ], tip: "주어가 같을 때만 써요." },
   { title: "~ために — ~을 위해서", level: "N4",
     rule: "목적을 나타내요",
     examples: [
       { j: "日本語を覚えるために、毎日勉強します", r: "nihongo wo oboeru tame ni, mainichi benkyou shimasu", m: "일본어를 배우기 위해 매일 공부해요" },
       { j: "健康のために、運動しています", r: "kenkou no tame ni, undou shite imasu", m: "건강을 위해 운동하고 있어요" },
+      { j: "試験に合格するために、頑張っています", r: "shiken ni goukaku suru tame ni, ganbatte imasu", m: "시험에 합격하기 위해 열심히 하고 있어요" },
+      { j: "家族のために、働きます", r: "kazoku no tame ni, hatarakimasu", m: "가족을 위해 일해요" },
     ], tip: "명사 + のために, 동사 기본형 + ために" },
   { title: "~ように — ~하도록", level: "N4",
     rule: "목적이나 바람, 또는 비유를 나타내요",
     examples: [
       { j: "忘れないように、メモしました", r: "wasurenai you ni, memo shimashita", m: "잊지 않도록 메모했어요" },
       { j: "まるで夢のようです", r: "marude yume no you desu", m: "마치 꿈 같아요" },
+      { j: "電車に遅れないように、早く家を出ます", r: "densha ni okurenai you ni, hayaku ie wo demasu", m: "전철을 놓치지 않도록 일찍 집을 나서요" },
+      { j: "よく聞こえるように、大きい声で話してください", r: "yoku kikoeru you ni, ookii koe de hanashite kudasai", m: "잘 들리도록 큰 소리로 말해 주세요" },
     ], tip: "~ように祈る = ~하도록 기도하다" },
   { title: "~ことにする — ~하기로 하다", level: "N4",
     rule: "자신의 결심/결정을 표현해요",
     examples: [
       { j: "毎日勉強することにしました", r: "mainichi benkyou suru koto ni shimashita", m: "매일 공부하기로 했어요" },
       { j: "タバコをやめることにしました", r: "tabako wo yameru koto ni shimashita", m: "담배를 끊기로 했어요" },
+      { j: "来年、日本へ留学することにしました", r: "rainen, nihon e ryuugaku suru koto ni shimashita", m: "내년에 일본으로 유학 가기로 했어요" },
+      { j: "週末は家でゆっくりすることにしました", r: "shuumatsu wa ie de yukkuri suru koto ni shimashita", m: "주말에는 집에서 푹 쉬기로 했어요" },
     ], tip: "~ことになる = (상황에 의해) ~하게 되다" },
   { title: "~ようになる — ~하게 되다", level: "N4",
     rule: "능력이나 상태의 변화를 나타내요",
     examples: [
       { j: "日本語が話せるようになりました", r: "nihongo ga hanaseru you ni narimashita", m: "일본어를 말할 수 있게 됐어요" },
       { j: "食べられなかったものが食べられるようになった", r: "taberarenakatta mono ga taberareru you ni natta", m: "못 먹던 게 먹을 수 있게 됐어요" },
+      { j: "日本語を話せるようになりたいです", r: "nihongo wo hanaseru you ni naritai desu", m: "일본어를 말할 수 있게 되고 싶어요" },
+      { j: "一人で料理ができるようになりました", r: "hitori de ryouri ga dekiru you ni narimashita", m: "혼자 요리를 할 수 있게 됐어요" },
     ], tip: "점진적 변화를 나타내요." },
 ];
 
@@ -890,58 +928,24 @@ function seededShuffle(arr, seed) {
   return a;
 }
 
-// ── 날짜 → Day 번호 (캘리포니아 시간 기준) ──────────────────────
-const START = { y: 2026, m: 6, d: 28 };
+// ── Day 시스템 ───────────────────────────────────────────────
+// 실제 달력 날짜가 아니라 "그 프로필이 며칠째 진도를 나갔는지"를 기준으로 Day
+// 번호가 매겨진다(useDailyProgress.js에서 계산). 5일마다(5, 10, 15...) 새 진도
+// 없이 복습 퀴즈만 하는 날이 끼어들고, 새 학습 내용은 나머지 날에만 채워진다.
+const REVIEW_INTERVAL = 5;
 
-// 캘리포니아(LA) 시간 기준 오늘 날짜를 Date 객체로 반환
-export function getCaliforniaToday() {
-  const f = new Intl.DateTimeFormat("en-US", {
-    timeZone: "America/Los_Angeles",
-    year: "numeric", month: "2-digit", day: "2-digit",
-  });
-  const p = f.formatToParts(new Date());
-  const y = parseInt(p.find(x => x.type === "year").value);
-  const m = parseInt(p.find(x => x.type === "month").value);
-  const d = parseInt(p.find(x => x.type === "day").value);
-  return new Date(y, m - 1, d);
+export function isReviewDay(dayNum) {
+  return dayNum % REVIEW_INTERVAL === 0;
 }
 
-// "YYYY-MM-DD" → Date. startKey가 없으면 앱 공통 기준일(START)을 사용
-function resolveStart(startKey) {
-  if (!startKey) return new Date(START.y, START.m - 1, START.d);
-  const [y, m, d] = startKey.split("-").map(Number);
-  return new Date(y, m - 1, d);
+// dayNum(복습일 제외) → 실제 컨텐츠가 몇 번째인지(0부터 시작). 복습일 개수만큼
+// 빼주면 된다.
+function contentIndexForDay(dayNum) {
+  return (dayNum - 1) - Math.floor((dayNum - 1) / REVIEW_INTERVAL);
 }
 
-// startKey(그 프로필이 학습을 시작한 날짜)를 기준으로 "오늘은 Day 며칠째"인지 계산.
-// 프로필마다 시작일이 다르므로 같은 날짜라도 사람마다 Day 번호가 다를 수 있음.
-export function getDayNumber(startKey) {
-  const today = getCaliforniaToday();
-  const start = resolveStart(startKey);
-  return Math.max(1, Math.floor((today - start) / 86400000) + 1);
-}
-
-export function dayNumToDateKey(dayNum, startKey) {
-  const start = resolveStart(startKey);
-  const d = new Date(start);
-  d.setDate(d.getDate() + dayNum - 1);
-  const y = d.getFullYear();
-  const m = String(d.getMonth() + 1).padStart(2, "0");
-  const day = String(d.getDate()).padStart(2, "0");
-  return `${y}-${m}-${day}`;
-}
-
-// 실제 날짜(Date) → 그 프로필 기준 Day 번호 (달력에서 날짜 탭할 때 사용)
-export function dateToDayNum(dateObj, startKey) {
-  const start = resolveStart(startKey);
-  const d = new Date(dateObj.getFullYear(), dateObj.getMonth(), dateObj.getDate());
-  return Math.floor((d - start) / 86400000) + 1;
-}
-
-// ── 하루 레슨 생성 ──────────────────────────────────────────────
-export function getDayLesson(dayNum) {
-  const d = dayNum - 1;
-
+// ── 하루 레슨 생성 (새 진도가 있는 날) ────────────────────────────
+function buildContentLesson(d) {
   // 글자 파트: 히라가나 + 카타카나 같은 행 (10일 주기)
   const rowIdx = d % 10;
   const hiraRow = hRows[rowIdx];
@@ -951,29 +955,78 @@ export function getDayLesson(dayNum) {
 
   // 읽기 단어: 히라가나 3개 + 카타카나 2개, 매일 다른 조합
   const wordPool = kanaReadingWords[rowIdx];
-  const hiraWords = seededShuffle(wordPool.hira, dayNum * 137 + rowIdx * 31).slice(0, 3);
-  const kataWords = seededShuffle(wordPool.kata, dayNum * 211 + rowIdx * 53).slice(0, 2);
-  const readingWords = seededShuffle([...hiraWords, ...kataWords], dayNum * 97 + rowIdx * 13);
+  const hiraWords = seededShuffle(wordPool.hira, d * 137 + rowIdx * 31).slice(0, 3);
+  const kataWords = seededShuffle(wordPool.kata, d * 211 + rowIdx * 53).slice(0, 2);
+  const readingWords = seededShuffle([...hiraWords, ...kataWords], d * 97 + rowIdx * 13);
 
   // 단어 파트 (하루 5개)
   const wordStart = (d * 5) % vocabPool.length;
   const words = Array.from({ length: 5 }, (_, i) => vocabPool[(wordStart + i) % vocabPool.length]);
 
-  // 문법 파트 (매일 새 레슨)
+  // 문법 파트 (매일 새 레슨 1개)
   const grammarIdx = d % grammarPool.length;
   const grammar = grammarPool[grammarIdx];
   const isNewGrammar = true;
 
-  // 문장 파트 (하루 3문장, 레벨에 맞는 풀에서)
-  const sentPool = getSentencePool(dayNum);
-  const sentStart = (d * 3) % sentPool.length;
-  const todaySentences = Array.from({ length: 3 }, (_, i) => sentPool[(sentStart + i) % sentPool.length]);
+  // 문장 파트: 아주 쉬운 문장 1개 + 오늘 배운 문법의 예문 4개.
+  // 문장 난이도가 그날 문법 수준(N5→N4로 서서히 올라감)과 항상 같이 움직이므로
+  // 갑자기 어려운 문장이 튀어나오지 않는다.
+  const easy = easySentences[d % easySentences.length];
+  const grammarSentences = grammar.examples.map((ex) => ({
+    japanese: ex.j, reading: ex.r, meaning: ex.m,
+  }));
+  const todaySentences = [easy, ...grammarSentences];
 
   const baseThemes = ["あ/ア행","か/カ행","さ/サ행","た/タ행","な/ナ행","は/ハ행","ま/マ행","や/ヤ행","ら/ラ행","わ/ワ행"];
   const phase = d < 20 ? "기초 글자" : d < 60 ? "N5 기초" : d < 120 ? "N5 심화" : d < 240 ? "N4 일상" : "N4 심화";
   const theme = `${phase} — ${baseThemes[rowIdx]}`;
 
   return { kana, kanaLabel, readingWords, words, grammar, isNewGrammar, sentences: todaySentences, theme };
+}
+
+// ── 복습 퀴즈 데이 (5일마다) ──────────────────────────────────────
+// 4개 보기 객관식 문제를 만든다. 정답 1개 + vocabPool에서 뽑은 오답 3개.
+function buildQuizItems(pool, seed, count) {
+  const items = seededShuffle(pool.filter((item) => item?.japanese && item?.meaning), seed).slice(
+    0, Math.min(count, pool.length)
+  );
+  const meaningPool = vocabPool.map((w) => w.meaning);
+  return items.map((item, i) => {
+    const distractorSource = meaningPool.filter((m) => m !== item.meaning);
+    const distractors = seededShuffle(distractorSource, seed + i * 17 + 3).slice(0, 3);
+    const choices = seededShuffle([item.meaning, ...distractors], seed + i * 29 + 5);
+    return { japanese: item.japanese, reading: item.reading, correct: item.meaning, choices };
+  });
+}
+
+function buildReviewLesson(dayNum) {
+  // 이 복습일 바로 앞의 4개 컨텐츠 데이를 복습 대상으로 삼는다.
+  const coveredDays = [dayNum - 4, dayNum - 3, dayNum - 2, dayNum - 1];
+  const lessons = coveredDays.map((d) => buildContentLesson(contentIndexForDay(d)));
+
+  const words = lessons.flatMap((l) => l.words);
+  const sentences = lessons.flatMap((l) => l.sentences);
+  const grammarPoints = lessons.map((l) => l.grammar);
+
+  const flashcards = seededShuffle([...words, ...sentences], dayNum * 71 + 11);
+  const quizItems = buildQuizItems([...words, ...sentences], dayNum * 131 + 13, 10);
+
+  return {
+    isReview: true,
+    dayNum,
+    coveredDays,
+    words,
+    sentences,
+    grammarPoints,
+    flashcards,
+    quizItems,
+    theme: `${dayNum}일 복습 퀴즈`,
+  };
+}
+
+export function getDayLesson(dayNum) {
+  if (isReviewDay(dayNum)) return buildReviewLesson(dayNum);
+  return { ...buildContentLesson(contentIndexForDay(dayNum)), isReview: false, dayNum };
 }
 
 export { sentences, vocabPool, grammarPool };
