@@ -3,11 +3,12 @@ import Furigana from "./Furigana";
 import { speak } from "../utils/speak";
 import { loadTaskPosition, saveTaskPosition, clearTaskPosition, clampIndex } from "../utils/taskPosition";
 import { mergeFlaggedCards, flagItem, unflagItem } from "../utils/reviewFlags";
+import { getDueLongTermItems, recordLongTermResult } from "../utils/spacedReview";
 import { getReadingParts } from "../utils/getReadingParts";
 
 // ── 1단계: 지난 4일 단어·문장 플래시카드로 훑어보기 ──────────────
 // 뜻을 먼저 보여주고 일본어를 떠올려본 뒤 확인하는 순서(작문 감각 훈련)
-function FlashPhase({ cards, initialIdx = 0, onIdxChange, onDone, onSkipAll, profile }) {
+function FlashPhase({ cards, initialIdx = 0, onIdxChange, onDone, onSkipAll, profile, dayNum }) {
   const [idx, setIdx] = useState(clampIndex(initialIdx, cards.length));
   const current = cards[idx];
   const isLast = idx + 1 >= cards.length;
@@ -27,11 +28,13 @@ function FlashPhase({ cards, initialIdx = 0, onIdxChange, onDone, onSkipAll, pro
 
   function markRemembered() {
     unflagItem(profile, current);
+    recordLongTermResult(profile, current, true, dayNum);
     next();
   }
 
   function markNotYet() {
     flagItem(profile, current);
+    recordLongTermResult(profile, current, false, dayNum);
     next();
   }
 
@@ -185,8 +188,16 @@ export default function ReviewQuiz({ lesson, onDone, profile, dayNum }) {
   const [finalScore, setFinalScore] = useState(initialPhase === "result" ? saved?.score || 0 : 0);
 
   const naturalCards = lesson.flashcards.length > 0 ? lesson.flashcards : lesson.words;
-  // "아직 못 외웠어요"로 표시해둔 카드를 얹어서, 세션 도중에는 목록이 안 바뀌게 고정
-  const [cards] = useState(() => mergeFlaggedCards(profile, naturalCards));
+  // "아직 못 외웠어요" 카드 + 오늘 다시 볼 차례가 된 장기 복습 카드(최대 3개)를
+  // 얹어서, 세션 도중에는 목록이 안 바뀌게 고정
+  const [cards] = useState(() => {
+    const withFlags = mergeFlaggedCards(profile, naturalCards);
+    const existingKeys = new Set(withFlags.map((c) => c.japanese));
+    const dueLongTerm = getDueLongTermItems(profile, dayNum, 3).filter(
+      (it) => !existingKeys.has(it.japanese)
+    );
+    return [...dueLongTerm, ...withFlags];
+  });
   const quizItems = lesson.quizItems;
 
   function persist(nextPhase, idx, extra = {}) {
@@ -211,6 +222,7 @@ export default function ReviewQuiz({ lesson, onDone, profile, dayNum }) {
         }}
         onSkipAll={handleFinalDone}
         profile={profile}
+        dayNum={dayNum}
       />
     );
   }

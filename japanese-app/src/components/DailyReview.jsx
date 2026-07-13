@@ -3,14 +3,23 @@ import Furigana from "./Furigana";
 import { speak } from "../utils/speak";
 import { loadTaskPosition, saveTaskPosition, clearTaskPosition, clampIndex } from "../utils/taskPosition";
 import { mergeFlaggedCards, flagItem, unflagItem } from "../utils/reviewFlags";
+import { getDueLongTermItems, recordLongTermResult } from "../utils/spacedReview";
 import { getReadingParts } from "../utils/getReadingParts";
 
 // 매일 뜨는 "복습" — 5일마다의 복습 퀴즈(ReviewQuiz)와는 별개로,
 // 글자연습 바로 위에서 전날·전전날 단어/문장을 플래시카드로만 훑고 넘어간다.
 // 뜻을 먼저 보여주고 일본어를 떠올려본 뒤 확인하는 순서(작문 감각 훈련)
 export default function DailyReview({ lesson, onDone, profile, dayNum }) {
-  // "아직 못 외웠어요"로 표시해둔 카드를 얹어서, 세션 도중에는 목록이 안 바뀌게 고정
-  const [cards] = useState(() => mergeFlaggedCards(profile, lesson.flashcards));
+  // "아직 못 외웠어요" 카드 + 오늘 다시 볼 차례가 된 장기 복습 카드(최대 3개)를
+  // 얹어서, 세션 도중에는 목록이 안 바뀌게 고정
+  const [cards] = useState(() => {
+    const withFlags = mergeFlaggedCards(profile, lesson.flashcards);
+    const existingKeys = new Set(withFlags.map((c) => c.japanese));
+    const dueLongTerm = getDueLongTermItems(profile, dayNum, 3).filter(
+      (it) => !existingKeys.has(it.japanese)
+    );
+    return [...dueLongTerm, ...withFlags];
+  });
   const saved = loadTaskPosition(profile, dayNum, "dailyReview");
   const [idx, setIdx] = useState(clampIndex(saved?.idx, cards.length));
 
@@ -46,11 +55,13 @@ export default function DailyReview({ lesson, onDone, profile, dayNum }) {
 
   function markRemembered() {
     unflagItem(profile, current);
+    recordLongTermResult(profile, current, true, dayNum);
     next();
   }
 
   function markNotYet() {
     flagItem(profile, current);
+    recordLongTermResult(profile, current, false, dayNum);
     next();
   }
 
