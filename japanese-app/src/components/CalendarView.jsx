@@ -31,7 +31,6 @@ export default function CalendarView({ dayProgress, todayDayNum, unlockedDayNum,
                   onClick={() => onSelectDay(day)}
                   className={`aspect-square rounded-xl flex flex-col items-center justify-center text-xs font-semibold transition-all active:scale-90 ${style}`}
                 >
-                  {isReview && <span className="text-sm leading-none">🎯</span>}
                   <span>{day}</span>
                 </button>
               );
@@ -42,7 +41,6 @@ export default function CalendarView({ dayProgress, todayDayNum, unlockedDayNum,
             <span className="flex items-center gap-1"><span className="w-3 h-3 rounded-full bg-green-400 inline-block" /> 완료</span>
             <span className="flex items-center gap-1"><span className="w-3 h-3 rounded-full bg-yellow-200 border border-yellow-300 inline-block" /> 일부</span>
             <span className="flex items-center gap-1"><span className="w-3 h-3 rounded-full bg-indigo-600 inline-block" /> 오늘</span>
-            <span className="flex items-center gap-1">🎯 복습일</span>
           </div>
 
           <button onClick={onClose} className="mt-4 w-full py-3 bg-gray-100 text-gray-600 rounded-2xl font-medium">닫기</button>
