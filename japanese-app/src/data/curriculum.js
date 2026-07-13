@@ -1210,4 +1210,47 @@ export function getDayLesson(dayNum) {
   return { ...buildContentLesson(contentIndexForDay(dayNum)), isReview: false, dayNum };
 }
 
+// ── 매일 뜨는 "전날 복습" (5일 복습 퀴즈와는 별개, 글자연습 바로 위에 뜬다) ──
+// 5일 복습 퀴즈가 끼는 날(dayNum이 REVIEW_INTERVAL의 배수)은 새 컨텐츠가 없으니
+// 건너뛰고, 그 앞의 실제 컨텐츠 데이 2개(전날, 전전날)까지만 거슬러 올라간다.
+function getPrecedingContentDays(dayNum, count) {
+  const days = [];
+  let d = dayNum - 1;
+  while (d >= 1 && days.length < count) {
+    if (!isReviewDay(d)) days.push(d);
+    d--;
+  }
+  return days.reverse(); // 오래된 날 → 최근 날 순
+}
+
+export function hasDailyReview(dayNum) {
+  return getPrecedingContentDays(dayNum, 1).length > 0;
+}
+
+export function getDailyReviewLesson(dayNum) {
+  const coveredDays = getPrecedingContentDays(dayNum, 2);
+  const lessons = coveredDays.map((d) => buildContentLesson(contentIndexForDay(d)));
+
+  // 글자연습 때 나왔던 단어 + 단어학습 단어 + 문법학습 예문(문장) + 문장 익히기 문장
+  const kanaWords = lessons.flatMap((l) => l.readingWords);
+  const words = lessons.flatMap((l) => l.words);
+  const grammarSentences = lessons.flatMap((l) =>
+    l.grammar.examples.map((ex) => ({ japanese: ex.j, reading: ex.r, meaning: ex.m }))
+  );
+  const sentences = lessons.flatMap((l) => l.sentences);
+
+  const flashcards = seededShuffle(
+    [...kanaWords, ...words, ...grammarSentences, ...sentences],
+    dayNum * 53 + 7
+  );
+
+  return {
+    isDailyReview: true,
+    dayNum,
+    coveredDays,
+    flashcards,
+    theme: `Day ${coveredDays.join(", ")} 복습`,
+  };
+}
+
 export { sentences, vocabPool, grammarPool };

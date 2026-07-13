@@ -1,8 +1,9 @@
 import { useState } from "react";
-import { getDayLesson } from "../data/curriculum";
+import { getDayLesson, hasDailyReview } from "../data/curriculum";
 import CalendarView from "./CalendarView";
 
 const TASK_META = {
+  dailyReview: { icon: "🔁", label: "전날 복습", color: "bg-sky-50 border-sky-200 text-sky-700" },
   kana:     { icon: "あ", label: "글자 연습", color: "bg-violet-50 border-violet-200 text-violet-700" },
   words:    { icon: "単", label: "단어 학습", color: "bg-blue-50 border-blue-200 text-blue-700" },
   grammar:  { icon: "文", label: "문법 학습", color: "bg-emerald-50 border-emerald-200 text-emerald-700" },
@@ -44,6 +45,7 @@ function TaskCard({ taskKey, done, onClick }) {
           {meta.label}
         </p>
         <p className="text-xs text-gray-400 mt-0.5">
+          {taskKey === "dailyReview" && "전날·전전날 단어·문장 복습"}
           {taskKey === "kana" && "히라가나+카타카나 한 행 + 읽기"}
           {taskKey === "words" && "새 단어 5개"}
           {taskKey === "grammar" && "문법 포인트 1개"}
@@ -78,7 +80,11 @@ function ReviewTaskCard({ dayNum, done, onClick }) {
 export default function Home({ onNavigate, todayDone, streak, recentStatus, dayProgress, dayNum, actualDayNum, onBackToToday, onViewDay }) {
   const isToday = dayNum === actualDayNum;
   const lesson = getDayLesson(dayNum);
-  const tasks = lesson.isReview ? ["review"] : ["kana", "words", "grammar", "sentence"];
+  const tasks = lesson.isReview
+    ? ["review"]
+    : hasDailyReview(dayNum)
+      ? ["dailyReview", "kana", "words", "grammar", "sentence"]
+      : ["kana", "words", "grammar", "sentence"];
   const doneCount = tasks.filter((t) => todayDone[t]).length;
   const [showCalendar, setShowCalendar] = useState(false);
 

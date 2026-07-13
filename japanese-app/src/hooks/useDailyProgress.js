@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { isReviewDay } from "../data/curriculum";
+import { isReviewDay, hasDailyReview } from "../data/curriculum";
 
 const PROFILE_KEY = "jp_profile";
 const TASK_KEYS = ["kana", "words", "grammar", "sentence"];
@@ -19,7 +19,8 @@ function dayProgressKey(profileName) {
 // Day 번호는 실제 달력 날짜가 아니라 "그 Day의 할 일을 다 끝냈는지"로만 진행된다.
 // 복습일(5일마다)은 태스크가 "review" 하나뿐이고, 그 외 날은 4개 모두 끝내야 한다.
 function requiredTasks(dayNum) {
-  return isReviewDay(dayNum) ? ["review"] : TASK_KEYS;
+  if (isReviewDay(dayNum)) return ["review"];
+  return hasDailyReview(dayNum) ? ["dailyReview", ...TASK_KEYS] : TASK_KEYS;
 }
 
 function isDayComplete(dayNum, dayDone) {
