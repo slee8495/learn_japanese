@@ -5,6 +5,7 @@ import { speak } from "../utils/speak";
 import ReviewQuiz from "./ReviewQuiz";
 import DailyReview from "./DailyReview";
 import { loadTaskPosition, saveTaskPosition, clearTaskPosition, clampIndex } from "../utils/taskPosition";
+import { getReadingParts } from "../utils/getReadingParts";
 
 // 다 안 봤어도 "이거 다 한 걸로 치고 완료 처리"할 수 있는 건너뛰기 버튼
 function SkipButton({ onSkip }) {
@@ -123,6 +124,7 @@ function KanaSection({ lesson, onDone, profile, dayNum }) {
 
   // 읽기 연습 — 뜻을 먼저 보고 일본어를 떠올려보는 방식(작문 감각 훈련)
   const current = readingList[idx];
+  const currentReadingParts = getReadingParts(current.japanese, current.reading);
   return (
     <div className="flex flex-col items-center gap-5 py-6 px-4">
       <div className="text-center">
@@ -137,7 +139,8 @@ function KanaSection({ lesson, onDone, profile, dayNum }) {
         onClick={() => speak(current.japanese)}
       >
         <span className="text-4xl font-medium">{current.japanese}</span>
-        <p className="text-indigo-500 text-sm mt-2">{current.reading}</p>
+        <p className="text-indigo-500 text-sm mt-2">{currentReadingParts.hiragana}</p>
+        <p className="text-gray-400 text-xs mt-0.5">{currentReadingParts.romaji}</p>
         <p className="text-gray-300 text-sm mt-3">탭하면 발음 🔊</p>
       </div>
       <div className="flex gap-3 w-full max-w-sm">
@@ -161,6 +164,7 @@ function WordsSection({ lesson, onDone, profile, dayNum }) {
   const saved = loadTaskPosition(profile, dayNum, "words");
   const [idx, setIdx] = useState(clampIndex(saved?.idx, lesson.words.length));
   const current = lesson.words[idx];
+  const currentReadingParts = getReadingParts(current.japanese, current.reading);
 
   useEffect(() => {
     saveTaskPosition(profile, dayNum, "words", { idx });
@@ -192,7 +196,8 @@ function WordsSection({ lesson, onDone, profile, dayNum }) {
         onClick={() => speak(current.japanese)}
       >
         <Furigana japanese={current.japanese} reading={current.reading} className="text-5xl" />
-        <p className="text-xl font-medium text-blue-600 mt-2">{current.reading}</p>
+        <p className="text-xl font-medium text-blue-600 mt-2">{currentReadingParts.hiragana}</p>
+        <p className="text-gray-400 text-sm mt-0.5">{currentReadingParts.romaji}</p>
         <p className="text-gray-300 text-sm mt-3">탭하면 발음 🔊</p>
       </div>
       <div className="flex gap-3 w-full max-w-sm">
@@ -237,17 +242,21 @@ function GrammarSection({ lesson, onDone }) {
       <div>
         <p className="text-xs font-semibold text-gray-400 mb-2">예문 (탭하면 발음)</p>
         <div className="flex flex-col gap-2">
-          {g.examples.map((ex, i) => (
-            <div
-              key={i}
-              className="bg-white rounded-2xl border border-gray-100 shadow-sm p-4 cursor-pointer"
-              onClick={() => speak(ex.j)}
-            >
-              <p className="text-sm font-medium text-gray-500">{ex.m}</p>
-              <Furigana japanese={ex.j} reading={ex.r} className="text-lg text-gray-800 mt-1" />
-              <p className="text-sm text-indigo-500 mt-0.5">{ex.r}</p>
-            </div>
-          ))}
+          {g.examples.map((ex, i) => {
+            const readingParts = getReadingParts(ex.j, ex.r);
+            return (
+              <div
+                key={i}
+                className="bg-white rounded-2xl border border-gray-100 shadow-sm p-4 cursor-pointer"
+                onClick={() => speak(ex.j)}
+              >
+                <p className="text-sm font-medium text-gray-500">{ex.m}</p>
+                <Furigana japanese={ex.j} reading={ex.r} className="text-lg text-gray-800 mt-1" />
+                <p className="text-sm text-indigo-500 mt-0.5">{readingParts.hiragana}</p>
+                <p className="text-xs text-gray-400 mt-0.5">{readingParts.romaji}</p>
+              </div>
+            );
+          })}
         </div>
       </div>
 
@@ -267,6 +276,7 @@ function SentenceSection({ lesson, onDone, profile, dayNum }) {
   const saved = loadTaskPosition(profile, dayNum, "sentence");
   const [idx, setIdx] = useState(clampIndex(saved?.idx, lesson.sentences.length));
   const current = lesson.sentences[idx];
+  const currentReadingParts = getReadingParts(current.japanese, current.reading);
 
   useEffect(() => {
     saveTaskPosition(profile, dayNum, "sentence", { idx });
@@ -298,7 +308,8 @@ function SentenceSection({ lesson, onDone, profile, dayNum }) {
         onClick={() => speak(current.japanese)}
       >
         <Furigana japanese={current.japanese} reading={current.reading} className="text-2xl font-medium text-gray-800" />
-        <p className="text-base text-indigo-500">{current.reading}</p>
+        <p className="text-base text-indigo-500">{currentReadingParts.hiragana}</p>
+        <p className="text-sm text-gray-400">{currentReadingParts.romaji}</p>
         <p className="text-gray-300 text-sm">탭하면 발음 🔊</p>
       </div>
       <div className="flex gap-3 w-full max-w-sm">

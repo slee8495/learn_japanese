@@ -3,6 +3,7 @@ import Furigana from "./Furigana";
 import { speak } from "../utils/speak";
 import { loadTaskPosition, saveTaskPosition, clearTaskPosition, clampIndex } from "../utils/taskPosition";
 import { mergeFlaggedCards, flagItem, unflagItem } from "../utils/reviewFlags";
+import { getReadingParts } from "../utils/getReadingParts";
 
 // ── 1단계: 지난 4일 단어·문장 플래시카드로 훑어보기 ──────────────
 // 뜻을 먼저 보여주고 일본어를 떠올려본 뒤 확인하는 순서(작문 감각 훈련)
@@ -10,6 +11,7 @@ function FlashPhase({ cards, initialIdx = 0, onIdxChange, onDone, onSkipAll, pro
   const [idx, setIdx] = useState(clampIndex(initialIdx, cards.length));
   const current = cards[idx];
   const isLast = idx + 1 >= cards.length;
+  const currentReadingParts = getReadingParts(current.japanese, current.reading);
 
   useEffect(() => { onIdxChange?.(idx); }, [idx]); // eslint-disable-line react-hooks/exhaustive-deps
 
@@ -47,6 +49,8 @@ function FlashPhase({ cards, initialIdx = 0, onIdxChange, onDone, onSkipAll, pro
         onClick={() => speak(current.japanese)}
       >
         <Furigana japanese={current.japanese} reading={current.reading} className="text-2xl font-medium text-gray-800" />
+        <p className="text-sm text-indigo-500">{currentReadingParts.hiragana}</p>
+        <p className="text-sm text-gray-400">{currentReadingParts.romaji}</p>
         <p className="text-gray-300 text-sm">탭하면 발음 🔊</p>
       </div>
       {idx > 0 && (
@@ -79,6 +83,7 @@ function QuizPhase({ items, initialIdx = 0, initialAnswers = {}, onIdxChange, on
   const isLast = idx + 1 >= items.length;
   const selected = answers[idx] ?? null;
   const score = Object.keys(answers).filter((k) => answers[k] === items[k]?.correct).length;
+  const currentReadingParts = getReadingParts(current.japanese, current.reading);
 
   useEffect(() => { onIdxChange?.(idx, answers); }, [idx, answers]); // eslint-disable-line react-hooks/exhaustive-deps
 
@@ -108,6 +113,8 @@ function QuizPhase({ items, initialIdx = 0, initialAnswers = {}, onIdxChange, on
         onClick={() => speak(current.japanese)}
       >
         <Furigana japanese={current.japanese} reading={current.reading} className="text-2xl font-medium text-gray-800" />
+        <p className="text-sm text-indigo-500">{currentReadingParts.hiragana}</p>
+        <p className="text-sm text-gray-400">{currentReadingParts.romaji}</p>
         <p className="text-gray-300 text-sm">탭하면 발음 🔊</p>
       </div>
       <div className="w-full max-w-sm flex flex-col gap-2">

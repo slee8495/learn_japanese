@@ -3,6 +3,7 @@ import Furigana from "./Furigana";
 import { speak } from "../utils/speak";
 import { loadTaskPosition, saveTaskPosition, clearTaskPosition, clampIndex } from "../utils/taskPosition";
 import { mergeFlaggedCards, flagItem, unflagItem } from "../utils/reviewFlags";
+import { getReadingParts } from "../utils/getReadingParts";
 
 // 매일 뜨는 "복습" — 5일마다의 복습 퀴즈(ReviewQuiz)와는 별개로,
 // 글자연습 바로 위에서 전날·전전날 단어/문장을 플래시카드로만 훑고 넘어간다.
@@ -31,6 +32,7 @@ export default function DailyReview({ lesson, onDone, profile, dayNum }) {
 
   const current = cards[idx];
   const isLast = idx + 1 >= cards.length;
+  const currentReadingParts = getReadingParts(current.japanese, current.reading);
 
   function next() {
     if (isLast) { clearTaskPosition(profile, dayNum, "dailyReview"); onDone(); return; }
@@ -73,6 +75,8 @@ export default function DailyReview({ lesson, onDone, profile, dayNum }) {
         onClick={() => speak(current.japanese)}
       >
         <Furigana japanese={current.japanese} reading={current.reading} className="text-2xl font-medium text-gray-800" />
+        <p className="text-sm text-indigo-500">{currentReadingParts.hiragana}</p>
+        <p className="text-sm text-gray-400">{currentReadingParts.romaji}</p>
         <p className="text-gray-300 text-sm">탭하면 발음 🔊</p>
       </div>
       {idx > 0 && (

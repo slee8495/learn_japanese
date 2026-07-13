@@ -1,6 +1,7 @@
 import { useState, useMemo } from "react";
 import jlptWords from "../data/jlpt-words.json";
 import Furigana from "./Furigana";
+import { getReadingParts } from "../utils/getReadingParts";
 
 const LEVELS = [
   { id: "n5", label: "N5", sub: "기초 (100개)", color: "bg-green-100 text-green-700" },
@@ -24,6 +25,7 @@ function speak(text) {
 
 function WordCard({ word }) {
   const posLabel = POS_LABELS[word.pos] || word.pos;
+  const readingParts = getReadingParts(word.japanese, word.reading);
 
   return (
     <div
@@ -34,7 +36,8 @@ function WordCard({ word }) {
         <div className="flex-1 min-w-0">
           <p className="text-base text-gray-600">{word.meaning}</p>
           <Furigana japanese={word.japanese} reading={word.reading} className="text-2xl font-medium text-gray-800 mt-1" />
-          <p className="text-sm text-indigo-500 mt-0.5">{word.reading}</p>
+          <p className="text-sm text-indigo-500 mt-0.5">{readingParts.hiragana}</p>
+          <p className="text-xs text-gray-400 mt-0.5">{readingParts.romaji}</p>
         </div>
         <div className="flex flex-col items-end gap-1 shrink-0">
           {posLabel && (

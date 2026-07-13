@@ -1,22 +1,6 @@
-import { romajiToHiragana } from "../utils/romajiToHiragana";
+import { hasKanji, normalizeReading } from "../utils/japaneseReading";
 
-function isKanjiChar(ch) {
-  return /[一-龯㐀-䶿]/.test(ch);
-}
-
-function hasKanji(text) {
-  return /[一-龯㐀-䶿]/.test(text);
-}
-
-function hasHiragana(text) {
-  return /[ぁ-ゖ]/.test(text);
-}
-
-function normalizeReading(reading) {
-  if (!reading) return '';
-  if (hasHiragana(reading)) return reading;
-  return romajiToHiragana(reading);
-}
+const isKanjiChar = hasKanji;
 
 // 한자 구간/비한자 구간으로 분리하고 각각에 읽기를 배분
 function segmentFurigana(japanese, reading) {

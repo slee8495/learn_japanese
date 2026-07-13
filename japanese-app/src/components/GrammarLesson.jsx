@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { grammarLessons } from "../data/grammar";
 import Furigana from "./Furigana";
+import { getReadingParts } from "../utils/getReadingParts";
 
 function speak(text) {
   const utt = new SpeechSynthesisUtterance(text);
@@ -10,6 +11,7 @@ function speak(text) {
 }
 
 function ExampleRow({ ex }) {
+  const readingParts = getReadingParts(ex.japanese, ex.reading);
   return (
     <div
       className="bg-gray-50 rounded-xl p-3 cursor-pointer hover:bg-indigo-50 transition-colors"
@@ -17,7 +19,8 @@ function ExampleRow({ ex }) {
     >
       <p className="text-sm font-medium text-gray-500">{ex.meaning}</p>
       <Furigana japanese={ex.japanese} reading={ex.reading} className="text-lg text-gray-800 mt-1" />
-      <p className="text-sm text-indigo-500 mt-0.5">{ex.reading}</p>
+      <p className="text-sm text-indigo-500 mt-0.5">{readingParts.hiragana}</p>
+      <p className="text-xs text-gray-400 mt-0.5">{readingParts.romaji}</p>
     </div>
   );
 }

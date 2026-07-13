@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { words } from "../data/kana";
+import { getReadingParts } from "../utils/getReadingParts";
 
 function speak(text) {
   const utt = new SpeechSynthesisUtterance(text);
@@ -23,6 +24,7 @@ export default function ReadingDrill() {
   const [index, setIndex] = useState(0);
 
   const current = deck[index];
+  const currentReadingParts = getReadingParts(current.japanese, current.reading);
 
   function next() {
     setIndex((i) => (i + 1) % deck.length);
@@ -45,7 +47,8 @@ export default function ReadingDrill() {
         onClick={() => speak(current.japanese)}
       >
         <span className="text-6xl mb-4">{current.japanese}</span>
-        <p className="text-2xl font-medium text-gray-700">{current.reading}</p>
+        <p className="text-2xl font-medium text-gray-700">{currentReadingParts.hiragana}</p>
+        <p className="text-gray-400 text-sm mt-1">{currentReadingParts.romaji}</p>
         <p className="text-gray-400 text-sm mt-2">클릭하면 발음을 들을 수 있어요 🔊</p>
       </div>
 
