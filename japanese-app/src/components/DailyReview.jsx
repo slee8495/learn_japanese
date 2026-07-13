@@ -1,13 +1,19 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Furigana from "./Furigana";
 import { speak } from "../utils/speak";
+import { loadTaskPosition, saveTaskPosition, clearTaskPosition, clampIndex } from "../utils/taskPosition";
 
 // 매일 뜨는 "전날 복습" — 5일마다의 복습 퀴즈(ReviewQuiz)와는 별개로,
 // 글자연습 바로 위에서 전날·전전날 단어/문장을 플래시카드로만 훑고 넘어간다.
 // 뜻을 먼저 보여주고 일본어를 떠올려본 뒤 확인하는 순서(작문 감각 훈련)
-export default function DailyReview({ lesson, onDone }) {
-  const [idx, setIdx] = useState(0);
+export default function DailyReview({ lesson, onDone, profile, dayNum }) {
   const cards = lesson.flashcards;
+  const saved = loadTaskPosition(profile, dayNum, "dailyReview");
+  const [idx, setIdx] = useState(clampIndex(saved?.idx, cards.length));
+
+  useEffect(() => {
+    if (cards.length > 0) saveTaskPosition(profile, dayNum, "dailyReview", { idx });
+  }, [idx, profile, dayNum, cards.length]);
 
   if (cards.length === 0) {
     return (
@@ -25,7 +31,7 @@ export default function DailyReview({ lesson, onDone }) {
   const isLast = idx + 1 >= cards.length;
 
   function next() {
-    if (isLast) { onDone(); return; }
+    if (isLast) { clearTaskPosition(profile, dayNum, "dailyReview"); onDone(); return; }
     setIdx((i) => i + 1);
   }
 

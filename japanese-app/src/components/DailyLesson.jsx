@@ -1,25 +1,34 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { getDayLesson, getDailyReviewLesson } from "../data/curriculum";
 import Furigana from "./Furigana";
 import { speak } from "../utils/speak";
 import ReviewQuiz from "./ReviewQuiz";
 import DailyReview from "./DailyReview";
+import { loadTaskPosition, saveTaskPosition, clearTaskPosition, clampIndex } from "../utils/taskPosition";
 
 // ── 글자 연습 (히라가나+카타카나 같이 + 읽기 연습) ───────────────
-function KanaSection({ lesson, onDone }) {
-  // phase: "kana" → 글자 카드, "reading" → 단어 읽기
-  const [phase, setPhase] = useState("kana");
-  const [idx, setIdx] = useState(0);
-  const [revealed, setRevealed] = useState(false);
-
+function KanaSection({ lesson, onDone, profile, dayNum }) {
   // 히라가나 먼저, 카타카나 나중 순서
   const kanaList = lesson.kana;
   const readingList = lesson.readingWords || [];
 
+  const saved = loadTaskPosition(profile, dayNum, "kana");
+  const initialPhase = saved?.phase === "reading" && readingList.length > 0 ? "reading" : "kana";
+  const initialList = initialPhase === "kana" ? kanaList : readingList;
+
+  // phase: "kana" → 글자 카드, "reading" → 단어 읽기
+  const [phase, setPhase] = useState(initialPhase);
+  const [idx, setIdx] = useState(clampIndex(saved?.idx, initialList.length));
+  const [revealed, setRevealed] = useState(false);
+
+  useEffect(() => {
+    saveTaskPosition(profile, dayNum, "kana", { phase, idx });
+  }, [phase, idx, profile, dayNum]);
+
   function nextKana() {
     if (idx + 1 >= kanaList.length) {
       if (readingList.length > 0) { setPhase("reading"); setIdx(0); setRevealed(false); }
-      else onDone();
+      else { clearTaskPosition(profile, dayNum, "kana"); onDone(); }
       return;
     }
     setIdx(i => i + 1);
@@ -27,7 +36,7 @@ function KanaSection({ lesson, onDone }) {
   }
 
   function nextReading() {
-    if (idx + 1 >= readingList.length) { onDone(); return; }
+    if (idx + 1 >= readingList.length) { clearTaskPosition(profile, dayNum, "kana"); onDone(); return; }
     setIdx(i => i + 1);
     setRevealed(false);
   }
@@ -97,12 +106,17 @@ function KanaSection({ lesson, onDone }) {
 
 // ── 단어 학습 ─────────────────────────────────────────────────
 // 뜻을 먼저 보여주고 일본어를 떠올려본 뒤 확인하는 순서(작문 감각 훈련)
-function WordsSection({ lesson, onDone }) {
-  const [idx, setIdx] = useState(0);
+function WordsSection({ lesson, onDone, profile, dayNum }) {
+  const saved = loadTaskPosition(profile, dayNum, "words");
+  const [idx, setIdx] = useState(clampIndex(saved?.idx, lesson.words.length));
   const current = lesson.words[idx];
 
+  useEffect(() => {
+    saveTaskPosition(profile, dayNum, "words", { idx });
+  }, [idx, profile, dayNum]);
+
   function next() {
-    if (idx + 1 >= lesson.words.length) { onDone(); return; }
+    if (idx + 1 >= lesson.words.length) { clearTaskPosition(profile, dayNum, "words"); onDone(); return; }
     setIdx(i => i + 1);
   }
 
@@ -180,12 +194,17 @@ function GrammarSection({ lesson, onDone }) {
 
 // ── 문장 익히기 ───────────────────────────────────────────────
 // 뜻을 먼저 보여주고 일본어 문장을 떠올려본 뒤 확인하는 순서(작문 감각 훈련)
-function SentenceSection({ lesson, onDone }) {
-  const [idx, setIdx] = useState(0);
+function SentenceSection({ lesson, onDone, profile, dayNum }) {
+  const saved = loadTaskPosition(profile, dayNum, "sentence");
+  const [idx, setIdx] = useState(clampIndex(saved?.idx, lesson.sentences.length));
   const current = lesson.sentences[idx];
 
+  useEffect(() => {
+    saveTaskPosition(profile, dayNum, "sentence", { idx });
+  }, [idx, profile, dayNum]);
+
   function next() {
-    if (idx + 1 >= lesson.sentences.length) { onDone(); return; }
+    if (idx + 1 >= lesson.sentences.length) { clearTaskPosition(profile, dayNum, "sentence"); onDone(); return; }
     setIdx(i => i + 1);
   }
 
@@ -214,20 +233,20 @@ function SentenceSection({ lesson, onDone }) {
 }
 
 // ── 메인 ──────────────────────────────────────────────────────
-export default function DailyLesson({ task, dayNum, onDone }) {
+export default function DailyLesson({ task, dayNum, onDone, profile }) {
   if (task === "dailyReview") {
-    return <DailyReview lesson={getDailyReviewLesson(dayNum)} onDone={onDone} />;
+    return <DailyReview lesson={getDailyReviewLesson(dayNum)} onDone={onDone} profile={profile} dayNum={dayNum} />;
   }
 
   const lesson = getDayLesson(dayNum);
 
   return (
     <div>
-      {task === "kana" && <KanaSection lesson={lesson} onDone={onDone} />}
-      {task === "words" && <WordsSection lesson={lesson} onDone={onDone} />}
+      {task === "kana" && <KanaSection lesson={lesson} onDone={onDone} profile={profile} dayNum={dayNum} />}
+      {task === "words" && <WordsSection lesson={lesson} onDone={onDone} profile={profile} dayNum={dayNum} />}
       {task === "grammar" && <GrammarSection lesson={lesson} onDone={onDone} />}
-      {task === "sentence" && <SentenceSection lesson={lesson} onDone={onDone} />}
-      {task === "review" && <ReviewQuiz lesson={lesson} onDone={onDone} />}
+      {task === "sentence" && <SentenceSection lesson={lesson} onDone={onDone} profile={profile} dayNum={dayNum} />}
+      {task === "review" && <ReviewQuiz lesson={lesson} onDone={onDone} profile={profile} dayNum={dayNum} />}
     </div>
   );
 }

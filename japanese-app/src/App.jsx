@@ -125,7 +125,7 @@ function MainApp({ profile, onSwitchProfile }) {
           </div>
         </header>
         <main className="max-w-lg mx-auto pb-44">
-          <DailyLesson task={activeLesson.task} dayNum={activeLesson.dayNum} onDone={handleTaskDone} />
+          <DailyLesson task={activeLesson.task} dayNum={activeLesson.dayNum} onDone={handleTaskDone} profile={profile} />
         </main>
         <ChatWidget context={chatContext} />
         <ScratchPad />

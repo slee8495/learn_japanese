@@ -1,13 +1,16 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Furigana from "./Furigana";
 import { speak } from "../utils/speak";
+import { loadTaskPosition, saveTaskPosition, clearTaskPosition, clampIndex } from "../utils/taskPosition";
 
 // ── 1단계: 지난 4일 단어·문장 플래시카드로 훑어보기 ──────────────
 // 뜻을 먼저 보여주고 일본어를 떠올려본 뒤 확인하는 순서(작문 감각 훈련)
-function FlashPhase({ cards, onDone }) {
-  const [idx, setIdx] = useState(0);
+function FlashPhase({ cards, initialIdx = 0, onIdxChange, onDone }) {
+  const [idx, setIdx] = useState(clampIndex(initialIdx, cards.length));
   const current = cards[idx];
   const isLast = idx + 1 >= cards.length;
+
+  useEffect(() => { onIdxChange?.(idx); }, [idx]); // eslint-disable-line react-hooks/exhaustive-deps
 
   function next() {
     if (isLast) { onDone(); return; }
@@ -38,12 +41,14 @@ function FlashPhase({ cards, onDone }) {
 }
 
 // ── 2단계: 4지선다 객관식 퀴즈 ────────────────────────────────
-function QuizPhase({ items, onDone }) {
-  const [idx, setIdx] = useState(0);
+function QuizPhase({ items, initialIdx = 0, initialScore = 0, onIdxChange, onDone }) {
+  const [idx, setIdx] = useState(clampIndex(initialIdx, items.length));
   const [selected, setSelected] = useState(null);
-  const [score, setScore] = useState(0);
+  const [score, setScore] = useState(initialScore);
   const current = items[idx];
   const isLast = idx + 1 >= items.length;
+
+  useEffect(() => { onIdxChange?.(idx, score); }, [idx, score]); // eslint-disable-line react-hooks/exhaustive-deps
 
   function choose(choice) {
     if (selected) return;
@@ -120,25 +125,51 @@ function ResultPhase({ score, total, onDone }) {
 }
 
 // ── 메인 ──────────────────────────────────────────────────────
-export default function ReviewQuiz({ lesson, onDone }) {
-  const [phase, setPhase] = useState("flash");
-  const [finalScore, setFinalScore] = useState(0);
+export default function ReviewQuiz({ lesson, onDone, profile, dayNum }) {
+  const saved = loadTaskPosition(profile, dayNum, "review");
+  const initialPhase = ["flash", "quiz", "result"].includes(saved?.phase) ? saved.phase : "flash";
+
+  const [phase, setPhase] = useState(initialPhase);
+  const [finalScore, setFinalScore] = useState(initialPhase === "result" ? saved?.score || 0 : 0);
 
   const cards = lesson.flashcards.length > 0 ? lesson.flashcards : lesson.words;
   const quizItems = lesson.quizItems;
 
+  function persist(nextPhase, idx, score) {
+    saveTaskPosition(profile, dayNum, "review", { phase: nextPhase, idx, score });
+  }
+
+  function handleFinalDone() {
+    clearTaskPosition(profile, dayNum, "review");
+    onDone();
+  }
+
   if (phase === "flash") {
-    return <FlashPhase cards={cards} onDone={() => setPhase(quizItems.length > 0 ? "quiz" : "result")} />;
+    return (
+      <FlashPhase
+        cards={cards}
+        initialIdx={saved?.phase === "flash" ? saved.idx : 0}
+        onIdxChange={(idx) => persist("flash", idx, 0)}
+        onDone={() => {
+          const next = quizItems.length > 0 ? "quiz" : "result";
+          setPhase(next);
+          persist(next, 0, 0);
+        }}
+      />
+    );
   }
 
   if (phase === "quiz") {
     return (
       <QuizPhase
         items={quizItems}
-        onDone={(score) => { setFinalScore(score); setPhase("result"); }}
+        initialIdx={saved?.phase === "quiz" ? saved.idx : 0}
+        initialScore={saved?.phase === "quiz" ? saved.score || 0 : 0}
+        onIdxChange={(idx, score) => persist("quiz", idx, score)}
+        onDone={(score) => { setFinalScore(score); setPhase("result"); persist("result", 0, score); }}
       />
     );
   }
 
-  return <ResultPhase score={finalScore} total={quizItems.length} onDone={onDone} />;
+  return <ResultPhase score={finalScore} total={quizItems.length} onDone={handleFinalDone} />;
 }
