@@ -86,12 +86,19 @@ function KanaSection({ lesson, onDone, profile, dayNum }) {
         </div>
         <p className="text-gray-400 text-sm">탭하면 발음 🔊</p>
         {!revealed ? (
-          <button
-            className="w-full max-w-xs py-4 bg-violet-50 border-2 border-violet-200 text-violet-700 rounded-2xl text-lg font-medium"
-            onClick={() => { setRevealed(true); speak(current.char); }}
-          >
-            읽기 확인
-          </button>
+          <div className="flex gap-3 w-full max-w-xs">
+            {idx > 0 && (
+              <button className="flex-1 py-3 bg-white border-2 border-gray-200 text-gray-600 rounded-2xl text-lg font-medium" onClick={prevKana}>
+                ← 이전
+              </button>
+            )}
+            <button
+              className="flex-1 py-4 bg-violet-50 border-2 border-violet-200 text-violet-700 rounded-2xl text-lg font-medium"
+              onClick={() => { setRevealed(true); speak(current.char); }}
+            >
+              읽기 확인
+            </button>
+          </div>
         ) : (
           <div className="w-full max-w-xs bg-white rounded-2xl border border-gray-100 shadow p-5 text-center">
             <p className="text-3xl font-bold text-indigo-600">{current.romaji}</p>
