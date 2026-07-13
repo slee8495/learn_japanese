@@ -6,6 +6,18 @@ import ReviewQuiz from "./ReviewQuiz";
 import DailyReview from "./DailyReview";
 import { loadTaskPosition, saveTaskPosition, clearTaskPosition, clampIndex } from "../utils/taskPosition";
 
+// 다 안 봤어도 "이거 다 한 걸로 치고 완료 처리"할 수 있는 건너뛰기 버튼
+function SkipButton({ onSkip }) {
+  return (
+    <button
+      className="text-xs text-gray-400 underline underline-offset-2 mt-1"
+      onClick={onSkip}
+    >
+      다 한 걸로 표시하고 넘어가기
+    </button>
+  );
+}
+
 // ── 글자 연습 (히라가나+카타카나 같이 + 읽기 연습) ───────────────
 function KanaSection({ lesson, onDone, profile, dayNum }) {
   // 히라가나 먼저, 카타카나 나중 순서
@@ -35,10 +47,26 @@ function KanaSection({ lesson, onDone, profile, dayNum }) {
     setRevealed(false);
   }
 
+  function prevKana() {
+    if (idx === 0) return;
+    setIdx(i => i - 1);
+    setRevealed(false);
+  }
+
   function nextReading() {
     if (idx + 1 >= readingList.length) { clearTaskPosition(profile, dayNum, "kana"); onDone(); return; }
     setIdx(i => i + 1);
     setRevealed(false);
+  }
+
+  function prevReading() {
+    if (idx === 0) return;
+    setIdx(i => i - 1);
+  }
+
+  function skipTask() {
+    clearTaskPosition(profile, dayNum, "kana");
+    onDone();
   }
 
   if (phase === "kana") {
@@ -70,10 +98,18 @@ function KanaSection({ lesson, onDone, profile, dayNum }) {
           </div>
         )}
         {revealed && (
-          <button className="px-8 py-3 bg-indigo-600 text-white rounded-2xl text-lg font-medium" onClick={nextKana}>
-            {idx + 1 >= kanaList.length ? (readingList.length > 0 ? "읽기 연습 →" : "완료 ✓") : "다음 →"}
-          </button>
+          <div className="flex gap-3 w-full max-w-xs">
+            {idx > 0 && (
+              <button className="flex-1 py-3 bg-white border-2 border-gray-200 text-gray-600 rounded-2xl text-lg font-medium" onClick={prevKana}>
+                ← 이전
+              </button>
+            )}
+            <button className="flex-1 px-8 py-3 bg-indigo-600 text-white rounded-2xl text-lg font-medium" onClick={nextKana}>
+              {idx + 1 >= kanaList.length ? (readingList.length > 0 ? "읽기 연습 →" : "완료 ✓") : "다음 →"}
+            </button>
+          </div>
         )}
+        <SkipButton onSkip={skipTask} />
       </div>
     );
   }
@@ -97,9 +133,17 @@ function KanaSection({ lesson, onDone, profile, dayNum }) {
         <p className="text-indigo-500 text-sm mt-2">{current.reading}</p>
         <p className="text-gray-300 text-sm mt-3">탭하면 발음 🔊</p>
       </div>
-      <button className="px-8 py-3 bg-indigo-600 text-white rounded-2xl text-lg font-medium" onClick={nextReading}>
-        {idx + 1 >= readingList.length ? "완료 ✓" : "다음 →"}
-      </button>
+      <div className="flex gap-3 w-full max-w-sm">
+        {idx > 0 && (
+          <button className="flex-1 py-3 bg-white border-2 border-gray-200 text-gray-600 rounded-2xl text-lg font-medium" onClick={prevReading}>
+            ← 이전
+          </button>
+        )}
+        <button className="flex-1 px-8 py-3 bg-indigo-600 text-white rounded-2xl text-lg font-medium" onClick={nextReading}>
+          {idx + 1 >= readingList.length ? "완료 ✓" : "다음 →"}
+        </button>
+      </div>
+      <SkipButton onSkip={skipTask} />
     </div>
   );
 }
@@ -120,6 +164,16 @@ function WordsSection({ lesson, onDone, profile, dayNum }) {
     setIdx(i => i + 1);
   }
 
+  function prev() {
+    if (idx === 0) return;
+    setIdx(i => i - 1);
+  }
+
+  function skipTask() {
+    clearTaskPosition(profile, dayNum, "words");
+    onDone();
+  }
+
   return (
     <div className="flex flex-col items-center gap-5 py-6 px-4">
       <p className="text-xs text-gray-400">{idx + 1} / {lesson.words.length} 단어</p>
@@ -134,12 +188,20 @@ function WordsSection({ lesson, onDone, profile, dayNum }) {
         <p className="text-xl font-medium text-blue-600 mt-2">{current.reading}</p>
         <p className="text-gray-300 text-sm mt-3">탭하면 발음 🔊</p>
       </div>
-      <button
-        className="px-8 py-3 bg-indigo-600 text-white rounded-2xl text-lg font-medium"
-        onClick={next}
-      >
-        {idx + 1 >= lesson.words.length ? "완료 ✓" : "다음 →"}
-      </button>
+      <div className="flex gap-3 w-full max-w-sm">
+        {idx > 0 && (
+          <button className="flex-1 py-3 bg-white border-2 border-gray-200 text-gray-600 rounded-2xl text-lg font-medium" onClick={prev}>
+            ← 이전
+          </button>
+        )}
+        <button
+          className="flex-1 px-8 py-3 bg-indigo-600 text-white rounded-2xl text-lg font-medium"
+          onClick={next}
+        >
+          {idx + 1 >= lesson.words.length ? "완료 ✓" : "다음 →"}
+        </button>
+      </div>
+      <SkipButton onSkip={skipTask} />
     </div>
   );
 }
@@ -208,6 +270,16 @@ function SentenceSection({ lesson, onDone, profile, dayNum }) {
     setIdx(i => i + 1);
   }
 
+  function prev() {
+    if (idx === 0) return;
+    setIdx(i => i - 1);
+  }
+
+  function skipTask() {
+    clearTaskPosition(profile, dayNum, "sentence");
+    onDone();
+  }
+
   return (
     <div className="flex flex-col items-center gap-5 py-6 px-4">
       <p className="text-xs text-gray-400">문장 {idx + 1} / {lesson.sentences.length}</p>
@@ -222,12 +294,20 @@ function SentenceSection({ lesson, onDone, profile, dayNum }) {
         <p className="text-base text-indigo-500">{current.reading}</p>
         <p className="text-gray-300 text-sm">탭하면 발음 🔊</p>
       </div>
-      <button
-        className="px-8 py-3 bg-indigo-600 text-white rounded-2xl text-lg font-medium"
-        onClick={next}
-      >
-        {idx + 1 >= lesson.sentences.length ? "완료 ✓" : "다음 →"}
-      </button>
+      <div className="flex gap-3 w-full max-w-sm">
+        {idx > 0 && (
+          <button className="flex-1 py-3 bg-white border-2 border-gray-200 text-gray-600 rounded-2xl text-lg font-medium" onClick={prev}>
+            ← 이전
+          </button>
+        )}
+        <button
+          className="flex-1 px-8 py-3 bg-indigo-600 text-white rounded-2xl text-lg font-medium"
+          onClick={next}
+        >
+          {idx + 1 >= lesson.sentences.length ? "완료 ✓" : "다음 →"}
+        </button>
+      </div>
+      <SkipButton onSkip={skipTask} />
     </div>
   );
 }

@@ -35,6 +35,16 @@ export default function DailyReview({ lesson, onDone, profile, dayNum }) {
     setIdx((i) => i + 1);
   }
 
+  function prev() {
+    if (idx === 0) return;
+    setIdx((i) => i - 1);
+  }
+
+  function skipTask() {
+    clearTaskPosition(profile, dayNum, "dailyReview");
+    onDone();
+  }
+
   return (
     <div className="flex flex-col items-center gap-5 py-6 px-4">
       <div className="text-center">
@@ -53,8 +63,18 @@ export default function DailyReview({ lesson, onDone, profile, dayNum }) {
         <Furigana japanese={current.japanese} reading={current.reading} className="text-2xl font-medium text-gray-800" />
         <p className="text-gray-300 text-sm">탭하면 발음 🔊</p>
       </div>
-      <button className="px-8 py-3 bg-indigo-600 text-white rounded-2xl text-lg font-medium" onClick={next}>
-        {isLast ? "복습 완료 ✓" : "다음 →"}
+      <div className="flex gap-3 w-full max-w-sm">
+        {idx > 0 && (
+          <button className="flex-1 py-3 bg-white border-2 border-gray-200 text-gray-600 rounded-2xl text-lg font-medium" onClick={prev}>
+            ← 이전
+          </button>
+        )}
+        <button className="flex-1 px-8 py-3 bg-indigo-600 text-white rounded-2xl text-lg font-medium" onClick={next}>
+          {isLast ? "복습 완료 ✓" : "다음 →"}
+        </button>
+      </div>
+      <button className="text-xs text-gray-400 underline underline-offset-2 mt-1" onClick={skipTask}>
+        다 한 걸로 표시하고 넘어가기
       </button>
     </div>
   );

@@ -22,15 +22,19 @@ export default function ReadingDrill() {
   const [deck] = useState(() => shuffle(words));
   const [index, setIndex] = useState(0);
 
-  const current = deck[index % deck.length];
+  const current = deck[index];
 
   function next() {
-    setIndex((i) => i + 1);
+    setIndex((i) => (i + 1) % deck.length);
+  }
+
+  function prev() {
+    setIndex((i) => (i - 1 + deck.length) % deck.length);
   }
 
   return (
     <div className="flex flex-col items-center gap-6 py-8 px-4 max-w-md mx-auto">
-      <p className="text-gray-400 text-sm">{(index % deck.length) + 1} / {deck.length} 단어</p>
+      <p className="text-gray-400 text-sm">{index + 1} / {deck.length} 단어</p>
 
       <div className="w-full bg-white rounded-2xl border border-gray-100 shadow p-6 text-center">
         <p className="text-lg text-gray-700">{current.meaning}</p>
@@ -45,12 +49,20 @@ export default function ReadingDrill() {
         <p className="text-gray-400 text-sm mt-2">클릭하면 발음을 들을 수 있어요 🔊</p>
       </div>
 
-      <button
-        className="px-8 py-3 bg-indigo-600 text-white rounded-2xl text-lg font-medium hover:bg-indigo-700 transition-colors"
-        onClick={next}
-      >
-        다음 단어 →
-      </button>
+      <div className="flex gap-3 w-full">
+        <button
+          className="flex-1 py-3 bg-white border-2 border-gray-200 text-gray-600 rounded-2xl text-lg font-medium hover:bg-gray-50 transition-colors"
+          onClick={prev}
+        >
+          ← 이전
+        </button>
+        <button
+          className="flex-1 px-8 py-3 bg-indigo-600 text-white rounded-2xl text-lg font-medium hover:bg-indigo-700 transition-colors"
+          onClick={next}
+        >
+          다음 단어 →
+        </button>
+      </div>
     </div>
   );
 }

@@ -5,7 +5,7 @@ import { loadTaskPosition, saveTaskPosition, clearTaskPosition, clampIndex } fro
 
 // ── 1단계: 지난 4일 단어·문장 플래시카드로 훑어보기 ──────────────
 // 뜻을 먼저 보여주고 일본어를 떠올려본 뒤 확인하는 순서(작문 감각 훈련)
-function FlashPhase({ cards, initialIdx = 0, onIdxChange, onDone }) {
+function FlashPhase({ cards, initialIdx = 0, onIdxChange, onDone, onSkipAll }) {
   const [idx, setIdx] = useState(clampIndex(initialIdx, cards.length));
   const current = cards[idx];
   const isLast = idx + 1 >= cards.length;
@@ -15,6 +15,11 @@ function FlashPhase({ cards, initialIdx = 0, onIdxChange, onDone }) {
   function next() {
     if (isLast) { onDone(); return; }
     setIdx((i) => i + 1);
+  }
+
+  function prev() {
+    if (idx === 0) return;
+    setIdx((i) => i - 1);
   }
 
   return (
@@ -33,33 +38,49 @@ function FlashPhase({ cards, initialIdx = 0, onIdxChange, onDone }) {
         <Furigana japanese={current.japanese} reading={current.reading} className="text-2xl font-medium text-gray-800" />
         <p className="text-gray-300 text-sm">탭하면 발음 🔊</p>
       </div>
-      <button className="px-8 py-3 bg-indigo-600 text-white rounded-2xl text-lg font-medium" onClick={next}>
-        {isLast ? "퀴즈 시작 →" : "다음 →"}
+      <div className="flex gap-3 w-full max-w-sm">
+        {idx > 0 && (
+          <button className="flex-1 py-3 bg-white border-2 border-gray-200 text-gray-600 rounded-2xl text-lg font-medium" onClick={prev}>
+            ← 이전
+          </button>
+        )}
+        <button className="flex-1 px-8 py-3 bg-indigo-600 text-white rounded-2xl text-lg font-medium" onClick={next}>
+          {isLast ? "퀴즈 시작 →" : "다음 →"}
+        </button>
+      </div>
+      <button className="text-xs text-gray-400 underline underline-offset-2 mt-1" onClick={onSkipAll}>
+        다 한 걸로 표시하고 넘어가기
       </button>
     </div>
   );
 }
 
 // ── 2단계: 4지선다 객관식 퀴즈 ────────────────────────────────
-function QuizPhase({ items, initialIdx = 0, initialScore = 0, onIdxChange, onDone }) {
+// answers = { [문제 idx]: 고른 답 } — 이전으로 돌아가도 이미 고른 답과 점수가
+// 그대로 유지되고, 답을 바꿀 수는 없다(복습 결과이므로).
+function QuizPhase({ items, initialIdx = 0, initialAnswers = {}, onIdxChange, onDone, onSkipAll }) {
   const [idx, setIdx] = useState(clampIndex(initialIdx, items.length));
-  const [selected, setSelected] = useState(null);
-  const [score, setScore] = useState(initialScore);
+  const [answers, setAnswers] = useState(initialAnswers);
   const current = items[idx];
   const isLast = idx + 1 >= items.length;
+  const selected = answers[idx] ?? null;
+  const score = Object.keys(answers).filter((k) => answers[k] === items[k]?.correct).length;
 
-  useEffect(() => { onIdxChange?.(idx, score); }, [idx, score]); // eslint-disable-line react-hooks/exhaustive-deps
+  useEffect(() => { onIdxChange?.(idx, answers); }, [idx, answers]); // eslint-disable-line react-hooks/exhaustive-deps
 
   function choose(choice) {
     if (selected) return;
-    setSelected(choice);
-    if (choice === current.correct) setScore((s) => s + 1);
+    setAnswers((a) => ({ ...a, [idx]: choice }));
   }
 
   function next() {
     if (isLast) { onDone(score); return; }
     setIdx((i) => i + 1);
-    setSelected(null);
+  }
+
+  function prev() {
+    if (idx === 0) return;
+    setIdx((i) => i - 1);
   }
 
   return (
@@ -96,11 +117,21 @@ function QuizPhase({ items, initialIdx = 0, initialScore = 0, onIdxChange, onDon
           );
         })}
       </div>
-      {selected && (
-        <button className="px-8 py-3 bg-indigo-600 text-white rounded-2xl text-lg font-medium" onClick={next}>
-          {isLast ? "결과 보기 →" : "다음 문제 →"}
-        </button>
-      )}
+      <div className="flex gap-3 w-full max-w-sm">
+        {idx > 0 && (
+          <button className="flex-1 py-3 bg-white border-2 border-gray-200 text-gray-600 rounded-2xl text-lg font-medium" onClick={prev}>
+            ← 이전
+          </button>
+        )}
+        {selected && (
+          <button className="flex-1 px-8 py-3 bg-indigo-600 text-white rounded-2xl text-lg font-medium" onClick={next}>
+            {isLast ? "결과 보기 →" : "다음 문제 →"}
+          </button>
+        )}
+      </div>
+      <button className="text-xs text-gray-400 underline underline-offset-2 mt-1" onClick={onSkipAll}>
+        다 한 걸로 표시하고 넘어가기
+      </button>
     </div>
   );
 }
@@ -135,8 +166,8 @@ export default function ReviewQuiz({ lesson, onDone, profile, dayNum }) {
   const cards = lesson.flashcards.length > 0 ? lesson.flashcards : lesson.words;
   const quizItems = lesson.quizItems;
 
-  function persist(nextPhase, idx, score) {
-    saveTaskPosition(profile, dayNum, "review", { phase: nextPhase, idx, score });
+  function persist(nextPhase, idx, extra = {}) {
+    saveTaskPosition(profile, dayNum, "review", { phase: nextPhase, idx, ...extra });
   }
 
   function handleFinalDone() {
@@ -149,12 +180,13 @@ export default function ReviewQuiz({ lesson, onDone, profile, dayNum }) {
       <FlashPhase
         cards={cards}
         initialIdx={saved?.phase === "flash" ? saved.idx : 0}
-        onIdxChange={(idx) => persist("flash", idx, 0)}
+        onIdxChange={(idx) => persist("flash", idx)}
         onDone={() => {
           const next = quizItems.length > 0 ? "quiz" : "result";
           setPhase(next);
-          persist(next, 0, 0);
+          persist(next, 0);
         }}
+        onSkipAll={handleFinalDone}
       />
     );
   }
@@ -164,9 +196,10 @@ export default function ReviewQuiz({ lesson, onDone, profile, dayNum }) {
       <QuizPhase
         items={quizItems}
         initialIdx={saved?.phase === "quiz" ? saved.idx : 0}
-        initialScore={saved?.phase === "quiz" ? saved.score || 0 : 0}
-        onIdxChange={(idx, score) => persist("quiz", idx, score)}
-        onDone={(score) => { setFinalScore(score); setPhase("result"); persist("result", 0, score); }}
+        initialAnswers={saved?.phase === "quiz" ? saved.answers || {} : {}}
+        onIdxChange={(idx, answers) => persist("quiz", idx, { answers })}
+        onDone={(score) => { setFinalScore(score); setPhase("result"); persist("result", 0, { score }); }}
+        onSkipAll={handleFinalDone}
       />
     );
   }

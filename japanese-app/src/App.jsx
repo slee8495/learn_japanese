@@ -78,7 +78,7 @@ function MainApp({ profile, onSwitchProfile }) {
   const [activeLesson, setActiveLesson] = useState(null);
   const [viewDayNum, setViewDayNum] = useState(null); // null = 오늘(현재 진행 중인 Day) 보는 중
 
-  const { markDayTask, getDayProgress, getStreak, getRecentStatus, dayProgress, dayNum: todayDayNum } = useDailyProgress(profile);
+  const { markDayTask, getDayProgress, getStreak, getRecentStatus, dayProgress, dayNum: todayDayNum, unlockedDayNum, setHomeDay } = useDailyProgress(profile);
   const streak = getStreak();
   const recentStatus = getRecentStatus();
 
@@ -90,6 +90,12 @@ function MainApp({ profile, onSwitchProfile }) {
   }
 
   function handleViewDay(d) {
+    if (d > todayDayNum) {
+      // 아직 안 가본, 새로 잠금 해제된 Day를 고르면 그 Day가 새로운 "오늘"이 된다.
+      setHomeDay(d);
+      setViewDayNum(null);
+      return;
+    }
     setViewDayNum(d === todayDayNum ? null : d);
   }
 
@@ -176,6 +182,7 @@ function MainApp({ profile, onSwitchProfile }) {
             dayProgress={dayProgress}
             dayNum={homeDayNum}
             actualDayNum={todayDayNum}
+            unlockedDayNum={unlockedDayNum}
             onBackToToday={() => setViewDayNum(null)}
             onViewDay={handleViewDay}
           />

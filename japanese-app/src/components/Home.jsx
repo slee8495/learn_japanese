@@ -77,7 +77,7 @@ function ReviewTaskCard({ dayNum, done, onClick }) {
   );
 }
 
-export default function Home({ onNavigate, todayDone, streak, recentStatus, dayProgress, dayNum, actualDayNum, onBackToToday, onViewDay }) {
+export default function Home({ onNavigate, todayDone, streak, recentStatus, dayProgress, dayNum, actualDayNum, unlockedDayNum, onBackToToday, onViewDay }) {
   const isToday = dayNum === actualDayNum;
   const lesson = getDayLesson(dayNum);
   const tasks = lesson.isReview
@@ -179,6 +179,7 @@ export default function Home({ onNavigate, todayDone, streak, recentStatus, dayP
         <CalendarView
           dayProgress={dayProgress}
           todayDayNum={actualDayNum}
+          unlockedDayNum={unlockedDayNum}
           onSelectDay={handleCalendarSelect}
           onClose={() => setShowCalendar(false)}
         />

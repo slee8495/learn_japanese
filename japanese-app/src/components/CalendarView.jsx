@@ -1,7 +1,7 @@
 // 실제 달력이 아니라 "Day 1, Day 2, ..." 그리드. Day는 프로필별 진도 속도에
 // 따라 정해지므로(달력 날짜와 무관) 요일/월 개념의 달력은 더 이상 의미가 없다.
-export default function CalendarView({ dayProgress, todayDayNum, onSelectDay, onClose }) {
-  const days = Array.from({ length: todayDayNum }, (_, i) => i + 1);
+export default function CalendarView({ dayProgress, todayDayNum, unlockedDayNum, onSelectDay, onClose }) {
+  const days = Array.from({ length: unlockedDayNum ?? todayDayNum }, (_, i) => i + 1);
 
   return (
     <div className="fixed inset-0 bg-black/50 z-50 flex items-end justify-center" onClick={onClose}>
