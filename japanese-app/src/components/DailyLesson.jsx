@@ -69,7 +69,7 @@ function KanaSection({ lesson, onDone }) {
     );
   }
 
-  // 읽기 연습
+  // 읽기 연습 — 뜻을 먼저 보고 일본어를 떠올려보는 방식(작문 감각 훈련)
   const current = readingList[idx];
   return (
     <div className="flex flex-col items-center gap-5 py-6 px-4">
@@ -77,78 +77,55 @@ function KanaSection({ lesson, onDone }) {
         <p className="text-sm font-semibold text-emerald-600">📖 읽기 연습</p>
         <p className="text-xs text-gray-400 mt-0.5">{idx + 1} / {readingList.length}</p>
       </div>
+      <div className="w-full max-w-sm bg-white rounded-2xl border border-gray-100 shadow p-5 text-center">
+        <p className="text-xl font-bold text-gray-800">{current.meaning}</p>
+      </div>
       <div
         className="w-full max-w-sm py-12 bg-white rounded-3xl shadow-lg border border-gray-100 flex flex-col items-center cursor-pointer"
         onClick={() => speak(current.japanese)}
       >
         <span className="text-4xl font-medium">{current.japanese}</span>
+        <p className="text-indigo-500 text-sm mt-2">{current.reading}</p>
         <p className="text-gray-300 text-sm mt-3">탭하면 발음 🔊</p>
       </div>
-      {!revealed ? (
-        <button
-          className="w-full max-w-sm py-4 bg-emerald-50 border-2 border-emerald-200 text-emerald-700 rounded-2xl text-lg font-medium"
-          onClick={() => { setRevealed(true); speak(current.japanese); }}
-        >
-          읽기 확인
-        </button>
-      ) : (
-        <div className="w-full max-w-sm bg-white rounded-2xl border border-gray-100 shadow p-5 text-center">
-          <p className="text-xl font-bold text-indigo-600">{current.reading}</p>
-          <p className="text-gray-600">{current.meaning}</p>
-        </div>
-      )}
-      {revealed && (
-        <button className="px-8 py-3 bg-indigo-600 text-white rounded-2xl text-lg font-medium" onClick={nextReading}>
-          {idx + 1 >= readingList.length ? "완료 ✓" : "다음 →"}
-        </button>
-      )}
+      <button className="px-8 py-3 bg-indigo-600 text-white rounded-2xl text-lg font-medium" onClick={nextReading}>
+        {idx + 1 >= readingList.length ? "완료 ✓" : "다음 →"}
+      </button>
     </div>
   );
 }
 
-// ── 단어 학습 ──────────────────────────────────────────────────
+// ── 단어 학습 ─────────────────────────────────────────────────
+// 뜻을 먼저 보여주고 일본어를 떠올려본 뒤 확인하는 순서(작문 감각 훈련)
 function WordsSection({ lesson, onDone }) {
   const [idx, setIdx] = useState(0);
-  const [revealed, setRevealed] = useState(false);
   const current = lesson.words[idx];
 
   function next() {
     if (idx + 1 >= lesson.words.length) { onDone(); return; }
     setIdx(i => i + 1);
-    setRevealed(false);
   }
 
   return (
     <div className="flex flex-col items-center gap-5 py-6 px-4">
       <p className="text-xs text-gray-400">{idx + 1} / {lesson.words.length} 단어</p>
+      <div className="w-full max-w-sm bg-white rounded-2xl border border-gray-100 shadow p-5 text-center">
+        <p className="text-2xl font-bold text-gray-800">{current.meaning}</p>
+      </div>
       <div
         className="w-full max-w-sm py-12 bg-white rounded-3xl shadow-lg border border-gray-100 flex flex-col items-center cursor-pointer"
         onClick={() => speak(current.japanese)}
       >
         <Furigana japanese={current.japanese} reading={current.reading} className="text-5xl" />
+        <p className="text-xl font-medium text-blue-600 mt-2">{current.reading}</p>
         <p className="text-gray-300 text-sm mt-3">탭하면 발음 🔊</p>
       </div>
-      {!revealed ? (
-        <button
-          className="w-full max-w-sm py-4 bg-blue-50 border-2 border-blue-200 text-blue-700 rounded-2xl text-lg font-medium"
-          onClick={() => { setRevealed(true); speak(current.japanese); }}
-        >
-          뜻 확인
-        </button>
-      ) : (
-        <div className="w-full max-w-sm bg-white rounded-2xl border border-gray-100 shadow p-5 text-center">
-          <p className="text-xl font-medium text-blue-600">{current.reading}</p>
-          <p className="text-2xl font-bold text-gray-800 mt-1">{current.meaning}</p>
-        </div>
-      )}
-      {revealed && (
-        <button
-          className="px-8 py-3 bg-indigo-600 text-white rounded-2xl text-lg font-medium"
-          onClick={next}
-        >
-          {idx + 1 >= lesson.words.length ? "완료 ✓" : "다음 →"}
-        </button>
-      )}
+      <button
+        className="px-8 py-3 bg-indigo-600 text-white rounded-2xl text-lg font-medium"
+        onClick={next}
+      >
+        {idx + 1 >= lesson.words.length ? "완료 ✓" : "다음 →"}
+      </button>
     </div>
   );
 }
@@ -183,9 +160,9 @@ function GrammarSection({ lesson, onDone }) {
               className="bg-white rounded-2xl border border-gray-100 shadow-sm p-4 cursor-pointer"
               onClick={() => speak(ex.j)}
             >
-              <Furigana japanese={ex.j} reading={ex.r} className="text-lg text-gray-800" />
+              <p className="text-sm font-medium text-gray-500">{ex.m}</p>
+              <Furigana japanese={ex.j} reading={ex.r} className="text-lg text-gray-800 mt-1" />
               <p className="text-sm text-indigo-500 mt-0.5">{ex.r}</p>
-              <p className="text-sm text-gray-500">{ex.m}</p>
             </div>
           ))}
         </div>
@@ -201,49 +178,37 @@ function GrammarSection({ lesson, onDone }) {
   );
 }
 
-// ── 문장 익히기 ────────────────────────────────────────────────
+// ── 문장 익히기 ───────────────────────────────────────────────
+// 뜻을 먼저 보여주고 일본어 문장을 떠올려본 뒤 확인하는 순서(작문 감각 훈련)
 function SentenceSection({ lesson, onDone }) {
   const [idx, setIdx] = useState(0);
-  const [revealed, setRevealed] = useState(false);
   const current = lesson.sentences[idx];
 
   function next() {
     if (idx + 1 >= lesson.sentences.length) { onDone(); return; }
     setIdx(i => i + 1);
-    setRevealed(false);
   }
 
   return (
     <div className="flex flex-col items-center gap-5 py-6 px-4">
       <p className="text-xs text-gray-400">문장 {idx + 1} / {lesson.sentences.length}</p>
+      <div className="w-full max-w-sm bg-white rounded-2xl border border-gray-100 shadow p-5 text-center">
+        <p className="text-xl font-bold text-gray-800">{current.meaning}</p>
+      </div>
       <div
-        className="w-full max-w-sm py-10 bg-white rounded-3xl shadow-lg border border-gray-100 flex flex-col items-center gap-3 cursor-pointer px-6 text-center"
+        className="w-full max-w-sm py-10 bg-white rounded-3xl shadow-lg border border-gray-100 flex flex-col items-center gap-2 cursor-pointer px-6 text-center"
         onClick={() => speak(current.japanese)}
       >
         <Furigana japanese={current.japanese} reading={current.reading} className="text-2xl font-medium text-gray-800" />
+        <p className="text-base text-indigo-500">{current.reading}</p>
         <p className="text-gray-300 text-sm">탭하면 발음 🔊</p>
       </div>
-      {!revealed ? (
-        <button
-          className="w-full max-w-sm py-4 bg-amber-50 border-2 border-amber-200 text-amber-700 rounded-2xl text-lg font-medium"
-          onClick={() => { setRevealed(true); speak(current.japanese); }}
-        >
-          뜻 확인
-        </button>
-      ) : (
-        <div className="w-full max-w-sm bg-white rounded-2xl border border-gray-100 shadow p-5 text-center">
-          <p className="text-base text-indigo-500">{current.reading}</p>
-          <p className="text-xl font-bold text-gray-800 mt-1">{current.meaning}</p>
-        </div>
-      )}
-      {revealed && (
-        <button
-          className="px-8 py-3 bg-indigo-600 text-white rounded-2xl text-lg font-medium"
-          onClick={next}
-        >
-          {idx + 1 >= lesson.sentences.length ? "완료 ✓" : "다음 →"}
-        </button>
-      )}
+      <button
+        className="px-8 py-3 bg-indigo-600 text-white rounded-2xl text-lg font-medium"
+        onClick={next}
+      >
+        {idx + 1 >= lesson.sentences.length ? "완료 ✓" : "다음 →"}
+      </button>
     </div>
   );
 }

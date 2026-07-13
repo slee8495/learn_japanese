@@ -23,25 +23,18 @@ function speak(text) {
 }
 
 function WordCard({ word }) {
-  const [flipped, setFlipped] = useState(false);
   const posLabel = POS_LABELS[word.pos] || word.pos;
 
   return (
     <div
       className="bg-white rounded-2xl border border-gray-100 shadow-sm p-4 cursor-pointer hover:shadow-md transition-shadow"
-      onClick={() => { setFlipped((f) => !f); speak(word.japanese); }}
+      onClick={() => speak(word.japanese)}
     >
       <div className="flex items-start justify-between gap-2">
         <div className="flex-1 min-w-0">
-          <Furigana japanese={word.japanese} reading={word.reading} className="text-2xl font-medium text-gray-800" />
-          {flipped ? (
-            <div className="mt-1">
-              <p className="text-sm text-indigo-500">{word.reading}</p>
-              <p className="text-base text-gray-600 mt-0.5">{word.meaning}</p>
-            </div>
-          ) : (
-            <p className="text-sm text-gray-300 mt-1">탭해서 뜻 보기</p>
-          )}
+          <p className="text-base text-gray-600">{word.meaning}</p>
+          <Furigana japanese={word.japanese} reading={word.reading} className="text-2xl font-medium text-gray-800 mt-1" />
+          <p className="text-sm text-indigo-500 mt-0.5">{word.reading}</p>
         </div>
         <div className="flex flex-col items-end gap-1 shrink-0">
           {posLabel && (
@@ -126,7 +119,7 @@ export default function VocabBook() {
           </span>
           {words.length}개 단어
         </p>
-        <p className="text-xs text-gray-400">탭하면 발음 + 뜻</p>
+        <p className="text-xs text-gray-400">탭하면 발음 🔊</p>
       </div>
 
       {/* 단어 리스트 */}

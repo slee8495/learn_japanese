@@ -15,9 +15,9 @@ function ExampleRow({ ex }) {
       className="bg-gray-50 rounded-xl p-3 cursor-pointer hover:bg-indigo-50 transition-colors"
       onClick={() => speak(ex.japanese)}
     >
-      <Furigana japanese={ex.japanese} reading={ex.reading} className="text-lg text-gray-800" />
+      <p className="text-sm font-medium text-gray-500">{ex.meaning}</p>
+      <Furigana japanese={ex.japanese} reading={ex.reading} className="text-lg text-gray-800 mt-1" />
       <p className="text-sm text-indigo-500 mt-0.5">{ex.reading}</p>
-      <p className="text-sm text-gray-500">{ex.meaning}</p>
     </div>
   );
 }

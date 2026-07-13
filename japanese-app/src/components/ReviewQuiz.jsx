@@ -3,16 +3,15 @@ import Furigana from "./Furigana";
 import { speak } from "../utils/speak";
 
 // ── 1단계: 지난 4일 단어·문장 플래시카드로 훑어보기 ──────────────
+// 뜻을 먼저 보여주고 일본어를 떠올려본 뒤 확인하는 순서(작문 감각 훈련)
 function FlashPhase({ cards, onDone }) {
   const [idx, setIdx] = useState(0);
-  const [revealed, setRevealed] = useState(false);
   const current = cards[idx];
   const isLast = idx + 1 >= cards.length;
 
   function next() {
     if (isLast) { onDone(); return; }
     setIdx((i) => i + 1);
-    setRevealed(false);
   }
 
   return (
@@ -21,6 +20,9 @@ function FlashPhase({ cards, onDone }) {
         <p className="text-sm font-semibold text-rose-600">🎯 복습 플래시카드</p>
         <p className="text-xs text-gray-400 mt-0.5">{idx + 1} / {cards.length}</p>
       </div>
+      <div className="w-full max-w-sm bg-white rounded-2xl border border-gray-100 shadow p-5 text-center">
+        <p className="text-xl font-bold text-gray-800">{current.meaning}</p>
+      </div>
       <div
         className="w-full max-w-sm py-10 bg-white rounded-3xl shadow-lg border border-gray-100 flex flex-col items-center gap-2 cursor-pointer px-6 text-center"
         onClick={() => speak(current.japanese)}
@@ -28,23 +30,9 @@ function FlashPhase({ cards, onDone }) {
         <Furigana japanese={current.japanese} reading={current.reading} className="text-2xl font-medium text-gray-800" />
         <p className="text-gray-300 text-sm">탭하면 발음 🔊</p>
       </div>
-      {!revealed ? (
-        <button
-          className="w-full max-w-sm py-4 bg-rose-50 border-2 border-rose-200 text-rose-700 rounded-2xl text-lg font-medium"
-          onClick={() => { setRevealed(true); speak(current.japanese); }}
-        >
-          뜻 확인
-        </button>
-      ) : (
-        <div className="w-full max-w-sm bg-white rounded-2xl border border-gray-100 shadow p-5 text-center">
-          <p className="text-xl font-bold text-gray-800">{current.meaning}</p>
-        </div>
-      )}
-      {revealed && (
-        <button className="px-8 py-3 bg-indigo-600 text-white rounded-2xl text-lg font-medium" onClick={next}>
-          {isLast ? "퀴즈 시작 →" : "다음 →"}
-        </button>
-      )}
+      <button className="px-8 py-3 bg-indigo-600 text-white rounded-2xl text-lg font-medium" onClick={next}>
+        {isLast ? "퀴즈 시작 →" : "다음 →"}
+      </button>
     </div>
   );
 }
