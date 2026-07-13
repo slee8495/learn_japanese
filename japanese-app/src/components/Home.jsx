@@ -13,9 +13,9 @@ const TASK_META = {
 function DayStrip({ recentStatus }) {
   return (
     <div className="flex justify-between gap-1">
-      {recentStatus.map(({ day, done, count, isToday, isReview }) => (
+      {recentStatus.map(({ day, done, count, isToday }) => (
         <div key={day} className="flex flex-col items-center gap-1 flex-1">
-          <span className="text-xs text-gray-400">{isReview ? "🎯" : `D${day}`}</span>
+          <span className="text-xs text-gray-400">{`D${day}`}</span>
           <div className={`w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold border-2 ${
             isToday ? "border-indigo-500 bg-indigo-500 text-white"
             : done  ? "border-green-400 bg-green-400 text-white"
