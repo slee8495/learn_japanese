@@ -2,12 +2,14 @@ import { useState, useEffect } from "react";
 import Furigana from "./Furigana";
 import { speak } from "../utils/speak";
 import { loadTaskPosition, saveTaskPosition, clearTaskPosition, clampIndex } from "../utils/taskPosition";
+import { mergeFlaggedCards, flagItem, unflagItem } from "../utils/reviewFlags";
 
-// 매일 뜨는 "전날 복습" — 5일마다의 복습 퀴즈(ReviewQuiz)와는 별개로,
+// 매일 뜨는 "복습" — 5일마다의 복습 퀴즈(ReviewQuiz)와는 별개로,
 // 글자연습 바로 위에서 전날·전전날 단어/문장을 플래시카드로만 훑고 넘어간다.
 // 뜻을 먼저 보여주고 일본어를 떠올려본 뒤 확인하는 순서(작문 감각 훈련)
 export default function DailyReview({ lesson, onDone, profile, dayNum }) {
-  const cards = lesson.flashcards;
+  // "아직 못 외웠어요"로 표시해둔 카드를 얹어서, 세션 도중에는 목록이 안 바뀌게 고정
+  const [cards] = useState(() => mergeFlaggedCards(profile, lesson.flashcards));
   const saved = loadTaskPosition(profile, dayNum, "dailyReview");
   const [idx, setIdx] = useState(clampIndex(saved?.idx, cards.length));
 
@@ -40,6 +42,16 @@ export default function DailyReview({ lesson, onDone, profile, dayNum }) {
     setIdx((i) => i - 1);
   }
 
+  function markRemembered() {
+    unflagItem(profile, current);
+    next();
+  }
+
+  function markNotYet() {
+    flagItem(profile, current);
+    next();
+  }
+
   function skipTask() {
     clearTaskPosition(profile, dayNum, "dailyReview");
     onDone();
@@ -63,14 +75,17 @@ export default function DailyReview({ lesson, onDone, profile, dayNum }) {
         <Furigana japanese={current.japanese} reading={current.reading} className="text-2xl font-medium text-gray-800" />
         <p className="text-gray-300 text-sm">탭하면 발음 🔊</p>
       </div>
+      {idx > 0 && (
+        <button className="w-full max-w-sm py-3 bg-white border-2 border-gray-200 text-gray-600 rounded-2xl text-lg font-medium" onClick={prev}>
+          ← 이전
+        </button>
+      )}
       <div className="flex gap-3 w-full max-w-sm">
-        {idx > 0 && (
-          <button className="flex-1 py-3 bg-white border-2 border-gray-200 text-gray-600 rounded-2xl text-lg font-medium" onClick={prev}>
-            ← 이전
-          </button>
-        )}
-        <button className="flex-1 px-8 py-3 bg-indigo-600 text-white rounded-2xl text-lg font-medium" onClick={next}>
-          {isLast ? "복습 완료 ✓" : "다음 →"}
+        <button className="flex-1 py-3 bg-rose-50 border-2 border-rose-200 text-rose-700 rounded-2xl font-medium" onClick={markNotYet}>
+          🔁 아직이에요
+        </button>
+        <button className="flex-1 px-8 py-3 bg-indigo-600 text-white rounded-2xl font-medium" onClick={markRemembered}>
+          {isLast ? "외웠어요 ✓" : "외웠어요 →"}
         </button>
       </div>
       <button className="text-xs text-gray-400 underline underline-offset-2 mt-1" onClick={skipTask}>
