@@ -48,7 +48,7 @@ export default function DailyReview({ lesson, onDone, profile, dayNum }) {
   return (
     <div className="flex flex-col items-center gap-5 py-6 px-4">
       <div className="text-center">
-        <p className="text-sm font-semibold text-sky-600">🔁 전날 복습</p>
+        <p className="text-sm font-semibold text-sky-600">🔁 복습</p>
         <p className="text-xs text-gray-400 mt-0.5">
           Day {lesson.coveredDays.join(", ")} · {idx + 1} / {cards.length}
         </p>

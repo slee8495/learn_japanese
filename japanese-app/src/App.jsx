@@ -17,7 +17,7 @@ const SCREEN_LABELS = {
   reading: "읽기 드릴", chart: "가나 표", vocab: "단어장", grammar: "문법 레슨",
 };
 const TASK_LABELS_FOR_CHAT = {
-  dailyReview: "전날 복습", kana: "글자 연습", words: "단어 학습", grammar: "문법", sentence: "문장 익히기", review: "복습 퀴즈",
+  dailyReview: "복습", kana: "글자 연습", words: "단어 학습", grammar: "문법", sentence: "문장 익히기", review: "복습 퀴즈",
 };
 
 const BOTTOM_TABS = [
@@ -107,7 +107,7 @@ function MainApp({ profile, onSwitchProfile }) {
   }
 
   const taskLabel = {
-    dailyReview: "전날 복습", kana: "글자 연습", words: "단어 학습", grammar: "문법", sentence: "문장 익히기", review: "복습 퀴즈",
+    dailyReview: "복습", kana: "글자 연습", words: "단어 학습", grammar: "문법", sentence: "문장 익히기", review: "복습 퀴즈",
   };
 
   const chatDayNum = activeLesson ? activeLesson.dayNum : homeDayNum;

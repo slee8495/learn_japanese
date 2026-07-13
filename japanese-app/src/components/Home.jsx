@@ -3,7 +3,7 @@ import { getDayLesson, hasDailyReview } from "../data/curriculum";
 import CalendarView from "./CalendarView";
 
 const TASK_META = {
-  dailyReview: { icon: "🔁", label: "전날 복습", color: "bg-sky-50 border-sky-200 text-sky-700" },
+  dailyReview: { icon: "🔁", label: "복습", color: "bg-sky-50 border-sky-200 text-sky-700" },
   kana:     { icon: "あ", label: "글자 연습", color: "bg-violet-50 border-violet-200 text-violet-700" },
   words:    { icon: "単", label: "단어 학습", color: "bg-blue-50 border-blue-200 text-blue-700" },
   grammar:  { icon: "文", label: "문법 학습", color: "bg-emerald-50 border-emerald-200 text-emerald-700" },
