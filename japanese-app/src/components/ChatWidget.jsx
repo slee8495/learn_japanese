@@ -1,5 +1,11 @@
 import { useEffect, useRef, useState } from "react";
 import { speak } from "../utils/speak";
+import { speakNatural } from "../utils/speakNatural";
+
+// 메시지 전체(한국어+일본어 섞인 문장)를 통째로 읽어줄 때는 「」 기호를 떼고 읽어야 자연스러움
+function speakWholeMessage(text) {
+  speakNatural(text.replace(/「([^」]*)」/g, "$1"));
+}
 
 // 「...」로 감싸진 일본어 구간에 발음 버튼을 붙여서 렌더링
 function MessageText({ text }) {
@@ -109,6 +115,15 @@ export default function ChatWidget({ context }) {
                 }`}
               >
                 <MessageText text={m.content} />
+                <button
+                  onClick={() => speakWholeMessage(m.content)}
+                  aria-label="이 메시지 전체 읽어주기"
+                  className={`mt-1 text-xs ${
+                    m.role === "user" ? "text-indigo-100" : "text-gray-400"
+                  }`}
+                >
+                  🔊
+                </button>
               </div>
             </div>
           ))}

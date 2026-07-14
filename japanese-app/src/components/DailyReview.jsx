@@ -88,7 +88,6 @@ export default function DailyReview({ lesson, onDone, profile, dayNum }) {
         <Furigana japanese={current.japanese} reading={current.reading} className="text-2xl font-medium text-gray-800" />
         <p className="text-sm text-indigo-500">{currentReadingParts.hiragana}</p>
         <p className="text-sm text-gray-400">{currentReadingParts.romaji}</p>
-        <p className="text-gray-300 text-sm">탭하면 발음 🔊</p>
       </div>
       {idx > 0 && (
         <button className="w-full max-w-sm py-3 bg-white border-2 border-gray-200 text-gray-600 rounded-2xl text-lg font-medium" onClick={prev}>

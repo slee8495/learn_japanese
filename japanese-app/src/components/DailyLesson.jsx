@@ -85,7 +85,6 @@ function KanaSection({ lesson, onDone, profile, dayNum }) {
         >
           <span className="text-8xl">{current.char}</span>
         </div>
-        <p className="text-gray-400 text-sm">탭하면 발음 🔊</p>
         {!revealed ? (
           <div className="flex gap-3 w-full max-w-xs">
             {idx > 0 && (
@@ -141,7 +140,6 @@ function KanaSection({ lesson, onDone, profile, dayNum }) {
         <span className="text-4xl font-medium">{current.japanese}</span>
         <p className="text-indigo-500 text-sm mt-2">{currentReadingParts.hiragana}</p>
         <p className="text-gray-400 text-xs mt-0.5">{currentReadingParts.romaji}</p>
-        <p className="text-gray-300 text-sm mt-3">탭하면 발음 🔊</p>
       </div>
       <div className="flex gap-3 w-full max-w-sm">
         {idx > 0 && (
@@ -198,7 +196,6 @@ function WordsSection({ lesson, onDone, profile, dayNum }) {
         <Furigana japanese={current.japanese} reading={current.reading} className="text-5xl" />
         <p className="text-xl font-medium text-blue-600 mt-2">{currentReadingParts.hiragana}</p>
         <p className="text-gray-400 text-sm mt-0.5">{currentReadingParts.romaji}</p>
-        <p className="text-gray-300 text-sm mt-3">탭하면 발음 🔊</p>
       </div>
       <div className="flex gap-3 w-full max-w-sm">
         {idx > 0 && (
@@ -240,7 +237,7 @@ function GrammarSection({ lesson, onDone }) {
       </div>
 
       <div>
-        <p className="text-xs font-semibold text-gray-400 mb-2">예문 (탭하면 발음)</p>
+        <p className="text-xs font-semibold text-gray-400 mb-2">예문</p>
         <div className="flex flex-col gap-2">
           {g.examples.map((ex, i) => {
             const readingParts = getReadingParts(ex.j, ex.r);
@@ -310,7 +307,6 @@ function SentenceSection({ lesson, onDone, profile, dayNum }) {
         <Furigana japanese={current.japanese} reading={current.reading} className="text-2xl font-medium text-gray-800" />
         <p className="text-base text-indigo-500">{currentReadingParts.hiragana}</p>
         <p className="text-sm text-gray-400">{currentReadingParts.romaji}</p>
-        <p className="text-gray-300 text-sm">탭하면 발음 🔊</p>
       </div>
       <div className="flex gap-3 w-full max-w-sm">
         {idx > 0 && (

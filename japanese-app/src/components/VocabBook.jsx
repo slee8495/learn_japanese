@@ -122,7 +122,6 @@ export default function VocabBook() {
           </span>
           {words.length}개 단어
         </p>
-        <p className="text-xs text-gray-400">탭하면 발음 🔊</p>
       </div>
 
       {/* 단어 리스트 */}

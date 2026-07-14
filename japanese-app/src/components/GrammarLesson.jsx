@@ -58,7 +58,7 @@ function LessonCard({ lesson, defaultOpen }) {
           </div>
 
           <div>
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-2">예문 (탭하면 발음)</p>
+            <p className="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-2">예문</p>
             <div className="flex flex-col gap-2">
               {lesson.examples.map((ex, i) => (
                 <ExampleRow key={i} ex={ex} />
@@ -89,7 +89,7 @@ export default function GrammarLesson() {
   return (
     <div className="flex flex-col gap-3 py-6 px-4 max-w-lg mx-auto">
       <div className="text-center mb-1">
-        <p className="text-sm text-gray-500">유치원~고등학교 수준 — 예문을 탭하면 발음이 들려요</p>
+        <p className="text-sm text-gray-500">유치원~고등학교 수준</p>
       </div>
 
       <div className="flex gap-2 overflow-x-auto pb-1">

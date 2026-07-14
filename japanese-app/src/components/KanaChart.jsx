@@ -93,8 +93,6 @@ export default function KanaChart() {
         ))}
       </div>
 
-      <p className="text-xs text-center text-gray-400">탭하면 발음 🔊</p>
-
       {/* 기본 오십음도 */}
       <div className="bg-gray-50 rounded-2xl p-3">
         <p className="text-xs font-semibold text-gray-500 mb-2">기본 오십음도</p>
