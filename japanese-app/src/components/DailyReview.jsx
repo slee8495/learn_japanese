@@ -89,6 +89,7 @@ export default function DailyReview({ lesson, onDone, profile, dayNum }) {
         <p className="text-sm text-indigo-500">{currentReadingParts.hiragana}</p>
         <p className="text-sm text-gray-400">{currentReadingParts.romaji}</p>
       </div>
+      <span className="text-gray-300 text-lg -mt-3">🔊</span>
       {idx > 0 && (
         <button className="w-full max-w-sm py-3 bg-white border-2 border-gray-200 text-gray-600 rounded-2xl text-lg font-medium" onClick={prev}>
           ← 이전

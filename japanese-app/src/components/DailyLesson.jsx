@@ -85,6 +85,7 @@ function KanaSection({ lesson, onDone, profile, dayNum }) {
         >
           <span className="text-8xl">{current.char}</span>
         </div>
+        <span className="text-gray-300 text-lg -mt-2">🔊</span>
         {!revealed ? (
           <div className="flex gap-3 w-full max-w-xs">
             {idx > 0 && (
@@ -141,6 +142,7 @@ function KanaSection({ lesson, onDone, profile, dayNum }) {
         <p className="text-indigo-500 text-sm mt-2">{currentReadingParts.hiragana}</p>
         <p className="text-gray-400 text-xs mt-0.5">{currentReadingParts.romaji}</p>
       </div>
+      <span className="text-gray-300 text-lg -mt-3">🔊</span>
       <div className="flex gap-3 w-full max-w-sm">
         {idx > 0 && (
           <button className="flex-1 py-3 bg-white border-2 border-gray-200 text-gray-600 rounded-2xl text-lg font-medium" onClick={prevReading}>
@@ -197,6 +199,7 @@ function WordsSection({ lesson, onDone, profile, dayNum }) {
         <p className="text-xl font-medium text-blue-600 mt-2">{currentReadingParts.hiragana}</p>
         <p className="text-gray-400 text-sm mt-0.5">{currentReadingParts.romaji}</p>
       </div>
+      <span className="text-gray-300 text-lg -mt-3">🔊</span>
       <div className="flex gap-3 w-full max-w-sm">
         {idx > 0 && (
           <button className="flex-1 py-3 bg-white border-2 border-gray-200 text-gray-600 rounded-2xl text-lg font-medium" onClick={prev}>
@@ -308,6 +311,7 @@ function SentenceSection({ lesson, onDone, profile, dayNum }) {
         <p className="text-base text-indigo-500">{currentReadingParts.hiragana}</p>
         <p className="text-sm text-gray-400">{currentReadingParts.romaji}</p>
       </div>
+      <span className="text-gray-300 text-lg -mt-3">🔊</span>
       <div className="flex gap-3 w-full max-w-sm">
         {idx > 0 && (
           <button className="flex-1 py-3 bg-white border-2 border-gray-200 text-gray-600 rounded-2xl text-lg font-medium" onClick={prev}>

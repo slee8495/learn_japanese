@@ -122,6 +122,7 @@ export default function VocabBook() {
           </span>
           {words.length}개 단어
         </p>
+        <span className="text-gray-300 text-sm">🔊</span>
       </div>
 
       {/* 단어 리스트 */}

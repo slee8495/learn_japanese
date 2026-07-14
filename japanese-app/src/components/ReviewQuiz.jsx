@@ -55,6 +55,7 @@ function FlashPhase({ cards, initialIdx = 0, onIdxChange, onDone, onSkipAll, pro
         <p className="text-sm text-indigo-500">{currentReadingParts.hiragana}</p>
         <p className="text-sm text-gray-400">{currentReadingParts.romaji}</p>
       </div>
+      <span className="text-gray-300 text-lg -mt-3">🔊</span>
       {idx > 0 && (
         <button className="w-full max-w-sm py-3 bg-white border-2 border-gray-200 text-gray-600 rounded-2xl text-lg font-medium" onClick={prev}>
           ← 이전
@@ -118,6 +119,7 @@ function QuizPhase({ items, initialIdx = 0, initialAnswers = {}, onIdxChange, on
         <p className="text-sm text-indigo-500">{currentReadingParts.hiragana}</p>
         <p className="text-sm text-gray-400">{currentReadingParts.romaji}</p>
       </div>
+      <span className="text-gray-300 text-lg -mt-3">🔊</span>
       <div className="w-full max-w-sm flex flex-col gap-2">
         {current.choices.map((choice) => {
           const isCorrect = choice === current.correct;
