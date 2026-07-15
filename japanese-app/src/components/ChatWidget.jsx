@@ -7,6 +7,22 @@ function speakWholeMessage(text) {
   speakNatural(text.replace(/「([^」]*)」/g, "$1"));
 }
 
+const RECORDING_MIME_TYPES = ["audio/webm", "audio/mp4", "audio/ogg"];
+
+function pickRecordingMimeType() {
+  if (typeof MediaRecorder === "undefined") return undefined;
+  return RECORDING_MIME_TYPES.find((type) => MediaRecorder.isTypeSupported(type));
+}
+
+function blobToBase64(blob) {
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.onloadend = () => resolve(String(reader.result).split(",")[1] || "");
+    reader.onerror = reject;
+    reader.readAsDataURL(blob);
+  });
+}
+
 // 「...」로 감싸진 일본어 구간에 발음 버튼을 붙여서 렌더링
 function MessageText({ text }) {
   const parts = text.split(/(「[^」]*」)/g);
@@ -37,7 +53,10 @@ export default function ChatWidget({ context }) {
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
+  const [recording, setRecording] = useState(false);
+  const [transcribing, setTranscribing] = useState(false);
   const scrollRef = useRef(null);
+  const mediaRecorderRef = useRef(null);
 
   useEffect(() => {
     if (open && messages.length === 0) {
@@ -54,8 +73,8 @@ export default function ChatWidget({ context }) {
     scrollRef.current?.scrollTo({ top: scrollRef.current.scrollHeight, behavior: "smooth" });
   }, [messages, loading]);
 
-  async function handleSend() {
-    const text = input.trim();
+  async function handleSend(overrideText) {
+    const text = (overrideText ?? input).trim();
     if (!text || loading) return;
     const nextMessages = [...messages, { role: "user", content: text }];
     setMessages(nextMessages);
@@ -76,6 +95,51 @@ export default function ChatWidget({ context }) {
     } finally {
       setLoading(false);
     }
+  }
+
+  async function startRecording() {
+    try {
+      const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+      const mimeType = pickRecordingMimeType();
+      const recorder = new MediaRecorder(stream, mimeType ? { mimeType } : undefined);
+      const chunks = [];
+
+      recorder.ondataavailable = (e) => {
+        if (e.data.size > 0) chunks.push(e.data);
+      };
+      recorder.onstop = async () => {
+        stream.getTracks().forEach((t) => t.stop());
+        const blob = new Blob(chunks, { type: mimeType || "audio/webm" });
+        setTranscribing(true);
+        try {
+          const audio = await blobToBase64(blob);
+          const res = await fetch("/api/transcribe", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ audio }),
+          });
+          if (!res.ok) throw new Error("transcription failed");
+          const { text } = await res.json();
+          if (text?.trim()) handleSend(text.trim());
+        } catch {
+          setError("음성을 인식하지 못했어요. 다시 시도하거나 직접 입력해주세요.");
+        } finally {
+          setTranscribing(false);
+        }
+      };
+
+      mediaRecorderRef.current = recorder;
+      recorder.start();
+      setRecording(true);
+    } catch {
+      setError("마이크 권한이 필요해요. 브라우저 설정을 확인해주세요.");
+    }
+  }
+
+  function stopRecording() {
+    mediaRecorderRef.current?.stop();
+    mediaRecorderRef.current = null;
+    setRecording(false);
   }
 
   if (!open) {
@@ -142,13 +206,28 @@ export default function ChatWidget({ context }) {
             value={input}
             onChange={(e) => setInput(e.target.value)}
             onKeyDown={(e) => e.key === "Enter" && handleSend()}
-            placeholder="궁금한 걸 물어보세요..."
-            className="flex-1 px-4 py-2.5 rounded-full bg-gray-100 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-300"
+            disabled={recording || transcribing}
+            placeholder={
+              recording ? "듣고 있어요..." : transcribing ? "음성 인식 중..." : "궁금한 걸 물어보세요..."
+            }
+            className="flex-1 px-4 py-2.5 rounded-full bg-gray-100 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-300 disabled:opacity-60"
           />
           <button
-            onClick={handleSend}
-            disabled={loading || !input.trim()}
-            className="w-11 h-11 rounded-full bg-indigo-600 text-white flex items-center justify-center disabled:opacity-40"
+            type="button"
+            onClick={() => (recording ? stopRecording() : startRecording())}
+            disabled={loading || transcribing}
+            aria-pressed={recording}
+            aria-label={recording ? "녹음 중지" : "음성으로 질문하기"}
+            className={`w-11 h-11 shrink-0 rounded-full flex items-center justify-center disabled:opacity-40 ${
+              recording ? "bg-red-500 text-white animate-pulse" : "bg-gray-100 text-gray-600"
+            }`}
+          >
+            {recording ? "⏹" : "🎤"}
+          </button>
+          <button
+            onClick={() => handleSend()}
+            disabled={loading || recording || transcribing || !input.trim()}
+            className="w-11 h-11 shrink-0 rounded-full bg-indigo-600 text-white flex items-center justify-center disabled:opacity-40"
           >
             ➤
           </button>
