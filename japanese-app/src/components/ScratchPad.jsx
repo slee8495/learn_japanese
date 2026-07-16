@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import StrokePractice from "./StrokePractice";
 
 const PEN_WIDTH = 2.5;
 const ERASE_RADIUS = 16;
@@ -25,8 +26,9 @@ function averageTouchY(touches) {
   return sum / touches.length;
 }
 
-export default function ScratchPad() {
+export default function ScratchPad({ dayNum }) {
   const [open, setOpen] = useState(false);
+  const [mode, setMode] = useState("draw"); // "draw" | "trace"
   const [isEraser, setIsEraser] = useState(false);
   const [strokes, setStrokes] = useState([]);
   const [paperHeight, setPaperHeight] = useState(PAPER_INITIAL_HEIGHT);
@@ -64,9 +66,10 @@ export default function ScratchPad() {
   // 종이 크기(=캔버스 크기) 반영 + 다시 그리기. canvas.width/height를 건드리면
   // 캔버스 내용이 초기화되므로 그때마다 strokes로부터 다시 그려준다.
   useEffect(() => {
-    if (!open) return;
+    if (!open || mode !== "draw") return;
     const canvas = canvasRef.current;
     const container = containerRef.current;
+    if (!canvas || !container) return;
 
     function resize() {
       const width = container.clientWidth;
@@ -82,14 +85,15 @@ export default function ScratchPad() {
     window.addEventListener("resize", resize);
     return () => window.removeEventListener("resize", resize);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [open, paperHeight]);
+  }, [open, mode, paperHeight]);
 
   // 지우개로 획을 지웠을 때(=strokes가 바뀌었을 때)만 전체를 다시 그린다.
   // 펜으로 쓰는 동안에는 아래 draw()에서 선분만 이어 그려서 매번 전체를 다시 그리지 않는다.
   useEffect(() => {
+    if (mode !== "draw") return;
     redraw();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [strokes]);
+  }, [strokes, mode]);
 
   function growIfNeeded(y) {
     if (y > paperHeight - GROW_THRESHOLD) {
@@ -212,48 +216,71 @@ export default function ScratchPad() {
 
   return (
     <div className="fixed inset-0 z-50 flex flex-col bg-white">
-      <div className="flex items-center justify-between px-3 py-2.5 border-b border-gray-200 gap-2">
-        <p className="font-bold text-gray-800 shrink-0">✏️ 낙서장</p>
-        <div className="flex items-center gap-1.5 flex-1 justify-end">
-          <button
-            onClick={() => setIsEraser(false)}
-            className={`px-3 py-1.5 rounded-xl text-sm font-medium ${!isEraser ? "bg-indigo-600 text-white" : "bg-gray-100 text-gray-600"}`}
-          >
-            펜
-          </button>
-          <button
-            onClick={() => setIsEraser(true)}
-            className={`px-3 py-1.5 rounded-xl text-sm font-medium ${isEraser ? "bg-indigo-600 text-white" : "bg-gray-100 text-gray-600"}`}
-          >
-            지우개
-          </button>
-          <button onClick={clearAll} className="px-3 py-1.5 rounded-xl text-sm font-medium bg-red-50 text-red-500">
-            전체 지우기
-          </button>
+      <div className="border-b border-gray-200">
+        <div className="flex items-center justify-between px-3 pt-2.5 pb-1.5 gap-2">
+          <div className="flex items-center gap-1 bg-gray-100 rounded-xl p-1">
+            <button
+              onClick={() => setMode("draw")}
+              className={`px-2.5 py-1.5 rounded-lg text-sm font-semibold transition-colors ${mode === "draw" ? "bg-white text-indigo-600 shadow-sm" : "text-gray-500"}`}
+            >
+              ✏️ 낙서
+            </button>
+            <button
+              onClick={() => setMode("trace")}
+              className={`px-2.5 py-1.5 rounded-lg text-sm font-semibold transition-colors ${mode === "trace" ? "bg-white text-indigo-600 shadow-sm" : "text-gray-500"}`}
+            >
+              あ 필순 연습
+            </button>
+          </div>
           <button onClick={() => setOpen(false)} className="text-gray-400 text-2xl leading-none px-2">
             ×
           </button>
         </div>
+        {mode === "draw" && (
+          <div className="flex items-center gap-1.5 justify-end px-3 pb-2.5">
+            <button
+              onClick={() => setIsEraser(false)}
+              className={`px-3 py-1.5 rounded-xl text-sm font-medium ${!isEraser ? "bg-indigo-600 text-white" : "bg-gray-100 text-gray-600"}`}
+            >
+              펜
+            </button>
+            <button
+              onClick={() => setIsEraser(true)}
+              className={`px-3 py-1.5 rounded-xl text-sm font-medium ${isEraser ? "bg-indigo-600 text-white" : "bg-gray-100 text-gray-600"}`}
+            >
+              지우개
+            </button>
+            <button onClick={clearAll} className="px-3 py-1.5 rounded-xl text-sm font-medium bg-red-50 text-red-500">
+              전체 지우기
+            </button>
+          </div>
+        )}
       </div>
-      {isEraser && (
+      {mode === "draw" && isEraser && (
         <p className="text-center text-xs text-gray-400 py-1 bg-gray-50 border-b border-gray-100">
           획을 톡 누르거나 쓸어서 지워요
         </p>
       )}
-      <div ref={containerRef} className="flex-1 overflow-y-auto overscroll-contain">
-        <canvas
-          ref={canvasRef}
-          className="touch-none block"
-          onMouseDown={startDraw}
-          onMouseMove={draw}
-          onMouseUp={endDraw}
-          onMouseLeave={endDraw}
-          onTouchStart={startDraw}
-          onTouchMove={draw}
-          onTouchEnd={endDraw}
-          onTouchCancel={endDraw}
-        />
-      </div>
+      {mode === "draw" ? (
+        <div ref={containerRef} className="flex-1 overflow-y-auto overscroll-contain">
+          <canvas
+            ref={canvasRef}
+            className="touch-none block"
+            onMouseDown={startDraw}
+            onMouseMove={draw}
+            onMouseUp={endDraw}
+            onMouseLeave={endDraw}
+            onTouchStart={startDraw}
+            onTouchMove={draw}
+            onTouchEnd={endDraw}
+            onTouchCancel={endDraw}
+          />
+        </div>
+      ) : (
+        <div className="flex-1 overflow-y-auto overscroll-contain">
+          <StrokePractice dayNum={dayNum} />
+        </div>
+      )}
     </div>
   );
 }

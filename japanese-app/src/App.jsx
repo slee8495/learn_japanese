@@ -134,7 +134,7 @@ function MainApp({ profile, onSwitchProfile }) {
           <DailyLesson task={activeLesson.task} dayNum={activeLesson.dayNum} onDone={handleTaskDone} profile={profile} />
         </main>
         <ChatWidget context={chatContext} />
-        <ScratchPad />
+        <ScratchPad dayNum={activeLesson.dayNum} />
       </div>
     );
   }
