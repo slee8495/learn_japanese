@@ -118,7 +118,7 @@ function StrokeCanvas({ char, showGuide, replayToken, clearToken }) {
   if (!data) {
     return (
       <div
-        className="flex items-center justify-center bg-gray-50 rounded-2xl text-sm text-gray-400 mx-auto"
+        className="flex items-center justify-center bg-sumi-50 rounded-2xl text-sm text-sumi-400 mx-auto"
         style={{ width: BOX, height: BOX }}
       >
         이 글자는 아직 필순 데이터가 없어요
@@ -127,7 +127,7 @@ function StrokeCanvas({ char, showGuide, replayToken, clearToken }) {
   }
 
   return (
-    <div className="relative mx-auto rounded-2xl overflow-hidden bg-white border border-gray-200" style={{ width: BOX, height: BOX }}>
+    <div className="relative mx-auto rounded-2xl overflow-hidden bg-white border border-sumi-200" style={{ width: BOX, height: BOX }}>
       {showGuide && (
         <svg viewBox="0 0 109 109" className="absolute inset-0 w-full h-full pointer-events-none">
           {data.strokes.map((d, i) => (
@@ -172,7 +172,7 @@ function CharChip({ ch, active, onClick }) {
     <button
       onClick={onClick}
       className={`shrink-0 w-11 h-11 rounded-xl flex items-center justify-center text-lg font-medium transition-colors ${
-        active ? "bg-indigo-600 text-white" : "bg-gray-100 text-gray-700"
+        active ? "bg-ai-600 text-white" : "bg-sumi-100 text-sumi-700"
       }`}
     >
       {ch}
@@ -210,7 +210,7 @@ export default function StrokePractice({ dayNum }) {
 
   return (
     <div className="flex flex-col gap-3 px-3 py-3 max-w-lg mx-auto w-full">
-      <div className="flex gap-1.5 bg-gray-100 rounded-2xl p-1">
+      <div className="flex gap-1.5 bg-sumi-100 rounded-2xl p-1">
         {[
           { id: "today", label: "오늘의 글자" },
           { id: "hira", label: "히라가나" },
@@ -221,7 +221,7 @@ export default function StrokePractice({ dayNum }) {
             key={t.id}
             onClick={() => setTab(t.id)}
             className={`flex-1 py-1.5 rounded-xl text-xs font-semibold transition-colors ${
-              tab === t.id ? "bg-white text-indigo-600 shadow-sm" : "text-gray-500"
+              tab === t.id ? "bg-white text-ai-600 shadow-sm" : "text-sumi-500"
             }`}
           >
             {t.label}
@@ -234,12 +234,12 @@ export default function StrokePractice({ dayNum }) {
           value={search}
           onChange={(e) => setSearch(e.target.value)}
           placeholder="글자나 단어를 입력해보세요 (예: 元気)"
-          className="w-full px-3 py-2 rounded-xl border border-gray-200 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-300"
+          className="w-full px-3 py-2 rounded-xl border border-sumi-200 text-sm focus:outline-none focus:ring-2 focus:ring-ai-300"
         />
       )}
 
       {list.length === 0 ? (
-        <p className="text-center text-xs text-gray-400 py-2">
+        <p className="text-center text-xs text-sumi-400 py-2">
           {tab === "today" ? "오늘의 글자 정보를 불러올 수 없어요" : "찾는 글자가 없어요"}
         </p>
       ) : (
@@ -256,13 +256,13 @@ export default function StrokePractice({ dayNum }) {
           <div className="flex items-center justify-center gap-2 flex-wrap">
             <button
               onClick={() => setReplayToken((t) => t + 1)}
-              className="px-3 py-1.5 rounded-xl text-sm font-medium bg-indigo-50 text-indigo-600"
+              className="px-3 py-1.5 rounded-xl text-sm font-medium bg-ai-50 text-ai-600"
             >
               ▶ 필순 보기
             </button>
             <button
               onClick={() => setShowGuide((v) => !v)}
-              className="px-3 py-1.5 rounded-xl text-sm font-medium bg-gray-100 text-gray-600"
+              className="px-3 py-1.5 rounded-xl text-sm font-medium bg-sumi-100 text-sumi-600"
             >
               가이드 {showGuide ? "숨기기" : "보기"}
             </button>
@@ -276,7 +276,7 @@ export default function StrokePractice({ dayNum }) {
         </>
       )}
 
-      <p className="text-center text-[10px] text-gray-300 pt-1">필순 데이터: KanjiVG (CC BY-SA 3.0)</p>
+      <p className="text-center text-[10px] text-sumi-300 pt-1">필순 데이터: KanjiVG (CC BY-SA 3.0)</p>
     </div>
   );
 }

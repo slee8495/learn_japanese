@@ -40,7 +40,7 @@ function ProfileSetup({ onDone }) {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-indigo-600 to-indigo-800 flex flex-col items-center justify-center px-6">
+    <div className="min-h-screen bg-gradient-to-b from-ai-600 to-ai-800 flex flex-col items-center justify-center px-6">
       <div className="text-center mb-10">
         <p className="text-6xl mb-4">🇯🇵</p>
         <h1 className="text-3xl font-bold text-white">일본어 학습</h1>
@@ -59,13 +59,13 @@ function ProfileSetup({ onDone }) {
         <button
           type="submit"
           disabled={!name.trim()}
-          className="w-full py-4 bg-white text-indigo-700 font-bold text-lg rounded-2xl disabled:opacity-40 active:scale-95 transition-transform"
+          className="w-full py-4 bg-white text-ai-700 font-bold text-lg rounded-2xl disabled:opacity-40 active:scale-95 transition-transform"
         >
           시작하기 →
         </button>
       </form>
 
-      <p className="text-indigo-300 text-xs mt-8 text-center">
+      <p className="text-ai-300 text-xs mt-8 text-center">
         같은 링크를 써도 이름별로 진도가 따로 저장돼요
       </p>
     </div>
@@ -118,14 +118,14 @@ function MainApp({ profile, onSwitchProfile }) {
 
   if (activeLesson) {
     return (
-      <div className="min-h-screen bg-gray-50">
-        <header className="bg-white border-b border-gray-200 sticky top-0 z-10">
+      <div className="min-h-screen bg-sumi-50">
+        <header className="bg-white border-b border-sumi-200 sticky top-0 z-10">
           <div className="max-w-lg mx-auto px-4 py-3 flex items-center gap-3">
-            <button onClick={() => setActiveLesson(null)} className="text-gray-400 text-2xl leading-none">←</button>
+            <button onClick={() => setActiveLesson(null)} className="text-sumi-400 text-2xl leading-none">←</button>
             <div>
-              <p className="font-semibold text-gray-800">{taskLabel[activeLesson.task]}</p>
+              <p className="font-semibold text-sumi-800">{taskLabel[activeLesson.task]}</p>
               {activeLesson.dayNum !== todayDayNum && (
-                <p className="text-xs text-indigo-500">Day {activeLesson.dayNum} 복습</p>
+                <p className="text-xs text-ai-500">Day {activeLesson.dayNum} 복습</p>
               )}
             </div>
           </div>
@@ -140,10 +140,10 @@ function MainApp({ profile, onSwitchProfile }) {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50 pb-44">
-      <header className="bg-white border-b border-gray-200 sticky top-0 z-10">
+    <div className="min-h-screen bg-sumi-50 pb-44">
+      <header className="bg-white border-b border-sumi-200 sticky top-0 z-10">
         <div className="max-w-lg mx-auto px-4 py-3 flex items-center justify-between">
-          <h1 className="text-lg font-bold text-gray-800">
+          <h1 className="text-lg font-bold text-sumi-800">
             {tab === "home" && "🇯🇵 일본어 학습"}
             {tab === "hiragana" && "히라가나 퀴즈"}
             {tab === "katakana" && "카타카나 퀴즈"}
@@ -154,7 +154,7 @@ function MainApp({ profile, onSwitchProfile }) {
           {/* 프로필 표시 + 전환 버튼 */}
           <button
             onClick={onSwitchProfile}
-            className="flex items-center gap-1.5 bg-indigo-50 border border-indigo-200 text-indigo-600 rounded-full px-3 py-1 text-sm font-medium"
+            className="flex items-center gap-1.5 bg-ai-50 border border-ai-200 text-ai-600 rounded-full px-3 py-1 text-sm font-medium"
           >
             <span>👤</span>
             <span>{profile}</span>
@@ -164,7 +164,7 @@ function MainApp({ profile, onSwitchProfile }) {
           <div className="max-w-lg mx-auto px-4 pb-2 flex gap-1">
             {[{id:"hiragana",label:"히라가나"},{id:"katakana",label:"카타카나"},{id:"reading",label:"읽기"},{id:"chart",label:"표 📋"}].map(t => (
               <button key={t.id} onClick={() => setTab(t.id)}
-                className={`px-3 py-1.5 rounded-xl text-sm font-medium transition-colors ${tab===t.id?"bg-indigo-600 text-white":"bg-gray-100 text-gray-600"}`}>
+                className={`px-3 py-1.5 rounded-xl text-sm font-medium transition-colors ${tab===t.id?"bg-ai-600 text-white":"bg-sumi-100 text-sumi-600"}`}>
                 {t.label}
               </button>
             ))}
@@ -195,7 +195,7 @@ function MainApp({ profile, onSwitchProfile }) {
         {tab === "grammar" && <GrammarLesson />}
       </main>
 
-      <nav className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 z-10">
+      <nav className="fixed bottom-0 left-0 right-0 bg-white border-t border-sumi-200 z-10">
         <div className="max-w-lg mx-auto flex">
           {BOTTOM_TABS.map(t => {
             const active = t.id === "kana"
@@ -204,7 +204,7 @@ function MainApp({ profile, onSwitchProfile }) {
             return (
               <button key={t.id}
                 onClick={() => setTab(t.id === "kana" ? "hiragana" : t.id)}
-                className={`flex-1 flex flex-col items-center py-2 gap-0.5 ${active?"text-indigo-600":"text-gray-400"}`}>
+                className={`flex-1 flex flex-col items-center py-2 gap-0.5 ${active?"text-ai-600":"text-sumi-400"}`}>
                 <span className="text-xl">{t.icon}</span>
                 <span className="text-xs font-medium">{t.label}</span>
               </button>

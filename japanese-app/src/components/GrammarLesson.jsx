@@ -14,13 +14,13 @@ function ExampleRow({ ex }) {
   const readingParts = getReadingParts(ex.japanese, ex.reading);
   return (
     <div
-      className="bg-gray-50 rounded-xl p-3 cursor-pointer hover:bg-indigo-50 transition-colors"
+      className="bg-sumi-50 rounded-xl p-3 cursor-pointer hover:bg-ai-50 transition-colors"
       onClick={() => speak(ex.japanese)}
     >
-      <p className="text-sm font-medium text-gray-500">{ex.meaning}</p>
-      <Furigana japanese={ex.japanese} reading={ex.reading} className="text-lg text-gray-800 mt-1" />
-      <p className="text-sm text-indigo-500 mt-0.5">{readingParts.hiragana}</p>
-      <p className="text-xs text-gray-400 mt-0.5">{readingParts.romaji}</p>
+      <p className="text-sm font-medium text-sumi-500">{ex.meaning}</p>
+      <Furigana japanese={ex.japanese} reading={ex.reading} className="text-lg text-sumi-800 mt-1" />
+      <p className="text-sm text-ai-500 mt-0.5">{readingParts.hiragana}</p>
+      <p className="text-xs text-sumi-400 mt-0.5">{readingParts.romaji}</p>
     </div>
   );
 }
@@ -29,36 +29,36 @@ function LessonCard({ lesson, defaultOpen }) {
   const [open, setOpen] = useState(defaultOpen);
 
   return (
-    <div className="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
+    <div className="bg-white rounded-2xl border border-sumi-100 shadow-sm overflow-hidden">
       <button
         className="w-full text-left p-4 flex items-center justify-between gap-3"
         onClick={() => setOpen((o) => !o)}
       >
         <div>
           <div className="flex items-center gap-2">
-            <span className="text-xs font-semibold bg-indigo-100 text-indigo-600 rounded-full px-2 py-0.5">{lesson.level}</span>
-            <span className="text-xs text-gray-400">레슨 {lesson.id}</span>
+            <span className="text-xs font-semibold bg-ai-100 text-ai-600 rounded-full px-2 py-0.5">{lesson.level}</span>
+            <span className="text-xs text-sumi-400">레슨 {lesson.id}</span>
           </div>
-          <p className="text-base font-semibold text-gray-800 mt-1">{lesson.title}</p>
+          <p className="text-base font-semibold text-sumi-800 mt-1">{lesson.title}</p>
         </div>
-        <span className="text-gray-400 text-xl shrink-0">{open ? "▲" : "▼"}</span>
+        <span className="text-sumi-400 text-xl shrink-0">{open ? "▲" : "▼"}</span>
       </button>
 
       {open && (
-        <div className="px-4 pb-4 flex flex-col gap-3 border-t border-gray-50 pt-3">
-          <p className="text-sm text-gray-600">{lesson.explanation}</p>
+        <div className="px-4 pb-4 flex flex-col gap-3 border-t border-sumi-50 pt-3">
+          <p className="text-sm text-sumi-600">{lesson.explanation}</p>
 
           <div className="flex flex-col gap-1.5">
             {lesson.points.map((p, i) => (
-              <div key={i} className="flex gap-2 text-sm text-gray-700">
-                <span className="text-indigo-400 shrink-0">•</span>
+              <div key={i} className="flex gap-2 text-sm text-sumi-700">
+                <span className="text-ai-400 shrink-0">•</span>
                 <span>{p}</span>
               </div>
             ))}
           </div>
 
           <div>
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-2">예문</p>
+            <p className="text-xs font-semibold text-sumi-400 uppercase tracking-wide mb-2">예문</p>
             <div className="flex flex-col gap-2">
               {lesson.examples.map((ex, i) => (
                 <ExampleRow key={i} ex={ex} />
@@ -89,7 +89,7 @@ export default function GrammarLesson() {
   return (
     <div className="flex flex-col gap-3 py-6 px-4 max-w-lg mx-auto">
       <div className="text-center mb-1">
-        <p className="text-sm text-gray-500">유치원~고등학교 수준</p>
+        <p className="text-sm text-sumi-500">유치원~고등학교 수준</p>
       </div>
 
       <div className="flex gap-2 overflow-x-auto pb-1">
@@ -99,8 +99,8 @@ export default function GrammarLesson() {
             onClick={() => setFilter(f.id)}
             className={`shrink-0 px-3 py-1.5 rounded-xl text-sm font-medium transition-colors ${
               filter === f.id
-                ? "bg-indigo-600 text-white"
-                : "bg-gray-100 text-gray-600 hover:bg-gray-200"
+                ? "bg-ai-600 text-white"
+                : "bg-sumi-100 text-sumi-600 hover:bg-sumi-200"
             }`}
           >
             {f.label}

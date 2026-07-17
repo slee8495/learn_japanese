@@ -36,7 +36,7 @@ function MessageText({ text }) {
           <span
             key={i}
             onClick={() => speak(jp)}
-            className="inline-flex items-center gap-1 bg-indigo-50 text-indigo-700 rounded-lg px-1.5 py-0.5 mx-0.5 cursor-pointer"
+            className="inline-flex items-center gap-1 bg-ai-50 text-ai-700 rounded-lg px-1.5 py-0.5 mx-0.5 cursor-pointer"
           >
             {jp}
             <span className="text-xs">🔊</span>
@@ -147,7 +147,7 @@ export default function ChatWidget({ context }) {
       <button
         onClick={() => setOpen(true)}
         aria-label="AI 튜터와 대화하기"
-        className="fixed bottom-24 right-4 z-40 w-14 h-14 rounded-full bg-indigo-600 text-white text-2xl shadow-lg flex items-center justify-center active:scale-95"
+        className="fixed bottom-24 right-4 z-40 w-14 h-14 rounded-full bg-ai-600 text-white text-2xl shadow-lg flex items-center justify-center active:scale-95"
       >
         ✨
       </button>
@@ -157,13 +157,13 @@ export default function ChatWidget({ context }) {
   return (
     <div className="fixed inset-0 z-50 flex flex-col justify-end">
       <div className="absolute inset-0 bg-black/30" onClick={() => setOpen(false)} />
-      <div className="relative bg-gray-50 rounded-t-3xl shadow-2xl w-full max-w-lg mx-auto h-[75vh] flex flex-col">
-        <div className="flex items-center justify-between px-4 py-3 border-b border-gray-200 bg-white rounded-t-3xl">
+      <div className="relative bg-sumi-50 rounded-t-3xl shadow-2xl w-full max-w-lg mx-auto h-[75vh] flex flex-col">
+        <div className="flex items-center justify-between px-4 py-3 border-b border-sumi-200 bg-white rounded-t-3xl">
           <div>
-            <p className="font-bold text-gray-800">✨ AI 튜터</p>
-            <p className="text-xs text-gray-400">{context?.screenLabel || "홈"} 기준으로 대화 중</p>
+            <p className="font-bold text-sumi-800">✨ AI 튜터</p>
+            <p className="text-xs text-sumi-400">{context?.screenLabel || "홈"} 기준으로 대화 중</p>
           </div>
-          <button onClick={() => setOpen(false)} className="text-gray-400 text-2xl leading-none px-2">
+          <button onClick={() => setOpen(false)} className="text-sumi-400 text-2xl leading-none px-2">
             ×
           </button>
         </div>
@@ -174,8 +174,8 @@ export default function ChatWidget({ context }) {
               <div
                 className={`max-w-[80%] rounded-2xl px-3 py-2 ${
                   m.role === "user"
-                    ? "bg-indigo-600 text-white"
-                    : "bg-white border border-gray-100 shadow-sm text-gray-800"
+                    ? "bg-ai-600 text-white"
+                    : "bg-white border border-sumi-100 shadow-sm text-sumi-800"
                 }`}
               >
                 <MessageText text={m.content} />
@@ -183,7 +183,7 @@ export default function ChatWidget({ context }) {
                   onClick={() => speakWholeMessage(m.content)}
                   aria-label="이 메시지 전체 읽어주기"
                   className={`mt-1 text-xs ${
-                    m.role === "user" ? "text-indigo-100" : "text-gray-400"
+                    m.role === "user" ? "text-ai-100" : "text-sumi-400"
                   }`}
                 >
                   🔊
@@ -193,7 +193,7 @@ export default function ChatWidget({ context }) {
           ))}
           {loading && (
             <div className="flex justify-start">
-              <div className="bg-white border border-gray-100 shadow-sm rounded-2xl px-3 py-2 text-gray-400 text-sm">
+              <div className="bg-white border border-sumi-100 shadow-sm rounded-2xl px-3 py-2 text-sumi-400 text-sm">
                 생각 중...
               </div>
             </div>
@@ -201,7 +201,7 @@ export default function ChatWidget({ context }) {
           {error && <p className="text-xs text-red-500 text-center">{error}</p>}
         </div>
 
-        <div className="p-3 border-t border-gray-200 bg-white flex gap-2">
+        <div className="p-3 border-t border-sumi-200 bg-white flex gap-2">
           <input
             value={input}
             onChange={(e) => setInput(e.target.value)}
@@ -210,7 +210,7 @@ export default function ChatWidget({ context }) {
             placeholder={
               recording ? "듣고 있어요..." : transcribing ? "음성 인식 중..." : "궁금한 걸 물어보세요..."
             }
-            className="flex-1 px-4 py-2.5 rounded-full bg-gray-100 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-300 disabled:opacity-60"
+            className="flex-1 px-4 py-2.5 rounded-full bg-sumi-100 text-sm focus:outline-none focus:ring-2 focus:ring-ai-300 disabled:opacity-60"
           />
           <button
             type="button"
@@ -219,7 +219,7 @@ export default function ChatWidget({ context }) {
             aria-pressed={recording}
             aria-label={recording ? "녹음 중지" : "음성으로 질문하기"}
             className={`w-11 h-11 shrink-0 rounded-full flex items-center justify-center disabled:opacity-40 ${
-              recording ? "bg-red-500 text-white animate-pulse" : "bg-gray-100 text-gray-600"
+              recording ? "bg-red-500 text-white animate-pulse" : "bg-sumi-100 text-sumi-600"
             }`}
           >
             {recording ? "⏹" : "🎤"}
@@ -227,7 +227,7 @@ export default function ChatWidget({ context }) {
           <button
             onClick={() => handleSend()}
             disabled={loading || recording || transcribing || !input.trim()}
-            className="w-11 h-11 shrink-0 rounded-full bg-indigo-600 text-white flex items-center justify-center disabled:opacity-40"
+            className="w-11 h-11 shrink-0 rounded-full bg-ai-600 text-white flex items-center justify-center disabled:opacity-40"
           >
             ➤
           </button>

@@ -207,7 +207,7 @@ export default function ScratchPad({ dayNum }) {
       <button
         onClick={() => setOpen(true)}
         aria-label="낙서장 열기"
-        className="fixed bottom-24 left-4 z-40 w-14 h-14 rounded-full bg-white border-2 border-gray-200 text-2xl shadow-lg flex items-center justify-center active:scale-95"
+        className="fixed bottom-24 left-4 z-40 w-14 h-14 rounded-full bg-white border-2 border-sumi-200 text-2xl shadow-lg flex items-center justify-center active:scale-95"
       >
         ✏️
       </button>
@@ -216,23 +216,23 @@ export default function ScratchPad({ dayNum }) {
 
   return (
     <div className="fixed inset-0 z-50 flex flex-col bg-white">
-      <div className="border-b border-gray-200">
+      <div className="border-b border-sumi-200">
         <div className="flex items-center justify-between px-3 pt-2.5 pb-1.5 gap-2">
-          <div className="flex items-center gap-1 bg-gray-100 rounded-xl p-1">
+          <div className="flex items-center gap-1 bg-sumi-100 rounded-xl p-1">
             <button
               onClick={() => setMode("draw")}
-              className={`px-2.5 py-1.5 rounded-lg text-sm font-semibold transition-colors ${mode === "draw" ? "bg-white text-indigo-600 shadow-sm" : "text-gray-500"}`}
+              className={`px-2.5 py-1.5 rounded-lg text-sm font-semibold transition-colors ${mode === "draw" ? "bg-white text-ai-600 shadow-sm" : "text-sumi-500"}`}
             >
               ✏️ 낙서
             </button>
             <button
               onClick={() => setMode("trace")}
-              className={`px-2.5 py-1.5 rounded-lg text-sm font-semibold transition-colors ${mode === "trace" ? "bg-white text-indigo-600 shadow-sm" : "text-gray-500"}`}
+              className={`px-2.5 py-1.5 rounded-lg text-sm font-semibold transition-colors ${mode === "trace" ? "bg-white text-ai-600 shadow-sm" : "text-sumi-500"}`}
             >
               あ 필순 연습
             </button>
           </div>
-          <button onClick={() => setOpen(false)} className="text-gray-400 text-2xl leading-none px-2">
+          <button onClick={() => setOpen(false)} className="text-sumi-400 text-2xl leading-none px-2">
             ×
           </button>
         </div>
@@ -240,13 +240,13 @@ export default function ScratchPad({ dayNum }) {
           <div className="flex items-center gap-1.5 justify-end px-3 pb-2.5">
             <button
               onClick={() => setIsEraser(false)}
-              className={`px-3 py-1.5 rounded-xl text-sm font-medium ${!isEraser ? "bg-indigo-600 text-white" : "bg-gray-100 text-gray-600"}`}
+              className={`px-3 py-1.5 rounded-xl text-sm font-medium ${!isEraser ? "bg-ai-600 text-white" : "bg-sumi-100 text-sumi-600"}`}
             >
               펜
             </button>
             <button
               onClick={() => setIsEraser(true)}
-              className={`px-3 py-1.5 rounded-xl text-sm font-medium ${isEraser ? "bg-indigo-600 text-white" : "bg-gray-100 text-gray-600"}`}
+              className={`px-3 py-1.5 rounded-xl text-sm font-medium ${isEraser ? "bg-ai-600 text-white" : "bg-sumi-100 text-sumi-600"}`}
             >
               지우개
             </button>
@@ -257,7 +257,7 @@ export default function ScratchPad({ dayNum }) {
         )}
       </div>
       {mode === "draw" && isEraser && (
-        <p className="text-center text-xs text-gray-400 py-1 bg-gray-50 border-b border-gray-100">
+        <p className="text-center text-xs text-sumi-400 py-1 bg-sumi-50 border-b border-sumi-100">
           획을 톡 누르거나 쓸어서 지워요
         </p>
       )}

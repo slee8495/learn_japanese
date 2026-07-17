@@ -31,8 +31,8 @@ export default function DailyReview({ lesson, onDone, profile, dayNum }) {
     return (
       <div className="flex flex-col items-center gap-4 py-10 px-4 text-center">
         <p className="text-4xl">🔁</p>
-        <p className="text-gray-500">아직 복습할 내용이 없어요</p>
-        <button className="px-8 py-3 bg-indigo-600 text-white rounded-2xl text-lg font-medium" onClick={onDone}>
+        <p className="text-sumi-500">아직 복습할 내용이 없어요</p>
+        <button className="px-8 py-3 bg-ai-600 text-white rounded-2xl text-lg font-medium" onClick={onDone}>
           확인 ✓
         </button>
       </div>
@@ -74,24 +74,24 @@ export default function DailyReview({ lesson, onDone, profile, dayNum }) {
     <div className="flex flex-col items-center gap-5 py-6 px-4">
       <div className="text-center">
         <p className="text-sm font-semibold text-sky-600">🔁 복습</p>
-        <p className="text-xs text-gray-400 mt-0.5">
+        <p className="text-xs text-sumi-400 mt-0.5">
           Day {lesson.coveredDays.join(", ")} · {idx + 1} / {cards.length}
         </p>
       </div>
-      <div className="w-full max-w-sm bg-white rounded-2xl border border-gray-100 shadow p-5 text-center">
-        <p className="text-xl font-bold text-gray-800">{current.meaning}</p>
+      <div className="w-full max-w-sm bg-white rounded-2xl border border-sumi-100 shadow p-5 text-center">
+        <p className="text-xl font-bold text-sumi-800">{current.meaning}</p>
       </div>
       <div
-        className="w-full max-w-sm py-10 bg-white rounded-3xl shadow-lg border border-gray-100 flex flex-col items-center gap-2 cursor-pointer px-6 text-center"
+        className="w-full max-w-sm py-10 bg-white rounded-3xl shadow-lg border border-sumi-100 flex flex-col items-center gap-2 cursor-pointer px-6 text-center"
         onClick={() => speak(current.japanese)}
       >
-        <Furigana japanese={current.japanese} reading={current.reading} className="text-2xl font-medium text-gray-800" />
-        <p className="text-sm text-indigo-500">{currentReadingParts.hiragana}</p>
-        <p className="text-sm text-gray-400">{currentReadingParts.romaji}</p>
+        <Furigana japanese={current.japanese} reading={current.reading} className="text-2xl font-medium text-sumi-800" />
+        <p className="text-sm text-ai-500">{currentReadingParts.hiragana}</p>
+        <p className="text-sm text-sumi-400">{currentReadingParts.romaji}</p>
       </div>
-      <span className="text-gray-300 text-lg -mt-3">🔊</span>
+      <span className="text-sumi-300 text-lg -mt-3">🔊</span>
       {idx > 0 && (
-        <button className="w-full max-w-sm py-3 bg-white border-2 border-gray-200 text-gray-600 rounded-2xl text-lg font-medium" onClick={prev}>
+        <button className="w-full max-w-sm py-3 bg-white border-2 border-sumi-200 text-sumi-600 rounded-2xl text-lg font-medium" onClick={prev}>
           ← 이전
         </button>
       )}
@@ -99,11 +99,11 @@ export default function DailyReview({ lesson, onDone, profile, dayNum }) {
         <button className="flex-1 py-3 bg-rose-50 border-2 border-rose-200 text-rose-700 rounded-2xl font-medium" onClick={markNotYet}>
           🔁 아직이에요
         </button>
-        <button className="flex-1 px-8 py-3 bg-indigo-600 text-white rounded-2xl font-medium" onClick={markRemembered}>
+        <button className="flex-1 px-8 py-3 bg-ai-600 text-white rounded-2xl font-medium" onClick={markRemembered}>
           {isLast ? "외웠어요 ✓" : "외웠어요 →"}
         </button>
       </div>
-      <button className="text-xs text-gray-400 underline underline-offset-2 mt-1" onClick={skipTask}>
+      <button className="text-xs text-sumi-400 underline underline-offset-2 mt-1" onClick={skipTask}>
         다 한 걸로 표시하고 넘어가기
       </button>
     </div>

@@ -10,7 +10,7 @@ export default function CalendarView({ dayProgress, todayDayNum, unlockedDayNum,
         onClick={(e) => e.stopPropagation()}
       >
         <div className="p-5">
-          <p className="font-bold text-gray-800 text-lg mb-4">지금까지의 모든 Day</p>
+          <p className="font-bold text-sumi-800 text-lg mb-4">지금까지의 모든 Day</p>
 
           <div className="grid grid-cols-5 gap-2 max-h-[60vh] overflow-y-auto">
             {days.map((day) => {
@@ -20,8 +20,8 @@ export default function CalendarView({ dayProgress, todayDayNum, unlockedDayNum,
               const isToday = day === todayDayNum;
               const isComplete = isReview ? doneCount >= 1 : doneCount >= 4;
 
-              let style = "bg-white border border-gray-100 text-gray-600";
-              if (isToday) style = "bg-indigo-600 text-white font-bold";
+              let style = "bg-white border border-sumi-100 text-sumi-600";
+              if (isToday) style = "bg-ai-600 text-white font-bold";
               else if (isComplete) style = "bg-green-400 text-white";
               else if (doneCount > 0) style = "bg-yellow-100 border border-yellow-300 text-yellow-700";
 
@@ -37,13 +37,13 @@ export default function CalendarView({ dayProgress, todayDayNum, unlockedDayNum,
             })}
           </div>
 
-          <div className="flex gap-4 justify-center mt-4 text-xs text-gray-500">
+          <div className="flex gap-4 justify-center mt-4 text-xs text-sumi-500">
             <span className="flex items-center gap-1"><span className="w-3 h-3 rounded-full bg-green-400 inline-block" /> 완료</span>
             <span className="flex items-center gap-1"><span className="w-3 h-3 rounded-full bg-yellow-200 border border-yellow-300 inline-block" /> 일부</span>
-            <span className="flex items-center gap-1"><span className="w-3 h-3 rounded-full bg-indigo-600 inline-block" /> 오늘</span>
+            <span className="flex items-center gap-1"><span className="w-3 h-3 rounded-full bg-ai-600 inline-block" /> 오늘</span>
           </div>
 
-          <button onClick={onClose} className="mt-4 w-full py-3 bg-gray-100 text-gray-600 rounded-2xl font-medium">닫기</button>
+          <button onClick={onClose} className="mt-4 w-full py-3 bg-sumi-100 text-sumi-600 rounded-2xl font-medium">닫기</button>
         </div>
       </div>
     </div>

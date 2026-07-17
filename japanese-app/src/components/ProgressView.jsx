@@ -16,27 +16,27 @@ export default function ProgressView({ progress, onReset }) {
   return (
     <div className="flex flex-col gap-6 py-8 px-4 max-w-lg mx-auto">
       <div className="grid grid-cols-3 gap-4">
-        <div className="bg-white rounded-2xl shadow border border-gray-100 p-4 text-center">
-          <p className="text-3xl font-bold text-indigo-600">{accuracy}%</p>
-          <p className="text-sm text-gray-500 mt-1">전체 정확도</p>
+        <div className="bg-white rounded-2xl shadow border border-sumi-100 p-4 text-center">
+          <p className="text-3xl font-bold text-ai-600">{accuracy}%</p>
+          <p className="text-sm text-sumi-500 mt-1">전체 정확도</p>
         </div>
-        <div className="bg-white rounded-2xl shadow border border-gray-100 p-4 text-center">
+        <div className="bg-white rounded-2xl shadow border border-sumi-100 p-4 text-center">
           <p className="text-3xl font-bold text-green-600">{mastered.length}</p>
-          <p className="text-sm text-gray-500 mt-1">마스터한 글자</p>
+          <p className="text-sm text-sumi-500 mt-1">마스터한 글자</p>
         </div>
-        <div className="bg-white rounded-2xl shadow border border-gray-100 p-4 text-center">
-          <p className="text-3xl font-bold text-gray-700">{total}</p>
-          <p className="text-sm text-gray-500 mt-1">총 풀은 문제</p>
+        <div className="bg-white rounded-2xl shadow border border-sumi-100 p-4 text-center">
+          <p className="text-3xl font-bold text-sumi-700">{total}</p>
+          <p className="text-sm text-sumi-500 mt-1">총 풀은 문제</p>
         </div>
       </div>
 
-      <div className="bg-white rounded-2xl shadow border border-gray-100 p-4">
-        <h3 className="text-gray-700 font-medium mb-3">글자별 성적</h3>
+      <div className="bg-white rounded-2xl shadow border border-sumi-100 p-4">
+        <h3 className="text-sumi-700 font-medium mb-3">글자별 성적</h3>
         <div className="flex flex-wrap gap-2">
           {all.map((k) => {
             const e = progress[k.char];
             if (!e) return (
-              <span key={k.char} className="w-10 h-10 flex items-center justify-center rounded-xl bg-gray-100 text-gray-400 text-lg">
+              <span key={k.char} className="w-10 h-10 flex items-center justify-center rounded-xl bg-sumi-100 text-sumi-400 text-lg">
                 {k.char}
               </span>
             );
@@ -49,7 +49,7 @@ export default function ProgressView({ progress, onReset }) {
             );
           })}
         </div>
-        <p className="text-xs text-gray-400 mt-3">초록 = 잘 알고 있음 / 노랑 = 보통 / 빨강 = 연습 필요 / 회색 = 아직 안 풀어봄</p>
+        <p className="text-xs text-sumi-400 mt-3">초록 = 잘 알고 있음 / 노랑 = 보통 / 빨강 = 연습 필요 / 회색 = 아직 안 풀어봄</p>
       </div>
 
       <button

@@ -71,33 +71,33 @@ export default function Flashcard({ deck, onProgress }) {
 
   return (
     <div className="flex flex-col items-center gap-6 py-8 px-4 max-w-md mx-auto">
-      <div className="flex gap-6 text-sm text-gray-500">
-        <span>연속 정답: <strong className="text-indigo-600">{streak}</strong></span>
-        <span>정확도: <strong className="text-indigo-600">{accuracy}%</strong></span>
+      <div className="flex gap-6 text-sm text-sumi-500">
+        <span>연속 정답: <strong className="text-ai-600">{streak}</strong></span>
+        <span>정확도: <strong className="text-ai-600">{accuracy}%</strong></span>
         <span>총 {totalAnswered}문제</span>
       </div>
 
       <div
-        className="w-48 h-48 flex items-center justify-center bg-white rounded-3xl shadow-lg border border-gray-100 cursor-pointer select-none"
+        className="w-48 h-48 flex items-center justify-center bg-white rounded-3xl shadow-lg border border-sumi-100 cursor-pointer select-none"
         onClick={() => speak(current.char)}
         title="클릭하면 발음을 들을 수 있어요"
       >
         <span className="text-8xl">{current.char}</span>
       </div>
 
-      <p className="text-gray-400 text-sm">클릭하면 발음을 들을 수 있어요 🔊</p>
+      <p className="text-sumi-400 text-sm">클릭하면 발음을 들을 수 있어요 🔊</p>
 
       <div className="grid grid-cols-2 gap-3 w-full">
         {choices.map((choice) => {
           let base = "py-4 rounded-2xl text-lg font-medium border-2 transition-all duration-150 ";
           if (!selected) {
-            base += "bg-white border-gray-200 hover:border-indigo-400 hover:bg-indigo-50 cursor-pointer";
+            base += "bg-white border-sumi-200 hover:border-ai-400 hover:bg-ai-50 cursor-pointer";
           } else if (choice.char === current.char) {
             base += "bg-green-50 border-green-400 text-green-700";
           } else if (choice.char === selected.char) {
             base += "bg-red-50 border-red-400 text-red-700";
           } else {
-            base += "bg-white border-gray-200 text-gray-400";
+            base += "bg-white border-sumi-200 text-sumi-400";
           }
           return (
             <button key={choice.char} className={base} onClick={() => handleChoice(choice)}>
@@ -109,7 +109,7 @@ export default function Flashcard({ deck, onProgress }) {
 
       {selected && (
         <button
-          className="mt-2 px-8 py-3 bg-indigo-600 text-white rounded-2xl text-lg font-medium hover:bg-indigo-700 transition-colors"
+          className="mt-2 px-8 py-3 bg-ai-600 text-white rounded-2xl text-lg font-medium hover:bg-ai-700 transition-colors"
           onClick={next}
         >
           다음 →

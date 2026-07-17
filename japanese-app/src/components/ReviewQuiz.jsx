@@ -42,22 +42,22 @@ function FlashPhase({ cards, initialIdx = 0, onIdxChange, onDone, onSkipAll, pro
     <div className="flex flex-col items-center gap-5 py-6 px-4">
       <div className="text-center">
         <p className="text-sm font-semibold text-rose-600">🎯 복습 플래시카드</p>
-        <p className="text-xs text-gray-400 mt-0.5">{idx + 1} / {cards.length}</p>
+        <p className="text-xs text-sumi-400 mt-0.5">{idx + 1} / {cards.length}</p>
       </div>
-      <div className="w-full max-w-sm bg-white rounded-2xl border border-gray-100 shadow p-5 text-center">
-        <p className="text-xl font-bold text-gray-800">{current.meaning}</p>
+      <div className="w-full max-w-sm bg-white rounded-2xl border border-sumi-100 shadow p-5 text-center">
+        <p className="text-xl font-bold text-sumi-800">{current.meaning}</p>
       </div>
       <div
-        className="w-full max-w-sm py-10 bg-white rounded-3xl shadow-lg border border-gray-100 flex flex-col items-center gap-2 cursor-pointer px-6 text-center"
+        className="w-full max-w-sm py-10 bg-white rounded-3xl shadow-lg border border-sumi-100 flex flex-col items-center gap-2 cursor-pointer px-6 text-center"
         onClick={() => speak(current.japanese)}
       >
-        <Furigana japanese={current.japanese} reading={current.reading} className="text-2xl font-medium text-gray-800" />
-        <p className="text-sm text-indigo-500">{currentReadingParts.hiragana}</p>
-        <p className="text-sm text-gray-400">{currentReadingParts.romaji}</p>
+        <Furigana japanese={current.japanese} reading={current.reading} className="text-2xl font-medium text-sumi-800" />
+        <p className="text-sm text-ai-500">{currentReadingParts.hiragana}</p>
+        <p className="text-sm text-sumi-400">{currentReadingParts.romaji}</p>
       </div>
-      <span className="text-gray-300 text-lg -mt-3">🔊</span>
+      <span className="text-sumi-300 text-lg -mt-3">🔊</span>
       {idx > 0 && (
-        <button className="w-full max-w-sm py-3 bg-white border-2 border-gray-200 text-gray-600 rounded-2xl text-lg font-medium" onClick={prev}>
+        <button className="w-full max-w-sm py-3 bg-white border-2 border-sumi-200 text-sumi-600 rounded-2xl text-lg font-medium" onClick={prev}>
           ← 이전
         </button>
       )}
@@ -65,11 +65,11 @@ function FlashPhase({ cards, initialIdx = 0, onIdxChange, onDone, onSkipAll, pro
         <button className="flex-1 py-3 bg-rose-50 border-2 border-rose-200 text-rose-700 rounded-2xl font-medium" onClick={markNotYet}>
           🔁 아직이에요
         </button>
-        <button className="flex-1 px-8 py-3 bg-indigo-600 text-white rounded-2xl font-medium" onClick={markRemembered}>
+        <button className="flex-1 px-8 py-3 bg-ai-600 text-white rounded-2xl font-medium" onClick={markRemembered}>
           {isLast ? "외웠어요, 퀴즈 시작 →" : "외웠어요 →"}
         </button>
       </div>
-      <button className="text-xs text-gray-400 underline underline-offset-2 mt-1" onClick={onSkipAll}>
+      <button className="text-xs text-sumi-400 underline underline-offset-2 mt-1" onClick={onSkipAll}>
         다 한 걸로 표시하고 넘어가기
       </button>
     </div>
@@ -109,22 +109,22 @@ function QuizPhase({ items, initialIdx = 0, initialAnswers = {}, onIdxChange, on
     <div className="flex flex-col items-center gap-5 py-6 px-4">
       <div className="text-center">
         <p className="text-sm font-semibold text-rose-600">🎯 복습 퀴즈</p>
-        <p className="text-xs text-gray-400 mt-0.5">{idx + 1} / {items.length}</p>
+        <p className="text-xs text-sumi-400 mt-0.5">{idx + 1} / {items.length}</p>
       </div>
       <div
-        className="w-full max-w-sm py-8 bg-white rounded-3xl shadow-lg border border-gray-100 flex flex-col items-center gap-2 cursor-pointer px-6 text-center"
+        className="w-full max-w-sm py-8 bg-white rounded-3xl shadow-lg border border-sumi-100 flex flex-col items-center gap-2 cursor-pointer px-6 text-center"
         onClick={() => speak(current.japanese)}
       >
-        <Furigana japanese={current.japanese} reading={current.reading} className="text-2xl font-medium text-gray-800" />
-        <p className="text-sm text-indigo-500">{currentReadingParts.hiragana}</p>
-        <p className="text-sm text-gray-400">{currentReadingParts.romaji}</p>
+        <Furigana japanese={current.japanese} reading={current.reading} className="text-2xl font-medium text-sumi-800" />
+        <p className="text-sm text-ai-500">{currentReadingParts.hiragana}</p>
+        <p className="text-sm text-sumi-400">{currentReadingParts.romaji}</p>
       </div>
-      <span className="text-gray-300 text-lg -mt-3">🔊</span>
+      <span className="text-sumi-300 text-lg -mt-3">🔊</span>
       <div className="w-full max-w-sm flex flex-col gap-2">
         {current.choices.map((choice) => {
           const isCorrect = choice === current.correct;
           const isPicked = choice === selected;
-          let style = "bg-white border-gray-200 text-gray-700";
+          let style = "bg-white border-sumi-200 text-sumi-700";
           if (selected) {
             if (isCorrect) style = "bg-green-50 border-green-400 text-green-700";
             else if (isPicked) style = "bg-red-50 border-red-300 text-red-600";
@@ -143,17 +143,17 @@ function QuizPhase({ items, initialIdx = 0, initialAnswers = {}, onIdxChange, on
       </div>
       <div className="flex gap-3 w-full max-w-sm">
         {idx > 0 && (
-          <button className="flex-1 py-3 bg-white border-2 border-gray-200 text-gray-600 rounded-2xl text-lg font-medium" onClick={prev}>
+          <button className="flex-1 py-3 bg-white border-2 border-sumi-200 text-sumi-600 rounded-2xl text-lg font-medium" onClick={prev}>
             ← 이전
           </button>
         )}
         {selected && (
-          <button className="flex-1 px-8 py-3 bg-indigo-600 text-white rounded-2xl text-lg font-medium" onClick={next}>
+          <button className="flex-1 px-8 py-3 bg-ai-600 text-white rounded-2xl text-lg font-medium" onClick={next}>
             {isLast ? "결과 보기 →" : "다음 문제 →"}
           </button>
         )}
       </div>
-      <button className="text-xs text-gray-400 underline underline-offset-2 mt-1" onClick={onSkipAll}>
+      <button className="text-xs text-sumi-400 underline underline-offset-2 mt-1" onClick={onSkipAll}>
         다 한 걸로 표시하고 넘어가기
       </button>
     </div>
@@ -170,9 +170,9 @@ function ResultPhase({ score, total, onDone }) {
   return (
     <div className="flex flex-col items-center gap-5 py-10 px-4 text-center">
       <p className="text-5xl">🎯</p>
-      <p className="text-2xl font-bold text-gray-800">{score} / {total} 정답!</p>
-      <p className="text-gray-500">{message}</p>
-      <button className="w-full max-w-sm py-4 bg-indigo-600 text-white rounded-2xl text-lg font-medium" onClick={onDone}>
+      <p className="text-2xl font-bold text-sumi-800">{score} / {total} 정답!</p>
+      <p className="text-sumi-500">{message}</p>
+      <button className="w-full max-w-sm py-4 bg-ai-600 text-white rounded-2xl text-lg font-medium" onClick={onDone}>
         복습 완료 ✓
       </button>
     </div>

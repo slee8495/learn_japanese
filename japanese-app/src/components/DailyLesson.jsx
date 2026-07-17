@@ -11,7 +11,7 @@ import { getReadingParts } from "../utils/getReadingParts";
 function SkipButton({ onSkip }) {
   return (
     <button
-      className="text-xs text-gray-400 underline underline-offset-2 mt-1"
+      className="text-xs text-sumi-400 underline underline-offset-2 mt-1"
       onClick={onSkip}
     >
       다 한 걸로 표시하고 넘어가기
@@ -76,43 +76,43 @@ function KanaSection({ lesson, onDone, profile, dayNum }) {
     return (
       <div className="flex flex-col items-center gap-5 py-6 px-4">
         <div className="text-center">
-          <p className="text-sm text-gray-400">{lesson.kanaLabel} — {isHira ? "히라가나" : "카타카나"}</p>
-          <p className="text-xs text-gray-300 mt-0.5">{idx + 1} / {kanaList.length}</p>
+          <p className="text-sm text-sumi-400">{lesson.kanaLabel} — {isHira ? "히라가나" : "카타카나"}</p>
+          <p className="text-xs text-sumi-300 mt-0.5">{idx + 1} / {kanaList.length}</p>
         </div>
         <div
-          className={`w-44 h-44 rounded-3xl shadow-lg border flex items-center justify-center cursor-pointer ${isHira ? "bg-violet-50 border-violet-100" : "bg-blue-50 border-blue-100"}`}
+          className={`w-44 h-44 rounded-3xl shadow-lg border flex items-center justify-center cursor-pointer ${isHira ? "bg-shu-50 border-shu-100" : "bg-ai-50 border-ai-100"}`}
           onClick={() => speak(current.char)}
         >
           <span className="text-8xl">{current.char}</span>
         </div>
-        <span className="text-gray-300 text-lg -mt-2">🔊</span>
+        <span className="text-sumi-300 text-lg -mt-2">🔊</span>
         {!revealed ? (
           <div className="flex gap-3 w-full max-w-xs">
             {idx > 0 && (
-              <button className="flex-1 py-3 bg-white border-2 border-gray-200 text-gray-600 rounded-2xl text-lg font-medium" onClick={prevKana}>
+              <button className="flex-1 py-3 bg-white border-2 border-sumi-200 text-sumi-600 rounded-2xl text-lg font-medium" onClick={prevKana}>
                 ← 이전
               </button>
             )}
             <button
-              className="flex-1 py-4 bg-violet-50 border-2 border-violet-200 text-violet-700 rounded-2xl text-lg font-medium"
+              className="flex-1 py-4 bg-shu-50 border-2 border-shu-200 text-shu-700 rounded-2xl text-lg font-medium"
               onClick={() => { setRevealed(true); speak(current.char); }}
             >
               읽기 확인
             </button>
           </div>
         ) : (
-          <div className="w-full max-w-xs bg-white rounded-2xl border border-gray-100 shadow p-5 text-center">
-            <p className="text-3xl font-bold text-indigo-600">{current.romaji}</p>
+          <div className="w-full max-w-xs bg-white rounded-2xl border border-sumi-100 shadow p-5 text-center">
+            <p className="text-3xl font-bold text-ai-600">{current.romaji}</p>
           </div>
         )}
         {revealed && (
           <div className="flex gap-3 w-full max-w-xs">
             {idx > 0 && (
-              <button className="flex-1 py-3 bg-white border-2 border-gray-200 text-gray-600 rounded-2xl text-lg font-medium" onClick={prevKana}>
+              <button className="flex-1 py-3 bg-white border-2 border-sumi-200 text-sumi-600 rounded-2xl text-lg font-medium" onClick={prevKana}>
                 ← 이전
               </button>
             )}
-            <button className="flex-1 px-8 py-3 bg-indigo-600 text-white rounded-2xl text-lg font-medium" onClick={nextKana}>
+            <button className="flex-1 px-8 py-3 bg-ai-600 text-white rounded-2xl text-lg font-medium" onClick={nextKana}>
               {idx + 1 >= kanaList.length ? (readingList.length > 0 ? "읽기 연습 →" : "완료 ✓") : "다음 →"}
             </button>
           </div>
@@ -129,27 +129,27 @@ function KanaSection({ lesson, onDone, profile, dayNum }) {
     <div className="flex flex-col items-center gap-5 py-6 px-4">
       <div className="text-center">
         <p className="text-sm font-semibold text-emerald-600">📖 읽기 연습</p>
-        <p className="text-xs text-gray-400 mt-0.5">{idx + 1} / {readingList.length}</p>
+        <p className="text-xs text-sumi-400 mt-0.5">{idx + 1} / {readingList.length}</p>
       </div>
-      <div className="w-full max-w-sm bg-white rounded-2xl border border-gray-100 shadow p-5 text-center">
-        <p className="text-xl font-bold text-gray-800">{current.meaning}</p>
+      <div className="w-full max-w-sm bg-white rounded-2xl border border-sumi-100 shadow p-5 text-center">
+        <p className="text-xl font-bold text-sumi-800">{current.meaning}</p>
       </div>
       <div
-        className="w-full max-w-sm py-12 bg-white rounded-3xl shadow-lg border border-gray-100 flex flex-col items-center cursor-pointer"
+        className="w-full max-w-sm py-12 bg-white rounded-3xl shadow-lg border border-sumi-100 flex flex-col items-center cursor-pointer"
         onClick={() => speak(current.japanese)}
       >
         <span className="text-4xl font-medium">{current.japanese}</span>
-        <p className="text-indigo-500 text-sm mt-2">{currentReadingParts.hiragana}</p>
-        <p className="text-gray-400 text-xs mt-0.5">{currentReadingParts.romaji}</p>
+        <p className="text-ai-500 text-sm mt-2">{currentReadingParts.hiragana}</p>
+        <p className="text-sumi-400 text-xs mt-0.5">{currentReadingParts.romaji}</p>
       </div>
-      <span className="text-gray-300 text-lg -mt-3">🔊</span>
+      <span className="text-sumi-300 text-lg -mt-3">🔊</span>
       <div className="flex gap-3 w-full max-w-sm">
         {idx > 0 && (
-          <button className="flex-1 py-3 bg-white border-2 border-gray-200 text-gray-600 rounded-2xl text-lg font-medium" onClick={prevReading}>
+          <button className="flex-1 py-3 bg-white border-2 border-sumi-200 text-sumi-600 rounded-2xl text-lg font-medium" onClick={prevReading}>
             ← 이전
           </button>
         )}
-        <button className="flex-1 px-8 py-3 bg-indigo-600 text-white rounded-2xl text-lg font-medium" onClick={nextReading}>
+        <button className="flex-1 px-8 py-3 bg-ai-600 text-white rounded-2xl text-lg font-medium" onClick={nextReading}>
           {idx + 1 >= readingList.length ? "완료 ✓" : "다음 →"}
         </button>
       </div>
@@ -187,27 +187,27 @@ function WordsSection({ lesson, onDone, profile, dayNum }) {
 
   return (
     <div className="flex flex-col items-center gap-5 py-6 px-4">
-      <p className="text-xs text-gray-400">{idx + 1} / {lesson.words.length} 단어</p>
-      <div className="w-full max-w-sm bg-white rounded-2xl border border-gray-100 shadow p-5 text-center">
-        <p className="text-2xl font-bold text-gray-800">{current.meaning}</p>
+      <p className="text-xs text-sumi-400">{idx + 1} / {lesson.words.length} 단어</p>
+      <div className="w-full max-w-sm bg-white rounded-2xl border border-sumi-100 shadow p-5 text-center">
+        <p className="text-2xl font-bold text-sumi-800">{current.meaning}</p>
       </div>
       <div
-        className="w-full max-w-sm py-12 bg-white rounded-3xl shadow-lg border border-gray-100 flex flex-col items-center cursor-pointer"
+        className="w-full max-w-sm py-12 bg-white rounded-3xl shadow-lg border border-sumi-100 flex flex-col items-center cursor-pointer"
         onClick={() => speak(current.japanese)}
       >
         <Furigana japanese={current.japanese} reading={current.reading} className="text-5xl" />
-        <p className="text-xl font-medium text-blue-600 mt-2">{currentReadingParts.hiragana}</p>
-        <p className="text-gray-400 text-sm mt-0.5">{currentReadingParts.romaji}</p>
+        <p className="text-xl font-medium text-ai-600 mt-2">{currentReadingParts.hiragana}</p>
+        <p className="text-sumi-400 text-sm mt-0.5">{currentReadingParts.romaji}</p>
       </div>
-      <span className="text-gray-300 text-lg -mt-3">🔊</span>
+      <span className="text-sumi-300 text-lg -mt-3">🔊</span>
       <div className="flex gap-3 w-full max-w-sm">
         {idx > 0 && (
-          <button className="flex-1 py-3 bg-white border-2 border-gray-200 text-gray-600 rounded-2xl text-lg font-medium" onClick={prev}>
+          <button className="flex-1 py-3 bg-white border-2 border-sumi-200 text-sumi-600 rounded-2xl text-lg font-medium" onClick={prev}>
             ← 이전
           </button>
         )}
         <button
-          className="flex-1 px-8 py-3 bg-indigo-600 text-white rounded-2xl text-lg font-medium"
+          className="flex-1 px-8 py-3 bg-ai-600 text-white rounded-2xl text-lg font-medium"
           onClick={next}
         >
           {idx + 1 >= lesson.words.length ? "완료 ✓" : "다음 →"}
@@ -223,14 +223,14 @@ function GrammarSection({ lesson, onDone }) {
   const g = lesson.grammar;
   return (
     <div className="flex flex-col gap-4 py-6 px-4 max-w-lg mx-auto">
-      <div className={`rounded-2xl p-1 text-center text-xs font-bold ${lesson.isNewGrammar ? "bg-emerald-100 text-emerald-700" : "bg-gray-100 text-gray-500"}`}>
+      <div className={`rounded-2xl p-1 text-center text-xs font-bold ${lesson.isNewGrammar ? "bg-emerald-100 text-emerald-700" : "bg-sumi-100 text-sumi-500"}`}>
         {lesson.isNewGrammar ? "🆕 새로운 문법 포인트" : "🔄 복습"}
       </div>
 
-      <div className="bg-white rounded-2xl border border-gray-100 shadow p-5">
-        <span className="text-xs font-bold bg-indigo-100 text-indigo-600 rounded-full px-2 py-0.5">{g.level}</span>
-        <h2 className="text-xl font-bold text-gray-800 mt-2">{g.title}</h2>
-        <p className="text-gray-600 text-sm mt-2">{g.rule}</p>
+      <div className="bg-white rounded-2xl border border-sumi-100 shadow p-5">
+        <span className="text-xs font-bold bg-ai-100 text-ai-600 rounded-full px-2 py-0.5">{g.level}</span>
+        <h2 className="text-xl font-bold text-sumi-800 mt-2">{g.title}</h2>
+        <p className="text-sumi-600 text-sm mt-2">{g.rule}</p>
         {g.tip && (
           <div className="mt-3 bg-amber-50 rounded-xl p-3">
             <p className="text-xs font-semibold text-amber-700">💡 포인트</p>
@@ -240,20 +240,20 @@ function GrammarSection({ lesson, onDone }) {
       </div>
 
       <div>
-        <p className="text-xs font-semibold text-gray-400 mb-2">예문</p>
+        <p className="text-xs font-semibold text-sumi-400 mb-2">예문</p>
         <div className="flex flex-col gap-2">
           {g.examples.map((ex, i) => {
             const readingParts = getReadingParts(ex.j, ex.r);
             return (
               <div
                 key={i}
-                className="bg-white rounded-2xl border border-gray-100 shadow-sm p-4 cursor-pointer"
+                className="bg-white rounded-2xl border border-sumi-100 shadow-sm p-4 cursor-pointer"
                 onClick={() => speak(ex.j)}
               >
-                <p className="text-sm font-medium text-gray-500">{ex.m}</p>
-                <Furigana japanese={ex.j} reading={ex.r} className="text-lg text-gray-800 mt-1" />
-                <p className="text-sm text-indigo-500 mt-0.5">{readingParts.hiragana}</p>
-                <p className="text-xs text-gray-400 mt-0.5">{readingParts.romaji}</p>
+                <p className="text-sm font-medium text-sumi-500">{ex.m}</p>
+                <Furigana japanese={ex.j} reading={ex.r} className="text-lg text-sumi-800 mt-1" />
+                <p className="text-sm text-ai-500 mt-0.5">{readingParts.hiragana}</p>
+                <p className="text-xs text-sumi-400 mt-0.5">{readingParts.romaji}</p>
               </div>
             );
           })}
@@ -261,7 +261,7 @@ function GrammarSection({ lesson, onDone }) {
       </div>
 
       <button
-        className="w-full py-4 bg-indigo-600 text-white rounded-2xl text-lg font-medium"
+        className="w-full py-4 bg-ai-600 text-white rounded-2xl text-lg font-medium"
         onClick={onDone}
       >
         이해했어요 ✓
@@ -299,27 +299,27 @@ function SentenceSection({ lesson, onDone, profile, dayNum }) {
 
   return (
     <div className="flex flex-col items-center gap-5 py-6 px-4">
-      <p className="text-xs text-gray-400">문장 {idx + 1} / {lesson.sentences.length}</p>
-      <div className="w-full max-w-sm bg-white rounded-2xl border border-gray-100 shadow p-5 text-center">
-        <p className="text-xl font-bold text-gray-800">{current.meaning}</p>
+      <p className="text-xs text-sumi-400">문장 {idx + 1} / {lesson.sentences.length}</p>
+      <div className="w-full max-w-sm bg-white rounded-2xl border border-sumi-100 shadow p-5 text-center">
+        <p className="text-xl font-bold text-sumi-800">{current.meaning}</p>
       </div>
       <div
-        className="w-full max-w-sm py-10 bg-white rounded-3xl shadow-lg border border-gray-100 flex flex-col items-center gap-2 cursor-pointer px-6 text-center"
+        className="w-full max-w-sm py-10 bg-white rounded-3xl shadow-lg border border-sumi-100 flex flex-col items-center gap-2 cursor-pointer px-6 text-center"
         onClick={() => speak(current.japanese)}
       >
-        <Furigana japanese={current.japanese} reading={current.reading} className="text-2xl font-medium text-gray-800" />
-        <p className="text-base text-indigo-500">{currentReadingParts.hiragana}</p>
-        <p className="text-sm text-gray-400">{currentReadingParts.romaji}</p>
+        <Furigana japanese={current.japanese} reading={current.reading} className="text-2xl font-medium text-sumi-800" />
+        <p className="text-base text-ai-500">{currentReadingParts.hiragana}</p>
+        <p className="text-sm text-sumi-400">{currentReadingParts.romaji}</p>
       </div>
-      <span className="text-gray-300 text-lg -mt-3">🔊</span>
+      <span className="text-sumi-300 text-lg -mt-3">🔊</span>
       <div className="flex gap-3 w-full max-w-sm">
         {idx > 0 && (
-          <button className="flex-1 py-3 bg-white border-2 border-gray-200 text-gray-600 rounded-2xl text-lg font-medium" onClick={prev}>
+          <button className="flex-1 py-3 bg-white border-2 border-sumi-200 text-sumi-600 rounded-2xl text-lg font-medium" onClick={prev}>
             ← 이전
           </button>
         )}
         <button
-          className="flex-1 px-8 py-3 bg-indigo-600 text-white rounded-2xl text-lg font-medium"
+          className="flex-1 px-8 py-3 bg-ai-600 text-white rounded-2xl text-lg font-medium"
           onClick={next}
         >
           {idx + 1 >= lesson.sentences.length ? "완료 ✓" : "다음 →"}

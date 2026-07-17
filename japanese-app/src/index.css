@@ -1,5 +1,43 @@
 @import "tailwindcss";
 
+@theme {
+  /* 藍色 aizome — primary brand (indigo dye blue) */
+  --color-ai-50: #eef1f7;
+  --color-ai-100: #dde3ef;
+  --color-ai-200: #b8c6e0;
+  --color-ai-300: #8fa3cc;
+  --color-ai-400: #5f79ac;
+  --color-ai-500: #3c5690;
+  --color-ai-600: #28417a;
+  --color-ai-700: #1f3364;
+  --color-ai-800: #17264c;
+  --color-ai-900: #101a35;
+
+  /* 朱色 shu-iro — accent (vermillion) */
+  --color-shu-50: #fdf2ef;
+  --color-shu-100: #fbe1db;
+  --color-shu-200: #f5c3b7;
+  --color-shu-300: #eb9c89;
+  --color-shu-400: #dc7057;
+  --color-shu-500: #d14a37;
+  --color-shu-600: #c23b2e;
+  --color-shu-700: #a52d22;
+  --color-shu-800: #82231b;
+  --color-shu-900: #671c15;
+
+  /* 墨/生成り sumi & kinari — warm ink-tinted neutrals (replaces cool gray) */
+  --color-sumi-50: #faf8f4;
+  --color-sumi-100: #f2ede4;
+  --color-sumi-200: #e6ddd0;
+  --color-sumi-300: #d3c7b4;
+  --color-sumi-400: #ab9d89;
+  --color-sumi-500: #8a7d6b;
+  --color-sumi-600: #6b6053;
+  --color-sumi-700: #4d443a;
+  --color-sumi-800: #332c25;
+  --color-sumi-900: #211c17;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -7,4 +45,5 @@
 body {
   margin: 0;
   font-family: system-ui, -apple-system, sans-serif;
+  background: var(--color-sumi-50);
 }

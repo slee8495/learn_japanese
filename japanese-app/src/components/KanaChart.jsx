@@ -38,10 +38,10 @@ function CharCell({ hira, kata, romaji, mode }) {
   return (
     <button
       onClick={() => speak(char)}
-      className="flex flex-col items-center justify-center bg-white border border-gray-100 rounded-xl py-1.5 active:bg-indigo-50 active:border-indigo-200 transition-colors w-full"
+      className="flex flex-col items-center justify-center bg-white border border-sumi-100 rounded-xl py-1.5 active:bg-ai-50 active:border-ai-200 transition-colors w-full"
     >
-      <span className="text-xl font-medium text-gray-800">{char}</span>
-      <span className="text-gray-400" style={{ fontSize: "0.6rem" }}>{romaji}</span>
+      <span className="text-xl font-medium text-sumi-800">{char}</span>
+      <span className="text-sumi-400" style={{ fontSize: "0.6rem" }}>{romaji}</span>
     </button>
   );
 }
@@ -53,12 +53,12 @@ function Table({ rows, mode }) {
       <div className="grid gap-1" style={{ gridTemplateColumns: "2.2rem repeat(5, 1fr)" }}>
         <div />
         {COL_LABELS.map(c => (
-          <div key={c} className="text-center text-xs text-gray-400 font-medium py-0.5">{c}</div>
+          <div key={c} className="text-center text-xs text-sumi-400 font-medium py-0.5">{c}</div>
         ))}
       </div>
       {rows.map((row) => (
         <div key={row.label} className="grid gap-1" style={{ gridTemplateColumns: "2.2rem repeat(5, 1fr)" }}>
-          <div className="flex items-center justify-center text-xs text-gray-400 font-medium"
+          <div className="flex items-center justify-center text-xs text-sumi-400 font-medium"
             style={{ fontSize: "0.6rem", lineHeight: 1.1 }}>
             {row.label}
           </div>
@@ -79,13 +79,13 @@ export default function KanaChart() {
     <div className="flex flex-col gap-4 py-4 px-3 max-w-lg mx-auto">
 
       {/* 히라가나 / 카타카나 전환 */}
-      <div className="flex gap-2 bg-gray-100 rounded-2xl p-1">
+      <div className="flex gap-2 bg-sumi-100 rounded-2xl p-1">
         {[{ id: "hira", label: "히라가나 あ" }, { id: "kata", label: "카타카나 ア" }].map(m => (
           <button
             key={m.id}
             onClick={() => setMode(m.id)}
             className={`flex-1 py-2 rounded-xl text-sm font-semibold transition-colors ${
-              mode === m.id ? "bg-white text-indigo-600 shadow-sm" : "text-gray-500"
+              mode === m.id ? "bg-white text-ai-600 shadow-sm" : "text-sumi-500"
             }`}
           >
             {m.label}
@@ -93,25 +93,25 @@ export default function KanaChart() {
         ))}
       </div>
 
-      <p className="text-xs text-center text-gray-300">🔊</p>
+      <p className="text-xs text-center text-sumi-300">🔊</p>
 
       {/* 기본 오십음도 */}
-      <div className="bg-gray-50 rounded-2xl p-3">
-        <p className="text-xs font-semibold text-gray-500 mb-2">기본 오십음도</p>
+      <div className="bg-sumi-50 rounded-2xl p-3">
+        <p className="text-xs font-semibold text-sumi-500 mb-2">기본 오십음도</p>
         <Table rows={ROWS} mode={mode} />
       </div>
 
       {/* 탁음 / 반탁음 */}
       <button
         onClick={() => setShowVoiced(v => !v)}
-        className="flex items-center justify-between bg-gray-50 rounded-2xl px-4 py-3 text-sm font-semibold text-gray-600"
+        className="flex items-center justify-between bg-sumi-50 rounded-2xl px-4 py-3 text-sm font-semibold text-sumi-600"
       >
         <span>탁음 · 반탁음 (が/ざ/だ/ば/ぱ행)</span>
         <span>{showVoiced ? "▲" : "▼"}</span>
       </button>
 
       {showVoiced && (
-        <div className="bg-gray-50 rounded-2xl p-3">
+        <div className="bg-sumi-50 rounded-2xl p-3">
           <Table rows={VOICED} mode={mode} />
         </div>
       )}

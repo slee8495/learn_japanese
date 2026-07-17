@@ -5,8 +5,8 @@ import { getReadingParts } from "../utils/getReadingParts";
 
 const LEVELS = [
   { id: "n5", label: "N5", sub: "기초 (100개)", color: "bg-green-100 text-green-700" },
-  { id: "n4", label: "N4", sub: "초급 (160개)", color: "bg-blue-100 text-blue-700" },
-  { id: "n3", label: "N3", sub: "중급 (300개)", color: "bg-violet-100 text-violet-700" },
+  { id: "n4", label: "N4", sub: "초급 (160개)", color: "bg-ai-100 text-ai-700" },
+  { id: "n3", label: "N3", sub: "중급 (300개)", color: "bg-shu-100 text-shu-700" },
   { id: "n2", label: "N2", sub: "고급 (400개)", color: "bg-rose-100 text-rose-700" },
 ];
 
@@ -29,19 +29,19 @@ function WordCard({ word }) {
 
   return (
     <div
-      className="bg-white rounded-2xl border border-gray-100 shadow-sm p-4 cursor-pointer hover:shadow-md transition-shadow"
+      className="bg-white rounded-2xl border border-sumi-100 shadow-sm p-4 cursor-pointer hover:shadow-md transition-shadow"
       onClick={() => speak(word.japanese)}
     >
       <div className="flex items-start justify-between gap-2">
         <div className="flex-1 min-w-0">
-          <p className="text-base text-gray-600">{word.meaning}</p>
-          <Furigana japanese={word.japanese} reading={word.reading} className="text-2xl font-medium text-gray-800 mt-1" />
-          <p className="text-sm text-indigo-500 mt-0.5">{readingParts.hiragana}</p>
-          <p className="text-xs text-gray-400 mt-0.5">{readingParts.romaji}</p>
+          <p className="text-base text-sumi-600">{word.meaning}</p>
+          <Furigana japanese={word.japanese} reading={word.reading} className="text-2xl font-medium text-sumi-800 mt-1" />
+          <p className="text-sm text-ai-500 mt-0.5">{readingParts.hiragana}</p>
+          <p className="text-xs text-sumi-400 mt-0.5">{readingParts.romaji}</p>
         </div>
         <div className="flex flex-col items-end gap-1 shrink-0">
           {posLabel && (
-            <span className="text-xs bg-gray-100 text-gray-500 rounded-full px-2 py-0.5">{posLabel}</span>
+            <span className="text-xs bg-sumi-100 text-sumi-500 rounded-full px-2 py-0.5">{posLabel}</span>
           )}
           {word.common && (
             <span className="text-xs bg-amber-50 text-amber-600 rounded-full px-2 py-0.5">★ 자주 씀</span>
@@ -85,8 +85,8 @@ export default function VocabBook() {
             onClick={() => { setLevel(l.id); setSearch(""); }}
             className={`shrink-0 px-4 py-2 rounded-xl text-sm font-semibold transition-colors ${
               level === l.id
-                ? "bg-indigo-600 text-white"
-                : "bg-gray-100 text-gray-600 hover:bg-gray-200"
+                ? "bg-ai-600 text-white"
+                : "bg-sumi-100 text-sumi-600 hover:bg-sumi-200"
             }`}
           >
             {l.label}
@@ -102,12 +102,12 @@ export default function VocabBook() {
           value={search}
           onChange={(e) => setSearch(e.target.value)}
           placeholder="일본어, 읽기, 뜻 검색..."
-          className="flex-1 px-3 py-2 rounded-xl border border-gray-200 text-sm focus:outline-none focus:border-indigo-400"
+          className="flex-1 px-3 py-2 rounded-xl border border-sumi-200 text-sm focus:outline-none focus:border-ai-400"
         />
         <button
           onClick={() => setShowCommonOnly((v) => !v)}
           className={`px-3 py-2 rounded-xl text-xs font-medium shrink-0 transition-colors ${
-            showCommonOnly ? "bg-amber-400 text-white" : "bg-gray-100 text-gray-600"
+            showCommonOnly ? "bg-amber-400 text-white" : "bg-sumi-100 text-sumi-600"
           }`}
         >
           ★ 자주 씀
@@ -116,18 +116,18 @@ export default function VocabBook() {
 
       {/* 결과 수 */}
       <div className="flex items-center justify-between">
-        <p className="text-sm text-gray-500">
+        <p className="text-sm text-sumi-500">
           <span className={`text-xs font-bold px-2 py-0.5 rounded-full mr-2 ${currentLevel?.color}`}>
             {currentLevel?.label}
           </span>
           {words.length}개 단어
         </p>
-        <span className="text-gray-300 text-sm">🔊</span>
+        <span className="text-sumi-300 text-sm">🔊</span>
       </div>
 
       {/* 단어 리스트 */}
       {words.length === 0 ? (
-        <div className="text-center py-12 text-gray-400">
+        <div className="text-center py-12 text-sumi-400">
           <p className="text-4xl mb-3">🔍</p>
           <p>검색 결과가 없어요</p>
         </div>
@@ -139,7 +139,7 @@ export default function VocabBook() {
         </div>
       )}
 
-      <p className="text-center text-xs text-gray-300 mt-2">
+      <p className="text-center text-xs text-sumi-300 mt-2">
         출처: Jisho.org (JMdict · Creative Commons)
       </p>
     </div>
