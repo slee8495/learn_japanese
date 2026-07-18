@@ -1,4 +1,5 @@
 import { itemKey } from "./reviewFlags";
+import { schedulePush } from "./progressSync";
 
 // 단기 복습("아직이에요"/"외웠어요")과는 별개로, 한 번 "외웠어요"를 확인한
 // 단어/문장을 아주 잊어버리지 않도록 먼 미래에 한 번씩 랜덤하게 다시
@@ -17,6 +18,7 @@ function loadQueue(profile) {
 
 function saveQueue(profile, queue) {
   localStorage.setItem(queueKey(profile), JSON.stringify(queue));
+  schedulePush(profile, { longtermQueue: queue });
 }
 
 // 성공 횟수(1~4)별 다음 등장까지의 최소/최대 일수. 갈수록 간격이 넓어진다.

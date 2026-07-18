@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { isReviewDay, hasDailyReview } from "../data/curriculum";
+import { schedulePush } from "../utils/progressSync";
 
 const PROFILE_KEY = "jp_profile";
 const TASK_KEYS = ["kana", "words", "grammar", "sentence"];
@@ -64,10 +65,12 @@ export function useDailyProgress(profileName) {
 
   useEffect(() => {
     localStorage.setItem(dayProgressKey(profileName), JSON.stringify(dayProgress));
+    schedulePush(profileName, { dayProgress });
   }, [dayProgress, profileName]);
 
   useEffect(() => {
     localStorage.setItem(pinnedDayKey(profileName), String(pinnedDayNum));
+    schedulePush(profileName, { pinnedDayNum });
   }, [pinnedDayNum, profileName]);
 
   // 오늘 할 일을 다 끝내면 다음 Day는 조용히 잠금 해제되지만(unlockedDayNum),

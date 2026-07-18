@@ -1,7 +1,8 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { hiragana, katakana } from "./data/kana";
 import { useDailyProgress, getStoredProfile, setStoredProfile } from "./hooks/useDailyProgress";
 import { getDayLesson } from "./data/curriculum";
+import { bootstrapProfileSync } from "./utils/progressSync";
 import Home from "./components/Home";
 import DailyLesson from "./components/DailyLesson";
 import Flashcard from "./components/Flashcard";
@@ -217,6 +218,28 @@ function MainApp({ profile, onSwitchProfile }) {
   );
 }
 
+// ── 프로필별 서버 동기화가 끝날 때까지 대기 ──────────────────────
+// useDailyProgress 등은 마운트 시점에 동기적으로 localStorage를 읽으므로,
+// 그 전에 서버 복원/백업이 끝나 있어야 한다.
+function ProfileGate({ profile, onSwitchProfile }) {
+  const [ready, setReady] = useState(false);
+
+  useEffect(() => {
+    setReady(false);
+    bootstrapProfileSync(profile).finally(() => setReady(true));
+  }, [profile]);
+
+  if (!ready) {
+    return (
+      <div className="min-h-screen bg-sumi-50 flex items-center justify-center">
+        <p className="text-ai-600 text-sm font-medium">불러오는 중...</p>
+      </div>
+    );
+  }
+
+  return <MainApp profile={profile} onSwitchProfile={onSwitchProfile} />;
+}
+
 // ── 루트 ────────────────────────────────────────────────────
 export default function App() {
   const [profile, setProfile] = useState(() => getStoredProfile());
@@ -236,5 +259,5 @@ export default function App() {
     return <ProfileSetup onDone={handleProfileDone} />;
   }
 
-  return <MainApp profile={profile} onSwitchProfile={handleSwitchProfile} />;
+  return <ProfileGate profile={profile} onSwitchProfile={handleSwitchProfile} />;
 }
