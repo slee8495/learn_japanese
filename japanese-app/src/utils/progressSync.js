@@ -42,26 +42,28 @@ export async function bootstrapProfileSync(profile) {
         body: JSON.stringify({ profile, ...snap }),
       }).catch(() => {});
     }
-    return;
+    return { restored: false };
   }
 
   try {
     const controller = new AbortController();
-    const timeout = setTimeout(() => controller.abort(), 4000);
+    const timeout = setTimeout(() => controller.abort(), 10000);
     const res = await fetch(`/api/progress?profile=${encodeURIComponent(profile)}`, {
       signal: controller.signal,
     });
     clearTimeout(timeout);
-    if (!res.ok) return;
+    if (!res.ok) return { restored: false, error: `HTTP ${res.status}` };
     const data = await res.json();
-    if (!data) return;
+    if (!data) return { restored: false, error: "서버에 저장된 기록 없음" };
 
     if (data.dayProgress) localStorage.setItem(DAY_PROGRESS_KEY(profile), JSON.stringify(data.dayProgress));
     if (data.pinnedDayNum != null) localStorage.setItem(PINNED_KEY(profile), String(data.pinnedDayNum));
     if (data.longtermQueue) localStorage.setItem(LONGTERM_KEY(profile), JSON.stringify(data.longtermQueue));
     if (data.reviewFlags) localStorage.setItem(REVIEWFLAGS_KEY(profile), JSON.stringify(data.reviewFlags));
-  } catch {
+    return { restored: true };
+  } catch (err) {
     // 오프라인이거나 서버 응답이 없으면 그냥 빈 상태로 시작한다.
+    return { restored: false, error: err?.name === "AbortError" ? "시간 초과" : String(err?.message || err) };
   }
 }
 

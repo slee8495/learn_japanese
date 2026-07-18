@@ -223,10 +223,16 @@ function MainApp({ profile, onSwitchProfile }) {
 // 그 전에 서버 복원/백업이 끝나 있어야 한다.
 function ProfileGate({ profile, onSwitchProfile }) {
   const [ready, setReady] = useState(false);
+  const [syncError, setSyncError] = useState(null);
 
   useEffect(() => {
     setReady(false);
-    bootstrapProfileSync(profile).finally(() => setReady(true));
+    setSyncError(null);
+    bootstrapProfileSync(profile)
+      .then((result) => {
+        if (result?.error) setSyncError(result.error);
+      })
+      .finally(() => setReady(true));
   }, [profile]);
 
   if (!ready) {
@@ -237,7 +243,16 @@ function ProfileGate({ profile, onSwitchProfile }) {
     );
   }
 
-  return <MainApp profile={profile} onSwitchProfile={onSwitchProfile} />;
+  return (
+    <>
+      {syncError && (
+        <div className="bg-shu-100 text-shu-700 text-xs text-center py-1.5 px-2">
+          서버 동기화 실패: {syncError} (스크린샷 부탁드려요)
+        </div>
+      )}
+      <MainApp profile={profile} onSwitchProfile={onSwitchProfile} />
+    </>
+  );
 }
 
 // ── 루트 ────────────────────────────────────────────────────
